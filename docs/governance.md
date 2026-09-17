@@ -102,7 +102,7 @@ The standard is versioned. Version 1.0 is targeted for February 1, 2027
 ([Roadmap and timeline](roadmap.md)). After 1.0, changes are proposed and
 ratified through the working-group process and released as numbered versions, so a conformance
 claim always references a specific version. The published repository
-([github.com/AAI-Society/ov-poc-standard](https://github.com/AAI-Society/ov-poc-standard)) is the
+([github.com/LFDT-ProofOfControl/ov-poc-standard](https://github.com/LFDT-ProofOfControl/ov-poc-standard)) is the
 single source of truth for the current text.
 
 ---

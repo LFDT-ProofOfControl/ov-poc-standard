@@ -291,7 +291,7 @@ clarified wording, and crosswalk rows can go straight to a pull request.
    ```bash
    git clone https://github.com/<your-username>/ov-poc-standard.git
    cd ov-poc-standard
-   git remote add upstream https://github.com/AAI-Society/ov-poc-standard.git
+   git remote add upstream https://github.com/LFDT-ProofOfControl/ov-poc-standard.git
    ```
 
 2. **Branch** off an up-to-date `master`. Name the branch for the change, not for yourself:
