@@ -37,6 +37,9 @@ poc-evidence = {
   -70011 => verdict,
   -70012 => tstr,             ; reason, free text, not security-relevant
   -70013 => alg-id,           ; signature algorithm identifier (C6.3.4)
+  -70014 => digest,           ; merkle_root, RFC 6962 tree head (C7.3.4)
+  -70015 => uint .ge 1,       ; tree_size, leaves the merkle_root covers
+  ? -70016 => digest,         ; dispatched_snapshot_hash, required when verdict is modify
 
   ; ---- attestation submodule [RFC 9711]
   266 => { "attestation" => attestation-submod },
