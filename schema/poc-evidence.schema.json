@@ -117,6 +117,10 @@
           "$ref": "#/$defs/digest",
           "description": "Digest of the bounded path summary at evaluation time (C4.1.7)."
         },
+        "dispatched_snapshot_hash": {
+          "$ref": "#/$defs/digest",
+          "description": "Digest of the action actually dispatched when verdict is MODIFY. Required in that case: validate.py rejects a MODIFY token without it (modify-unbound)."
+        },
         "verdict": {
           "enum": ["ALLOW", "DENY", "MODIFY", "ESCALATE"],
           "description": "The binding decision. MODIFY means the dispatched action differs from the proposed one and MUST itself be evidenced."
