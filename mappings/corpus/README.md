@@ -49,8 +49,10 @@ corpus and reproduce the coding.
 
 * **Title:** Cloud Security Alliance — Autonomous Action Runtime Management (contributed by
   Vanta)
-* **Version:** 2026 publication
-* **Access:** <https://cloudsecurityalliance.org/>
+* **Version:** v1.0 (R1–R9; the GitHub repository metadata reports 2.0 — discrepancy noted)
+* **Access:** <https://aarm.dev/spec> (specification text, CC BY 4.0) and
+  <https://github.com/aarm-dev/aarm> (source). The CSA working-group page carries no
+  specification text, so it is not a corpus source for this coding.
 
 ### 8. Zero Trust Architecture (`NIST_SP_800_207`)
 

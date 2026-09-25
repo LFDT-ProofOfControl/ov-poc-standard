@@ -216,7 +216,7 @@ with `python3 mappings/compute_coverage.py`:
 | [ISO/IEC 42001](mappings/iso-iec-42001.md) | 0 | 72 | 55 | **57%** |
 | [SOC 2](mappings/soc-2.md) | 0 | 68 | 59 | **54%** |
 | [EU AI Act](mappings/eu-ai-act.md) | 0 | 65 | 62 | **51%** |
-| [CSA AARM](mappings/csa-aarm.md) | 13 | 47 | 67 | **47%** |
+| [CSA AARM](mappings/csa-aarm.md) | 1 | 55 | 71 | **44%** |
 | [Zero Trust (NIST SP 800-207)](mappings/zero-trust.md) | 8 | 46 | 73 | **43%** |
 | [MITRE ATLAS](mappings/mitre-atlas.md) | 0 | 38 | 89 | **30%** |
 

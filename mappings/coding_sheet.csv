@@ -247,7 +247,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 3.2.3,C3.2,NIST_SP_800_207,NM,—,Evidence continuity not addressed,seed-01
 3.2.3,C3.2,OWASP_AISVS,NM,—,Evidence continuity not addressed,seed-01
 3.2.3,C3.2,SOC_2,NM,—,Evidence continuity not addressed,seed-01
-4.1.1,C4.1,CSA_AARM,EM,Action interception: approve / modify / defer / deny,Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection,seed-01
+4.1.1,C4.1,CSA_AARM,PM,R5 Tamper-evident Receipts; R9 Least Privilege Enforcement (SHOULD),"R5 records the policy context used in each evaluation and R9 scopes credentials per action, but AARM requires no record of the granted permission set, its scope and its expiry written before the first action executes under it.",joseruiz1571
 4.1.1,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
 4.1.1,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
 4.1.1,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
@@ -255,7 +255,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 4.1.1,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
 4.1.1,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
 4.1.1,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
-4.1.2,C4.1,CSA_AARM,EM,Action interception: approve / modify / defer / deny,Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection,seed-01
+4.1.2,C4.1,CSA_AARM,PM,R3 Policy Evaluation with Intent Alignment; R5 Tamper-evident Receipts,"R3 requires every intercepted action to be evaluated against policy and R5 requires the decision and the policy context to be recorded, but AARM never defines policy context and never requires the record to name the permission matched or the denial reason.",joseruiz1571
 4.1.2,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
 4.1.2,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
 4.1.2,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
@@ -263,7 +263,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 4.1.2,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
 4.1.2,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
 4.1.2,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
-4.1.3,C4.1,CSA_AARM,EM,Action interception: approve / modify / defer / deny,Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection,seed-01
+4.1.3,C4.1,CSA_AARM,EM,"R1 Pre-execution Interception; R4 Five Authorization Decisions (ALLOW, DENY, MODIFY, STEP_UP, DEFER); R5 Tamper-evident Receipts","R1 stops the action before execution rather than flagging it, R4 supplies DENY as a decision, and R5 records the original action and the decision, so the block and its rejection record match in scope and specificity.",joseruiz1571
 4.1.3,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
 4.1.3,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
 4.1.3,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
@@ -271,7 +271,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 4.1.3,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
 4.1.3,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
 4.1.3,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
-4.1.4,C4.1,CSA_AARM,EM,Action interception: approve / modify / defer / deny,Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection,seed-01
+4.1.4,C4.1,CSA_AARM,PM,R3 Policy Evaluation with Intent Alignment,"R3 evaluates the intercepted action itself at execution time, but AARM has no registered tool schema, no structural validation of call parameters against one, and no stored parameter digest.",joseruiz1571
 4.1.4,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
 4.1.4,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
 4.1.4,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
@@ -279,7 +279,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 4.1.4,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
 4.1.4,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
 4.1.4,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
-4.1.5,C4.1,CSA_AARM,EM,Action interception: approve / modify / defer / deny,Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection,seed-01
+4.1.5,C4.1,CSA_AARM,PM,R9 Least Privilege Enforcement (SHOULD),"R9 scopes credentials to the minimum necessary for each action rather than session-wide, but it is a SHOULD in the Extended tier and imposes no expiry or per-task issuance requirement.",joseruiz1571
 4.1.5,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
 4.1.5,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
 4.1.5,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
@@ -287,7 +287,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 4.1.5,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
 4.1.5,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
 4.1.5,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
-4.1.6,C4.1,CSA_AARM,EM,Action interception: approve / modify / defer / deny,Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection,seed-01
+4.1.6,C4.1,CSA_AARM,PM,R4 Five Authorization Decisions (STEP_UP); R5 Tamper-evident Receipts,"STEP_UP requires human approval before execution but carries no recording obligation anywhere in the spec, so of the four fields this requirement names AARM reaches only the timestamp and the policy engine's own decision, never the approver's authenticated identity or the exact content presented.",joseruiz1571
 4.1.6,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
 4.1.6,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
 4.1.6,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
@@ -295,7 +295,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 4.1.6,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
 4.1.6,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
 4.1.6,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
-4.1.7,C4.1,CSA_AARM,EM,Action interception: approve / modify / defer / deny,Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection,seed-01
+4.1.7,C4.1,CSA_AARM,PM,R2 Context Accumulation; R3 Policy Evaluation with Intent Alignment,"R2 puts prior actions in the session into the context available at each decision and R3 evaluates against it, but AARM's unit is the session thread rather than the execution path and it never states that a composed sequence cannot exceed the authority of its steps.",joseruiz1571
 4.1.7,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
 4.1.7,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
 4.1.7,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
@@ -303,7 +303,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 4.1.7,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
 4.1.7,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
 4.1.7,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
-4.1.8,C4.1,CSA_AARM,EM,Action interception: approve / modify / defer / deny,Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection,seed-01
+4.1.8,C4.1,CSA_AARM,NM,—,"No AARM requirement pins approval thresholds to the original grant; R2 does the opposite by accumulating prior actions and tool output into the evaluation context, and R7 semantic distance tracking is a SHOULD aimed at intent drift rather than at authorization state.",joseruiz1571
 4.1.8,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
 4.1.8,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
 4.1.8,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
@@ -487,7 +487,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 6.3.5,C6.3,NIST_SP_800_207,NM,—,Key lifecycle not addressed at this level,seed-01
 6.3.5,C6.3,OWASP_AISVS,PM,AISVS C4; C5,C4/C5 key-management expectations; evidence-key custody is specific to Proof-of-Control,seed-01
 6.3.5,C6.3,SOC_2,PM,CC6.1,CC6.1 encryption and key management expectations; not evidence-key custody,seed-01
-7.1.1,C7.1,CSA_AARM,EM,The AARM runtime gateway,"The AARM runtime gateway is the same interception boundary, mediating all agent actions",seed-01
+7.1.1,C7.1,CSA_AARM,PM,R1 Pre-execution Interception,"R1 forbids any action bypassing the control plane, but it is architecture-neutral and AARM section 6.2 expressly recognizes SDK instrumentation that may miss non-instrumented paths, so a gateway running out-of-process from the agent is not required.",joseruiz1571
 7.1.1,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
 7.1.1,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
 7.1.1,C7.1,MITRE_ATLAS,NM,—,No evidence-generation concept,seed-01
@@ -495,7 +495,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 7.1.1,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
 7.1.1,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
 7.1.1,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
-7.1.2,C7.1,CSA_AARM,EM,The AARM runtime gateway,"The AARM runtime gateway is the same interception boundary, mediating all agent actions",seed-01
+7.1.2,C7.1,CSA_AARM,PM,R5 Tamper-evident Receipts; R6 Identity Binding,"R5 requires one tamper-evident receipt per evaluated action and R6 binds it to an agent identity, but AARM requires no before, during and after records, no independent signature on each, and no shared action ID linking them.",joseruiz1571
 7.1.2,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
 7.1.2,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
 7.1.2,C7.1,MITRE_ATLAS,NM,—,No evidence-generation concept,seed-01
@@ -503,7 +503,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 7.1.2,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
 7.1.2,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
 7.1.2,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
-7.1.3,C7.1,CSA_AARM,EM,The AARM runtime gateway,"The AARM runtime gateway is the same interception boundary, mediating all agent actions",seed-01
+7.1.3,C7.1,CSA_AARM,NM,—,"AARM orders interception before execution but places no ordering or durability requirement on the receipt, so evidence emission is never a precondition of action release.",joseruiz1571
 7.1.3,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
 7.1.3,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
 7.1.3,C7.1,MITRE_ATLAS,NM,—,No evidence-generation concept,seed-01
@@ -511,7 +511,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 7.1.3,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
 7.1.3,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
 7.1.3,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
-7.1.4,C7.1,CSA_AARM,EM,The AARM runtime gateway,"The AARM runtime gateway is the same interception boundary, mediating all agent actions",seed-01
+7.1.4,C7.1,CSA_AARM,NM,—,"AARM has no attestation, capability-binding or attested-egress requirement; section 6.1 Protocol Gateway is one of four recognized architectures, not a requirement to mediate the effect channel inside the policy-evaluation trust boundary.",joseruiz1571
 7.1.4,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
 7.1.4,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
 7.1.4,C7.1,MITRE_ATLAS,PM,AML.M0028 — AI Agent Tools Permissions Configuration; AML.M0032 — Segmentation of AI Agent Components,"ATLAS covers applying inherited permissions/restrictions to tools and enforcing boundaries around tools and data sources. It does not require attested mediation, action-bound capabilities, or matching evidence.",codex-review-01
@@ -519,7 +519,7 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 7.1.4,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
 7.1.4,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
 7.1.4,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
-7.1.5,C7.1,CSA_AARM,EM,The AARM runtime gateway,"The AARM runtime gateway is the same interception boundary, mediating all agent actions",seed-01
+7.1.5,C7.1,CSA_AARM,NM,—,"AARM grades conformance as Core or Extended by requirements satisfied and has no notion of evidence tiers, so it imposes nothing on what a conformance claim may assert about executed actions.",joseruiz1571
 7.1.5,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
 7.1.5,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
 7.1.5,C7.1,MITRE_ATLAS,NM,—,No evidence-generation concept,seed-01
