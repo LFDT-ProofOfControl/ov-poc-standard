@@ -131,7 +131,7 @@ action did not happen.
 ## Coverage
 
 <!-- coverage:start -->
-**Coverage: 0 of 29 threats** across 1 use cases. `░░░░░░░░░░░░░░░░░░░░░░░░░░░░`  
+**Coverage: 3 of 29 threats** across 2 use cases. `███░░░░░░░░░░░░░░░░░░░░░░░░░`  
 Full index in [COVERAGE.md](COVERAGE.md).
 <!-- coverage:end -->
 
