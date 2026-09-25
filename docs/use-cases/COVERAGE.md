@@ -1,6 +1,6 @@
 # Coverage index
 
-**20 of 29 threats have a worked use case.** 13 submissions.
+**20 of 29 threats have a worked use case.** 14 submissions.
 
 Generated from the `threats:` frontmatter across this folder. Do not
 edit by hand: run `python3 tools/generate_use_case_coverage.py`.
@@ -47,8 +47,8 @@ A submission covering one of these helps most.
 | Memory, knowledge, and supply chain | `model-poisoning` | `credit-decisioning` |
 | Memory, knowledge, and supply chain | `supply-chain-poisoning` | `credit-decisioning`, `frontier-lab-agent-collective`, `privileged-software-change` |
 | Identity, authority, and inter-agent trust | `identity-abuse` | `account-takeover-stolen-credentials`, `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `deepfake-interview-insider`, `frontier-lab-agent-collective`, `license-piracy-agent`, `pig-butchering`, `privileged-software-change` |
-| Identity, authority, and inter-agent trust | `context-blind-authorization` | `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `frontier-lab-agent-collective`, `privileged-software-change`, `rogue-internal-agent-pii` |
-| Identity, authority, and inter-agent trust | `excessive-agency` | `account-takeover-stolen-credentials`, `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `deepfake-interview-insider`, `frontier-lab-agent-collective`, `privileged-software-change`, `rogue-internal-agent-pii`, `shopping-agent` |
+| Identity, authority, and inter-agent trust | `context-blind-authorization` | `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii` |
+| Identity, authority, and inter-agent trust | `excessive-agency` | `account-takeover-stolen-credentials`, `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `deepfake-interview-insider`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
 | Identity, authority, and inter-agent trust | `insecure-inter-agent-comms` | `agentic-cross-border-payments`, `frontier-lab-agent-collective` |
 | Tools, actions, and effects | `tool-misuse` | `agentic-cross-border-payments`, `license-piracy-agent` |
 | Tools, actions, and effects | `unexpected-code-execution` | `frontier-lab-agent-collective` |
@@ -61,7 +61,7 @@ A submission covering one of these helps most.
 | Record integrity and resilience | `audit-tampering` | `agentic-cross-border-payments`, `frontier-lab-agent-collective`, `privileged-software-change`, `rogue-internal-agent-pii` |
 | Record integrity and resilience | `cascading-failure` | `privileged-software-change` |
 | Record integrity and resilience | `coverage-decay` | — |
-| Record integrity and resilience | `evidence-repudiation` | `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `frontier-lab-agent-collective`, `privileged-software-change`, `rogue-internal-agent-pii`, `shopping-agent` |
+| Record integrity and resilience | `evidence-repudiation` | `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
 | Record integrity and resilience | `trust-opacity` | `account-takeover-stolen-credentials`, `deepfake-interview-insider`, `pig-butchering` |
 | Human oversight and disclosure | `approval-fatigue` | `deepfake-biometric`, `pig-butchering` |
 | Human oversight and disclosure | `undisclosed-ai` | `license-piracy-agent`, `pig-butchering` |
@@ -83,6 +83,7 @@ A submission covering one of these helps most.
 | `license-piracy-agent` | `identity-abuse`, `tool-misuse`, `undisclosed-ai` |
 | `pig-butchering` | `identity-abuse`, `approval-fatigue`, `undisclosed-ai`, `trust-opacity` |
 | `privileged-software-change` | `supply-chain-poisoning`, `identity-abuse`, `context-blind-authorization`, `excessive-agency`, `scope-creep-lifecycle`, `audit-tampering`, `cascading-failure`, `evidence-repudiation` |
+| `provider-replacement-live-mandate` | `context-blind-authorization`, `excessive-agency`, `evidence-repudiation` |
 | `rogue-internal-agent-pii` | `excessive-agency`, `context-blind-authorization`, `data-exfiltration`, `audit-tampering`, `evidence-repudiation` |
 | `shopping-agent` | `excessive-agency`, `autonomy-creep`, `unbounded-consumption`, `evidence-repudiation` |
 | `sovereign-agents` | **none tagged** |

@@ -29,6 +29,7 @@ boundary concrete against real examples.
 | [`license-piracy-agent.md`](license-piracy-agent.md) | Software publishing | Scenario | 3 |
 | [`pig-butchering.md`](pig-butchering.md) | Financial services | Scenario | 4 |
 | [`privileged-software-change.md`](privileged-software-change.md) | Software and cloud services | Scenario | 4 |
+| [`provider-replacement-live-mandate.md`](provider-replacement-live-mandate.md) | Business operations | Scenario | 3 |
 | [`rogue-internal-agent-pii.md`](rogue-internal-agent-pii.md) | Enterprise software | Scenario | 3 |
 | [`shopping-agent.md`](shopping-agent.md) | E-commerce | Scenario | 3 |
 | [`sovereign-agents.md`](sovereign-agents.md) | Cross-sector | Scenario, v1 template | 4 |
@@ -175,7 +176,7 @@ action did not happen.
 ## Coverage
 
 <!-- coverage:start -->
-**Coverage: 20 of 29 threats** across 13 use cases. `███████████████████░░░░░░░░░`  
+**Coverage: 20 of 29 threats** across 14 use cases. `███████████████████░░░░░░░░░`  
 Full index in [COVERAGE.md](COVERAGE.md).
 <!-- coverage:end -->
 
