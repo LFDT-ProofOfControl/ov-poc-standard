@@ -102,7 +102,7 @@ Each of the 127 requirements is coded against each framework with one of three *
 | [ISO/IEC 42001](iso-iec-42001.md) | 0 | 72 | 55 | **57%** |
 | [SOC 2](soc-2.md) | 0 | 68 | 59 | **54%** |
 | [EU AI Act](eu-ai-act.md) | 0 | 65 | 62 | **51%** |
-| [CSA AARM](csa-aarm.md) | 13 | 47 | 67 | **47%** |
+| [CSA AARM](csa-aarm.md) | 1 | 55 | 71 | **44%** |
 | [Zero Trust (NIST SP 800-207)](zero-trust.md) | 8 | 46 | 73 | **43%** |
 | [MITRE ATLAS](mitre-atlas.md) | 0 | 38 | 89 | **30%** |
 

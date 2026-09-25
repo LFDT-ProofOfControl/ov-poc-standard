@@ -25,7 +25,7 @@ Where they meet: AARM mints the tamper-evident receipt at the runtime gateway in
 
 <!-- BEGIN GENERATED MAPPING (tools/generate_crosswalks.py) -->
 
-**Coverage: 47%** of the 127 Proof-of-Control requirements (13 exact matches, 47 partial matches, 67 not covered), computed per the [mapping rubric](rubric.md) from the row-level [coding sheet](coding_sheet.csv). *Draft seed coding — pending working-group validation.* To change this table, edit the coding sheet and run `python3 tools/generate_crosswalks.py`.
+**Coverage: 44%** of the 127 Proof-of-Control requirements (1 exact matches, 55 partial matches, 71 not covered), computed per the [mapping rubric](rubric.md) from the row-level [coding sheet](coding_sheet.csv). *Draft seed coding — pending working-group validation.* To change this table, edit the coding sheet and run `python3 tools/generate_crosswalks.py`.
 
 **How to read the Match column** ([full rubric](rubric.md)): **Exact** — the framework has a clause equivalent in scope and intent. **Partial** — the framework covers the topic, but not with Proof-of-Control's operator-independent evidence (or not at the same depth). **None** — the framework has no analogous provision. Where a section holds a mix, the badge shows the strongest match present and the **Covered** column shows how many of its requirements are matched at all — so a section reading *Partial 3/5* has two requirements this framework does not reach.
 
@@ -41,14 +41,14 @@ Where they meet: AARM mints the tamper-evident receipt at the runtime gateway in
 | [C2.4 Evidence Handling for Protected Data](../0.1/en/0x10-C02-Privacy.md) | 2 | 0/2 | None | — | Evidence-store handling not addressed |
 | [C3.1 Boundary-Crossing Evidence](../0.1/en/0x10-C03-Portability.md) | 2 | 0/2 | None | — | Boundary-crossing evidence not addressed |
 | [C3.2 Cross-Environment Continuity](../0.1/en/0x10-C03-Portability.md) | 3 | 0/3 | None | — | Not addressed |
-| [C4.1 Authority and Scope Enforcement](../0.1/en/0x10-C04-Authorization.md) | 8 | 8/8 | Exact | Action interception: approve / modify / defer / deny | Action interception with approve/modify/defer/deny decisions matches scope enforcement and evidenced rejection |
+| [C4.1 Authority and Scope Enforcement](../0.1/en/0x10-C04-Authorization.md) | 8 | 7/8 | Exact | R5 Tamper-evident Receipts; R9 Least Privilege Enforcement (SHOULD); R3 Policy Evaluation with Intent Alignment; R5 Tamper-evident Receipts; R1 Pre-execution Interception; R4 Five Authorization Decisions (ALLOW, DENY, MODIFY, STEP_UP, DEFER); R5 Tamper-evident Receipts; R3 Policy Evaluation with Intent Alignment; R9 Least Privilege Enforcement (SHOULD); R4 Five Authorization Decisions (STEP_UP); R5 Tamper-evident Receipts; R2 Context Accumulation; R3 Policy Evaluation with Intent Alignment | R1 stops the action before execution rather than flagging it, R4 supplies DENY as a decision, and R5 records the original action and the decision, so the block and its rejection record match in scope and specificity. Not reached: 4.1.8. |
 | [C4.2 Delegation](../0.1/en/0x10-C04-Authorization.md) | 4 | 4/4 | Partial | Authority evaluation at the boundary | Authority evaluation at the boundary partially covers delegation checks |
 | [C5.1 Agent and Principal Binding](../0.1/en/0x10-C05-Identity.md) | 4 | 4/4 | Partial | Agent identity as authorization input | Agent identity as an input to runtime authorization; no principal-binding tokens |
 | [C5.2 Inter-Agent Identity](../0.1/en/0x10-C05-Identity.md) | 2 | 0/2 | None | — | Inter-agent identity not addressed |
 | [C6.1 Execution Environment Integrity](../0.1/en/0x10-C06-Security.md) | 4 | 4/4 | Partial | Runtime control enforcement | Runtime control enforcement covers controls-held aims; environment attestation not addressed |
 | [C6.2 Isolation and Confidential Execution](../0.1/en/0x10-C06-Security.md) | 3 | 0/3 | None | — | Isolation proof not addressed |
 | [C6.3 Cryptographic Key Lifecycle](../0.1/en/0x10-C06-Security.md) | 5 | 0/5 | None | — | Key lifecycle not addressed |
-| [C7.1 Generation at the Action Boundary](../0.1/en/0x10-C07-Evidence-Generation-and-Properties.md) | 5 | 5/5 | Exact | The AARM runtime gateway | The AARM runtime gateway is the same interception boundary, mediating all agent actions |
+| [C7.1 Generation at the Action Boundary](../0.1/en/0x10-C07-Evidence-Generation-and-Properties.md) | 5 | 2/5 | Partial | R1 Pre-execution Interception; R5 Tamper-evident Receipts; R6 Identity Binding | R1 forbids any action bypassing the control plane, but it is architecture-neutral and AARM section 6.2 expressly recognizes SDK instrumentation that may miss non-instrumented paths, so a gateway running out-of-process from the agent is not required. Not reached: 7.1.3, 7.1.4, 7.1.5. |
 | [C7.2 The Contemporaneous Property](../0.1/en/0x10-C07-Evidence-Generation-and-Properties.md) | 4 | 2/4 | Partial | Execution-time audit trail | Enforcement produces execution-time records; operator-run, not operator-independent. Not reached: 7.2.3, 7.2.4. |
 | [C7.3 The Tamper-Evident Property](../0.1/en/0x10-C07-Evidence-Generation-and-Properties.md) | 5 | 3/5 | Partial | Gateway receipts | Tamper-evident receipts at the gateway; trust remains rooted in the deployment operator. Not reached: 7.3.4, 7.3.5. |
 | [C7.4 The Transparent Property](../0.1/en/0x10-C07-Evidence-Generation-and-Properties.md) | 1 | 0/1 | None | — | No trust-assumption disclosure |
@@ -74,9 +74,11 @@ Where they meet: AARM mints the tamper-evident receipt at the runtime gateway in
 * **C2.4 Evidence Handling for Protected Data** — Evidence-store handling not addressed
 * **C3.1 Boundary-Crossing Evidence** — Boundary-crossing evidence not addressed
 * **C3.2 Cross-Environment Continuity** — Not addressed
+* **C4.1 Authority and Scope Enforcement** — partially reached; no provision for 4.1.8: No AARM requirement pins approval thresholds to the original grant; R2 does the opposite by accumulating prior actions and tool output into the evaluation context, and R7 semantic distance tracking is a SHOULD aimed at intent drift rather than at authorization state.
 * **C5.2 Inter-Agent Identity** — Inter-agent identity not addressed
 * **C6.2 Isolation and Confidential Execution** — Isolation proof not addressed
 * **C6.3 Cryptographic Key Lifecycle** — Key lifecycle not addressed
+* **C7.1 Generation at the Action Boundary** — partially reached; no provision for 7.1.3, 7.1.4, 7.1.5: AARM orders interception before execution but places no ordering or durability requirement on the receipt, so evidence emission is never a precondition of action release.
 * **C7.2 The Contemporaneous Property** — partially reached; no provision for 7.2.3, 7.2.4: No hardware-attestation freshness obligation
 * **C7.3 The Tamper-Evident Property** — partially reached; no provision for 7.3.4, 7.3.5: Receipt integrity addressed; per-record proof against a published root not required
 * **C7.4 The Transparent Property** — No trust-assumption disclosure

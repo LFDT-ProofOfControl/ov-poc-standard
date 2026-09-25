@@ -52,9 +52,9 @@
 <text x="304" y="419.5" font-size="12.5" fill="#f0edea" text-anchor="end">CSA AARM</text>
 <clipPath id="clip5"><rect x="320" y="398" width="560" height="34" rx="9"/></clipPath>
 <rect x="320" y="398" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#5c5850"/>
-<rect x="320" y="398" width="57.3" height="34" fill="#8fae00" clip-path="url(#clip5)"/>
-<rect x="377.3" y="398" width="207.2" height="34" fill="#cfff04" clip-path="url(#clip5)"/>
-<text x="898" y="420.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">47%</text>
+<rect x="320" y="398" width="4.4" height="34" fill="#8fae00" clip-path="url(#clip5)"/>
+<rect x="324.4" y="398" width="242.5" height="34" fill="#cfff04" clip-path="url(#clip5)"/>
+<text x="898" y="420.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">44%</text>
 <text x="304" y="469.5" font-size="12.5" fill="#f0edea" text-anchor="end">Zero Trust (NIST SP 800-207)</text>
 <clipPath id="clip6"><rect x="320" y="448" width="560" height="34" rx="9"/></clipPath>
 <rect x="320" y="448" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#5c5850"/>
