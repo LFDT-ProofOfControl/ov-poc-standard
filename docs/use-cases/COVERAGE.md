@@ -1,6 +1,6 @@
 # Coverage index
 
-**0 of 29 threats have a worked use case.** 1 submissions.
+**3 of 29 threats have a worked use case.** 2 submissions.
 
 Generated from the `threats:` frontmatter across this folder. Do not
 edit by hand: run `python3 tools/generate_use_case_coverage.py`.
@@ -11,11 +11,11 @@ edit by hand: run `python3 tools/generate_use_case_coverage.py`.
 |---|---|---|
 | Instruction and goal manipulation | 0/3 | `░░░░░░░░░░░░░░░░░░░░` |
 | Memory, knowledge, and supply chain | 0/4 | `░░░░░░░░░░░░░░░░░░░░` |
-| Identity, authority, and inter-agent trust | 0/4 | `░░░░░░░░░░░░░░░░░░░░` |
+| Identity, authority, and inter-agent trust | 2/4 | `██████████░░░░░░░░░░` |
 | Tools, actions, and effects | 0/4 | `░░░░░░░░░░░░░░░░░░░░` |
 | Data exposure | 0/1 | `░░░░░░░░░░░░░░░░░░░░` |
 | Autonomy, drift, and lifecycle | 0/3 | `░░░░░░░░░░░░░░░░░░░░` |
-| Record integrity and resilience | 0/5 | `░░░░░░░░░░░░░░░░░░░░` |
+| Record integrity and resilience | 1/5 | `████░░░░░░░░░░░░░░░░` |
 | Human oversight and disclosure | 0/2 | `░░░░░░░░░░░░░░░░░░░░` |
 | Output quality and availability | 0/3 | `░░░░░░░░░░░░░░░░░░░░` |
 
@@ -33,8 +33,6 @@ A submission covering one of these helps most.
 | Memory, knowledge, and supply chain | `model-poisoning` | Training-time data or model poisoning |
 | Memory, knowledge, and supply chain | `supply-chain-poisoning` | Poisoned supply chain, tools or MCP |
 | Identity, authority, and inter-agent trust | `identity-abuse` | Identity and privilege abuse or spoofing |
-| Identity, authority, and inter-agent trust | `context-blind-authorization` | Context-blind authorization |
-| Identity, authority, and inter-agent trust | `excessive-agency` | Excessive agency or over-permission |
 | Identity, authority, and inter-agent trust | `insecure-inter-agent-comms` | Insecure inter-agent communication |
 | Tools, actions, and effects | `tool-misuse` | Tool misuse |
 | Tools, actions, and effects | `unexpected-code-execution` | Unexpected code execution |
@@ -47,7 +45,6 @@ A submission covering one of these helps most.
 | Record integrity and resilience | `audit-tampering` | Audit tampering |
 | Record integrity and resilience | `cascading-failure` | Cascading failure or fail-open |
 | Record integrity and resilience | `coverage-decay` | Coverage decay |
-| Record integrity and resilience | `evidence-repudiation` | Evidence repudiation |
 | Record integrity and resilience | `trust-opacity` | Trust opacity |
 | Human oversight and disclosure | `approval-fatigue` | Human-agent trust exploitation or approval fatigue |
 | Human oversight and disclosure | `undisclosed-ai` | Undisclosed AI or absent consent |
@@ -67,8 +64,8 @@ A submission covering one of these helps most.
 | Memory, knowledge, and supply chain | `model-poisoning` | — |
 | Memory, knowledge, and supply chain | `supply-chain-poisoning` | — |
 | Identity, authority, and inter-agent trust | `identity-abuse` | — |
-| Identity, authority, and inter-agent trust | `context-blind-authorization` | — |
-| Identity, authority, and inter-agent trust | `excessive-agency` | — |
+| Identity, authority, and inter-agent trust | `context-blind-authorization` | `provider-replacement-live-mandate` |
+| Identity, authority, and inter-agent trust | `excessive-agency` | `provider-replacement-live-mandate` |
 | Identity, authority, and inter-agent trust | `insecure-inter-agent-comms` | — |
 | Tools, actions, and effects | `tool-misuse` | — |
 | Tools, actions, and effects | `unexpected-code-execution` | — |
@@ -81,7 +78,7 @@ A submission covering one of these helps most.
 | Record integrity and resilience | `audit-tampering` | — |
 | Record integrity and resilience | `cascading-failure` | — |
 | Record integrity and resilience | `coverage-decay` | — |
-| Record integrity and resilience | `evidence-repudiation` | — |
+| Record integrity and resilience | `evidence-repudiation` | `provider-replacement-live-mandate` |
 | Record integrity and resilience | `trust-opacity` | — |
 | Human oversight and disclosure | `approval-fatigue` | — |
 | Human oversight and disclosure | `undisclosed-ai` | — |
@@ -94,3 +91,4 @@ A submission covering one of these helps most.
 | Use case | Threats tagged |
 |---|---|
 | `credit-decisioning` | **none tagged** |
+| `provider-replacement-live-mandate` | `context-blind-authorization`, `excessive-agency`, `evidence-repudiation` |
