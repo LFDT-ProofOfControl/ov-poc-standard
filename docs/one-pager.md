@@ -68,7 +68,7 @@ system has Proof-of-Control here, and only here.**
 | Whose dog is this? | Collar tag & owner registration | *prerequisite* | The registry | At onboarding |
 | The owner's claims? | "My dog is trained and friendly" | Tier 1 | The owner | Never |
 | The inspector's claim? | A yearly paper badge | Tier 2 | The inspector | Yearly, on paper |
-| **Proof-of-Control** | **A smart leash anyone can verify, that locks itself** | **Tiers 3–4** | **No one** | **Inline, continuously** |
+| **Proof-of-Control** | **A smart leash anyone can verify, that locks itself** | **Tiers 3–4** | **A disclosed residual set** ([C10.2](../0.1/en/0x10-C10-Conformance-and-Disclosure.md)) | **Inline, continuously** |
 
 ## Why the Leash Has to Be Smart
 
@@ -79,7 +79,7 @@ system has Proof-of-Control here, and only here.**
   non-deterministic trajectories by hand is the bottleneck. Proof-of-Control makes the check
   mechanical: *"Does your AI have Proof-of-Control?"* is a yes-or-no question.
 * **Open beats independent.** "Independent" still means trusting an auditor (Tier 2). "Open" <!--aais-allow-->
-  means **no one has to be trusted** (Tiers 3–4): anyone can verify the proof directly, without
+  means **what must still be trusted is disclosed** (Tiers 3–4, [C10.2](../0.1/en/0x10-C10-Conformance-and-Disclosure.md)): anyone can verify the proof directly, without
   access to your data.
 
 ## Climb the Leash: Questions for Your AI Vendors
@@ -91,7 +91,7 @@ what "governed" has to mean before an agent gets production authority.
 | :---: | --- | --- |
 | Tier 1 | *"Show me your system prompt and guardrails."* If the operator's own logs are your only evidence, you have an assertion — not control. | Trust required: **total** <!--aais-allow--> |
 | Tier 2 | *"Show me your SOC 2 / ISO 42001 report."* Good hygiene, but static and retrospective, and it cannot stop a live action. | Trust required: **the auditor** |
-| Tiers 3–4 | *"Show me the signed proof for this action — and prove a violation halts execution."* Now you verify the math, not the vendor. **This is the bar.** | Trust required: **none** |
+| Tiers 3–4 | *"Show me the signed proof for this action — and prove a violation halts execution."* Now you verify the math, not the vendor. **This is the bar.** | Trust required: **the disclosed residual set** |
 
 ---
 
