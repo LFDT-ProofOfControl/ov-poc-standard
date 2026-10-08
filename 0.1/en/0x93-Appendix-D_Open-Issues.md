@@ -158,7 +158,7 @@ draft status until the working group ratifies them against the primary sources:
   al.): guardrail efficacy correlates with structural parsing, not NL safety tuning. <!--aais-allow-->
 * Threat rows: skill composition risk, shadow/undeclared agents, trajectory-monitor parsing
   failure ([Appendix C](0x92-Appendix-C_Threat-Model.md)).
-* Also to decide: whether Verifiable Trust Circles (W3C VC 2.0) enter the mechanism inventory
+* Also to decide: whether Verifiable Trust Circles (proposed in the Web 7.0 / did7:web7 specification, built on W3C VC Data Model 2.0 with Data Integrity Proof Sets) enter the mechanism inventory
   permanently ([Appendix B](0x91-Appendix-B_Proof-Mechanism-Inventory.md)), and whether the
   citations verify against the primary literature.
 

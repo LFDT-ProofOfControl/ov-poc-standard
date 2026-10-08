@@ -50,7 +50,7 @@ Forged or unauthenticated agent-to-agent messages are a catalogued threat class;
 ## References
 
 * [W3C Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) · [OAuth 2.0 / JWT](https://oauth.net/2/) · [W3C Verifiable Credentials Data Model 2.0](https://www.w3.org/TR/vc-data-model-2.0/)
-* Verifiable Trust Circles (Web 7.0 specification) — N-party membership and delegation proofs beyond pairwise credentials, relevant to multi-agent chains ([research basis](../../docs/research-basis.md))
+* Verifiable Trust Circles (proposed in the Web 7.0 / did7:web7 specification, built on W3C VC Data Model 2.0 with Data Integrity Proof Sets) — N-party membership and delegation proofs beyond pairwise credentials, relevant to multi-agent chains ([research basis](../../docs/research-basis.md))
 * WIMSE / IETF workload-identity work — Identity-domain source mechanism under mapping ([mappings/README](../../mappings/README.md))
 * Crosswalks: [MAESTRO L7 agent identity verification](0x91-Appendix-B_Proof-Mechanism-Inventory.md), [Zero Trust](../../mappings/zero-trust.md)
 * [Appendix D — Open Working-Group Issues](0x93-Appendix-D_Open-Issues.md)

@@ -1,12 +1,12 @@
 # Findings against the standard, from building the tools
 
-**Date:** 2026-08-10 · **Source:** the tooling programme in [`TOOLING.md`](../TOOLING.md)
+**Date:** 2026-08-10 · **Source:** the tooling programme. Its companion documents, `TOOLING.md` and `parallax-outcomes.md`, were not published with this file and are cited below by name only.
 
 Eight defects in `ov-poc-standard` found while designing and building the compliance
 tools. Each was found by trying to *produce* or *check* an evidence record, not by
 reading the specification — which is the same method that put three requirements into
 the standard in the first place, and the same method
-[building `parallax`](parallax-outcomes.md) used to correct P01.
+building `parallax` (recorded in the unpublished `parallax-outcomes.md`) used to correct P01.
 
 This file exists because these are the programme's actual output to the standard, and
 until now they lived only in commit messages and design prose.
@@ -243,7 +243,7 @@ validator. They are defects in what the fields **mean**, and a schema checks sha
 Findings 1, 3, 4, 5 and 8 were each found by trying to build the thing that produces or
 checks the field — and every one of them produces a record that **validates cleanly while
 failing to carry the property the field exists to provide**. That is the same defect
-shape [`parallax` documented across five criticals](parallax-outcomes.md#the-defect-pattern-worth-carrying-to-transit-and-occultation):
+shape `parallax` documented across five criticals (in the unpublished `parallax-outcomes.md`, under "The defect pattern worth carrying to transit and occultation"):
 correct code implementing a subtly wrong specification, producing a confident wrong
 answer rather than an error.
 
