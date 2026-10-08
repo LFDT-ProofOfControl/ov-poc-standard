@@ -129,9 +129,9 @@ ten steps or five thousand. Eleven attacks work against the naive design and fai
 against ours---and three of them were defects in our own implementation,
 found by review rather than by design. We also
 measure what we did not expect: a monitor that watches the whole path refuses
-42\% of perfectly legitimate work unless you give it an explicit place to
-forget, which is exactly what people who study information flow have been
-saying for fifty years. Because an auditor should be able to verify one action
+44.8\% of perfectly legitimate work unless you give it an explicit place to
+forget, and one the monitor can verify, which is exactly what people who study
+information flow have been saying for fifty years. Because an auditor should be able to verify one action
 without downloading a million, we adopt Certificate Transparency's tree and
 show it turns a \SI{123}{\mega\byte} download into a 544-byte proof. Because
 evidence has to be believable long after it is written, we measure surviving
@@ -237,7 +237,11 @@ software stand-in: the signing key is never handed out, the ``measurement'' is
 a digest of the policy code, and every step of the protocol runs for real. But
 hardware isolation is not there. That means our timings leave out the cost of
 crossing into a real enclave, and the true number will be larger. We say so
-rather than guessing at a number we did not measure.
+rather than guessing at a number we did not measure. That is still the state
+of the main cost breakdown (Table~\ref{tab:latency}), which runs on the stand-in. Since that
+draft, \S\ref{sec:tdx} has run the same pipeline inside a real Intel TDX
+trust domain and measured the crossing, and \S\ref{sec:discussion} records
+what that moved.
 
 \section{Why the Obvious Answers Do Not Work}
 \label{sec:background}
@@ -627,7 +631,9 @@ framerule=0.4pt, breaklines]{json}
 \end{minted}
 \caption{A \poc{} Evidence token (EAT, JWT rendering) emitted at the
 pre-call tool-invocation hook. Claim-by-claim definitions follow in
-Table~\ref{tab:claims} below.}
+Table~\ref{tab:claims} below. Two claims the table defines,
+\texttt{chain\_head} and \texttt{tree\_size}, are absent from this token;
+both are carried once the log of \S\ref{sec:merkle} is in use.}
 \label{lst:eat}
 \vspace{1.2em}
 \centering\scriptsize
@@ -821,8 +827,8 @@ what we claim.
 problem~\cite{sabelfeld2003}. A monitor that accumulates restrictions along a
 path eventually refuses to let anyone do anything. The literature has been
 saying this for fifty years. We did not believe it hard enough until we
-measured it in Section~\ref{sec:utility}, where it cost us 42\% of legitimate
-work.
+measured it in Section~\ref{sec:utility}, where it cost us 44.8\% of legitimate
+work once declassification was modelled honestly (\S\ref{sec:frontier}).
 \end{itemize}
 
 \subsection{Keeping the cost from growing}
@@ -1535,7 +1541,8 @@ cost that actually matters and is in no number in this section. It does
 \SI{160}{\micro\second}. Everything runs in one process, so no network or IPC
 costs are included. The workflows are synthetic: the shape of the utility
 result is solid---label creep is real and declassification fixes it---but
-42.2\% is a property of our workload model and yours will differ. It is
+44.8\%, the corrected no-declassification baseline of \S\ref{sec:frontier},
+is a property of our workload model and yours will differ. It is
 Python, so the absolute numbers are conservative; the breakdown between
 components is the part that will hold up. And we did not implement the
 privacy-preserving evidence options at all.
@@ -2069,7 +2076,7 @@ your work unless you tell it where to forget.
 
 We also built it, which is how we learned that the cryptography costs
 \SI{201}{\micro\second} and is not the problem, that the policy design costs
-42\% of your legitimate work and is, and that making the whole thing survive
+44.8\% of your legitimate work and is, and that making the whole thing survive
 quantum computers is a storage bill rather than a redesign. Then we ran it on
 real Intel TDX hardware, which settled the question the software model could
 not: running inside a trust domain costs 6.2\%, about ten microseconds a step,
