@@ -97,8 +97,8 @@ attack harness and benchmarks: [`impl/`](impl/README.md).
 
 ```bash
 cd impl
-python3 tests/test_core.py        # 22 correctness tests, mapped to requirement IDs
-python3 attacks/run_attacks.py    # 11 attacks, run with and without each requirement
+python3 tests/test_core.py        # 36 correctness tests, mapped to requirement IDs
+python3 attacks/run_attacks.py    # 13 attacks, run with and without each requirement
 python3 bench/bench.py            # latency, scaling, verification, utility
 python3 bench/bench_pq.py         # post-quantum signature comparison
 python3 bench/bench_frontier.py   # the declassification frontier
@@ -120,7 +120,8 @@ Headline results (Apple M2 Max, single core; except where noted the TEE is model
 so enclave transitions are excluded and latencies are a lower bound): **201 µs** per intercepted step
 (p99 255 µs) — **1.3%** of the 15 ms design budget · path-aware evaluation **flat at 0.21 µs**
 from 10 to 50,000 steps, versus linear growth for naive re-evaluation · **11/11 attacks** succeed
-without the derived requirements and are refused or detected with them · a Merkle inclusion
+without the derived requirements and are refused or detected with them (A12 and A13 test
+requirements still at the proposal stage) · a Merkle inclusion
 proof checks one record in a 100,000-record log with **544 bytes** instead of replaying
 **123 MB** · path-aware authorization falsely rejects **42%** of benign workflows without a
 declassification point — and the fix is not more coverage but *verifiable* declassification,
@@ -335,7 +336,7 @@ clarified wording, and crosswalk rows can go straight to a pull request.
    cd impl && python3 tests/test_core.py   # if you changed the reference implementation
    ```
 
-   Expect `17 passed, 0 failed` and `22 passed, 0 failed`.
+   Expect `17 passed, 0 failed` and `36 passed, 0 failed`.
 
 6. **Commit and push to your fork**, then open a pull request against `master`:
 

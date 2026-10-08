@@ -7,8 +7,8 @@ open verification — with an attack harness and benchmarks.
 
 ```bash
 cd impl
-python3 tests/test_core.py        # 22 correctness tests
-python3 attacks/run_attacks.py    # 11 attack scenarios, with and without the requirement
+python3 tests/test_core.py        # 36 correctness tests
+python3 attacks/run_attacks.py    # 13 attack scenarios, with and without the requirement
 python3 bench/bench.py            # latency, scaling, verification, utility
 python3 bench/bench_pq.py         # post-quantum signature comparison
 python3 bench/bench_frontier.py   # the declassification frontier
@@ -161,9 +161,12 @@ and litigation may be a decade after the fact. A scheme that becomes forgeable i
 retroactively destroys evidence about actions taken today, so this is a first-order concern for
 an evidence standard rather than a checkbox.
 
-**The chain is already fine.** Grover buys a square root on preimage search, so SHA-256 keeps
-~128-bit security: the hash chain, sequence numbering, and anchoring survive unchanged. Only the
-signatures migrate.
+**The chain is already fine; the evidence around it is not.** Grover buys a square root on
+preimage search, so SHA-256 keeps ~128-bit security: the hash chain and the sequence numbering
+survive unchanged. An anchor survives only where whatever dates the root is itself hash-based. A
+timestamp token, a log's signed tree head and a hardware quote are classical signatures with the
+same horizon as the records, and migrating the signer protects only what is signed after the
+migration. See [Evidence that outlives its algorithms](#evidence-that-outlives-its-algorithms).
 
 | Scheme | Signature | Public key | Record | Per million actions |
 | --- | ---: | ---: | ---: | ---: |
@@ -186,6 +189,42 @@ default during transition.
 Requirements added as a result: **C6.3.4** (algorithm identified in every record; migration path
 declared) and **C6.3.5** (post-quantum or hybrid signing, or scheduled re-signing, where
 retention outlives the scheme).
+
+## Evidence that outlives its algorithms
+
+Signing post-quantum from now on does nothing for evidence already signed, for the timestamp that
+dates it, or for the signatures the operator never controlled. Re-signing retained evidence
+replaces it rather than carrying it across. [`poc/renewal.py`](poc/renewal.py) implements the
+alternative RFC 4998 (Evidence Record Syntax) standardized in 2007: archive the records exactly as
+signed, timestamp the archive's Merkle root, and before the algorithm under the newest token is
+retired, cover that token with a token on another algorithm. Nothing is re-signed; the chain only
+grows. A verifier then establishes that the record existed before each algorithm it rests on was
+broken, by induction from the newest token, which is sound today. An honest authority dates by
+the shared clock; only a key holder chooses its dates. One authority stands in for the renewal
+anchor here, where the proposal requires an open one.
+
+The scenarios run on a timeline in years: records made in year 0, archived in year 1 under the
+classical algorithm, renewed in year 5, the classical algorithm broken in year 8, examined in
+year 10. A break is modelled operationally (the adversary holds the broken algorithm's keys) and
+every key is Ed25519 under the name of the algorithm it stands for, so the harness keeps its one
+dependency.
+
+* **A12, backdated rewrite after the anchor's algorithm breaks.** The records stay on a sound
+  algorithm, as they would in a deployment hybrid from day one; only the timestamp's algorithm
+  breaks. The operator, who holds the evidence key (A9's premise), rebuilds year-0 history with one
+  read that never happened and forges a year-1 timestamp over it. It verifies exactly as the
+  genuine history does; a verifier that refuses the broken algorithm loses the genuine history
+  too. With renewal, the genuine year-1 token was covered in year 5 and the rewrite's was not; a
+  sound token issued in year 10 does not help, because it postdates the break.
+* **A13, history laundered through re-signing.** A renewal job re-signs the retained records
+  under a current key and alters step 3 on the way. The result verifies under the renewal key, in
+  an archive on a sound algorithm, and by year 10 the original classical signatures cannot
+  contradict it. Enforcing the anchoring interval (C7.6.6) is not available as a defence while
+  re-signing is allowed, because honestly re-signed evidence fails it too. Keeping the originals
+  and renewing by covering them makes the interval enforceable, and then the laundered record is
+  detected: first timestamped five years after it was made, and absent from the archive that was.
+
+Both defences are proposals, not adopted text: [`docs/proposals/long-term-verifiability.md`](../docs/proposals/long-term-verifiability.md).
 
 ## Proving one record without fetching the log
 
@@ -361,6 +400,8 @@ Each scenario runs with and without the relevant requirement.
 | A9 | Mid-history rewrite by a key-holding operator | Succeeds: the rewritten history replays perfectly, because the operator recomputed every link | Detected: presented head does not match the anchored root |
 | A10 | Substitution past an unconfigured mediation check | Succeeds: endpoint verifies signature, measurement, resource and nonce, then executes a different request | Refused: capability carries an action digest the endpoint recomputes unaided; refuses when it cannot |
 | A11 | Capability paired with the wrong evidence record | Succeeds: both objects verify independently, so reconciliation balances | Detected: capability commits to its record's step index and digest  <!--aais-allow--> |
+| A12 | Backdated rewrite after the anchor's algorithm breaks | Succeeds: a rewritten year-0 history with a forged year-1 timestamp verifies exactly as the genuine one | Detected: its classical token is forgeable from the break and no token issued before then covers it |
+| A13 | History laundered through re-signing | Succeeds: the altered, re-signed history verifies under the renewal key | Detected: first timestamped five years after it was made, and absent from the original archive |
 
 A1 is the empirical form of Proposition 1 in the paper: without a check binding
 the executed request to the evidenced snapshot, the adversary wins with
@@ -372,14 +413,15 @@ probability 1 — here, on the first attempt.
 impl/
 ├── poc/core.py            the pipeline: snapshot, policy, chain, evidence,
 │                          gateway, relying party, anchor, gossip, verifier
-├── attacks/run_attacks.py 8 attack scenarios, with/without each requirement
+├── attacks/run_attacks.py 13 attack scenarios, with/without each requirement
 ├── bench/bench.py         B1 latency · B2 scaling · B3 verification · B4 utility
 ├── bench/bench_pq.py      post-quantum signature comparison (size and cost)
 ├── bench/bench_frontier.py the declassification frontier (verified vs not)
 ├── bench/bench_ops.py     deep scaling · anchoring Δ · batching · retention
 ├── bench/bench_merkle.py  inclusion proofs · consistency proofs · hot-path cost
 ├── poc/merkle.py          RFC 6962 append-only tree: inclusion and consistency
-├── tests/test_core.py     22 correctness tests mapped to requirement IDs
+├── poc/renewal.py         RFC 4998 archive timestamps: renewal, long-term verification
+├── tests/test_core.py     36 correctness tests mapped to requirement IDs
 └── results/               attacks.json, bench.json (regenerated by the scripts)
 ```
 
