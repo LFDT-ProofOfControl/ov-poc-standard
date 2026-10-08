@@ -1,0 +1,55 @@
+name: Paper PDF
+
+# The committed paper/main.pdf is the artifact readers download, and it went
+# five weeks stale once. This workflow keeps it honest: every PR touching the
+# paper proves the source still compiles, and every merge to master rebuilds
+# the committed PDF from the merged source and pushes it back.
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'paper/**'
+      - 'images/diagrams/**'
+      - 'tools/generate_diagrams.py'
+      - 'tools/generate_charts.py'
+      - 'tools/build_paper_figures.sh'
+  pull_request:
+    paths:
+      - 'paper/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install the toolchain
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q librsvg2-bin python3-pygments
+          curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
+          sudo mv tectonic /usr/local/bin/
+      - name: Build the figures from the repository's SVGs
+        run: ./tools/build_paper_figures.sh
+      - name: Compile the paper
+        run: |
+          cd paper
+          tectonic -Z shell-escape main.tex
+      - name: Upload the PDF for reviewers
+        uses: actions/upload-artifact@v4
+        with:
+          name: proof-of-control-paper
+          path: paper/main.pdf
+      - name: Commit the rebuilt PDF (master only)
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add paper/main.pdf
+          git diff --cached --quiet && echo "PDF unchanged" && exit 0
+          git commit -m "Rebuild paper/main.pdf from the merged source [skip ci]"
+          git push

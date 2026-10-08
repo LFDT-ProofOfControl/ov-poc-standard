@@ -72,8 +72,11 @@ open problems in the authors' own words.
 
 ## How to contribute
 
-We want this to work for people who use GitHub and people who do not. Pick whichever path
-suits you:
+We want this to work for people who use GitHub and people who do not.
+
+**The review window: send comments by Wednesday, October 22, 2026.** We spend the two weeks
+after that folding them in, so the draft is clean ahead of the Distinguished Review Board
+sign-off at the end of November. Pick whichever path suits you:
 
 1. **Join a research meeting.** We hold two research meetings during October to work on the
    paper together; times are posted in the Slack channel below.

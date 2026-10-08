@@ -21,7 +21,10 @@ working-group consensus, and stewarded by the
    [Sign up at advancedaisociety.org](https://advancedaisociety.org/).
 4. **Contribute a crosswalk.** Extend the [framework mappings](mappings/README.md) to other
    standards and frameworks. Several crosswalks are marked as needing a volunteer.
-5. **Contribute a use case.** Sector working groups produce the worked use cases
+5. **Review the research paper.** The paper behind the standard is open for review, and
+   reviewing it is the minimum for co-authorship. [`paper/README.md`](paper/README.md) has
+   the download link and every way to send comments, on GitHub and off it.
+6. **Contribute a use case.** Sector working groups produce the worked use cases
    ([use cases](docs/use-cases/README.md)) that validate the standard against real
    deployments. Copy [`docs/use-cases/_TEMPLATE.md`](docs/use-cases/_TEMPLATE.md), tag
    the threats it exercises from [`THREATS.md`](docs/use-cases/THREATS.md), and open a
