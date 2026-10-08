@@ -578,7 +578,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     findings: list[tuple[Path, int, str]] = []
     legacy = 0
     for story in stories:
-        if story == USE_CASES_DIR / LEGACY_V1_STORY:
+        # Matched by name, wherever it sits (the stories moved into
+        # submissions/ on 2026-10-08); the SHA pin below guards the content.
+        if story.name == LEGACY_V1_STORY:
             try:
                 unchanged = (
                     hashlib.sha256(story.read_bytes()).hexdigest()

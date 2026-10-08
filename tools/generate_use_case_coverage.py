@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate docs/use-cases/COVERAGE.md, and the summary block in
 docs/use-cases/README.md, from the `threats:` frontmatter of every use-case
-submission in docs/use-cases/.
+submission in docs/use-cases/submissions/.
 
     python3 tools/generate_use_case_coverage.py            rewrite both files
     python3 tools/generate_use_case_coverage.py --check    exit 1 if either is stale
@@ -32,7 +32,7 @@ def vocabulary():
 
 def submissions():
     used, by_case = collections.defaultdict(list), {}
-    for f in sorted(HERE.glob("*.md")):
+    for f in sorted(HERE.rglob("*.md")):
         if f.name in SKIP:
             continue
         text = f.read_text()

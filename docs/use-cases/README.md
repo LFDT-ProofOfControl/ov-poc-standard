@@ -107,15 +107,15 @@ threat vocabulary.
 Two ways, depending on how you work.
 
 **In your browser, with no git.** Open
-[`_TEMPLATE.md`](_TEMPLATE.md), click **Raw**, and copy everything. Come back to
-this folder, click **Add file** and then **Create new file**. GitHub forks the
-repository for you at that point. Name the file a descriptive slug ending in
-`.md`, paste the template in, fill it out, and click **Propose new file** to open
-a pull request.
+[`_TEMPLATE.md`](_TEMPLATE.md), click **Raw**, and copy everything. Open the
+[`submissions/`](submissions) folder, click **Add file** and then **Create new
+file**. GitHub forks the repository for you at that point. Name the file a
+descriptive slug ending in `.md`, paste the template in, fill it out, and click
+**Propose new file** to open a pull request.
 
 **With git.** Fork the repository, clone your fork, create a branch, copy
-`_TEMPLATE.md` to a descriptive slug, fill it out, push, and open a pull request
-from your fork.
+`_TEMPLATE.md` to `submissions/<your-slug>.md`, fill it out, push, and open a
+pull request from your fork.
 
 Either way:
 

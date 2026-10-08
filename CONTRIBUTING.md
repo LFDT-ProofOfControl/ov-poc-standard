@@ -23,7 +23,8 @@ working-group consensus, and stewarded by the
    standards and frameworks. Several crosswalks are marked as needing a volunteer.
 5. **Contribute a use case.** Sector working groups produce the worked use cases
    ([use cases](docs/use-cases/README.md)) that validate the standard against real
-   deployments. Copy [`docs/use-cases/_TEMPLATE.md`](docs/use-cases/_TEMPLATE.md), tag
+   deployments. Copy [`docs/use-cases/_TEMPLATE.md`](docs/use-cases/_TEMPLATE.md) into
+   [`docs/use-cases/submissions/`](docs/use-cases/submissions), tag
    the threats it exercises from [`THREATS.md`](docs/use-cases/THREATS.md), and open a
    pull request; the folder README walks through it.
 
