@@ -1,9 +1,9 @@
 name: Paper PDF
 
-# The committed paper/main.pdf is the artifact readers download, and it went
-# five weeks stale once. This workflow keeps it honest: every PR touching the
-# paper proves the source still compiles, and every merge to master rebuilds
-# the committed PDF from the merged source and pushes it back.
+# The paper download went five weeks stale once. This workflow keeps it
+# honest: every PR touching the paper proves the source still compiles, and
+# every merge to master rebuilds the PDF and publishes it to the paper-latest
+# release, which is the public download URL the READMEs link.
 on:
   push:
     branches: [master]
@@ -44,12 +44,16 @@ jobs:
         with:
           name: proof-of-control-paper
           path: paper/main.pdf
-      - name: Commit the rebuilt PDF (master only)
+      # Master is protected (LFDT repository rules reject direct pushes, the
+      # bot's included), so the fresh build is published as a release asset:
+      # a stable public download URL that CI refreshes on every merge.
+      - name: Publish the fresh PDF to the paper-latest release (master only)
         if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add paper/main.pdf
-          git diff --cached --quiet && echo "PDF unchanged" && exit 0
-          git commit -m "Rebuild paper/main.pdf from the merged source [skip ci]"
-          git push
+          gh release view paper-latest >/dev/null 2>&1 || \
+            gh release create paper-latest --title "Proof-of-Control paper - latest build" \
+              --notes "Rebuilt by CI from master on every merge that touches the paper. Download main.pdf below." \
+              --latest=false
+          gh release upload paper-latest paper/main.pdf --clobber

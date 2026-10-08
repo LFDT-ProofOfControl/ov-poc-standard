@@ -18,7 +18,7 @@
 > or in this GitHub.
 
 > **📄 The research paper:** the experiments behind the standard, measured on real
-> confidential-computing hardware — **[download the PDF](paper/main.pdf)** or read
+> confidential-computing hardware — **[download the PDF](https://github.com/LFDT-ProofOfControl/ov-poc-standard/releases/download/paper-latest/main.pdf)** or read
 > [what we tested and how to contribute](paper/README.md).
 
 > **Get involved:** Proof-of-Control is developed in the open and stewarded by the

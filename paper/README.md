@@ -1,9 +1,9 @@
 # The Proof-of-Control Research Paper
 
-> ## 📄 [Read the paper (PDF)](main.pdf)
+> ## 📄 [Download the paper (PDF)](https://github.com/LFDT-ProofOfControl/ov-poc-standard/releases/download/paper-latest/main.pdf)
 >
-> Click the link above, then use the **Download** button at the top right of the viewer.
-> Or [download it directly](https://github.com/LFDT-ProofOfControl/ov-poc-standard/raw/master/paper/main.pdf) in one click.
+> One click, always the latest build — rebuilt automatically on every merge.
+> Prefer to read in the browser? [Open it in the GitHub viewer](main.pdf).
 
 *Proof-of-Control: An Open Standard for Runtime Verifiability and Cryptographic Oversight in
 Autonomous AI Execution* — Jim Schwoebel, Tricia Wang, Ken Huang.
@@ -141,7 +141,7 @@ differs. Section titles are plain declaratives ("The Problem", "Does It Actually
 
 | File | Purpose |
 | --- | --- |
-| [`main.pdf`](main.pdf) | **The paper — download this to read it** |
+| [`main.pdf`](https://github.com/LFDT-ProofOfControl/ov-poc-standard/releases/download/paper-latest/main.pdf) | **The paper — download this to read it** (the in-tree copy is refreshed by maintainer pull requests; this link always serves the latest CI build) |
 | `main.tex` | The paper's LaTeX source (compiles with tectonic, XeTeX engine) |
 | `references.bib` | Complete bibliography: RFCs, NIST/ISO/EU documents, frameworks, and the 2026 research corpus |
 | `figures/aai-logo.png` | Advanced AI Society logo asset (reference; the cover uses the brand-kit lockup) |
