@@ -17,6 +17,10 @@
 > [Google Doc](https://docs.google.com/document/d/1EiiGDwLXvMxoSHp3Ru56AhR2u9gNd-6Fjs_CKZ4kU-w/edit?tab=t.0#heading=h.5cwdygy69mua)
 > or in this GitHub.
 
+> **📄 The research paper:** the experiments behind the standard, measured on real
+> confidential-computing hardware — **[download the PDF](paper/main.pdf)** or read
+> [what we tested and how to contribute](paper/README.md).
+
 > **Get involved:** Proof-of-Control is developed in the open and stewarded by the
 > **[Advanced AI Society](https://advancedaisociety.org/)**. Join a working group, comment on
 > the draft, or become a member — **[sign up at advancedaisociety.org](https://advancedaisociety.org/)**.

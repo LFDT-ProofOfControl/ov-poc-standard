@@ -1,20 +1,82 @@
-# Proof-of-Control: arXiv Preprint
+# The Proof-of-Control Research Paper
 
-LaTeX source for *Proof-of-Control: An Open Standard for Runtime Verifiability and
-Cryptographic Oversight in Autonomous AI Execution*.
+> ## 📄 [Read the paper (PDF)](main.pdf)
+>
+> Click the link above, then use the **Download** button at the top right of the viewer.
+> Or [download it directly](https://github.com/LFDT-ProofOfControl/ov-poc-standard/raw/master/paper/main.pdf) in one click.
 
-**Status: working draft for co-author review — not yet submitted.**
+*Proof-of-Control: An Open Standard for Runtime Verifiability and Cryptographic Oversight in
+Autonomous AI Execution* — Tricia Wang, Ken Huang, Jim Schwoebel.
 
-**Prose style.** The paper is written in the plain, concrete, direct manner associated with
-Richard Feynman's expository writing: examples before abstractions, ordinary words for technical
-things, and explicit statements of what is *not* known or claimed. All technical content —
-theorems, proofs, tables, measurements, citations — is unchanged; only the prose style
-differs. Section titles are plain declaratives ("The Problem", "Does It Actually Work?",
-"What We Still Do Not Know").
+**Status: working draft, open for review.** Not yet submitted.
 
-The measured results in Section 9 come from the reference implementation in
-[`../impl/`](../impl/README.md); regenerate them with `python3 bench/bench.py` and
-`python3 attacks/run_attacks.py` from that directory.
+## What this paper is
+
+AI agents act faster than any person can watch, and the only account of what they did usually
+comes from the system being asked. The [Proof-of-Control Standard](../README.md) answers that
+with tamper-evident evidence anyone can verify without trusting the operator. This paper is the
+research behind the standard: we built the evidence pipeline the standard describes, attacked
+it, and measured what it costs, on real confidential-computing hardware. It is written to
+bridge AI-safety research into enterprise cybersecurity, in plain language, with every claim
+tied to a measurement or a theorem.
+
+**How it relates to the standard.** The two complement each other. The specification in this
+repository ([`0.1/en/`](../0.1/en), also readable as a
+[Google Doc working draft](https://docs.google.com/document/d/1EiiGDwLXvMxoSHp3Ru56AhR2u9gNd-6Fjs_CKZ4kU-w/edit))
+is the normative text: the requirements an implementation must meet. The paper is the evidence
+for it: why those requirements exist, what happens when they are missing, and what meeting them
+costs. The repository remains the source of truth for the standard's text.
+
+## The experiments we ran
+
+Everything in Section 9 ("Does It Actually Work?") comes from the open reference implementation
+in [`../impl/`](../impl/README.md), and every number can be regenerated from it.
+
+* **We built the whole pipeline and timed it.** Interception, signing, hash-chaining,
+  path-aware policy evaluation, capability tickets, anchoring, gossip, and fail-closed
+  behavior: about 201 µs per intercepted step on a laptop, 160 µs inside a real Intel TDX
+  trust domain — roughly 1% of a 15 ms per-action budget.
+* **We attacked it.** Eleven attacks, from log rewriting to privilege escalation through
+  composed calls, each run with and without the requirement derived from it. All eleven
+  succeed without the requirements and are refused or detected with them.
+* **We measured real confidential hardware.** Running inside the trust domain costs 5.1%
+  against an identical control instance, but one hardware attestation quote costs 39.5 ms,
+  so per-action attestation is impossible and every deployment must amortize — which became
+  requirements C7.2.3 and C7.2.4 of the standard.
+* **We checked it stays cheap.** Policy evaluation stays flat from 10 to 50,000 steps, where
+  naive re-evaluation grows linearly.
+* **We measured what an auditor pays.** Merkle inclusion proofs turn a 123 MB chain download
+  into a 544-byte proof for verifying a single action.
+* **We ran 2,000 randomized workflows** (70% ordinary work, 30% probing the boundaries) to
+  measure how much legitimate work verification refuses — and found the result we did not
+  expect: a monitor that watches the whole path refuses 42% of legitimate work unless the
+  policy gives it an explicit declassification point.
+* **We compared post-quantum signatures**, chose the anchoring interval by measurement, and
+  measured the batching that removes most of the signing cost.
+
+The paper also states what is *not* shown — Section 10, "What We Still Do Not Know," lists the
+open problems in the authors' own words.
+
+## How to contribute
+
+We want this to work for people who use GitHub and people who do not. Pick whichever path
+suits you:
+
+1. **Join a research meeting.** We hold two research meetings during October to work on the
+   paper together; times are posted in the Slack channel below.
+2. **Discuss it in Slack.** The `#proof-of-control-paper`
+   [channel](https://advancedaisoc-kxy6033.slack.com/archives/C0C7MKS5E3U) exists for exactly
+   this conversation.
+3. **Comment on GitHub.** Open an [issue](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues)
+   with your comments, or send edits as a pull request against `paper/main.tex`. We compile
+   and discuss every comment at the research meetings.
+4. **Email the maintainer.** Send comments to Jim Schwoebel, the paper's technical maintainer,
+   and we will fold them into the review.
+
+**On authorship.** We welcome as many reviewers as the paper can earn. The minimum for
+co-authorship is that you reviewed the manuscript and consent to your name standing behind it:
+a careful review is itself the contribution we are asking for. Comments are welcome on top of
+that, and we will work through them together in the October meetings, in Slack, or by email.
 
 ## Build
 
@@ -24,15 +86,23 @@ cd paper
 tectonic -Z shell-escape main.tex   # shell-escape needed for minted (pygments)
 ```
 
-Output: `main.pdf` (a compiled copy is committed for convenience).
+Output: `main.pdf` (a compiled copy is committed so readers can download the paper without
+building it).
+
+**Prose style.** The paper is written in the plain, concrete, direct manner associated with
+Richard Feynman's expository writing: examples before abstractions, ordinary words for technical
+things, and explicit statements of what is *not* known or claimed. All technical content —
+theorems, proofs, tables, measurements, citations — is unchanged; only the prose style
+differs. Section titles are plain declaratives ("The Problem", "Does It Actually Work?",
+"What We Still Do Not Know").
 
 ## Before Submission — Required Steps
 
 1. **Co-author consent.** The author list is limited to those who have reviewed the manuscript
-   and consented to authorship: currently Jim Schwoebel (first author) and Tricia Wang. Others
+   and consented to authorship: currently Tricia Wang, Ken Huang, and Jim Schwoebel. Others
    from the Advanced AI Society leadership, board, and advisory board
-   ([advancedaisociety.org/about](https://advancedaisociety.org/about)) are added only after
-   they review the draft and consent. The title-page footnote states this.
+   ([advancedaisociety.org/about](https://advancedaisociety.org/about)) are added after they
+   review the draft and consent. The title-page footnote states this.
 2. **Citation verification.** Entries in `references.bib` marked `[verify]` (Bandara et al.
    AI Trust OS, Chen et al. TraceSafe-Bench, Xie et al. SCR-Bench, Web 7.0 Verifiable Trust
    Circles, Catena-X AI Service KIT, MindXO KRI, and the arXiv:2603.16586 author list) carry
@@ -49,8 +119,8 @@ Output: `main.pdf` (a compiled copy is committed for convenience).
 
 | File | Purpose |
 | --- | --- |
-| `main.tex` | The paper (compiles with tectonic, XeTeX engine) |
+| [`main.pdf`](main.pdf) | **The paper — download this to read it** |
+| `main.tex` | The paper's LaTeX source (compiles with tectonic, XeTeX engine) |
 | `references.bib` | Complete bibliography: RFCs, NIST/ISO/EU documents, frameworks, and the 2026 research corpus |
-| `figures/aai-logo.png` | Advanced AI Society logo asset (reference; the cover mark is drawn in TikZ) |
+| `figures/aai-logo.png` | Advanced AI Society logo asset (reference; the cover uses the brand-kit lockup) |
 | `figures/*.pdf` | Paper figures, built from the repo's SVGs. They are gitignored build output — regenerate all of them with `./tools/build_paper_figures.sh` from the repository root, which also re-runs the diagram and chart generators so a stale figure cannot outlive a data change. |
-| `main.pdf` | Compiled output |
