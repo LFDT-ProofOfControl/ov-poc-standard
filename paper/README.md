@@ -14,7 +14,9 @@ Autonomous AI Execution* — Tricia Wang, Ken Huang, Jim Schwoebel.
 
 AI agents act faster than any person can watch, and the only account of what they did usually
 comes from the system being asked. The [Proof-of-Control Standard](../README.md) answers that
-with tamper-evident evidence anyone can verify without trusting the operator. This paper is the
+with tamper-evident evidence anyone can verify without trusting the operator. The standard grades that
+evidence on four [Verifiability Tiers](../0.1/en/0x10-C08-Verifiability-Tiers.md), and
+Proof-of-Control is evidence at Verifiability Tiers 3 and 4 only. This paper is the
 research behind the standard: we built the evidence pipeline the standard describes, attacked
 it, and measured what it costs, on real confidential-computing hardware. It is written to
 bridge AI-safety research into enterprise cybersecurity, in plain language, with every claim
@@ -29,20 +31,29 @@ costs. The repository remains the source of truth for the standard's text.
 
 ## The experiments we ran
 
-Everything in Section 9 ("Does It Actually Work?") comes from the open reference implementation
-in [`../impl/`](../impl/README.md), and every number can be regenerated from it.
+Every experiment answers the same question about the
+[Verifiability Tiers](../0.1/en/0x10-C08-Verifiability-Tiers.md): can evidence at
+Verifiability Tier 3 (Trust-minimized) and Verifiability Tier 4 (Self-enforcing) — the only
+two Tiers that count as Proof-of-Control, and the demonstration that open verification works —
+be produced at machine speed, at a cost a deployment can carry? Everything in Section 9
+("Does It Actually Work?") comes from the open reference implementation in
+[`../impl/`](../impl/README.md), and every number can be regenerated from it.
 
 * **We built the whole pipeline and timed it.** Interception, signing, hash-chaining,
   path-aware policy evaluation, capability tickets, anchoring, gossip, and fail-closed
   behavior: about 201 µs per intercepted step on a laptop, 160 µs inside a real Intel TDX
-  trust domain — roughly 1% of a 15 ms per-action budget.
+  trust domain — roughly 1% of a 15 ms per-action budget. The fail-closed gate is the
+  Verifiability Tier 4 property: verification gates operation, and an action without evidence
+  does not run.
 * **We attacked it.** Eleven attacks, from log rewriting to privilege escalation through
   composed calls, each run with and without the requirement derived from it. All eleven
   succeed without the requirements and are refused or detected with them.
 * **We measured real confidential hardware.** Running inside the trust domain costs 5.1%
   against an identical control instance, but one hardware attestation quote costs 39.5 ms,
   so per-action attestation is impossible and every deployment must amortize — which became
-  requirements C7.2.3 and C7.2.4 of the standard.
+  requirements C7.2.3 and C7.2.4 of the standard. This is Verifiability Tier 3 evidence:
+  produced by the mechanism itself, verifiable with published tools, with the parties it rests
+  on disclosed rather than removed.
 * **We checked it stays cheap.** Policy evaluation stays flat from 10 to 50,000 steps, where
   naive re-evaluation grows linearly.
 * **We measured what an auditor pays.** Merkle inclusion proofs turn a 123 MB chain download
@@ -64,14 +75,19 @@ suits you:
 
 1. **Join a research meeting.** We hold two research meetings during October to work on the
    paper together; times are posted in the Slack channel below.
-2. **Discuss it in Slack.** The `#proof-of-control-paper`
-   [channel](https://advancedaisoc-kxy6033.slack.com/archives/C0C7MKS5E3U) exists for exactly
-   this conversation.
-3. **Comment on GitHub.** Open an [issue](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues)
-   with your comments, or send edits as a pull request against `paper/main.tex`. We compile
-   and discuss every comment at the research meetings.
-4. **Email the maintainer.** Send comments to Jim Schwoebel, the paper's technical maintainer,
-   and we will fold them into the review.
+2. **Discuss it in Slack.** New to our Slack?
+   [Join here](https://join.slack.com/t/advancedaisoc-kxy6033/shared_invite/zt-4bl8klaav-E1CMLj0N3kG_fF3jwEnHuQ),
+   then open the `#proof-of-control-paper`
+   [channel](https://advancedaisoc-kxy6033.slack.com/archives/C0C7MKS5E3U) — it exists for
+   exactly this conversation.
+3. **Send a pull request.** The preferred route: send edits as a pull request against
+   `paper/main.tex`, or open an
+   [issue](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues) with your comments.
+   Jim Schwoebel maintains the paper: pull requests come to him, and he rebuilds the committed
+   PDF from the merged source. We discuss every comment at the research meetings.
+4. **Email the maintainer.** Send comments to Jim Schwoebel, the paper's technical
+   maintainer, at [jim@advancedaisociety.org](mailto:jim@advancedaisociety.org), and we will
+   fold them into the review.
 
 **On authorship.** We welcome as many reviewers as the paper can earn. The minimum for
 co-authorship is that you reviewed the manuscript and consent to your name standing behind it:
@@ -87,7 +103,8 @@ tectonic -Z shell-escape main.tex   # shell-escape needed for minted (pygments)
 ```
 
 Output: `main.pdf` (a compiled copy is committed so readers can download the paper without
-building it).
+building it). Contributors send source changes, not rebuilt PDFs: the maintainer rebuilds
+`main.pdf` after merging.
 
 **Prose style.** The paper is written in the plain, concrete, direct manner associated with
 Richard Feynman's expository writing: examples before abstractions, ordinary words for technical
