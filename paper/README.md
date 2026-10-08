@@ -82,12 +82,14 @@ suits you:
    then open the `#proof-of-control-paper`
    [channel](https://advancedaisoc-kxy6033.slack.com/archives/C0C7MKS5E3U) — it exists for
    exactly this conversation.
-3. **Send a pull request.** The preferred route: send edits as a pull request against
+3. **Start a group discussion on the mailing list.** Write to the Proof-of-Control mailing
+   list at [poc@advancedaisociety.org](mailto:poc@advancedaisociety.org).
+4. **Send a pull request.** The preferred route: send edits as a pull request against
    `paper/main.tex`, or open an
    [issue](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues) with your comments.
    Jim Schwoebel maintains the paper: pull requests come to him, and he rebuilds the committed
    PDF from the merged source. We discuss every comment at the research meetings.
-4. **Email the maintainer.** Send comments to Jim Schwoebel, the paper's technical
+5. **Email the maintainer.** Send comments to Jim Schwoebel, the paper's technical
    maintainer, at [jim@advancedaisociety.org](mailto:jim@advancedaisociety.org), and we will
    fold them into the review.
 
