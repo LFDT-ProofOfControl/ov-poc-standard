@@ -18,7 +18,7 @@ boundary concrete against real examples.
 ## How much of the threat model is covered
 
 <!-- coverage:start -->
-**Coverage: 20 of 29 threats** across 14 use cases. `███████████████████░░░░░░░░░`  
+**Coverage: 20 of 29 threats** across 15 use cases. `███████████████████░░░░░░░░░`  
 Full index in [COVERAGE.md](COVERAGE.md).
 <!-- coverage:end -->
 
