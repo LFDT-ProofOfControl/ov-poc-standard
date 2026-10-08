@@ -19,17 +19,20 @@ verification, where the root of trust is a mechanism anyone can verify, not a pa
 must believe. The standard grades that
 evidence on four [Verifiability Tiers](../0.1/en/0x10-C08-Verifiability-Tiers.md), and
 Proof-of-Control is evidence at Verifiability Tiers 3 and 4 only. This paper is the
-research behind the standard: we built the evidence pipeline the standard describes, attacked
-it, and measured what it costs, on real confidential-computing hardware. It is written to
-bridge AI-safety research into enterprise cybersecurity, in plain language, with every claim
-tied to a measurement or a theorem.
+research behind the Proof-of-Control Standard. We built the evidence pipeline for
+Verifiability Tiers 3 and 4 that reach Proof-of-Control. We attacked it, and measured what
+it costs, on real confidential-computing hardware. Every claim is tied to a measurement or
+a theorem.
 
-**How it relates to the standard.** The two complement each other. The specification in this
-repository ([`0.1/en/`](../0.1/en), also readable as a
+The paper integrates AI-safety research with practical enterprise cybersecurity, in plain
+language.
+
+**How the research relates to the Proof-of-Control Standard.** The two complement each
+other. The specification in this repository ([`0.1/en/`](../0.1/en), also readable as a
 [Google Doc working draft](https://docs.google.com/document/d/1EiiGDwLXvMxoSHp3Ru56AhR2u9gNd-6Fjs_CKZ4kU-w/edit))
-is the normative text: the requirements an implementation must meet. The paper is the evidence
-for it: why those requirements exist, what happens when they are missing, and what meeting them
-costs. The repository remains the source of truth for the standard's text.
+is the normative text: the requirements an implementation must meet. The paper is the
+evidence for why those requirements exist, what happens when they are missing, and what
+meeting them costs. The repository remains the source of truth for the standard's text.
 
 ## The experiments we ran
 
