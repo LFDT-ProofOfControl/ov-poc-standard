@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you reference this repository, cite the standard; to cite the research paper, use preferred-citation."
+title: "Proof-of-Control: an open standard for verifying what AI agents did"
+version: "Working Draft v0.1"
+license: Apache-2.0
+repository-code: "https://github.com/LFDT-ProofOfControl/ov-poc-standard"
+url: "https://advancedaisociety.org"
+authors:
+  - name: "Advanced AI Society and the Proof-of-Control contributors"
+preferred-citation:
+  type: article
+  title: "Proof-of-Control: An Open Standard for Runtime Verifiability and Cryptographic Oversight in Autonomous AI Execution"
+  year: 2026
+  status: preprint
+  notes: "Working draft v0.1, open for review; not yet submitted."
+  url: "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/master/paper/main.pdf"
+  authors:
+    - family-names: Schwoebel
+      given-names: Jim
+    - family-names: Wang
+      given-names: Tricia
+    - family-names: Huang
+      given-names: Ken
