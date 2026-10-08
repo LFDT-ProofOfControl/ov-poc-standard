@@ -40,7 +40,12 @@ HOOKS = ["TASK_INITIALIZATION", "CONTEXT_ASSEMBLY", "PLAN_GENERATION",
          "PRE_CALL_TOOL_INVOCATION", "POST_CALL_TOOL_RESULT", "MEMORY_WRITE",
          "SUBAGENT_DELEGATION", "TASK_COMPLETION"]
 VERDICTS = ["ALLOW", "DENY", "MODIFY", "ESCALATE"]
-ALGS = ["EdDSA", "ES256", "ML-DSA-44", "ML-DSA-65", "Ed25519+ML-DSA-44"]
+# COSE algorithm identifiers, as poc-evidence.cddl defines alg-id. A list
+# position here once stood in for them, so tokens from this encoder failed
+# CDDL validation at key -70013.
+ALGS = {"EdDSA": -8, "ES256": -7, "ML-DSA-44": -48, "ML-DSA-65": -49,
+        "Ed25519+ML-DSA-44": -1000}
+ALG_NAMES = {v: k for k, v in ALGS.items()}
 HASHES = ["sha-256", "sha-384", "sha-512", "sha3-256"]
 
 
@@ -81,7 +86,7 @@ def to_cbor(token: dict) -> bytes:
         elif k == "verdict":
             m[key] = VERDICTS.index(v) + 1
         elif k == "alg":
-            m[key] = ALGS.index(v) + 1
+            m[key] = ALGS[v]
         else:
             m[key] = v
     att = dict(token["submods"]["attestation"])
@@ -110,7 +115,7 @@ def from_cbor(data: bytes) -> dict:
         elif name == "verdict":
             claims[name] = VERDICTS[v - 1]
         elif name == "alg":
-            claims[name] = ALGS[v - 1]
+            claims[name] = ALG_NAMES[v]
         else:
             claims[name] = v
     att = dict(m[STD["submods"]]["attestation"])
