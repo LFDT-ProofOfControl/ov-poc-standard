@@ -6,7 +6,7 @@
 > Or [download it directly](https://github.com/LFDT-ProofOfControl/ov-poc-standard/raw/master/paper/main.pdf) in one click.
 
 *Proof-of-Control: An Open Standard for Runtime Verifiability and Cryptographic Oversight in
-Autonomous AI Execution* — Tricia Wang, Ken Huang, Jim Schwoebel.
+Autonomous AI Execution* — Jim Schwoebel, Tricia Wang, Ken Huang.
 
 **Status: working draft, open for review.** Not yet submitted.
 
@@ -14,7 +14,9 @@ Autonomous AI Execution* — Tricia Wang, Ken Huang, Jim Schwoebel.
 
 AI agents act faster than any person can watch, and the only account of what they did usually
 comes from the system being asked. The [Proof-of-Control Standard](../README.md) answers that
-with tamper-evident evidence anyone can verify without trusting the operator. The standard grades that
+with tamper-evident evidence anyone can openly verify, without trusting the operator: open
+verification, where the root of trust is a mechanism anyone can verify, not a party anyone
+must believe. The standard grades that
 evidence on four [Verifiability Tiers](../0.1/en/0x10-C08-Verifiability-Tiers.md), and
 Proof-of-Control is evidence at Verifiability Tiers 3 and 4 only. This paper is the
 research behind the standard: we built the evidence pipeline the standard describes, attacked
@@ -90,9 +92,9 @@ suits you:
    fold them into the review.
 
 **On authorship.** We welcome as many reviewers as the paper can earn. The minimum for
-co-authorship is that you reviewed the manuscript and consent to your name standing behind it:
-a careful review is itself the contribution we are asking for. Comments are welcome on top of
-that, and we will work through them together in the October meetings, in Slack, or by email.
+co-authorship is that you reviewed the manuscript. Authorship can look like a review or
+comments or rewrite suggestions. We will work through comments together in the October
+meetings, in Slack, or by email.
 
 ## Build
 
@@ -116,10 +118,8 @@ differs. Section titles are plain declaratives ("The Problem", "Does It Actually
 ## Before Submission — Required Steps
 
 1. **Co-author consent.** The author list is limited to those who have reviewed the manuscript
-   and consented to authorship: currently Tricia Wang, Ken Huang, and Jim Schwoebel. Others
-   from the Advanced AI Society leadership, board, and advisory board
-   ([advancedaisociety.org/about](https://advancedaisociety.org/about)) are added after they
-   review the draft and consent. The title-page footnote states this.
+   and consented to authorship: currently Jim Schwoebel, Tricia Wang, and Ken Huang. We will
+   add all co-authors after reviewing the draft and consenting.
 2. **Citation verification.** Entries in `references.bib` marked `[verify]` (Bandara et al.
    AI Trust OS, Chen et al. TraceSafe-Bench, Xie et al. SCR-Bench, Web 7.0 Verifiable Trust
    Circles, Catena-X AI Service KIT, MindXO KRI, and the arXiv:2603.16586 author list) carry
