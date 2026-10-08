@@ -3,7 +3,7 @@
 ## About the Standard
 
 **Open Verification: the Proof-of-Control Standard for Agents**
-v1.0 — for public comment until October 30, 2026
+Working Draft v0.1 — for public comment until October 30, 2026
 
 This is a working draft, not a final standard. It will change based on member input,
 working-group deliberation, public comment, and implementation experience. It is stewarded by the

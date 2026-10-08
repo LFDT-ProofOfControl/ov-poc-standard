@@ -15,6 +15,11 @@ Frontispiece, README, chapter header and roadmap still say 30 October 2026, and 
 discrepancy awaits the Owner's direction. Comments filed after this register was written
 are not in it.
 
+*Note added 2026-10-07:* the Owner settled both points the same day. The window closes on
+30 October 2026, and the label is Working Draft v0.1 everywhere until ratification; the FAQ
+and the front-page labels were changed to match, and #86 was resolved on that basis. The
+paragraph above is left as written.
+
 ## Resolved by a pull request
 
 | Issue | Raised by | Sections | What it asked | Disposition |

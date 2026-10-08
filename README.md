@@ -8,12 +8,12 @@
 
 <p align="center">
   <a href="https://www.apache.org/licenses/LICENSE-2.0"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
-  <a href="0.1/en/0x01-Frontispiece.md"><img alt="Status: v1.0" src="https://img.shields.io/badge/Status-v1.0-orange.svg"></a>
+  <a href="0.1/en/0x01-Frontispiece.md"><img alt="Status: Working Draft v0.1 (public comment)" src="https://img.shields.io/badge/Status-Working_Draft_v0.1_(public_comment)-orange.svg"></a>
   <a href="0.1/en"><img alt="Requirements: 127" src="https://img.shields.io/badge/Requirements-127-cfff04.svg"></a>
   <a href="https://advancedaisociety.org/"><img alt="Steward: Advanced AI Society" src="https://img.shields.io/badge/Steward-Advanced%20AI%20Society-cfff04.svg"></a>
 </p>
 
-> **Launch of v1.0** — comment on the
+> **Working Draft v0.1, open for public comment until October 30, 2026** — comment on the
 > [Google Doc](https://docs.google.com/document/d/1EiiGDwLXvMxoSHp3Ru56AhR2u9gNd-6Fjs_CKZ4kU-w/edit?tab=t.0#heading=h.5cwdygy69mua)
 > or in this GitHub.
 
@@ -245,7 +245,7 @@ in [`mappings/`](mappings/README.md). *(Draft seed coding, pending working-group
 
 ```text
 /
-├── 0.1/en/     <- the standard: chapters C1–C10 + appendices A–E  (v1.0)
+├── 0.1/en/     <- the standard: chapters C1–C10 + appendices A–E  (Working Draft v0.1)
 ├── schema/     <- the evidence claim set: CDDL, JSON Schema, canonical form, test vectors
 ├── impl/       <- reference implementation, attack harness, benchmarks
 ├── checklist/  <- the audit checklist as CSV and JSON (generated)

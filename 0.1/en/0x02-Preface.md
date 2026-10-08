@@ -59,7 +59,7 @@ The standard grades three different things, and each has its own word — an unq
 * `[DRAFT]` — a section still being written.
 * `[INSERT]` — a pending merge from a companion document.
 
-This is v1.0, open for public comment until October 30, 2026. It will change based on member input, working-group deliberation, public comment, and implementation experience.
+This is Working Draft v0.1, open for public comment until October 30, 2026. It will change based on member input, working-group deliberation, public comment, and implementation experience.
 
 ---
 

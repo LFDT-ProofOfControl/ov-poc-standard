@@ -235,7 +235,7 @@ It implements action interception, path-aware policy evaluation, hash-chained si
 
 The pipeline has been exercised in software and inside a real Intel TDX trust domain on GCP, with a matched non-confidential control, so the protocol has run on hardware rather than only being modelled.
 
-**This is live work, not finished work.** The standard is in public comment until 7 October 2026, the reference implementation is being extended alongside it, and the specification is open for anyone to build against. The standard commits to conformance being demonstrated with running code rather than only asserted on paper, and a conformance test suite is the next artifact on the roadmap. If you are building against it, the working group wants implementation reports, and wants to hear what breaks.
+**This is live work, not finished work.** The standard is in public comment until 30 October 2026, the reference implementation is being extended alongside it, and the specification is open for anyone to build against. The standard commits to conformance being demonstrated with running code rather than only asserted on paper, and a conformance test suite is the next artifact on the roadmap. If you are building against it, the working group wants implementation reports, and wants to hear what breaks.
 
 **More:** [the reference implementation](../impl/README.md) · [the evidence claim set](../schema/README.md) · [the paper](../paper/)
 
@@ -287,7 +287,7 @@ Hybrid costs 64 bytes more than post-quantum alone and covers both cases, making
 
 ## 12 · When will someone require this of me?
 
-Proof-of-Control is open for public comment through 7 October 2026. No buyer or regulator mandates it by name today, and four stakeholders already demand the evidence properties it produces.
+Proof-of-Control is open for public comment through 30 October 2026. No buyer or regulator mandates it by name today, and four stakeholders already demand the evidence properties it produces.
 
 | Who asks | What they ask today | When it reaches you |
 | --- | --- | --- |
@@ -361,7 +361,7 @@ Every stage requires the same trust-assumption disclosure, which is what makes t
 
 ## 15 · Where is the standard right now?
 
-Proof-of-Control is Working Draft v0.1, open for public comment through 7 October 2026.
+Proof-of-Control is Working Draft v0.1, open for public comment through 30 October 2026.
 
 Normative chapters C1 to C10 are under version control in the repository. Open working-group items are tagged `[WG-INPUT NEEDED]` and are seeking contribution, including:
 
