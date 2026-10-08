@@ -117,6 +117,28 @@ threat vocabulary.
 
 ## To contribute
 
+### What we are looking for
+
+Use cases from any industry are welcome. These are the ones we most want next:
+
+- **Finance.** Agentic commerce is already moving money, and the evidence of what an
+  agent did is what makes that insurable and auditable.
+- **Health.** Agents are reaching care workflows that carry some of the most regulated
+  PII there is.
+- **Legal.** An agent's actions can carry obligations, privilege, and discovery duties.
+- **Content.** Provenance decides what can be trusted, who made it, and who gets paid.
+- **Stories for civil society.** Use cases a non-technical reader can follow, because
+  this corpus exists to make verifiable AI real for the people agents act on, not only
+  for security teams.
+
+Agents are being integrated into exactly these high-risk industries, where PII
+regulation is dense and identity runs through everything, the agent's identity and the
+human's. If your use case sits outside these topics, send it anyway. The priorities
+above are where a story helps most right now, alongside the uncovered threats in the
+[coverage index](COVERAGE.md).
+
+### How to submit
+
 Two ways, depending on how you work.
 
 **In your browser, with no git.** Open
