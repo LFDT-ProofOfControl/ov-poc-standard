@@ -19,7 +19,26 @@ boundary concrete against real examples.
 
 | File | Industry | Type | Tier |
 |---|---|---|---|
+| [`account-takeover-stolen-credentials.md`](account-takeover-stolen-credentials.md) | Cloud services | Scenario | 4 |
+| [`agent-exceeds-principal-clearance.md`](agent-exceeds-principal-clearance.md) | Enterprise software | Scenario | 2 |
+| [`agentic-cross-border-payments.md`](agentic-cross-border-payments.md) | Cross-border payments | Scenario | 4 |
 | [`credit-decisioning.md`](credit-decisioning.md) | Consumer lending | Scenario | 4 |
+| [`deepfake-biometric.md`](deepfake-biometric.md) | Financial services | Scenario | 3 |
+| [`deepfake-interview-insider.md`](deepfake-interview-insider.md) | Technology | Scenario | 4 |
+| [`frontier-lab-agent-collective.md`](frontier-lab-agent-collective.md) | AI research | Incident | 1 observed, 4 required |
+| [`license-piracy-agent.md`](license-piracy-agent.md) | Software publishing | Scenario | 3 |
+| [`pig-butchering.md`](pig-butchering.md) | Financial services | Scenario | 4 |
+| [`privileged-software-change.md`](privileged-software-change.md) | Software and cloud services | Scenario | 4 |
+| [`rogue-internal-agent-pii.md`](rogue-internal-agent-pii.md) | Enterprise software | Scenario | 3 |
+| [`shopping-agent.md`](shopping-agent.md) | E-commerce | Scenario | 3 |
+| [`sovereign-agents.md`](sovereign-agents.md) | Cross-sector | Scenario, v1 template | 4 |
+
+Every story here was first submitted to
+[AAI-Society/openverification](https://github.com/AAI-Society/openverification/pulls),
+and the closing note in each file records its pull request and author. The two
+Advanced AI Society drafts, the frontier-lab incident and the cross-border
+payments scenario, were opened for comment and remain so. `sovereign-agents.md`
+predates the threat vocabulary and the v2 template and awaits that retrofit.
 
 A further worked use case, Proof-of-Control for the Universal Commerce Protocol,
 adapts Ken Huang's UCP assurance framework and exercises the six domains, the System
@@ -115,6 +134,31 @@ disclaimer becomes *"Documented incident. Facts are drawn from the sources
 listed in the frontmatter."* And the single "Claimed tier" heading becomes two:
 **Tier observed** and **Tier the risky domains demanded**.
 
+### Check your submission
+
+From the repository root, run `python3 tools/validate_use_cases.py`, or pass
+the path to your story to check just that file. Run the regression checks with
+`python3 -m unittest tools.test_validate_use_cases -v`.
+
+The validator checks scenarios and incidents against the v2 template: required
+fields and sections, tier headings, canonical domain order, explicit
+`not claimed` entries, known threat slugs matching the threats table, and
+incident source URLs. It accepts scalar frontmatter and indented block lists
+for `threats` and `sources`, as shown in the template; it does not parse general
+YAML, nested objects, inline lists, or multiline scalar values. Incident tier
+headings may be bare or include `: Tier N`; numbered headings must match their
+frontmatter. In an incident's domain table, `observed → required` pairs such
+as `1 → 4` keep the two tiers distinct. Scenarios use a single tier per domain.
+Neither form is averaged or forced to equal the overall tier.
+It checks neither tier justification nor the truth, completeness,
+or primary-source status of citations. Those require review.
+
+The unchanged v1 `sovereign-agents.md` is temporarily exempt, with a warning,
+pending its retrofit to the v2 template. The exemption matches that exact path
+and content hash. Editing the story requires completing its v2 migration; new
+v1 stories are rejected. The strict per-file validator still reports the legacy
+story's structural omissions.
+
 ### The two tests in "Why not one tier down?"
 
 **Reversibility.** Can the harm be undone once you detect it? Money that has
@@ -131,7 +175,7 @@ action did not happen.
 ## Coverage
 
 <!-- coverage:start -->
-**Coverage: 0 of 29 threats** across 1 use cases. `░░░░░░░░░░░░░░░░░░░░░░░░░░░░`  
+**Coverage: 20 of 29 threats** across 13 use cases. `███████████████████░░░░░░░░░`  
 Full index in [COVERAGE.md](COVERAGE.md).
 <!-- coverage:end -->
 
@@ -141,8 +185,9 @@ coverage are where a submission helps most.
 
 After merging a submission, run `python3 tools/generate_use_case_coverage.py`
 from the repository root. Continuous integration runs the same script with
-`--check`, which fails if the index has drifted from the submissions. Do not edit
-`COVERAGE.md` or the coverage block above by hand.
+`--check`, which fails if the index has drifted from the submissions, and runs
+`tools/validate_use_cases.py` over every story. Do not edit `COVERAGE.md` or the
+coverage block above by hand.
 
 *To contribute a use case from your sector, join a working group at
 [advancedaisociety.org](https://advancedaisociety.org/).*

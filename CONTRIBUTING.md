@@ -57,7 +57,8 @@ working-group consensus, and stewarded by the
   (and `python3 tools/generate_diagrams.py` if a diagram
   changed) and commit the regenerated Appendix E, `checklist/` exports, and
   `images/diagrams/` SVGs alongside your change. After adding or editing a use case, run
-  `python3 tools/generate_use_case_coverage.py` and commit `docs/use-cases/COVERAGE.md`.
+  `python3 tools/validate_use_cases.py`, then `python3 tools/generate_use_case_coverage.py`,
+  and commit `docs/use-cases/COVERAGE.md`.
 * "Prove" is reserved for genuine cryptographic proofs and the coined name Proof-of-Control;
   what an agent did is *shown* or *evidenced*, never "proven."
 
