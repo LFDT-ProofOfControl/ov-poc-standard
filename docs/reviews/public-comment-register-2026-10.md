@@ -75,6 +75,17 @@ item they are grouped so the working group reads them together.
 | [#76](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/76) | bkuan001 | Permitted public wording for a Tier 1 or Tier 2 placement under 8.1.4; support for the split claim in #64; a reformulated Tier 2/3 test; a Tier 1 evidence floor |
 | [#72](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/72) | basilpuglisi | Appendix D issue 13: a seven-day anchoring maximum for high-risk records, the history-rewrite risk it bounds, and an operator-side halt monitor that does not meet C8.3.5 (offered as reference) |
 
+*Note added 2026-10-09:* [#__PR__](https://github.com/LFDT-ProofOfControl/ov-poc-standard/pull/__PR__) (StevenMih), filed after this register was written, bears on
+issue 7 and builds on #79: a per-claim shape for the C10.2 disclosure, offered as reference. Each
+claim carries two lists. **Established** is what the verifier recomputed itself. **Assumed** is
+each party or property still trusted, with its 10.2.2 category, who selected that party, and
+whether its dishonesty would become publicly detectable, the two tests the C8 working-group note
+raises. Three conventions keep the lists honest: name the rung the evidence reached
+(self-attested, witnessed or countersigned); label what does not hold (`not independent` for a
+producer's countersignature of its own records, `unresolved signer` for a key bound to no known
+party); and report completeness as three separate claims (graph closure, interval coverage,
+per-record membership). The disposition is the working group's.
+
 ### C4.1, C7.1, C7.5 and the schema: vocabularies and the verifier result
 
 | Issue | Raised by | What it asked |
