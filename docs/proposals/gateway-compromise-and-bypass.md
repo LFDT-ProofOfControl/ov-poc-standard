@@ -2,9 +2,9 @@
 
 *Date:* 2026-10-12 · *Status:* proposal only. No normative file is edited by this proposal.
 
-*Submitted by:* Imran Siddique (@imran-siddique), in a personal capacity. I work on cMCP at
-OPAQUE, which enforces MCP tool policy inside a TEE, so I build the component this proposal is
-about.
+*Submitted by:* Imran Siddique (@imran-siddique), in a personal capacity. I maintain cMCP in
+agentrust-io, which enforces MCP tool policy inside a TEE, so I build the component this proposal
+is about.
 
 *Targets:* Appendix C, C10.2, C10.3.2 (auditor evidence), README
 
