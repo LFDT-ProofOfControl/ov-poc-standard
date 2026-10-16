@@ -1015,3 +1015,130 @@ poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rati
 10.3.7,C10.3,NIST_SP_800_207,PM,Tenet 7; CDM integration,Continuous diagnostics and mitigation align with continuous-operation intent,seed-01
 10.3.7,C10.3,OWASP_AISVS,PM,AISVS C12,C12 continuous monitoring aligns in intent; not tier-validated per-action evidence,seed-01
 10.3.7,C10.3,SOC_2,PM,Type II operating-effectiveness period,Type II covers a period with operating effectiveness; not per-action near-real-time validation,seed-01
+1.1.1,C1.1,OSFI_E23,NM,—,Appendix 1 records model ID and version at inventory level; E-23 does not address what each execution record carries,rakeshgohel01
+1.1.2,C1.1,OSFI_E23,PM,Principle 3.5,"Principle 3.5 requires that integrating models into operational settings preserve their integrity and reliability; no load-time digest comparison against a signed manifest, and no per-comparison record",rakeshgohel01
+1.1.3,C1.1,OSFI_E23,NM,—,Deployment change control and approval hierarchies (Principle 3.5) do not address signature chains over model artifacts or authorized signing keys,rakeshgohel01
+1.1.4,C1.1,OSFI_E23,NM,—,"Model review covers third-party sub-components (Principle 3.4), but attestation-based admission of models, tools or plugins is not addressed",rakeshgohel01
+1.1.5,C1.1,OSFI_E23,NM,—,E-23 provenance stays inside the institution; no externally verifiable supply-chain attestation,rakeshgohel01
+1.2.1,C1.2,OSFI_E23,NM,—,Principle 3.2 traceability covers data used to develop the model and Principle 3.6 tracks changes in input data in aggregate; neither records runtime inputs per action,rakeshgohel01
+1.2.2,C1.2,OSFI_E23,NM,—,No custody chain linking inputs to the actions they informed,rakeshgohel01
+1.2.3,C1.2,OSFI_E23,PM,Principle 3.2,"Principle 3.2 requires controls on data cleansing and documented provenance of synthetic and proxy data; no hash-linked, append-only transformation log",rakeshgohel01
+1.2.4,C1.2,OSFI_E23,PM,Principle 3.2,"Principle 3.2 requires development data to be traceable (documented lineage and provenance) and compliant; lineage is held by the institution, not obtainable by an external verifier",rakeshgohel01
+1.3.1,C1.3,OSFI_E23,NM,—,Appendix 1 records model dependencies at inventory level; no per-execution identification of the compute environment,rakeshgohel01
+1.3.2,C1.3,OSFI_E23,NM,—,Hardware or remote attestation of the substrate not addressed,rakeshgohel01
+1.4.1,C1.4,OSFI_E23,NM,—,Principle 3.2 requires model data to meet privacy requirements; provenance records holding digests instead of payloads not addressed,rakeshgohel01
+1.4.2,C1.4,OSFI_E23,NM,—,Verification of provenance claims without disclosure not addressed,rakeshgohel01
+2.1.1,C2.1,OSFI_E23,NM,—,Per-operation data access records not addressed,rakeshgohel01
+2.1.2,C2.1,OSFI_E23,NM,—,Content of evidence records not addressed,rakeshgohel01
+2.1.3,C2.1,OSFI_E23,NM,—,Distinction between data used and data disclosed not addressed,rakeshgohel01
+2.2.1,C2.2,OSFI_E23,NM,—,Principle 3.2 requires model data to be compliant with privacy requirements; no runtime consent evaluation,rakeshgohel01
+2.2.2,C2.2,OSFI_E23,NM,—,"Approved uses in Appendix 1 concern the model, not the permitted purposes of data",rakeshgohel01
+2.2.3,C2.2,OSFI_E23,NM,—,Query-level data minimization not addressed,rakeshgohel01
+2.2.4,C2.2,OSFI_E23,NM,—,Machine-enforced license and residency rules not addressed,rakeshgohel01
+2.2.5,C2.2,OSFI_E23,NM,—,Principle 3.2 asks for documented use of synthetic and proxy data; deidentification logging and re-identification blocking not addressed,rakeshgohel01
+2.3.1,C2.3,OSFI_E23,NM,—,Cryptographic privacy mechanisms not addressed,rakeshgohel01
+2.3.2,C2.3,OSFI_E23,NM,—,Commitment to consent records not addressed,rakeshgohel01
+2.3.3,C2.3,OSFI_E23,NM,—,Verifiable computation not addressed,rakeshgohel01
+2.4.1,C2.4,OSFI_E23,NM,—,Minimized forms of protected data in retained evidence not addressed,rakeshgohel01
+2.4.2,C2.4,OSFI_E23,NM,—,Reconciling deletion requests with tamper-evident evidence not addressed,rakeshgohel01
+3.1.1,C3.1,OSFI_E23,NM,—,Boundary-crossing records not addressed,rakeshgohel01
+3.1.2,C3.1,OSFI_E23,NM,—,Destination-side integrity verification not addressed,rakeshgohel01
+3.2.1,C3.2,OSFI_E23,NM,—,Decommission keeps a retired model and its documentation for a set period; continued verifiability of evidence after a migration not addressed,rakeshgohel01
+3.2.2,C3.2,OSFI_E23,NM,—,Linking records across attestation domains not addressed,rakeshgohel01
+3.2.3,C3.2,OSFI_E23,NM,—,Cross-jurisdiction disclosure review of evidence not addressed,rakeshgohel01
+4.1.1,C4.1,OSFI_E23,PM,Appendix 1; Principle 2.3,"Appendix 1 records approved uses and limitations, and Principle 2.3 sets limits or constraints on model usage by risk rating; no per-run record of granted permissions, scope and expiry",rakeshgohel01
+4.1.2,C4.1,OSFI_E23,PM,Principle 2.3; Principle 3.6,Principle 2.3 sets usage constraints and Principle 3.6 monitoring verifies the model is within its original scope; no per-action evaluation against a permission set,rakeshgohel01
+4.1.3,C4.1,OSFI_E23,PM,Principle 2.3,Principle 2.3 allows limiting the model's scope and adding safeguards; no blocking at an interception point or rejection records,rakeshgohel01
+4.1.4,C4.1,OSFI_E23,NM,—,Validation of tool-call parameters not addressed,rakeshgohel01
+4.1.5,C4.1,OSFI_E23,NM,—,Per-task credentials not addressed,rakeshgohel01
+4.1.6,C4.1,OSFI_E23,PM,Principle 3.5; D.2 Model decommission,"Deployment procedures cover exception handling including overlays, and excessive overrides are a decommission trigger; no per-override record of approver identity and content presented",rakeshgohel01
+4.1.7,C4.1,OSFI_E23,NM,—,Path-aware authorization not addressed,rakeshgohel01
+4.1.8,C4.1,OSFI_E23,NM,—,Separation of advisory outputs from authorization state not addressed,rakeshgohel01
+4.2.1,C4.2,OSFI_E23,NM,—,Signed authorization tokens not addressed,rakeshgohel01
+4.2.2,C4.2,OSFI_E23,NM,—,Delegation chains not addressed,rakeshgohel01
+4.2.3,C4.2,OSFI_E23,NM,—,Scope attenuation on delegation not addressed,rakeshgohel01
+4.2.4,C4.2,OSFI_E23,NM,—,Confidential delegation proofs not addressed,rakeshgohel01
+5.1.1,C5.1,OSFI_E23,NM,—,"Appendix 1 names a model owner, an accountable unit, not the principal for each action; per-action attribution not addressed",rakeshgohel01
+5.1.2,C5.1,OSFI_E23,NM,—,Cryptographic agent credentials not addressed,rakeshgohel01
+5.1.3,C5.1,OSFI_E23,NM,—,Delegation tokens per tool call not addressed,rakeshgohel01
+5.1.4,C5.1,OSFI_E23,NM,—,Binding of identity to an attested environment not addressed,rakeshgohel01
+5.2.1,C5.2,OSFI_E23,NM,—,Inter-agent message signing not addressed,rakeshgohel01
+5.2.2,C5.2,OSFI_E23,NM,—,Sender identity validation from published keys not addressed,rakeshgohel01
+6.1.1,C6.1,OSFI_E23,NM,—,Model approval accepts compensating mitigants and Principle 2.3 names controls for residual risk; no mapping of each declared control to an evidence source,rakeshgohel01
+6.1.2,C6.1,OSFI_E23,PM,Principle 3.6,"Principle 3.6 requires tracking and evaluating model usage; no per-invocation record of tool, arguments and result",rakeshgohel01
+6.1.3,C6.1,OSFI_E23,NM,—,Principle 3.5 refers deployment risk assessments to B-13 and E-21; runtime attestation against reference values not addressed in E-23,rakeshgohel01
+6.1.4,C6.1,OSFI_E23,NM,—,Hardware-rooted attestation not addressed,rakeshgohel01
+6.2.1,C6.2,OSFI_E23,NM,—,Sandboxing of generated code not addressed,rakeshgohel01
+6.2.2,C6.2,OSFI_E23,NM,—,Confidential compute not addressed,rakeshgohel01
+6.2.3,C6.2,OSFI_E23,NM,—,Hardware-gated compliance not addressed,rakeshgohel01
+6.3.1,C6.3,OSFI_E23,NM,—,Key management not addressed in E-23,rakeshgohel01
+6.3.2,C6.3,OSFI_E23,NM,—,Key rotation not addressed,rakeshgohel01
+6.3.3,C6.3,OSFI_E23,NM,—,Key compromise procedure not addressed,rakeshgohel01
+6.3.4,C6.3,OSFI_E23,NM,—,Signature algorithm identification and migration not addressed,rakeshgohel01
+6.3.5,C6.3,OSFI_E23,NM,—,Post-quantum signatures not addressed,rakeshgohel01
+7.1.1,C7.1,OSFI_E23,NM,—,No interception gateway concept,rakeshgohel01
+7.1.2,C7.1,OSFI_E23,NM,—,"Before, during and after evidence records not addressed",rakeshgohel01
+7.1.3,C7.1,OSFI_E23,NM,—,Evidence as a precondition of action release not addressed,rakeshgohel01
+7.1.4,C7.1,OSFI_E23,NM,—,Mediation of the effect channel not addressed,rakeshgohel01
+7.1.5,C7.1,OSFI_E23,NM,—,No claim limits tied to effect-channel mediation,rakeshgohel01
+7.2.1,C7.2,OSFI_E23,NM,—,Timing of record creation not addressed,rakeshgohel01
+7.2.2,C7.2,OSFI_E23,NM,—,External timestamp anchoring not addressed,rakeshgohel01
+7.2.3,C7.2,OSFI_E23,NM,—,Attestation refresh interval not addressed,rakeshgohel01
+7.2.4,C7.2,OSFI_E23,NM,—,Binding of signing key to hardware attestation not addressed,rakeshgohel01
+7.3.1,C7.3,OSFI_E23,NM,—,"Hash chaining of records not addressed. Principle 2.1 asks for an inventory subject to robust controls, which is not record integrity",rakeshgohel01
+7.3.2,C7.3,OSFI_E23,NM,—,Signing-key custody not addressed,rakeshgohel01
+7.3.3,C7.3,OSFI_E23,NM,—,Equivocation resistance not addressed,rakeshgohel01
+7.3.4,C7.3,OSFI_E23,NM,—,Inclusion proofs not addressed,rakeshgohel01
+7.3.5,C7.3,OSFI_E23,NM,—,Consistency proofs not addressed,rakeshgohel01
+7.4.1,C7.4,OSFI_E23,NM,—,No disclosure of the parties and assumptions evidence rests on,rakeshgohel01
+7.5.1,C7.5,OSFI_E23,NM,—,Evidence schema content not addressed,rakeshgohel01
+7.5.2,C7.5,OSFI_E23,NM,—,Claims review limiting statements to execution facts not addressed,rakeshgohel01
+7.6.1,C7.6,OSFI_E23,NM,—,"Principle 3.6 contingency plans cover model unavailability and failure, not evidence-pipeline failures",rakeshgohel01
+7.6.2,C7.6,OSFI_E23,NM,—,Sequence numbering of records not addressed,rakeshgohel01
+7.6.3,C7.6,OSFI_E23,NM,—,Fail-closed refusal on evidence loss not addressed; Principle 3.6 contingency planning concerns the model,rakeshgohel01
+7.6.4,C7.6,OSFI_E23,NM,—,Access control on an evidence store not addressed,rakeshgohel01
+7.6.5,C7.6,OSFI_E23,NM,—,"Retention of retired models and documentation for a set period applies to model records, not execution evidence",rakeshgohel01
+7.6.6,C7.6,OSFI_E23,NM,—,External anchoring of chain roots not addressed,rakeshgohel01
+7.7.1,C7.7,OSFI_E23,NM,—,No evidence schema requirement,rakeshgohel01
+7.7.2,C7.7,OSFI_E23,NM,—,Canonical serialization not addressed,rakeshgohel01
+7.7.3,C7.7,OSFI_E23,NM,—,Algorithm identifiers not addressed,rakeshgohel01
+7.7.4,C7.7,OSFI_E23,NM,—,Test vectors not addressed,rakeshgohel01
+7.7.5,C7.7,OSFI_E23,NM,—,Parser behaviour not addressed,rakeshgohel01
+8.1.1,C8.1,OSFI_E23,NM,—,No grading of evidence by verifiability,rakeshgohel01
+8.1.2,C8.1,OSFI_E23,NM,—,No trust analysis of evidence,rakeshgohel01
+8.1.3,C8.1,OSFI_E23,NM,—,No grading of evidence by verifiability,rakeshgohel01
+8.1.4,C8.1,OSFI_E23,NM,—,No grading of evidence by verifiability,rakeshgohel01
+8.1.5,C8.1,OSFI_E23,NM,—,Principle 3.4 review is independent of model development and may use objective third parties; verification without operator credentials not addressed,rakeshgohel01
+8.1.6,C8.1,OSFI_E23,NM,—,No grading of evidence by verifiability,rakeshgohel01
+8.1.7,C8.1,OSFI_E23,NM,—,Vendor-rooted attestation not addressed,rakeshgohel01
+8.1.8,C8.1,OSFI_E23,NM,—,Publication of verification tooling not addressed,rakeshgohel01
+8.2.1,C8.2,OSFI_E23,NM,—,No mechanism-to-requirement fit rule,rakeshgohel01
+8.2.2,C8.2,OSFI_E23,NM,—,No mechanism-to-requirement fit rule,rakeshgohel01
+8.3.1,C8.3,OSFI_E23,NM,—,No self-enforcement concept,rakeshgohel01
+8.3.2,C8.3,OSFI_E23,NM,—,No self-enforcement concept,rakeshgohel01
+8.3.3,C8.3,OSFI_E23,NM,—,No self-enforcement concept,rakeshgohel01
+8.3.4,C8.3,OSFI_E23,NM,—,Principle 3.6 contingency plans cover model failure; availability impact of proof-gated operation not addressed,rakeshgohel01
+8.3.5,C8.3,OSFI_E23,NM,—,No self-enforcement concept,rakeshgohel01
+9.1.1,C9.1,OSFI_E23,NM,—,No stack-location requirement,rakeshgohel01
+9.1.2,C9.1,OSFI_E23,NM,—,No stack-location requirement,rakeshgohel01
+9.1.3,C9.1,OSFI_E23,NM,—,No stack-location requirement,rakeshgohel01
+9.2.1,C9.2,OSFI_E23,NM,—,Tamper-evident logging coverage not addressed,rakeshgohel01
+9.2.2,C9.2,OSFI_E23,NM,—,No stack-location requirement,rakeshgohel01
+9.2.3,C9.2,OSFI_E23,NM,—,Cross-layer evidence bundles not addressed,rakeshgohel01
+10.1.1,C10.1,OSFI_E23,PM,Principle 3.4; Appendix 1,"Principle 3.4 requires review independent of development, by internal reviewers or objective third parties, and Appendix 1 records the model reviewer and approver; no published statement of an assurance stage",rakeshgohel01
+10.1.2,C10.1,OSFI_E23,NM,—,Declared domains and marketing limits not addressed,rakeshgohel01
+10.1.3,C10.1,OSFI_E23,NM,—,Resolving asserted facts to evidence streams not addressed,rakeshgohel01
+10.1.4,C10.1,OSFI_E23,PM,Appendix 1,"Appendix 1 fields (model ID, name, version, deployment date, dependencies, limitations) cover system identification; domains, Tiers, mechanisms and trust-assumption disclosure not addressed",rakeshgohel01
+10.1.5,C10.1,OSFI_E23,NM,—,Citing a standard's version and claim date not addressed,rakeshgohel01
+10.1.6,C10.1,OSFI_E23,PM,D.2 Model rationale; Appendix 1,"Model rationale requires a well-defined purpose including scope, coverage and how outputs are used, and Appendix 1 records approved uses and limitations including exceptions; no enumeration of in-scope and excluded action classes",rakeshgohel01
+10.1.7,C10.1,OSFI_E23,NM,—,Machine-readable publication not addressed,rakeshgohel01
+10.1.8,C10.1,OSFI_E23,PM,Principle 2.1,"Principle 2.1 requires periodic identification of models in use, including vendor and third-party models, and an accurate, evergreen inventory updated in a timely manner; identification is by survey, not reconciliation against automated discovery",rakeshgohel01
+10.2.1,C10.2,OSFI_E23,PM,Appendix 1; Principle 2.2,"Appendix 1 records model origin, developer and dependencies, and Principle 2.2 rates externally developed models on a standalone basis, so the parties a model relies on are named; no disclosure of the trust assumptions behind evidence",rakeshgohel01
+10.2.2,C10.2,OSFI_E23,NM,—,No category scheme for trust assumptions,rakeshgohel01
+10.3.1,C10.3,OSFI_E23,NM,—,Tamper-evident evidence store not addressed,rakeshgohel01
+10.3.2,C10.3,OSFI_E23,NM,—,Coverage of every in-scope action not addressed,rakeshgohel01
+10.3.3,C10.3,OSFI_E23,NM,—,Automated validation of evidence records not addressed,rakeshgohel01
+10.3.4,C10.3,OSFI_E23,NM,—,"Principle 3.6 escalation applies to model performance issues, not evidence validation failures",rakeshgohel01
+10.3.5,C10.3,OSFI_E23,NM,—,"Principle 3.4 periodic review applies to the model, not to a monitoring pipeline",rakeshgohel01
+10.3.6,C10.3,OSFI_E23,NM,—,Published coverage metric not addressed,rakeshgohel01
+10.3.7,C10.3,OSFI_E23,PM,A.4 Model; Principle 3.4,"An automated validator built on AI/ML is a model under A.4, so Principle 3.4 independent review of its performance applies; E-23 does not name structured-trace parsing",rakeshgohel01
