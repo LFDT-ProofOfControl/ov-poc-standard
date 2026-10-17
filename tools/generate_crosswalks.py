@@ -32,6 +32,7 @@ PAGES = {
     "MITRE_ATLAS": "mitre-atlas.md",
     "CSA_AARM": "csa-aarm.md",
     "NIST_SP_800_207": "zero-trust.md",
+    "OSFI_E23": "osfi-e23.md",
 }
 
 CHAPTER_FILES = {
