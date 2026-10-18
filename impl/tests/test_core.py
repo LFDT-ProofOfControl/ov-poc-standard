@@ -47,10 +47,10 @@ def main():
           r["verdict"] == "DENY" and len(store.records) == 2
           and store.records[-1]["poc_claims"]["verdict"] == "DENY")
 
-    # chain verifies end-to-end by an independent verifier
+    # chain verifies end-to-end by anyone, using only published material
     v = Verifier(ae.pk, ae.measurement)
     ok, msg = v.verify_chain(store.records)
-    check(f"C8.1.5 independent verification ({msg})", ok)
+    check(f"C8.1.5 open verification ({msg})", ok)
 
     # signing key is not reachable through the API
     check("C7.3.2 signing key not exposed",

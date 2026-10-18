@@ -28,7 +28,7 @@
 <text x="538" y="146" font-size="11" fill="#6b665f" text-anchor="middle">attestation report</text>
 <rect x="592" y="100" width="414" height="116" rx="14" fill="url(#gLime)" stroke="#8fae00" stroke-width="1.5" filter="url(#fGlow)"/>
 <g transform="translate(612,114) scale(0.8)" fill="none" stroke="#1a2000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 C6 7 18 7 21 12 C18 17 6 17 3 12 Z"/><path d="M12 12 m-2.4 0 a2.4 2.4 0 1 0 4.8 0 a2.4 2.4 0 1 0 -4.8 0"/></g>
-<text x="644" y="132" font-size="15" fill="#1a2000" text-anchor="start" font-weight="700">Independent verification</text>
+<text x="644" y="132" font-size="15" fill="#1a2000" text-anchor="start" font-weight="700">Open verification</text>
 <text x="612" y="164" font-size="12" fill="#1a2000" text-anchor="start">report compared to published</text>
 <text x="612" y="182" font-size="12" fill="#1a2000" text-anchor="start">reference values — pass ✓</text>
 <line x1="490" y1="276" x2="586" y2="276" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>

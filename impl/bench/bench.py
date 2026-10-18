@@ -5,7 +5,7 @@ B1 Per-step latency, broken out by component (canonicalization, policy
    evaluation, signing, chain append, store append) with percentiles.
 B2 Scaling with path length: validates the O(1)-per-step claim of the bounded
    path summary against a naive full-path baseline.
-B3 Verification cost: independent verifier throughput over chain length.
+B3 Verification cost: open verification throughput over chain length.
 B4 Utility cost of path-aware authorization: false-rejection rate on benign
    workloads, and the effect of a declassification point.
 
@@ -262,7 +262,7 @@ def main():
     b1 = b1_latency()
     print("\nB2  scaling with path length (bounded summary vs naive)")
     b2 = b2_scaling()
-    print("\nB3  independent verification cost")
+    print("\nB3  open verification cost")
     b3 = b3_verification()
     print("\nB4  utility cost of path-aware authorization")
     b4 = b4_utility()
