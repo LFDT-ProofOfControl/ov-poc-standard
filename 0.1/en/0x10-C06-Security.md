@@ -9,7 +9,7 @@ Produce verifiable evidence of system integrity and access-control enforcement. 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../../images/diagrams/c6-security-dark.svg">
-    <img alt="The execution environment attests its measurement to an independent verifier against published reference values; evidence-signing keys live in an HSM" src="../../images/diagrams/c6-security-light.svg" width="900">
+    <img alt="The execution environment attests its measurement for open verification against published reference values; evidence-signing keys live in an HSM" src="../../images/diagrams/c6-security-light.svg" width="900">
   </picture>
 </p>
 

@@ -540,7 +540,7 @@ def gossip(log_a: TransparencyLog, log_b: TransparencyLog) -> tuple[bool, str]:
 # ---------------------------------------------------------------- verifier
 
 class Verifier:
-    """Independent verifier: checks signatures, measurement, and chain
+    """Open verifier: checks signatures, measurement, and chain
     continuity using only published material (C8.1.5, C8.1.8)."""
 
     def __init__(self, pk: Ed25519PublicKey, expected_measurement: str):

@@ -129,7 +129,7 @@ Placement is set by how much you must trust, not by whether cryptography is used
 | **8.1.7** | **Verify that** claims resting on a vendor-rooted attestation service are either registered at Tier 2, or composed with independent anchoring (e.g., attestation reports committed to a public transparency log with independent monitors) before being registered at Tier 3 — with the vendor trust assumption on the disclosure in both cases. | 3 |
 | **8.1.8** | **Verify that** the verification procedure and tooling for each Tier 3+ claim are published (public repository or equivalent), versioned, and usable without an NDA, license negotiation, or operator-issued credentials. | 3 |
 
-**Auditor evidence:** 8.1.1–8.1.3 — the claim register; recompute the tier for three sampled claims from their trust analyses. 8.1.4 — claims-review sign-off vs. current public claim text. 8.1.5 — the recorded independent verification run; repeat it yourself. 8.1.6 — register entries for after-the-fact mechanisms. 8.1.7 — anchoring configuration and a validated anchor proof. 8.1.8 — locate, install, and run the published verifier as an outsider. <!--aais-allow-->
+**Auditor evidence:** 8.1.1–8.1.3 — the claim register; recompute the tier for three sampled claims from their trust analyses. 8.1.4 — claims-review sign-off vs. current public claim text. 8.1.5 — the recorded open verification run; repeat it yourself. 8.1.6 — register entries for after-the-fact mechanisms. 8.1.7 — anchoring configuration and a validated anchor proof. 8.1.8 — locate, install, and run the published verifier as an outsider. <!--aais-allow-->
 
 ---
 

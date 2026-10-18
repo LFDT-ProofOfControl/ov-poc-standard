@@ -900,7 +900,7 @@ def c6_security(t, v):
     s.label(538, 146, "attestation report")
     s.card(592, 100, 414, 116, kind="lime", glow=True)
     s.icon(["eye_outer", "eye_pupil"], 612, 114, t["lime_text"], scale=0.8)
-    s.text(644, 132, "Independent verification", 15, t["lime_text"], bold=True,
+    s.text(644, 132, "Open verification", 15, t["lime_text"], bold=True,
            anchor="start")
     s.text(612, 164, "report compared to published", 12, t["lime_text"],
            anchor="start")

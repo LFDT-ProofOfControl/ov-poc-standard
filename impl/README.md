@@ -84,7 +84,7 @@ Per-step cost with the bounded summary is **flat** across a 500× increase in
 path length, confirming the O(|Π| + B) claim; the naive baseline is linear in
 path length and would exhaust the 15 ms budget at roughly 22,000 steps.
 
-### Independent verification
+### Open verification
 
 | Records | Total | Per record |
 | ---: | ---: | ---: |
@@ -92,8 +92,8 @@ path length and would exhaust the 15 ms budget at roughly 22,000 steps.
 | 1,000 | 191.88 ms | 191.88 µs |
 | 5,000 | 966.39 ms | 193.28 µs |
 
-Verification is linear and dominated by Ed25519 verification. A verifier can
-check a 5,000-step agent history in under a second, using only published keys
+Verification is linear and dominated by Ed25519 verification. Anyone can
+verify a 5,000-step agent history in under a second, using only published keys
 and reference values.
 
 ### Utility cost of path-aware authorization — and where we fooled ourselves
