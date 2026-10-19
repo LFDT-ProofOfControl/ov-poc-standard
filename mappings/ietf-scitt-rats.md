@@ -45,10 +45,9 @@ RFC 9334 separates 7 roles. Three of them bear directly on this standard.
 | [C1.1](../0.1/en/0x10-C01-Provenance.md) model and artifact provenance, C1.3 compute substrate provenance | Evidence from an Attester, Endorsements from an Endorser, Reference Values from a Reference Value Provider, appraised into Attestation Results | RATS supplies the vocabulary and the role separation for exactly the claims C1.3 makes about the substrate. It leaves the agent-specific content to this standard |
 | [C8](../0.1/en/0x10-C08-Verifiability-Tiers.md) the Tiers, and the binary threshold | The split between **Verifier** and **Relying Party** | A Relying Party that acts on an Attestation Result is trusting the Verifier that produced it, which is the Tier 2 position stated in RATS terms. A Relying Party that verifies a receipt itself against a published root has no appraiser to trust, which is where Tier 3 begins. The 2 architectures name the same boundary from opposite sides, and neither grades it |
 
-The Tier reading is the useful part of this crosswalk for the working group. RATS has a
-widely implemented, 3 year old vocabulary for the distinction C8 was written to grade, and
-adopting its terms where they fit would let a reader who knows RATS place the Tiers without
-learning a second vocabulary.
+RATS has a widely implemented, 3 year old vocabulary for the distinction C8 was written to
+grade. Adopting its terms where they fit would let a reader who knows RATS place the Tiers
+without learning a second vocabulary.
 
 ## Proposed entry for the by-domain mapping
 
@@ -77,6 +76,4 @@ quantitative sheet at all, and settle the rubric question, before 254 rows are c
 ## Contributor disclosure
 
 Contributed by Certisyn, Inc., which has posted individual Internet-Drafts in this area,
-including `draft-hillier-scitt-arp`. They are individual submissions and are not IETF standards.
-The interest is stated so the working group can weigh it. Nothing in this crosswalk cites them,
-and every claim above rests on the published RFC text.
+including `draft-hillier-scitt-arp`. Every claim above rests on the published RFC text.
