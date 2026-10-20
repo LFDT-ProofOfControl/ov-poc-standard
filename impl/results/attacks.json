@@ -86,5 +86,21 @@
     "without_requirement": "attack SUCCEEDS: both objects verify on their own, so a ticket can be presented next to a record it was never issued with and the reconciliation still balances",
     "with_requirement": "detected: capability names step 0, record is step 1",
     "note": ""
+  },
+  {
+    "id": "A12",
+    "attack": "Backdated rewrite after the anchor's algorithm breaks",
+    "requirement": "C6.3.5 as proposed: timestamp renewal before the break (RFC 4998)",
+    "without_requirement": "attack SUCCEEDS: the rewritten year-0 history verifies exactly as the genuine one does (record signatures under a sound key, chain, inclusion proof, a year-1 timestamp); a verifier that refuses the broken timestamp algorithm rejects the genuine history too",
+    "with_requirement": "detected: token 0 (tsa-classical, classical) is forgeable from year 8, and nothing covers it; a sound token issued in year 10 does not help: token 0 (tsa-classical, classical) is forgeable from year 8, and the token covering it was issued in year 10, after that. The genuine archive verifies: existence shown back to year 1 through 2 token(s); newest rests on current",
+    "note": "docs/proposals/long-term-verifiability.md"
+  },
+  {
+    "id": "A13",
+    "attack": "History laundered through re-signing",
+    "requirement": "C6.3.5 as proposed: originals kept and covered; the verifier enforces the C7.6.6 interval",
+    "without_requirement": "attack SUCCEEDS: the laundered history verifies under the renewal key, in an archive resting on a sound algorithm; the original classical signatures cannot contradict it, and a verifier enforcing the C7.6.6 interval would reject honestly re-signed evidence too",
+    "with_requirement": "detected: first timestamped in year 5, 5 years after the record was generated; the declared anchoring interval is 1; against the original archive: record is not in the archived root",
+    "note": "docs/proposals/long-term-verifiability.md"
   }
 ]
