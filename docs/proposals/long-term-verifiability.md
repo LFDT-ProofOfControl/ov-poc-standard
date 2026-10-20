@@ -279,6 +279,36 @@ A new row also changes the threat count the README states.
 **Confidence:** the qualification is settled by A12; the wording and the coverage grade of the
 new row are `[WG-INPUT NEEDED]`.
 
+## Follow-up, 2026-10-20: proposed Audit tampering regrade
+
+For Audit tampering, this dated follow-up supersedes the proposed Full rating and its
+renewal-only rationale above, following [the review comment on #113](https://github.com/LFDT-ProofOfControl/ov-poc-standard/pull/113#issuecomment-6220071997).
+
+At `93d0e28`, [Appendix C](../../0.1/en/0x92-Appendix-C_Threat-Model.md) defines the threat as
+"a compromised host rewrites the record", yet excludes "insider compromise at the silicon
+layer" from its coverage. That exclusion is part of the stated threat. Disclosing the trust
+assumption does not remove it, and [Appendix D issue 11, referral 4](../../0.1/en/0x93-Appendix-D_Open-Issues.md#issue-11--ciso-review-referrals)
+still refers the silicon/HSM insider question to the cryptography review. On the coverage key,
+which rates how much of the threat the evidence reaches, the proposed grade is **Strong**.
+
+One revised row carries the three boundaries together: algorithm retirement from L5,
+gateway omission from [#120's G3 proposal](https://github.com/LFDT-ProofOfControl/ov-poc-standard/pull/120),
+and the existing silicon exclusion:
+
+> `| Audit tampering | Strong | For actions the gateway records, records are tamper-evident under the disclosed mechanism assumptions; renewal (C6.3.5) preserves the originals without re-signing | Actions omitted by or bypassing the gateway; insider compromise at the silicon layer; retained evidence not renewed before an algorithm it rests on became forgeable |`
+
+Renewal preserves evidence that existed while its assumptions held. It does not recover an
+action the gateway omitted or repair evidence generated under a compromised silicon root.
+The regrade therefore does not become Full merely by adopting renewal.
+
+**Assessor evidence:** the disclosed gateway and silicon trust assumptions, the scope of
+recorded actions and any reconciliation against an action source outside the gateway, and
+the retained originals and renewal-verification results. These identify the coverage boundary;
+disclosure alone is not evidence that an excluded compromise has been prevented.
+
+**Confidence:** Strong is the proposed coverage grade, not an adopted normative change.
+The wording and grade remain `[WG-INPUT NEEDED]`; issue 11's referral remains open.
+
 ---
 
 # L6: Appendix D issue 6, a third question
