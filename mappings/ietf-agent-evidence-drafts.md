@@ -32,9 +32,9 @@ revision below. Section numbers are those revisions'.
 | AAC | [draft-mih-scitt-agent-action-capsule](https://datatracker.ietf.org/doc/draft-mih-scitt-agent-action-capsule/05/) | S. Mih | -05, 2026-09-26 | The Agent Action Capsule: a digest-committed record of one agent action and its disposition, a COSE_Sign1 Producer Envelope, and SCITT registration |
 | SD | [draft-mih-scitt-agent-action-capsule-sel-disc](https://datatracker.ietf.org/doc/draft-mih-scitt-agent-action-capsule-sel-disc/00/) | S. Mih | -00, 2026-06-19 | Per-field selective disclosure for Capsule payloads: salted-hash commitments and decoy digests |
 | DE | [draft-mih-agent-disclosure-envelope](https://datatracker.ietf.org/doc/draft-mih-agent-disclosure-envelope/00/) | S. Mih | -00, 2026-09-26 | Revealing the content behind a digest-only field without changing the Capsule |
-| Bundle | [draft-mih-zhang-agent-disclosure-bundle](https://datatracker.ietf.org/doc/draft-mih-zhang-agent-disclosure-bundle/00/) | S. Mih, Y. Zhang | -00, 2026-09-26 | A portable container of Capsules with declared citation closure and separately reported completeness claims |
+| Bundle | [draft-mih-zhang-agent-disclosure-bundle](https://datatracker.ietf.org/doc/draft-mih-zhang-agent-disclosure-bundle/01/) | S. Mih, Y. Zhang | -01, 2026-10-19 | A portable container of Capsules with declared citation closure and separately reported completeness claims |
 | CPB | [draft-mih-sokolov-scitt-payload-binding](https://datatracker.ietf.org/doc/draft-mih-sokolov-scitt-payload-binding/05/) | S. Mih, A. Sokolov | -05, 2026-09-11 | A canonicalization algorithm registry, derived identifiers, typed digest references, statement-to-Receipt binding |
-| CLL | [draft-mih-scitt-checkpointed-local-log](https://datatracker.ietf.org/doc/draft-mih-scitt-checkpointed-local-log/01/) | S. Mih | -01, 2026-09-26 | A producer-run append-only log (Merkle Mountain Range) with signed checkpoints that other parties verify for consistency |
+| CLL | [draft-mih-scitt-checkpointed-local-log](https://datatracker.ietf.org/doc/draft-mih-scitt-checkpointed-local-log/02/) | S. Mih | -02, 2026-10-13 | A producer-run append-only log (Merkle Mountain Range) with signed checkpoints that other parties verify for consistency |
 | Bilateral | [draft-mih-agent-bilateral-attestation](https://datatracker.ietf.org/doc/draft-mih-agent-bilateral-attestation/02/) | S. Mih | -02, 2026-09-13 | Request and action attestations exchanged across an organizational boundary |
 | Settlement | [draft-mih-agent-settlement-records](https://datatracker.ietf.org/doc/draft-mih-agent-settlement-records/00/) | S. Mih | -00, 2026-10-01 | Two-party payment records: each leg sealed by the party that observed it; agreement derived by the verifier |
 | Request | [draft-mih-agent-evidence-request](https://datatracker.ietf.org/doc/draft-mih-agent-evidence-request/00/) | S. Mih | -00, 2026-09-26 | Asking for evidence: exactly one of an artifact, a signed refusal with a reason, or a recorded absence |
@@ -56,21 +56,24 @@ not establish.
   is an operator-signed record. C8 places that at Tier 2.
 * Registering a record with a SCITT Transparency Service (AAC Section 3.3) returns a Receipt:
   evidence of inclusion in that service's log, and of time only when the Receipt carries a signed
-  time claim (CLL Section 3.3). A Receipt is not a consistency proof (Store Section 8).
-* CLL checkpoints accepted by witnesses the producer does not operate (CLL Section 3.2, items 2
-  and 3) are the drafts' route toward a Tier 3 claim. Whether a deployment gets there depends on
-  who those witnesses and Transparency Service operators are; C8.1.2 requires naming them, and
-  C8.1.3 places a log whose root one party controls at Tier 2. "Witness" is the CLL's own term
-  (Section 1.1); it is not defined by SCITT, and a Transparency Service is one kind of witness.
+  time claim (CLL Section 4.5). A Receipt is not a consistency proof (Store Section 8).
+* CLL checkpoints registered under a Consistency Registration Policy at Transparency Services the
+  producer does not operate (CLL Section 4.4, items 2 and 3, and Section 4.5) are the drafts' route
+  toward a Tier 3 claim. Whether a deployment gets there depends on who those Transparency Service
+  operators are; C8.1.2 requires naming them, and C8.1.3 places a log whose root one party controls
+  at Tier 2. "Consistency Registration Policy" is the CLL's own term (Section 1.1): a SCITT
+  Registration Policy that admits a checkpoint only if it is consistent with the last checkpoint
+  that service registered for the same log. The CLL defines no witness role (Section 1.2).
 * Runtime labels each model, runtime and hardware fact with how it was obtained (self-reported,
   provider-reported, OS-reported, computed or attested), and a verifier never reports a fact above
   its label (Runtime Sections 2, 3.1.1 and 7). A fact is attested only through a cited attestation
   record that the record issuer's own verifier accepts (Runtime Section 4.5).
 * Nothing in the drafts gates execution on proof validity. They do not reach Tier 4 (C8.3).
 
-The drafts state the same limit C8 states for Tier 3. A witnessed CLL establishes order,
+The drafts state the same limit C8 states for Tier 3. A CLL whose checkpoints are registered under
+a Consistency Registration Policy establishes order,
 contemporaneity and completeness of what was committed; it establishes nothing about the truth of
-any entry, and not that the log is the producer's only log (CLL Section 5). A signature and a
+any entry, and not that the log is the producer's only log (CLL Section 7). A signature and a
 Receipt attest record bytes and timing, not the honesty of the runtime that wrote them (AAC
 Section 13, CPB Section 12.5). That is the signing-time versus runtime distinction of C8.2.2.
 
@@ -83,7 +86,7 @@ Section 13, CPB Section 12.5). That is the signing-time versus runtime distincti
 | 1.1.1 | Runtime Section 3.1: `weights_digest` over the weight file as loaded (scope `file`, source `computed`) or over in-memory tensors (scope `tensors`, admitted only as `attested`), with `model_id`, `quantization` and `decoding`. Runtime Section 4.1: `runtime_digest` of the serving binary, with a `measurement_class`. AAC Section 5.2: `epoch_id` rotates when the model version changes, and the epoch-boundary Capsule (Section 5.2.2) carries the block. AAC Section 5.3: the `inference_completion` effect binds request and completion digests at the serving boundary | A `computed` weights digest can be recomputed by anyone holding the file; that this file served the request is still the producer's statement unless a cited attestation record binds the same value (Runtime Sections 3.1.1 and 4.5). `model_id` alone is a self-reported name, and no field establishes which arithmetic ran, so quantization is never reported as verified (Runtime Sections 3.1.1 and 9) |
 | 1.1.2 to 1.1.5 | None | No signed-manifest comparison, model signature chain, admission control or supply-chain attestation. Runtime Section 4.5 cites an attestation record by digest but defines no attestation format |
 | 1.2.1, 1.2.2 | AAC Section 5.5.5: typed digest references from a Capsule to the records it acted on or responded to. DE Section 1: digests of the agent's input and output | Presence by digest, asserted by the producer; input integrity is composed upstream (AAC Section 13) |
-| 1.2.3 | CLL is payload-neutral (Section 1); transformation records could be its entries | No transformation record is defined |
+| 1.2.3 | CLL is payload-neutral (Section 1); digests of transformation records could be its entries | No transformation record is defined |
 | 1.3.1, 1.3.2 | Runtime Section 4.2: the agent's execution environment (`runtime_env`, framework, sandbox, invoked tool version). Runtime Section 4.4: platform and accelerator. Runtime Section 4.5: a hardware or platform attestation record cited by typed digest reference and verified by its issuer's verifier, which lifts a field to `attested` only when it binds an equal value. AAC Section 5.5.6: a `ran_under` citation to a record of the runtime environment. Composition Section 6.4.3: an action digest bound into a TPM quote | Without a verified attestation record, hardware is OS-reported at best and the agent runtime is self-reported (Runtime Sections 4.4 and 7). Stable device identifiers never enter the record (Runtime Section 4.4), so host identity is not recorded. The TPM binding was exercised on a virtual TPM and establishes no hardware root (Composition Section 6.4.7) |
 | 1.4.1, 1.4.2 | AAC Section 14.1: each field is classed clear-safe, digest-only or never-enters before admission. SD Sections 4 and 6; DE Section 5 | |
 
@@ -145,7 +148,7 @@ Request (Section 4, the three outcomes; Section 9, retention commitments) and Bu
 | 6.2.3 | None | No hardware gate |
 | 6.3.1, 6.3.3 | None | No key custody or compromise procedure. Bilateral Section 11.8 asks for key validity as of anchored time and leaves revocation to the identity scheme |
 | 6.3.2 | CLL Section 2, item 3 | |
-| 6.3.4 | AAC Section 3.1 (algorithm in the protected header); CPB Section 4 (named algorithms; a new hash is a new entry); CLL Section 3.1 | The AAC Producer Envelope fixes Ed25519; moving off it takes a profile revision |
+| 6.3.4 | AAC Section 3.1 (algorithm in the protected header); CPB Section 4 (named algorithms; a new hash is a new entry); CLL Section 4 | The AAC Producer Envelope fixes Ed25519; moving off it takes a profile revision. CLL defines checkpoints for MMR_SHA256 logs only (CLL Section 9) |
 | 6.3.5 | CPB Section 12.6; AAC Section 5.4.2 | No post-quantum algorithm is registered |
 
 ### C7 Evidence Generation and Properties
@@ -156,21 +159,21 @@ Request (Section 4, the three outcomes; Section 9, retention commitments) and Bu
 | 7.1.2 | AAC Section 5.3: effect status `planned`, `dispatched`, `confirmed`, in Capsules linked by chain relations (Section 5.5.4) and correlation fields (Section 3.4) | Not required at three points per action |
 | 7.1.4, 7.1.5 | AAC Section 5.3: `confirmed` requires a digest of the observed response, and `effect_attestation` records whether a gate observed the effect or a runtime reported it. AAC Section 5.4: `effect_mode` is rederived by the verifier and never graded up | Observed and bound, not world state (AAC Section 13). No action-bound single-use capability, so option (b) has no format |
 | 7.2.1 | AAC Section 5.4.3: an imported historical record declares itself `backfilled`. CLL Section 2, item 1: append at production time | Record timestamps are producer-attested (AAC Section 5.4.3) |
-| 7.2.2 | AAC Section 3.3 (Receipt); CLL Section 3.3 | Time only where the Receipt carries a signed time claim |
+| 7.2.2 | AAC Section 3.3 (Receipt); CLL Section 4.5 | Time only where the Receipt carries a signed time claim |
 | 7.2.3, 7.2.4 | None | |
-| 7.3.1 | AAC Section 5.5.4 (chain block); CLL Sections 1 and 3 (Merkle Mountain Range) | |
+| 7.3.1 | AAC Section 5.5.4 (chain block); CLL Sections 1, 3 and 4 (Merkle Mountain Range) | |
 | 7.3.2 | None | Key custody is out of scope |
-| 7.3.3 | CLL Section 3.2, items 2 and 3, and Section 3.3: a witness accepts a checkpoint only if it extends the last one it accepted, and a witness the producer runs is a replica. Request Section 5: the artifact served depends on the subject and the anchor, not on who asks | |
-| 7.3.4 | CLL Section 4 (inclusion); AAC Section 3.3 (Receipt); Bundle Section 6 (per-record membership; an endpoint proof does not stand in for it) | |
-| 7.3.5 | CLL Section 3.2, item 2, and Section 4 (consistency); Store Section 8 | |
+| 7.3.3 | CLL Section 4.4, items 2 and 3, and Section 4.5: a Transparency Service applying a Consistency Registration Policy registers a checkpoint only if it extends the last one it registered, and a Transparency Service the producer runs is a replica. Request Section 5: the artifact served depends on the subject and the anchor, not on who asks | |
+| 7.3.4 | CLL Section 6 (inclusion); AAC Section 3.3 (Receipt); Bundle Section 6 (per-record membership; an endpoint proof does not stand in for it) | |
+| 7.3.5 | CLL Section 4.4, item 2, and Section 6 (consistency); Store Section 8 | |
 | 7.4.1 | See C10.2 | |
 | 7.5.1, 7.5.2 | Method Section 4 (the determinism boundary); AAC Section 8.1 (each result comes from a deterministic predicate, and no model is re-prompted to verify one); Store Section 4.1 (`epistemic_type`, set at commit and never upgraded) | |
 | 7.6.1 | None | |
-| 7.6.2 | CLL Section 4 (range completeness); Bundle Section 4 (a cited record is supplied or listed as missing, never dropped) | Bounds omission within the committed log, not action taken off it (CLL Section 5). Bundle Section 8 gives one digest over an enumerated set, but its signature slot is reserved and unverified, so it is not yet the signed manifest the 7.6.2 auditor note accepts |
+| 7.6.2 | CLL Section 6 (range completeness); Bundle Section 4 (a cited record is supplied or listed as missing, never dropped) | Bounds omission within the committed log, not action taken off it (CLL Section 7). Bundle Section 8 gives one digest over an enumerated set and defines an Ed25519 countersignature over it; that counts toward the signed manifest the 7.6.2 auditor note accepts only when the signer is a party other than the producer, since Section 8 renders a self-countersignature as not independent |
 | 7.6.3 | None | Tier 4 |
 | 7.6.4 | Store Section 6.2 (disclosure records) | Records acts of disclosure, not every read |
 | 7.6.5 | AAC Section 5.5.6 (retention declarations); Request Section 9 (retention commitments); Store Section 6.1 | |
-| 7.6.6 | CLL Section 3.2, items 1 and 4: a declared maximum interval between checkpoints makes a missed one detectable, and nothing after the last witnessed checkpoint is represented as witnessed | |
+| 7.6.6 | CLL Section 4.4, items 1 and 4: a declared maximum interval between checkpoints makes a missed one detectable, and nothing after the last registered checkpoint is represented as covered by one | |
 | 7.7.1 | AAC Section 5 (field tables) | |
 | 7.7.2 | CPB Sections 4.1 and 5; AAC Section 5.1 (`canonicalization_id` is `jcs`); Settlement Section 6 (amounts as an integer and a scale) | |
 | 7.7.3 | CPB Section 4 (a payload class declares one algorithm, and verifiers do not infer it), Section 6.2, Section 7 (unknown VDS identifiers are rejected) | |
@@ -203,7 +206,7 @@ cross-party records (Bilateral, Settlement, Request) at Layer 7.
 | Requirement | Candidate evidence format | Limit |
 | --- | --- | --- |
 | 10.1.1 to 10.1.8 | None. Method Section 3 covers verification of records (binding, per-slot, composition), not an organization's statement | No template for a Self-Declared or Third-Party Assessed statement |
-| 10.2.1, 10.2.2 | Material for a disclosure, not a format: Bundle Section 6 (three completeness claims reported separately, and `checkpoint_unverified` where no witness signature was verified) and Section 10 (producer self-report labelled as such); CLL Section 3.2, item 3 (named witnesses); Store Section 4.1 | No category set ([Appendix D](../0.1/en/0x93-Appendix-D_Open-Issues.md), issue 7) |
+| 10.2.1, 10.2.2 | Material for a disclosure, not a format: Bundle Section 6 (three completeness claims reported separately, and `checkpoint_unverified` where no witness signature was verified) and Section 10 (producer self-report labelled as such); CLL Section 4.4, item 3 (named Transparency Services); Store Section 4.1 | No category set ([Appendix D](../0.1/en/0x93-Appendix-D_Open-Issues.md), issue 7) |
 | 10.3.1 | CLL | |
 | 10.3.2 | AAC Section 5.5.3 (a Capsule on every verdict) | A producer rule; the count reconciliation is not defined |
 | 10.3.3 | AAC Sections 6 and 7; Method Section 4 | |
@@ -216,7 +219,7 @@ Each touches one of these formats, so each has a row. The rows map claims, not r
 
 | Claim | Candidate evidence format | Limit |
 | --- | --- | --- |
-| `merkle_root` (-70014), `tree_size` (-70015) | AAC Section 3.3: a Receipt from a Transparency Service whose verifiable data structure is an RFC 9162 Merkle tree carries an inclusion proof, with the tree size it is taken against, to a root the service signs. The verifier reads which structure applies from the Receipt's protected header (CPB Section 7) | CPB is agnostic about the structure (Section 7), so this holds only where the service uses an RFC 9162 tree. A CLL checkpoint commits a Merkle Mountain Range (CLL Section 3.1): its `commitment` and `log_size` are not an RFC 6962 tree head and do not belong in these two claims |
+| `merkle_root` (-70014), `tree_size` (-70015) | AAC Section 3.3: a Receipt from a Transparency Service whose verifiable data structure is an RFC 9162 Merkle tree carries an inclusion proof, with the tree size it is taken against, to a root the service signs. The verifier reads which structure applies from the Receipt's protected header (CPB Section 7) | CPB is agnostic about the structure (Section 7), so this holds only where the service uses an RFC 9162 tree. A CLL checkpoint commits a Merkle Mountain Range (CLL Sections 4 and 4.1): its `commitment` and `log_size` are not an RFC 6962 tree head and do not belong in these two claims |
 | `dispatched_snapshot_hash` (-70016) | AAC Section 5.3: a Capsule with effect status `dispatched` carries the `request_digest` of what was sent, and chains (Section 5.5.4) to the Capsules before it for the same action. The evidence a check evaluated can be bound by an optional `evidence_digest` in its Constraint Record (Section 8.1) | AAC has no MODIFY verdict and no field that marks a dispatched action as a modification of the evaluated one: the difference shows only when a verifier compares the two digests. `request_digest` is SHOULD, not MUST, at `dispatched` |
 
 ## What the Drafts Do Not Cover
