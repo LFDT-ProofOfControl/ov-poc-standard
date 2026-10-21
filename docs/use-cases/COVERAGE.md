@@ -1,6 +1,6 @@
 # Coverage index
 
-**20 of 29 threats have a worked use case.** 14 submissions.
+**21 of 29 threats have a worked use case.** 15 submissions.
 
 Generated from the `threats:` frontmatter across this folder. Do not
 edit by hand: run `python3 tools/generate_use_case_coverage.py`.
@@ -15,7 +15,7 @@ edit by hand: run `python3 tools/generate_use_case_coverage.py`.
 | Tools, actions, and effects | 2/4 | `██████████░░░░░░░░░░` |
 | Data exposure | 1/1 | `████████████████████` |
 | Autonomy, drift, and lifecycle | 3/3 | `████████████████████` |
-| Record integrity and resilience | 4/5 | `████████████████░░░░` |
+| Record integrity and resilience | 5/5 | `████████████████████` |
 | Human oversight and disclosure | 2/2 | `████████████████████` |
 | Output quality and availability | 2/3 | `█████████████░░░░░░░` |
 
@@ -32,7 +32,6 @@ A submission covering one of these helps most.
 | Memory, knowledge, and supply chain | `rag-weakness` | Vector, embedding or retrieval weakness |
 | Tools, actions, and effects | `unsafe-actuation` | Unsafe actuation |
 | Tools, actions, and effects | `improper-output-handling` | Improper output handling |
-| Record integrity and resilience | `coverage-decay` | Coverage decay |
 | Output quality and availability | `misinformation` | Misinformation or hallucination |
 
 ## Every threat
@@ -45,11 +44,11 @@ A submission covering one of these helps most.
 | Memory, knowledge, and supply chain | `memory-poisoning` | — |
 | Memory, knowledge, and supply chain | `rag-weakness` | — |
 | Memory, knowledge, and supply chain | `model-poisoning` | `credit-decisioning` |
-| Memory, knowledge, and supply chain | `supply-chain-poisoning` | `credit-decisioning`, `frontier-lab-agent-collective`, `privileged-software-change` |
+| Memory, knowledge, and supply chain | `supply-chain-poisoning` | `credit-decisioning`, `frontier-lab-agent-collective`, `mesh-llm-twin-check`, `privileged-software-change` |
 | Identity, authority, and inter-agent trust | `identity-abuse` | `account-takeover-stolen-credentials`, `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `deepfake-interview-insider`, `frontier-lab-agent-collective`, `license-piracy-agent`, `pig-butchering`, `privileged-software-change` |
 | Identity, authority, and inter-agent trust | `context-blind-authorization` | `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii` |
 | Identity, authority, and inter-agent trust | `excessive-agency` | `account-takeover-stolen-credentials`, `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `deepfake-interview-insider`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
-| Identity, authority, and inter-agent trust | `insecure-inter-agent-comms` | `agentic-cross-border-payments`, `frontier-lab-agent-collective` |
+| Identity, authority, and inter-agent trust | `insecure-inter-agent-comms` | `agentic-cross-border-payments`, `frontier-lab-agent-collective`, `mesh-llm-twin-check` |
 | Tools, actions, and effects | `tool-misuse` | `agentic-cross-border-payments`, `license-piracy-agent` |
 | Tools, actions, and effects | `unexpected-code-execution` | `frontier-lab-agent-collective` |
 | Tools, actions, and effects | `unsafe-actuation` | — |
@@ -60,9 +59,9 @@ A submission covering one of these helps most.
 | Autonomy, drift, and lifecycle | `scope-creep-lifecycle` | `credit-decisioning`, `deepfake-interview-insider`, `privileged-software-change` |
 | Record integrity and resilience | `audit-tampering` | `agentic-cross-border-payments`, `frontier-lab-agent-collective`, `privileged-software-change`, `rogue-internal-agent-pii` |
 | Record integrity and resilience | `cascading-failure` | `privileged-software-change` |
-| Record integrity and resilience | `coverage-decay` | — |
-| Record integrity and resilience | `evidence-repudiation` | `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
-| Record integrity and resilience | `trust-opacity` | `account-takeover-stolen-credentials`, `deepfake-interview-insider`, `pig-butchering` |
+| Record integrity and resilience | `coverage-decay` | `mesh-llm-twin-check` |
+| Record integrity and resilience | `evidence-repudiation` | `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `frontier-lab-agent-collective`, `mesh-llm-twin-check`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
+| Record integrity and resilience | `trust-opacity` | `account-takeover-stolen-credentials`, `deepfake-interview-insider`, `mesh-llm-twin-check`, `pig-butchering` |
 | Human oversight and disclosure | `approval-fatigue` | `deepfake-biometric`, `pig-butchering` |
 | Human oversight and disclosure | `undisclosed-ai` | `license-piracy-agent`, `pig-butchering` |
 | Output quality and availability | `misinformation` | — |
@@ -81,6 +80,7 @@ A submission covering one of these helps most.
 | `deepfake-interview-insider` | `identity-abuse`, `excessive-agency`, `scope-creep-lifecycle`, `trust-opacity` |
 | `frontier-lab-agent-collective` | `insecure-inter-agent-comms`, `audit-tampering`, `excessive-agency`, `context-blind-authorization`, `identity-abuse`, `unexpected-code-execution`, `data-exfiltration`, `supply-chain-poisoning`, `behavioral-drift`, `evidence-repudiation` |
 | `license-piracy-agent` | `identity-abuse`, `tool-misuse`, `undisclosed-ai` |
+| `mesh-llm-twin-check` | `supply-chain-poisoning`, `evidence-repudiation`, `insecure-inter-agent-comms`, `trust-opacity`, `coverage-decay` |
 | `pig-butchering` | `identity-abuse`, `approval-fatigue`, `undisclosed-ai`, `trust-opacity` |
 | `privileged-software-change` | `supply-chain-poisoning`, `identity-abuse`, `context-blind-authorization`, `excessive-agency`, `scope-creep-lifecycle`, `audit-tampering`, `cascading-failure`, `evidence-repudiation` |
 | `provider-replacement-live-mandate` | `context-blind-authorization`, `excessive-agency`, `evidence-repudiation` |
