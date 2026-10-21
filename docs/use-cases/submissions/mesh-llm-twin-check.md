@@ -135,7 +135,10 @@ answer was sound.
   plugin's key in the node's gossip, signed by the node key, and peers keep it
   only from a directly connected peer whose binding verifies. That binds the key
   to the node, and still not to a principal. It takes effect once a mesh-llm
-  release includes it and the plugin announces its key through it.
+  release includes it and the plugin announces its key through it. The capsules
+  plugin v0.1.4 reads peers' keys from the host when mesh-llm announces them,
+  with the hand-entered map as the fallback; that path has not yet run on a
+  stock mesh-llm release.
 * **The asking node's host.** That it strips the twin header before forwarding,
   and that its response digest is the digest of what the serving node returned on
   every path, streaming included. Whether the two sides' digests are identical for
@@ -162,11 +165,13 @@ blocks are merged and in that release (#2144, #1946, #2138, #2142). The capsules
 plugin v0.1.3 installs on an unmodified mesh-llm 0.77 or later, and a confirmed
 exchange works on 0.78 or later once turned on, with keys entered by hand. The
 referee does not run on stock: it needs the exchange text kept on the node, and
-stock mesh-llm passes no exchange text to plugins (v0.1.3 release notes). Of the
+stock mesh-llm passes no exchange text to plugins (v0.1.3 release notes).
+Plugin v0.1.4 lets the referee take a twin pair's texts from the client instead,
+and that has not yet run on a stock release either. Of the
 three host additions #2264 discusses, the first, a plugin key bound to the node
 key, is merged to main (#2299) and not yet in a release. The twin policy in
-`/api/status` is an open pull request (#2300), and digest parity on routed and
-streamed responses is not merged.
+`/api/status` is also merged to main (#2300) and not yet in a release, and digest
+parity on routed and streamed responses is not merged.
 
 **Tier placement today.** Read strictly, C8.1.2 treats the hand-entered key
 binding as a single trusted party, which would cap Provenance and Portability at
