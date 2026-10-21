@@ -66,7 +66,7 @@ item they are grouped so the working group reads them together.
 | [#78](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/78) | imran-siddique | C7.1 makes an enforcement point a precondition and Appendix C has no row for it: add gateway-compromise and gateway-bypass rows, disclose who operates the gateway in C10.2, and restate the boundary. The thread proposes a grading for the bypass row |
 | [#60](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/60) | ajayc47 | Default orchestration frameworks produce a faithful log of a manipulated action; add a caveat that logging alone does not meet the authority-definition and evidence requirements |
 
-*Note added 2026-10-09:* [#__PR__](https://github.com/LFDT-ProofOfControl/ov-poc-standard/pull/__PR__) (StevenMih), filed after this register was written, bears on
+*Note added 2026-10-20:* [#143](https://github.com/LFDT-ProofOfControl/ov-poc-standard/pull/143) (StevenMih), filed after this register was written, bears on
 issues 3 and 5 and on C3.1 and C3.2: a worked mechanism for continuity, offered as reference.
 Across time, a producer's checkpointed log whose signed checkpoints are registered at Transparency
 Services the producer does not operate gives continuity between checkpoints, range completeness, a declared
