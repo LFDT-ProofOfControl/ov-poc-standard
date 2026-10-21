@@ -68,8 +68,8 @@ item they are grouped so the working group reads them together.
 
 *Note added 2026-10-09:* [#__PR__](https://github.com/LFDT-ProofOfControl/ov-poc-standard/pull/__PR__) (StevenMih), filed after this register was written, bears on
 issues 3 and 5 and on C3.1 and C3.2: a worked mechanism for continuity, offered as reference.
-Across time, a producer's checkpointed log whose signed checkpoints are accepted by witnesses the
-producer does not operate gives continuity between checkpoints, range completeness, a declared
+Across time, a producer's checkpointed log whose signed checkpoints are registered at Transparency
+Services the producer does not operate gives continuity between checkpoints, range completeness, a declared
 maximum interval that makes a missed checkpoint detectable, and key rotation recorded as an entry.
 Across parties, each side keeps its own records and a comparison assigns every pairing one of six
 states (MATCHED, A_ONLY, B_ONLY, CONFLICTING, INSUFFICIENT, UNRESOLVED), so a record missing on
