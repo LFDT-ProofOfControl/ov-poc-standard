@@ -196,8 +196,8 @@ def chart_batch(data, t, v):
            red(t), dash=True)
     p.legend([(lime(t, v), "throughput (actions/s)", False),
               (red(t), "worst-case delay before signing (us)", True)], 330, 306)
-    s.text(450, 408, "batching 128 actions is 61x cheaper per action and leaves "
-           "them unsigned for at most 180 microseconds", 12, t["muted"])
+    s.text(450, 408, "batching 128 actions is 64x cheaper per action and leaves "
+           "them unsigned for at most 170 microseconds", 12, t["muted"])
     s.save()
 
 
