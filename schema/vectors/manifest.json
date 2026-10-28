@@ -49,6 +49,11 @@
       "why": "MODIFY must commit to the action that actually runs"
     },
     {
+      "expect_code": "root-leaf",
+      "file": "negative/root-verdict-mismatch.json",
+      "why": "a tree head must commit to the verdict the token states"
+    },
+    {
       "expect_code": "hex-case",
       "file": "negative/uppercase-hex-extension.json",
       "why": "extension claims are open, so canonicalization is the only defence against two digests for one value"
