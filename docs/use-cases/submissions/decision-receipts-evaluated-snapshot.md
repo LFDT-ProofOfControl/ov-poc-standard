@@ -13,7 +13,10 @@ threats:
 
 # Decision receipts as evaluated snapshots: binding the decision record into Proof-of-Control evidence
 
-> *Worked scenario built on a real, open-source implementation (a decision-receipt adapter over a Jev-shaped decision-model stub). The deployment described is illustrative; the implementation and its verified behaviors are real.*
+> *Illustrative, hypothetical scenario for calibration. Not necessarily
+> indicative of any specific organization's current state.*
+>
+> *Worked from an open-source decision-receipt adapter over a Jev-shaped decision-model stub. The deployment is illustrative. Behaviors cited were checked against that stub on 2026-09-29.*
 
 ## Scenario
 
@@ -66,7 +69,7 @@ Specific to this deployment:
 - Whether the chosen option was *correct*. The record proves the decision happened as recorded — not that it was right.
 - Whether the policy tiers and thresholds were set wisely. They are operator-declared, disclosed with the receipts, and open to challenge — but setting them is a governance act, not a verification result.
 
-*Verification is not validation. Proof-of-Control shows what an agent did and whether each action stayed within its controls. It does not judge whether a control was adequate, whether a decision was sound, or whether an effect settled in the outside world.*
+Verification is not validation. Proof-of-Control shows what this agent did and whether each released action stayed inside its controls. It does not judge whether a control was adequate, whether the decision was sound, or whether an effect settled outside the record.
 
 ## Residual trust assumptions to disclose
 
