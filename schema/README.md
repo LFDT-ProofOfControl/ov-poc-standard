@@ -15,18 +15,53 @@ implementations that all believe they conform and none of which interoperate.
 | [`poc-evidence.cddl`](poc-evidence.cddl) | The normative shape, in CDDL — the form an IETF EAT profile is written in. Covers the evidence token, the dispatch capability, and the published anchor. |
 | [`poc-evidence.schema.json`](poc-evidence.schema.json) | The same claim set as JSON Schema, for JWT-based deployments. |
 | [`canonicalization.md`](canonicalization.md) | The exact bytes a digest or signature commits to. **Read this before implementing anything.** |
-| [`validate.py`](validate.py) | A three-layer validator: structure, canonical form, semantics. No dependency beyond `jsonschema`; RFC 8785 is implemented inline so the normative behaviour is readable in one place. |
+| [`validate.py`](validate.py) | A three-layer validator: structure, canonical form, semantics. Requires `jsonschema` for structural verification and `cryptography` for signature verification (`--key` or `--vectors`); RFC 8785 is implemented inline so the normative behaviour is readable in one place. |
 | [`cbor_profile.py`](cbor_profile.py) | The CWT/CBOR rendering and a round-trip proof that it carries the same claim set as the JSON one. |
 | [`vectors/`](vectors) | Signed test vectors: positive, negative, and canonical-form. |
 
 ## Run it
+
+Use Python 3.11 or newer. Install both packages to verify signatures and run the
+published vectors:
+
+```bash
+python3 -m pip install jsonschema cryptography
+```
 
 ```bash
 python3 schema/validate.py --vectors          # every published vector
 python3 schema/cbor_profile.py                # JSON <-> CBOR equivalence
 python3 schema/validate.py token.json --key <hex>
 python3 schema/validate.py --canonical t.json # canonical bytes and digest
+python3 -m unittest discover -s schema -p 'test_validate_cli.py' -v
 ```
+
+For token verification, the CLI distinguishes these outcomes:
+
+| Result | CLI output | Exit status |
+| --- | --- | --- |
+| Signature verified against the supplied key | `ok ...; signature: verified against supplied key` | 0 |
+| Signature verification not requested | `ok ...; signature: not requested (no --key)` | 0 |
+| Requested signature verification unavailable | `ERROR ...: [no-verifier] pip install cryptography to verify signatures` | 1 |
+| Signature verification failed | `INVALID ...: [signature] ...` | 1 |
+
+Without `--key`, only the structural, canonical-form and other semantic
+verification runs; `cryptography` is not required. An `ok` result in this mode
+says nothing about the signature. With `--key`, an unavailable `cryptography`
+import produces `no-verifier` for a token that reaches signature verification.
+It produces neither `ok` nor an assertion that the token is invalid.
+Structural, canonical-form and other semantic errors raised by `validate()`
+still report `INVALID` under their own codes.
+
+Missing `jsonschema` reports `ERROR [no-validator]`; an empty, non-hex or
+wrong-length public key reports `ERROR [bad-key]` when the signature backend
+is available. Neither is a verdict on the signature. Token files are processed
+in order. An `ERROR` or `INVALID` reported by `validate()` does not stop later
+files and makes the final exit status 1. File-read and token-parsing failures
+currently terminate the CLI before later files are processed.
+`--vectors` uses the manifest's public key and reports
+unavailable verification as `FAIL ... cannot evaluate`, not a passing rejection.
+`--canonical` prints bytes and digests without verifying tokens or signatures.
 
 Current state:
 

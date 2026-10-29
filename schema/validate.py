@@ -125,6 +125,10 @@ class ValidationError(Exception):
         self.code, self.message = code, message
 
 
+# These describe the verifier or its inputs, not an invalid evidence token.
+TOOL_ERROR_CODES = {"no-validator", "no-verifier", "bad-key"}
+
+
 def _no_duplicates(pairs):
     seen = {}
     for k, v in pairs:
@@ -227,16 +231,21 @@ def check_semantics(token: dict, public_key_hex: str | None = None) -> list[str]
             f"platform {att['platform']}: evidence supports Tier 2 at most; "
             f"no hardware isolation is attested")
 
-    if public_key_hex:
+    if public_key_hex is not None:
         try:
             from cryptography.hazmat.primitives.asymmetric.ed25519 import (
                 Ed25519PublicKey)
             from cryptography.exceptions import InvalidSignature
-        except ImportError:                               # pragma: no cover
-            return warnings
+        except ImportError as e:
+            raise ValidationError(
+                "no-verifier", "pip install cryptography to verify signatures") from e
         if "signature" not in token:
             raise ValidationError("unsigned", "no signature to verify")
-        pk = Ed25519PublicKey.from_public_bytes(bytes.fromhex(public_key_hex))
+        try:
+            pk = Ed25519PublicKey.from_public_bytes(bytes.fromhex(public_key_hex))
+        except ValueError as e:
+            raise ValidationError(
+                "bad-key", "Ed25519 public key must be 32 bytes encoded as hex") from e
         try:
             pk.verify(bytes.fromhex(token["signature"]), signing_input(token))
         except InvalidSignature:
@@ -246,8 +255,9 @@ def check_semantics(token: dict, public_key_hex: str | None = None) -> list[str]
 
 
 def validate(token: dict, public_key_hex: str | None = None) -> list[str]:
-    """Run all three layers. Returns warnings; raises ValidationError on
-    anything that makes the token non-conforming."""
+    """Run all three layers. Returns warnings; raises ValidationError for a
+    non-conforming token or a requested verification that cannot run.
+    TOOL_ERROR_CODES identify verifier errors, not token invalidity."""
     check_structure(token)
     check_canonical(token)
     return check_semantics(token, public_key_hex)
@@ -269,7 +279,9 @@ def run_vectors() -> int:
             print(f"  ok    {entry['file']:<38} {entry['description']}{note}")
             passed += 1
         except (ValidationError, ValueError) as e:
-            print(f"  FAIL  {entry['file']:<38} unexpectedly rejected: {e}")
+            reason = ("cannot evaluate" if isinstance(e, ValidationError)
+                      and e.code in TOOL_ERROR_CODES else "unexpectedly rejected")
+            print(f"  FAIL  {entry['file']:<38} {reason}: {e}")
             failed += 1
 
     print("\nNegative vectors -- these MUST be rejected, for the stated reason\n")
@@ -280,7 +292,10 @@ def run_vectors() -> int:
             tok = load_token(path.read_text(encoding="utf-8"))
             validate(tok, pk)
         except ValidationError as e:
-            if e.code == want:
+            if e.code in TOOL_ERROR_CODES:
+                print(f"  FAIL  {entry['file']:<38} cannot evaluate: {e}")
+                failed += 1
+            elif e.code == want:
                 print(f"  ok    {entry['file']:<38} rejected: {e.code}")
                 passed += 1
             else:
@@ -351,9 +366,12 @@ def main() -> int:
         try:
             for w in validate(tok, args.key):
                 print(f"  warning: {w}")
-            print(f"  ok  {p}")
+            signature = ("verified against supplied key" if args.key is not None
+                         else "not requested (no --key)")
+            print(f"  ok  {p}; signature: {signature}")
         except ValidationError as e:
-            print(f"  INVALID  {p}: {e}")
+            label = "ERROR" if e.code in TOOL_ERROR_CODES else "INVALID"
+            print(f"  {label}  {p}: {e}")
             rc = 1
     return rc
 
