@@ -1,0 +1,11 @@
+{
+  "schema": "bjorn-vectors/generator-truth/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B2-e",
+  "family": "B2",
+  "canary": "CANARY-b2e-a6c2",
+  "intervention_point": "no alternate-path effect injected; alt-db fully observed",
+  "injected": [],
+  "leak_check_tokens": [],
+  "notes": "Generator-only ground truth. The assessor must not read this file."
+}

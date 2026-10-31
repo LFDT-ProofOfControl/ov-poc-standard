@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bjorn-vectors/generator-truth/v0",
+  "title": "Generator-only ground truth. DESIGN CANDIDATE / PROPOSED, NOT EXECUTED. The assessor must not read this file",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "status", "case_id", "family", "canary", "intervention_point", "injected", "leak_check_tokens", "notes"],
+  "properties": {
+    "schema": {"const": "bjorn-vectors/generator-truth/v0"},
+    "status": {"const": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED"},
+    "case_id": {"type": "string"},
+    "family": {"enum": ["B1", "B2"]},
+    "canary": {"type": "string"},
+    "intervention_point": {"type": "string"},
+    "injected": {"type": "array", "items": {"type": "object", "required": ["kind", "time"]}},
+    "restart": {"type": "object", "required": ["time", "from_epoch", "to_epoch"]},
+    "true_population": {"type": "array", "items": {"type": "string"}},
+    "leak_check_tokens": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "string"}
+  }
+}

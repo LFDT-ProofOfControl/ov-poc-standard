@@ -1,0 +1,29 @@
+{
+  "schema": "bjorn-vectors/assessor-input/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B2-d1",
+  "family": "B2",
+  "claim": {"kind": "no_bypass", "polarity": "every effect on a required surface in the scope took a mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}}, "cutoff": "2026-01-01T03:05:00Z"},
+  "integrity_inputs": {"provenance": "synthetic stage-1 declaration for design review; no signature or chain verification was performed", "chain": "verified", "records": 3, "visible_log": "consistent: seq 0-2 contiguous, no repeated record_id"},
+  "records": [
+    {"record_id": "R-a120", "seq": 0, "time": "2026-01-01T02:10:00Z", "surface": "gw-http", "effect_ref": "X-11"},
+    {"record_id": "R-a121", "seq": 1, "time": "2026-01-01T02:50:00Z", "surface": "alt-db", "effect_ref": "X-12"},
+    {"record_id": "R-a122", "seq": 2, "time": "2026-01-01T02:55:00Z", "surface": "gw-http", "effect_ref": "X-13"}
+  ],
+  "assumptions": [
+    {"id": "A4", "text": "db-audit-feed is produced by the database independently of the agent gateway and emits one entry, with its own feed_seq, for every committed write", "status": "declared_not_verified"},
+    {"id": "A5", "text": "within an available segment, a feed_seq range from first_seq to last_seq with heartbeats and no declared gaps means no committed write in that segment went unreported", "status": "declared_not_verified"},
+    {"id": "A6", "text": "the route field of db-audit-feed is authoritative; credential svc-rp-db is held only by relying party rp-db, and rp-db uses it only to execute writes after verifying a capability bound to exactly one gateway record. This mediation policy is assumed; holding the credential alone would not show it", "status": "declared_not_verified"},
+    {"id": "A7", "text": "rp-http-ledger records every request executed at the gw-http endpoint, one numbered entry per execution", "status": "declared_not_verified"},
+    {"id": "A8", "text": "the route field of rp-http-ledger is authoritative; route rp-http-capability is recorded only for requests executed after verifying a capability bound to exactly one gateway record", "status": "declared_not_verified"},
+    {"id": "A9", "text": "each effect_ref identifies exactly one execution and is never reused, and the route evidence and mediation policies apply throughout the claim interval", "status": "declared_not_verified"}
+  ],
+  "observations": [
+    {"surface": "gw-http", "evidence_id": "OB-http", "observer": "rp-http-ledger", "mechanism": "relying-party execution ledger, one numbered entry per executed request, with the execution route", "segments": [{"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z", "status": "available", "completeness": {"kind": "sequenced_ledger", "first_seq": 40, "last_seq": 41, "gaps": []}}], "observed_effects": [{"effect_id": "E-11", "time": "2026-01-01T02:10:00Z", "effect_ref": "X-11", "feed_seq": 40, "route": "rp-http-capability"}, {"effect_id": "E-13", "time": "2026-01-01T02:55:00Z", "effect_ref": "X-13", "feed_seq": 41, "route": "rp-http-capability"}], "assumptions": ["A7"]},
+    {"surface": "alt-db", "evidence_id": "OB-db", "observer": "db-audit-feed", "mechanism": "database audit feed: one entry per committed write with its execution route, 60-second heartbeats, sequenced feed_seq", "segments": [{"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z", "status": "available", "completeness": {"kind": "sequenced_feed", "first_seq": 500, "last_seq": 560, "heartbeat_interval_s": 60, "gaps": []}}], "observed_effects": [{"effect_id": "E-77", "time": "2026-01-01T02:30:00Z", "effect_ref": "X-99", "feed_seq": 530, "route": "svc-batch"}, {"effect_id": "E-12", "time": "2026-01-01T02:50:00Z", "effect_ref": "X-12", "feed_seq": 552, "route": "svc-rp-db"}], "assumptions": ["A4", "A5"]}
+  ],
+  "mediation_evidence": [
+    {"evidence_id": "MB-http", "surface": "gw-http", "route_field": "route", "mediated_routes": ["rp-http-capability"], "statement": "an effect on gw-http whose route is rp-http-capability was executed only after a capability bound to exactly one gateway record was verified", "assumptions": ["A8", "A9"]},
+    {"evidence_id": "MB-db", "surface": "alt-db", "route_field": "route", "mediated_routes": ["svc-rp-db"], "statement": "an effect on alt-db whose route is svc-rp-db was executed by rp-db only after a capability bound to exactly one gateway record was verified; any other route value is not a mediated route", "assumptions": ["A6", "A9"]}
+  ]
+}

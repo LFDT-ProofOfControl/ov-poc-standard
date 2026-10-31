@@ -1,0 +1,21 @@
+{
+  "schema": "bjorn-vectors/expected-outcome/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B1-a2",
+  "family": "B1",
+  "frozen_before_any_run": true,
+  "integrity": {"predicate": "per-epoch signature, chain and sequence integrity of the presented records", "per_epoch": [{"epoch_id": "src-1/e1", "status": "verified"}, {"epoch_id": "src-1/e2", "status": "verified"}], "rules": ["R1", "R2"], "provenance": "echo of the declared stage-1 input; reported separately and never used to decide completeness"},
+  "cross_epoch": {"discontinuity": "restart_counter_reset", "from_epoch": "src-1/e1", "to_epoch": "src-1/e2", "link": "absent", "note": "cross-epoch completeness is assessed only from population evidence (R3)"},
+  "basis_assessment": {"kind": "independent_population_evidence", "evidence_id": "PB-2", "status": "partial_scope", "covers": {"start": "2026-01-01T00:25:00Z", "end": "2026-01-01T01:00:00Z"}, "internal_check": "3 entries equal checkpoint difference 127-124", "conditional_on": ["A1", "A2", "A3"], "rules": ["R4", "R7"]},
+  "reconciliation": {"scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:25:00Z", "end": "2026-01-01T01:00:00Z"}}, "matched": [{"obligation_id": "O-58c1", "record_id": "R-07ab"}, {"obligation_id": "O-f60b", "record_id": "R-d3e9"}, {"obligation_id": "O-9e27", "record_id": "R-6b15"}], "missing": []},
+  "findings": [],
+  "claim_results": [
+    {"claim": "coverage_complete", "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record", "scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T01:00:00Z"}}, "status": "not_established", "rules": ["R6", "R7"], "evidence": ["PB-2 covers 00:25-01:00 only", "no population evidence for 00:00-00:25"], "conditional_on": []}
+  ],
+  "scoped_results": [
+    {"claim": "coverage_complete", "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record", "scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:25:00Z", "end": "2026-01-01T01:00:00Z"}}, "status": "supported", "rules": ["R4", "R7", "R12"], "evidence": ["PB-2 internal check holds", "3 of 3 listed obligations matched by exactly one record"], "conditional_on": ["A1", "A2", "A3"]}
+  ],
+  "unestablished": [{"scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T00:25:00Z"}}, "affected_claims": ["coverage_complete"]}],
+  "must_not_conclude": ["coverage_complete supported for 00:00-01:00", "scoped support extended to 00:00-00:25", "a withheld event named, counted or dated"],
+  "pr182_mapping": "Population completeness is established, under A1-A3, only for 00:25-01:00 and is not established for 00:00-00:25. C1 is not demonstrated for the window."
+}

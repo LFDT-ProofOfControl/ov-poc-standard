@@ -1,0 +1,11 @@
+{
+  "schema": "bjorn-vectors/generator-truth/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B2-f",
+  "family": "B2",
+  "canary": "CANARY-b2f-3e57",
+  "intervention_point": "no alternate-path effect injected; both surfaces fully observed, but the generator exports no execution route and supplies no mediation binding",
+  "injected": [],
+  "leak_check_tokens": ["X-99", "svc-batch"],
+  "notes": "Generator-only ground truth. The assessor must not read this file. Every observed effect_ref matches a record by construction; the case checks that this match alone does not restore no_bypass support."
+}
