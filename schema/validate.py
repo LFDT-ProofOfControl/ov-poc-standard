@@ -21,6 +21,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -218,6 +219,20 @@ def check_semantics(token: dict, public_key_hex: str | None = None) -> list[str]
             "modify-unbound",
             "verdict MODIFY without dispatched_snapshot_hash: the token "
             "commits to the proposed action, but a different one executes")
+
+    # With a single leaf the tree head IS the leaf (canonicalization.md, "The
+    # leaf and the tree"). A token whose root commits to a different snapshot
+    # or verdict than the one it states is signed, schema-valid and wrong: the
+    # tree head would evidence an action the token does not describe.
+    if c["tree_size"] == 1:
+        leaf = hashlib.sha256(b"\x00" + jcs({
+            "snapshot": c["canonical_snapshot_hash"].split(":", 1)[1],
+            "verdict": c["verdict"]})).hexdigest()
+        if c["merkle_root"] != "sha-256:" + leaf:
+            raise ValidationError(
+                "root-leaf",
+                "tree_size 1 but merkle_root is not the leaf of this token's "
+                "own snapshot and verdict")
 
     # Software attestation is honest evidence of a software claim. It is not
     # evidence of anything a Tier 3 conformance statement asserts, and the
