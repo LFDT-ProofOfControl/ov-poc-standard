@@ -1,6 +1,6 @@
 # Coverage index
 
-**20 of 29 threats have a worked use case.** 14 submissions.
+**20 of 29 threats have a worked use case.** 15 submissions.
 
 Generated from the `threats:` frontmatter across this folder. Do not
 edit by hand: run `python3 tools/generate_use_case_coverage.py`.
@@ -58,10 +58,10 @@ A submission covering one of these helps most.
 | Autonomy, drift, and lifecycle | `autonomy-creep` | `agentic-cross-border-payments`, `shopping-agent` |
 | Autonomy, drift, and lifecycle | `behavioral-drift` | `credit-decisioning`, `frontier-lab-agent-collective` |
 | Autonomy, drift, and lifecycle | `scope-creep-lifecycle` | `credit-decisioning`, `deepfake-interview-insider`, `privileged-software-change` |
-| Record integrity and resilience | `audit-tampering` | `agentic-cross-border-payments`, `frontier-lab-agent-collective`, `privileged-software-change`, `rogue-internal-agent-pii` |
+| Record integrity and resilience | `audit-tampering` | `agentic-cross-border-payments`, `fnol-committed-review-artifacts`, `frontier-lab-agent-collective`, `privileged-software-change`, `rogue-internal-agent-pii` |
 | Record integrity and resilience | `cascading-failure` | `privileged-software-change` |
 | Record integrity and resilience | `coverage-decay` | — |
-| Record integrity and resilience | `evidence-repudiation` | `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
+| Record integrity and resilience | `evidence-repudiation` | `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `fnol-committed-review-artifacts`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
 | Record integrity and resilience | `trust-opacity` | `account-takeover-stolen-credentials`, `deepfake-interview-insider`, `pig-butchering` |
 | Human oversight and disclosure | `approval-fatigue` | `deepfake-biometric`, `pig-butchering` |
 | Human oversight and disclosure | `undisclosed-ai` | `license-piracy-agent`, `pig-butchering` |
@@ -79,6 +79,7 @@ A submission covering one of these helps most.
 | `credit-decisioning` | `model-poisoning`, `supply-chain-poisoning`, `scope-creep-lifecycle`, `behavioral-drift`, `identity-abuse`, `data-exfiltration`, `hidden-bias`, `evidence-repudiation` |
 | `deepfake-biometric` | `identity-abuse`, `approval-fatigue`, `evidence-repudiation` |
 | `deepfake-interview-insider` | `identity-abuse`, `excessive-agency`, `scope-creep-lifecycle`, `trust-opacity` |
+| `fnol-committed-review-artifacts` | `audit-tampering`, `evidence-repudiation` |
 | `frontier-lab-agent-collective` | `insecure-inter-agent-comms`, `audit-tampering`, `excessive-agency`, `context-blind-authorization`, `identity-abuse`, `unexpected-code-execution`, `data-exfiltration`, `supply-chain-poisoning`, `behavioral-drift`, `evidence-repudiation` |
 | `license-piracy-agent` | `identity-abuse`, `tool-misuse`, `undisclosed-ai` |
 | `pig-butchering` | `identity-abuse`, `approval-fatigue`, `undisclosed-ai`, `trust-opacity` |
