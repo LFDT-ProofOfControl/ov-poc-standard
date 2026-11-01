@@ -1,0 +1,13 @@
+{
+  "schema": "bjorn-vectors/generator-truth/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B1-d",
+  "family": "B1",
+  "canary": "CANARY-b1d-36b9",
+  "intervention_point": "no event withheld; source restarted with counter reset at 00:25",
+  "injected": [],
+  "restart": {"time": "2026-01-01T00:25:00Z", "from_epoch": "src-1/e1", "to_epoch": "src-1/e2"},
+  "true_population": ["O-3a7e", "O-b519", "O-2d84", "O-58c1", "O-f60b", "O-9e27"],
+  "leak_check_tokens": [],
+  "notes": "Generator-only ground truth. The assessor must not read this file."
+}

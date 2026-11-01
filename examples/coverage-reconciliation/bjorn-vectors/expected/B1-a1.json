@@ -1,0 +1,19 @@
+{
+  "schema": "bjorn-vectors/expected-outcome/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B1-a1",
+  "family": "B1",
+  "frozen_before_any_run": true,
+  "integrity": {"predicate": "per-epoch signature, chain and sequence integrity of the presented records", "per_epoch": [{"epoch_id": "src-1/e1", "status": "verified"}, {"epoch_id": "src-1/e2", "status": "verified"}], "rules": ["R1", "R2"], "provenance": "echo of the declared stage-1 input; reported separately and never used to decide completeness"},
+  "cross_epoch": {"discontinuity": "restart_counter_reset", "from_epoch": "src-1/e1", "to_epoch": "src-1/e2", "link": "absent", "note": "cross-epoch completeness is assessed only from population evidence (R3)"},
+  "basis_assessment": {"kind": "none", "status": "absent", "rules": ["R6"]},
+  "reconciliation": null,
+  "findings": [],
+  "claim_results": [
+    {"claim": "coverage_complete", "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record", "scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T01:00:00Z"}}, "status": "not_established", "rules": ["R2", "R6"], "evidence": ["no population evidence supplied", "per-epoch integrity does not decide completeness"], "conditional_on": []}
+  ],
+  "scoped_results": [],
+  "unestablished": [{"scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T01:00:00Z"}}, "affected_claims": ["coverage_complete"]}],
+  "must_not_conclude": ["coverage_complete supported", "a withheld event named, counted or dated", "per-epoch sequence continuity implies population completeness"],
+  "pr182_mapping": "Completeness of the population is not established (PR182 S, C3); a 10.3.6 figure would be coverage of the identified population only. This is not the PR182 obligation state undetermined. C1 is not demonstrated."
+}

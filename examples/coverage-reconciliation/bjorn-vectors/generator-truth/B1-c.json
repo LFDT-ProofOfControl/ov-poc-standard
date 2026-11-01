@@ -1,0 +1,13 @@
+{
+  "schema": "bjorn-vectors/generator-truth/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B1-c",
+  "family": "B1",
+  "canary": "CANARY-b1c-8e44",
+  "intervention_point": "origin event withheld before the evidence writer at 00:20; source restarted with counter reset at 00:25; the independent origin ledger still lists the event",
+  "injected": [{"kind": "origin_event_withheld_before_writer", "obligation_id": "O-c41d", "time": "2026-01-01T00:20:00Z", "epoch_context": "src-1/e1"}],
+  "restart": {"time": "2026-01-01T00:25:00Z", "from_epoch": "src-1/e1", "to_epoch": "src-1/e2"},
+  "true_population": ["O-3a7e", "O-b519", "O-2d84", "O-c41d", "O-58c1", "O-f60b", "O-9e27"],
+  "leak_check_tokens": [],
+  "notes": "Generator-only ground truth. The assessor must not read this file. O-c41d is legitimately visible here through population evidence PB-1."
+}

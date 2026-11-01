@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/LFDT-ProofOfControl/ov-poc-standard",
+  "revision": "93d0e282fc177d5df741de4cdd6a0d0dacf1955a",
+  "reference_source_vendored": false,
+  "files": [
+    {
+      "path": "impl/poc/core.py",
+      "bytes": 30825,
+      "sha256": "0a093e348e94bb2709b654f07e773964c98536c18e902aaa57082d26a39ce1da"
+    },
+    {
+      "path": "impl/attacks/run_attacks.py",
+      "bytes": 16739,
+      "sha256": "3603a34c15f74f798789f3685b86af1b9a6ae48c9c839bc6124229cc2e8a6601"
+    },
+    {
+      "path": "impl/poc/__init__.py",
+      "bytes": 709,
+      "sha256": "d8ea20ed3b3ad06a44516140ca1e43f2f396c0c2d9426d822d914b6079ca37e9"
+    },
+    {
+      "path": "impl/poc/merkle.py",
+      "bytes": 8698,
+      "sha256": "22497d3605b47875802e08f7c2c0eb4f9c9a68da46f57d08eac198081a13c2a0"
+    }
+  ]
+}
