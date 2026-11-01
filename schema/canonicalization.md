@@ -117,7 +117,7 @@ Neither can affect the claim set: its keys are ASCII and it contains no floats.
 Both can affect a snapshot carrying application data with exotic keys or
 floating-point parameters.
 
-`vectors/negative/nonbmp-key-ordering.json` exhibits the ordering case
+`vectors/canonical/nonbmp-key-ordering.json` exhibits the ordering case
 concretely. An implementation that intends to interoperate on arbitrary
 application payloads MUST implement RFC 8785 properly;
 [`validate.py`](validate.py) does, and reports when the two disagree.
@@ -135,5 +135,5 @@ rejects every negative vector *for the stated reason*, and (c) reproduces the
 published canonical bytes and digests exactly.
 
 Rejecting a negative vector for the wrong reason is not a pass. A validator that
-throws on `bad-hex-case.json` because it could not parse the file has not
+throws on `uppercase-hex-extension.json` because it could not parse the file has not
 demonstrated that it checks hex case.
