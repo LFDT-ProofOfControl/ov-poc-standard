@@ -1,0 +1,1356 @@
+{
+  "schema": "aarm-source-rationale-review/1",
+  "author": "Mikhail Sergeev",
+  "preparation": "AI-assisted, nonblind source review; proposed row judgements, not a completed independent-human coding study.",
+  "status": "Proposed informative source/rationale review; not canonical coding or conformance evidence.",
+  "upstream_baseline": {
+    "repository": "LFDT-ProofOfControl/ov-poc-standard",
+    "commit": "54a7bc67140b39c9107216cd390dd47c1d42946d",
+    "coding_sheet_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/mappings/coding_sheet.csv",
+    "rubric_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/mappings/rubric.md"
+  },
+  "source_views": {
+    "P": {
+      "description": "Captured aarm.dev/spec v1.0 text only",
+      "source_url": "https://aarm.dev/spec",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "published_label": "v1.0; February 2026",
+      "raw_html_sha256": "93072c4244287e984bc24e394d1d271c52a380f3ef857a06d701fdfdf1ebe598",
+      "extracted_text_sha256": "a75c5ea686d16eeedc3f69f76566d14b89e098a23f99c37651d685bb99adc199"
+    },
+    "C": {
+      "description": "P plus separately captured linked protocol",
+      "source_url": "https://aarm.dev/conformance",
+      "captured_at_utc": "2026-10-31T22:35:47.897441+00:00",
+      "published_label": "No version/date label observed; not historical v1.0 text",
+      "raw_html_sha256": "d293d128492431ebbd90e86134c4cb56039b632508cff707952d14c5e754f4e8",
+      "extracted_text_sha256": "16e9dadeec3d6cab3e28449c59879cb91e8cc38de4c1b046071f8777bacd83b8"
+    }
+  },
+  "source_attribution": {
+    "primary": "AARM v1.0, February 2026; Herman Errico; Cloud Security Alliance Technical Working Group; aarm.dev/spec, CC BY 4.0. Quoted source text is attributed; proposed labels and rationales are this review.",
+    "companion": "AARM linked conformance/testing page at aarm.dev/conformance, captured separately; no version/date label observed. Table excerpts retain their requirement/test/result/applicability context."
+  },
+  "interpretation": [
+    "P uses the captured specification text alone. C uses that same text plus the separately captured undated linked protocol. The latter is not backdated into historical v1.0.",
+    "Source keys identify exact inspected clauses or table cells. For NM they identify the nearest inspected source, not a requirement for the missing duty.",
+    "PM may cover an analogous general control without every Proof-of-Control mechanism or operator-independence property. Missing specific subduties alone do not force NM.",
+    "The referenced receipt schema was not separately obtained or version-identified. Its content remains unavailable/unassessed; no absent-source content is coded NM.",
+    "These are scoped coding proposals and alternatives. They produce no aggregate coverage scores, empirical conformance results, agreement statistic or completed human study.",
+    "The published mapping study protocol, including independent initial coding, adjudication and reverse mapping, remains to be completed. This forward source note does not substitute for that study."
+  ],
+  "rows": [
+    {
+      "poc_requirement_id": "7.1.1",
+      "poc_requirement": "Verify that all agent tool and effect invocations are routed through an Action Interception Gateway that runs as a separate process or service from the agent — the agent has no network or credential path to its tools that bypasses the gateway.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R1"
+        ],
+        "C": [
+          "R1"
+        ]
+      },
+      "missing_subduties": "Separate gateway process/service and removal of bypass network/credential paths.",
+      "rationale_under_rubric": "Mandatory pre-execution interception is the same general control; Proof-of-Control specifies its architecture.",
+      "alternatives": "AARM architecture examples and universal R1 are in tension; do not infer that all SDK implementations conform.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.1.2",
+      "poc_requirement": "Verify that for each intercepted action the gateway emits evidence records at three points — request received (before), effect performed (during), and result returned (after) — each independently signed and linkable to the same action ID.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5",
+          "R6"
+        ],
+        "C": [
+          "R5",
+          "R6",
+          "CT_R5_2"
+        ]
+      },
+      "missing_subduties": "Three phase-specific, independently signed records linked by action ID.",
+      "rationale_under_rubric": "Per-action receipts and identity binding partially cover action evidence without matching every phase duty.",
+      "alternatives": "No numeric match alternative; protocol strengthens signature support but not three-phase coverage.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.1.3",
+      "poc_requirement": "Verify that the architecture makes evidence emission a precondition of action release: the gateway does not forward the action to the tool until the *before* record is durably written.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "ABSTRACT",
+          "R5"
+        ],
+        "C": [
+          "ABSTRACT",
+          "R5"
+        ]
+      },
+      "missing_subduties": "Durable before-record write as an enforced prerequisite for forwarding.",
+      "rationale_under_rubric": "Explicit recording before execution is a partial timing control; absence of the durable-write gate prevents EM, not PM.",
+      "alternatives": "The narrower NM reading emphasizes the missing durable-write prerequisite. PM is proposed because explicit pre-execution recording partially addresses timing, even though the durable-write gate is absent.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.1.4",
+      "poc_requirement": "Verify that the effect channel is mediated within the same trust boundary as policy evaluation, by at least one of: (a) the credentials and transport for the effect are held inside the attesting environment, which emits the request itself; (b) the mechanism releases a single-use capability cryptographically bound to the evaluated snapshot digest and target resource, which the relying party checks before executing; or (c) egress is confined to an attested enforcement point that admits only requests carrying matching evidence. The conformance claim states which.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R1",
+          "ARCH61"
+        ],
+        "C": [
+          "R1",
+          "ARCH61"
+        ]
+      },
+      "missing_subduties": "Specified attested effect-channel binding, target-bound capability or attested egress.",
+      "rationale_under_rubric": "Mandatory interception/control-plane mediation is a partial control; Proof-of-Control adds specific attested effect bindings.",
+      "alternatives": "The narrower NM reading emphasizes the missing attested effect-channel binding. PM is proposed because mandatory interception and control-plane mediation are analogous general controls, while the specified binding mechanism remains absent.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.1.5",
+      "poc_requirement": "Verify that the claim does not assert that evidence describes executed actions unless 7.1.4 is met — a system evidencing evaluation but not mediating the effect channel may claim Tier 1–2 only.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE"
+        ],
+        "C": [
+          "CONFORMANCE"
+        ]
+      },
+      "missing_subduties": "Proof-of-Control 7.1.4-dependent restriction on executed-action claims to Tier1–2.",
+      "rationale_under_rubric": "Core/Extended eligibility is a different claim regime, not this evidence/mechanism-dependent restriction.",
+      "alternatives": "Core/Extended is not interchangeable with Proof-of-Control evidence tiers.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.2.1",
+      "poc_requirement": "Verify that each evidence record is written within the executing transaction of the action it describes — not batch-reconstructed later — and carries the capture timestamp of the event itself.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "ABSTRACT",
+          "R5"
+        ],
+        "C": [
+          "ABSTRACT",
+          "R5"
+        ]
+      },
+      "missing_subduties": "Transaction coupling and precise event-capture timestamp semantics.",
+      "rationale_under_rubric": "Pre-execution recording and receipt timestamps overlap contemporaneous evidence, without the transaction mechanism.",
+      "alternatives": "A timestamp requirement alone does not establish capture-time truth.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.2.2",
+      "poc_requirement": "Verify that evidence timestamps are anchored to a source outside the operator's control — an RFC 3161 timestamp authority, transparency-log inclusion proof, or consensus time — at least once per defined anchoring interval.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5"
+        ]
+      },
+      "missing_subduties": "External time authority/consensus/log anchoring and interval.",
+      "rationale_under_rubric": "A timestamp field is not an external time-anchoring control; keep the temporal-evidence PM alternative visible.",
+      "alternatives": "PM remains a plausible broader temporal-evidence coding; default-to-NM rubric judgement is disclosed, not treated as a source fact.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.2.3",
+      "poc_requirement": "Verify that the conformance claim states a maximum attestation refresh interval — the longest period, or the largest number of actions, for which evidence may rest on a hardware measurement taken before them — and that the mechanism refreshes within it or refuses to continue.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "ARCH_NEUTRAL",
+          "ARCH63"
+        ],
+        "C": [
+          "ARCH_NEUTRAL",
+          "ARCH63"
+        ]
+      },
+      "missing_subduties": "Hardware-attestation refresh deadline and stop condition.",
+      "rationale_under_rubric": "An implementation architecture description does not impose measurement freshness.",
+      "alternatives": "No assertion about uninspected implementation-specific attestations.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.2.4",
+      "poc_requirement": "Verify that the hardware attestation cryptographically binds the evidence signing key: the key's digest appears in the attested report body (TDX `REPORTDATA`, SEV-SNP `REPORT_DATA`, or equivalent), so that a verifier establishes *this key ran inside this measured environment* rather than receiving a measurement and a key that merely arrived together.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R6"
+        ],
+        "C": [
+          "R6"
+        ]
+      },
+      "missing_subduties": "Attested report binding the evidence-signing-key digest.",
+      "rationale_under_rubric": "Agent identity binding does not bind that key to a hardware measurement.",
+      "alternatives": "Generic cryptography is not a partial hardware-attestation binding requirement under this coding unit.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.3.1",
+      "poc_requirement": "Verify that evidence records are hash-chained or Merkle-anchored so that modifying, inserting, or reordering any record invalidates the chain, and that chain verification runs on a defined schedule with results recorded.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5",
+          "CT_R5_2",
+          "CT_R5_3"
+        ]
+      },
+      "missing_subduties": "History chaining/Merkle structure, ordering checks and scheduled verification.",
+      "rationale_under_rubric": "Receipt tamper evidence is a general integrity control; missing history mechanisms limit the match to PM.",
+      "alternatives": "Source does not itself specify who controls all receipt keys.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.3.2",
+      "poc_requirement": "Verify that evidence records are signed by keys held by the generating mechanism (gateway, enclave, or logging service) that operator and agent identities cannot access, per the key-custody configuration.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R6",
+          "R5"
+        ],
+        "C": [
+          "CT_R5_2",
+          "CT_R5_3"
+        ]
+      },
+      "missing_subduties": "Generating-mechanism signing keys inaccessible to operator and agent identities.",
+      "rationale_under_rubric": "Primary: identity binding does not prescribe a signing-key architecture, so NM remains the reasoned alternative. Companion: explicit receipt signatures provide a partial signing control; custody isolation is still absent.",
+      "alternatives": "Primary-only PM is a possible broader cryptographic-control interpretation, but R6 identity binding does not prescribe a signing-key architecture. Primary NM remains the proposed alternative; companion PM credits its explicit signature tests without inferring custody isolation.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.3.3",
+      "poc_requirement": "Verify that the implementation resists equivocation (presenting divergent histories to different relying parties) by at least one of: cross-verifier consistency checking (gossip), a witness quorum co-signing chain roots, or anchoring to a ledger with single-history consensus — and that the mechanism is named in the claim.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5",
+          "CT_R5_3"
+        ]
+      },
+      "missing_subduties": "Gossip/quorum/consensus against divergent valid histories.",
+      "rationale_under_rubric": "Detecting altered receipts is not a history anti-equivocation duty; the two properties must not be inferred from one another.",
+      "alternatives": "A broad integrity-domain PM is weaker than the explicit equivocation unit; record for adjudication.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.3.4",
+      "poc_requirement": "Verify that the evidence log is structured so a verifier can establish that a single named record is present in the log committed to by a published root, without retrieving the rest of the log — by an inclusion proof against an append-only Merkle tree (RFC 6962) or equivalent — and that the proof, the tree size it is taken against, and the published root are all obtainable by the verifier.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5",
+          "CT_R5_2"
+        ]
+      },
+      "missing_subduties": "Obtainable inclusion proof, tree size and published root.",
+      "rationale_under_rubric": "Receipt verification does not require proving membership in a committed log.",
+      "alternatives": "No claim that a conforming implementation could not add Merkle proofs.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.3.5",
+      "poc_requirement": "Verify that a published root is checked for append-only consistency against previously published roots, by a consistency proof or equivalent, and that the verification procedure compares the recomputed root against the anchored value rather than only against a step count or record count.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5",
+          "CT_R5_3"
+        ]
+      },
+      "missing_subduties": "Append-only root consistency and comparison with an anchored root.",
+      "rationale_under_rubric": "Tamper evidence does not impose consistency between published histories.",
+      "alternatives": "No algorithm or append-only claim is inferred from 'tamper-evident'.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.4.1",
+      "poc_requirement": "Verify that the published trust-assumption disclosure (C10.2) lists, for each evidence mechanism in use, every party, hardware element, and mathematical assumption that must hold for the evidence to be believed.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "ARCH_NEUTRAL",
+          "ARCH62",
+          "ARCH64"
+        ],
+        "C": [
+          "ARCH_NEUTRAL",
+          "ARCH62",
+          "ARCH64"
+        ]
+      },
+      "missing_subduties": "Public mechanism-by-mechanism party/hardware/mathematical trust disclosure.",
+      "rationale_under_rubric": "Acknowledged architecture trade-offs are not a disclosure obligation.",
+      "alternatives": "Could support context, not the required disclosure.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.5.1",
+      "poc_requirement": "Verify that every field in the evidence schema records an observable execution fact (identifier, digest, timestamp, decision result) — the schema contains no field asserting quality, correctness, or intent.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5",
+          "R2",
+          "R3"
+        ],
+        "C": [
+          "R5",
+          "R2",
+          "R3"
+        ]
+      },
+      "missing_subduties": "Execution-fact-only schema; prohibition on quality/correctness/intent assertions.",
+      "rationale_under_rubric": "Receipt fields and intent-aware policy do not impose this semantic boundary on every field.",
+      "alternatives": "Do not turn AARM's use of intent context into an assertion that every receipt contains a prohibited intent-quality claim.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.5.2",
+      "poc_requirement": "Verify that the conformance statement and public product claims describe the evidence only as execution facts, and that a documented claims review (legal or compliance sign-off) confirms no claim of output correctness, fairness, or model intent is attributed to Proof-of-Control.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE"
+        ],
+        "C": [
+          "CONFORMANCE"
+        ]
+      },
+      "missing_subduties": "Documented claims-review sign-off limiting Proof-of-Control correctness/fairness/intent assertions.",
+      "rationale_under_rubric": "Generic conformance-package review is not this specific public-claims control.",
+      "alternatives": "Generic conformance review is not this specific claims-boundary review.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.6.1",
+      "poc_requirement": "Verify that evidence-pipeline failures (write errors, signing errors, store unavailability) raise a monitored alert and are themselves written as failure events to a secondary durable log.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R4",
+          "R5"
+        ],
+        "C": [
+          "CT_R1_3"
+        ]
+      },
+      "missing_subduties": "Evidence-pipeline fault alerts and a secondary durable failure log.",
+      "rationale_under_rubric": "Authorization outcomes or fail-closed outage handling do not provide logging-system failure observability.",
+      "alternatives": "The fail-closed unavailability test does not add monitored alerts or secondary durable logging.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.6.2",
+      "poc_requirement": "Verify that evidence records carry per-source monotonic sequence numbers (or equivalent chaining), so a verifier can detect a missing record from the sequence gap alone.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5",
+          "CT_R5_3"
+        ]
+      },
+      "missing_subduties": "Per-source sequence/chaining rule permitting missing-record gap detection.",
+      "rationale_under_rubric": "Receipt modification checks do not establish omission detection.",
+      "alternatives": "PM possible only under a broad integrity-domain interpretation; source does not establish omission detection.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.6.3",
+      "poc_requirement": "Verify that when evidence cannot be generated at the claimed Tier, in-scope actions are refused by the gateway until the pipeline recovers — demonstrated by a fail-closed test on the evidence store.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R1",
+          "R4",
+          "R5"
+        ],
+        "C": [
+          "CT_R1_3"
+        ]
+      },
+      "missing_subduties": "Evidence-store failure test and refusal until claimed-Tier evidence generation recovers.",
+      "rationale_under_rubric": "Primary: no explicit evidence-failure behavior. Companion: AARM-unavailability fail-closed test supplies a partial control, though not the evidence-store mechanism.",
+      "alternatives": "This row is directly sensitive to whether the undated linked testing page belongs in the mapped corpus.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.6.4",
+      "poc_requirement": "Verify that the evidence store enforces role-based access, and that every read of evidence writes its own access record (who, what, when).",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R9",
+          "R5"
+        ],
+        "C": [
+          "R9",
+          "R5"
+        ]
+      },
+      "missing_subduties": "Evidence-store RBAC and logged reads by every reader, including operators.",
+      "rationale_under_rubric": "Per-action least privilege (SHOULD; required for Extended) and agent-action receipts are a limited access-control analogue.",
+      "alternatives": "NM is plausible if the rubric requires evidence-store-specific controls; the conditional action-scope overlap must not be described as mandatory store RBAC.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.6.5",
+      "poc_requirement": "Verify that the retention period for evidence is stated in the conformance claim, configured in the store's retention policy, and at least as long as the period the claim covers.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5",
+          "CONFORMANCE"
+        ],
+        "C": [
+          "R5",
+          "CONFORMANCE"
+        ]
+      },
+      "missing_subduties": "Declared/configured evidence-retention period covering the claim.",
+      "rationale_under_rubric": "Receipt creation and conformance review do not prescribe retention.",
+      "alternatives": "No claim about retention choices of particular implementations.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.6.6",
+      "poc_requirement": "Verify that the chain root is anchored externally within a declared maximum interval, that the interval is stated in the claim (it bounds the window in which head truncation is undetectable), and that a missed anchoring deadline raises an alert.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5"
+        ]
+      },
+      "missing_subduties": "External root anchoring, declared maximum interval and missed-deadline alert.",
+      "rationale_under_rubric": "A signed/timestamped receipt does not supply external anchoring.",
+      "alternatives": "Distinct from receipt-integrity and timestamp requirements.",
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "7.7.1",
+      "poc_requirement": "Verify that the evidence claim set is defined by a machine-readable schema covering every field, published where a verifier can obtain it, and that the deployed implementation's own output validates against it.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5",
+          "R8"
+        ],
+        "C": [
+          "CT_R5_1",
+          "CT_R8_1"
+        ]
+      },
+      "missing_subduties": "Published field-complete receipt schema and whole-output validation.",
+      "rationale_under_rubric": "Receipt fields and standard telemetry/schema tests partially cover structured evidence. Unprovided schema contents remain unassessed.",
+      "alternatives": "The referenced receipt schema was not identified in inspected pages. Its contents remain unavailable/unspecified; do not turn that access gap into a global absence claim.",
+      "source_access_limit": "Referenced receipt schema remains unavailable/unassessed; labels concern only inspected source text."
+    },
+    {
+      "poc_requirement_id": "7.7.2",
+      "poc_requirement": "Verify that the schema declares a single canonical serialization — fixing key ordering, number formatting, string escaping, digest case, and the meaning of an absent field — and states exactly which bytes each digest and signature covers.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5",
+          "R6",
+          "R8"
+        ],
+        "C": [
+          "CT_R5_1",
+          "CT_R5_2"
+        ]
+      },
+      "missing_subduties": "Single canonical serialization and exact signed/digested bytes.",
+      "rationale_under_rubric": "Format and signature requirements do not specify canonicalization. No judgement is made about the unavailable referenced schema.",
+      "alternatives": "An unprovided 'per schema' reference may contain relevant rules; obtaining and versioning it is an explicit source gap.",
+      "source_access_limit": "Referenced receipt schema remains unavailable/unassessed; labels concern only inspected source text."
+    },
+    {
+      "poc_requirement_id": "7.7.3",
+      "poc_requirement": "Verify that every digest and signature carries an explicit algorithm identifier, and that a verifier presented with an unidentified digest rejects it rather than assuming an algorithm.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R6"
+        ],
+        "C": [
+          "CT_R5_2"
+        ]
+      },
+      "missing_subduties": "Explicit algorithm identifiers and refusal of unidentified digests.",
+      "rationale_under_rubric": "Signature validation does not impose this algorithm-selection/metadata rule.",
+      "alternatives": "Expanded receipt-schema scope unresolved.",
+      "source_access_limit": "Referenced receipt schema remains unavailable/unassessed; labels concern only inspected source text."
+    },
+    {
+      "poc_requirement_id": "7.7.4",
+      "poc_requirement": "Verify that conformance to the canonical form is demonstrated against published test vectors including negative cases, and that each negative vector is rejected for the reason it was written to test.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE_STEPS"
+        ],
+        "C": [
+          "CT_R5_3",
+          "CT_R8_1"
+        ]
+      },
+      "missing_subduties": "Published canonical-form vectors, including targeted negative cases.",
+      "rationale_under_rubric": "Actual tamper/schema tests are acknowledged, but canonical-form conformance is a different test object; breadth remains contestable.",
+      "alternatives": "If the referenced schema/testing materials supply canonical-form vectors, expanded-corpus coding requires a new pinned read; not presumed absent.",
+      "source_access_limit": "Referenced receipt schema remains unavailable/unassessed; labels concern only inspected source text.",
+      "additional_narrow_review_note": "A general conformance-testing PM remains contestable. NM here focuses on canonical-form vectors as a different test object, not absence of all testing."
+    },
+    {
+      "poc_requirement_id": "7.7.5",
+      "poc_requirement": "Verify that a parser rejects duplicate object keys rather than resolving them last-wins, so that one evidence artifact cannot mean different things to different readers.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C07-Evidence-Generation-and-Properties.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5",
+          "R8"
+        ],
+        "C": [
+          "CT_R5_1"
+        ]
+      },
+      "missing_subduties": "Duplicate object-key rejection rather than last-wins parsing.",
+      "rationale_under_rubric": "Receipt fields and interoperability do not decide ambiguous parser behavior.",
+      "alternatives": "Expanded schema/parser specification remains a documented access/scope gap.",
+      "source_access_limit": "Referenced receipt schema remains unavailable/unassessed; labels concern only inspected source text."
+    },
+    {
+      "poc_requirement_id": "10.1.1",
+      "poc_requirement": "Verify that the published conformance statement names its stage — Self-Declared, Third-Party Assessed, or Continuously Monitored — and, for the latter two, identifies the assessor or monitoring regime.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ],
+        "C": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ]
+      },
+      "missing_subduties": "Proof-of-Control verification stage plus named assessor/monitoring regime.",
+      "rationale_under_rubric": "Conformance claims and evidence review are analogous general controls, without Proof-of-Control's named stages.",
+      "alternatives": [
+        {
+          "label": "NM",
+          "reason": "The exact duty is publication of verification stage and assessor/monitor identity; AARM only names technical requirement levels. PM is retained for the direct claim-and-review overlap.",
+          "review_status": "open alternative"
+        }
+      ],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.1.2",
+      "poc_requirement": "Verify that the statement lists the domains claimed (of C1–C6), and that domains not listed appear nowhere in the operator's Proof-of-Control marketing for the system.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ],
+        "C": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ]
+      },
+      "missing_subduties": "Selected-domain declaration and exclusion of unclaimed domains from marketing.",
+      "rationale_under_rubric": "Core/Extended eligibility does not impose that domain/marketing boundary; a broad PM analogy remains open.",
+      "alternatives": [
+        {
+          "label": "PM",
+          "reason": "Core/Extended eligibility limits what a conformance label may assert. This is a plausible general claim-scope analogy, but the domain declaration and out-of-scope marketing duties remain absent.",
+          "review_status": "open alternative"
+        }
+      ],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.1.3",
+      "poc_requirement": "Verify that every verifiable fact asserted in the statement resolves to at least one evidence stream in the claim register — no asserted fact without a register entry.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ],
+        "C": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ]
+      },
+      "missing_subduties": "Every asserted fact resolving to an evidence stream in a claim register.",
+      "rationale_under_rubric": "Evidence compiled for each requirement partially covers claim-to-evidence traceability.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.1.4",
+      "poc_requirement": "Verify that the statement contains all required fields: system identification (name, version, environment); domains claimed; per-claim evidence properties met and Tier reached; mechanisms used; and the trust-assumption disclosure.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ],
+        "C": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ]
+      },
+      "missing_subduties": "Specified conformance-statement fields: system, scope, mechanisms, per-claim properties and assumptions.",
+      "rationale_under_rubric": "Evidence-package existence is not a prescribed statement field set; keep the broad-package PM alternative.",
+      "alternatives": [
+        {
+          "label": "PM",
+          "reason": "A broad reading could map the evidence-package requirement to structured claims in general. Conservative NM is selected because none of the stated statement-field duties is imposed by the reviewed source.",
+          "review_status": "open alternative"
+        }
+      ],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.1.5",
+      "poc_requirement": "Verify that the statement cites the exact version of this standard (e.g., v0.1) and the date of the claim.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE"
+        ],
+        "C": [
+          "CONFORMANCE"
+        ]
+      },
+      "missing_subduties": "Claim citing exact specification version and claim date.",
+      "rationale_under_rubric": "The specification's own metadata is not a duty on an implementation claim.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.1.6",
+      "poc_requirement": "Verify that the statement defines the system boundary (components, environments, interfaces in scope) and the classes of in-scope agent actions, and enumerates excluded action classes with a stated rationale for each exclusion.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R1",
+          "CONFORMANCE"
+        ],
+        "C": [
+          "R1",
+          "CONFORMANCE"
+        ]
+      },
+      "missing_subduties": "Published system/action-class boundaries and justified exclusions.",
+      "rationale_under_rubric": "Universal action interception does not prescribe documentary scope/exclusion declarations; the broader scope analogy remains open.",
+      "alternatives": [
+        {
+          "label": "PM",
+          "reason": "R1 defines the universe of agent actions and forbids bypass, offering a general scope analogy. It does not impose the documentary boundary/exclusion control that is the coding unit.",
+          "review_status": "open alternative"
+        }
+      ],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.1.7",
+      "poc_requirement": "Verify that the statement and its per-claim data are published in a documented, machine-readable format (schema available), so assessors and insurers can compare claims across implementations programmatically.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R8",
+          "CONFORMANCE"
+        ],
+        "C": [
+          "CT_R8_1"
+        ]
+      },
+      "missing_subduties": "Published schema-defined conformance statement and per-claim data.",
+      "rationale_under_rubric": "Action telemetry and conformance statements are different artifacts.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.1.8",
+      "poc_requirement": "Verify that the declared system inventory is reconciled on a defined schedule against automated discovery from operational and observability streams, and that undeclared agent deployments surface as recorded findings rather than remaining shadow systems. *(Research-driven addition — see Appendix D, issue 12.)*",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R8"
+        ],
+        "C": [
+          "CT_R8_1"
+        ]
+      },
+      "missing_subduties": "Scheduled inventory/discovery reconciliation and shadow-agent findings.",
+      "rationale_under_rubric": "Observability export does not impose deployment discovery reconciliation.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.2.1",
+      "poc_requirement": "Verify that the disclosure lists, per claim, each residual trust assumption with the assumption's subject (named vendor, hardware element, mathematical assumption, or ceremony) — matched one-to-one against the mechanisms in the claim register.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "ARCH_NEUTRAL",
+          "ARCH62",
+          "ARCH64"
+        ],
+        "C": [
+          "ARCH_NEUTRAL",
+          "ARCH62",
+          "ARCH64"
+        ]
+      },
+      "missing_subduties": "Per-claim residual assumptions reconciled to each mechanism.",
+      "rationale_under_rubric": "Architecture trust commentary is not the required disclosure.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.2.2",
+      "poc_requirement": "Verify that each disclosed assumption is tagged with one of the defined categories (draft set: Hardware, Mathematical, Ceremony, Vendor, Implementation, Distributed), so disclosures are machine-comparable across implementations.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "NM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "ARCH_NEUTRAL",
+          "ARCH62",
+          "ARCH64"
+        ],
+        "C": [
+          "ARCH_NEUTRAL",
+          "ARCH62",
+          "ARCH64"
+        ]
+      },
+      "missing_subduties": "Categorized, machine-comparable trust-assumption disclosures.",
+      "rationale_under_rubric": "Named trust trade-offs do not impose comparable disclosure tags.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.3.1",
+      "poc_requirement": "Verify that evidence is retained in a store meeting the tamper-evident requirements of C7.3, with the store's chain-verification results available to the assessor.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5",
+          "CT_R5_2",
+          "CT_R5_3"
+        ]
+      },
+      "missing_subduties": "Retained C7.3 store and chain-verification results for the assessor.",
+      "rationale_under_rubric": "Receipt integrity is a partial evidence-integrity control despite missing store/history duties.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.3.2",
+      "poc_requirement": "Verify that evidence generation covers every in-scope action rather than a sample — demonstrated by reconciling gateway action counts against evidence-record counts over an audit window, with zero unexplained difference.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "PM",
+        "C": "PM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R1",
+          "R5"
+        ],
+        "C": [
+          "R1",
+          "R5"
+        ]
+      },
+      "missing_subduties": "Audit-window action/evidence reconciliation with zero unexplained difference.",
+      "rationale_under_rubric": "Universal interception and receipts partially cover all-action evidence generation without the prescribed reconciliation.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.3.3",
+      "poc_requirement": "Verify that an automated validator checks each evidence record against its claimed Tier's requirements within the defined validation window, and that validator results are themselves logged.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R5"
+        ],
+        "C": [
+          "R5",
+          "CT_R5_2",
+          "CT_R5_3"
+        ]
+      },
+      "missing_subduties": "Automated per-record Tier validation in a declared window with logged outcomes.",
+      "rationale_under_rubric": "Verification capability and conformance tests do not require an operating scheduled validator; the broad PM analogy remains visible.",
+      "alternatives": [
+        {
+          "label": "PM",
+          "reason": "The verification object overlaps: integrity checks are part of evidence validation. A general-principle-to-specific-control reading could assign PM. Conservative NM keeps capability/testing distinct from the continuous operational duty.",
+          "review_status": "open alternative"
+        }
+      ],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.3.4",
+      "poc_requirement": "Verify that validation failures and coverage gaps raise alerts to a monitored destination within the bounded window defined in the claim, with alert-to-acknowledgment times tracked.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R7",
+          "R8"
+        ],
+        "C": [
+          "CT_R7_1",
+          "CT_R8_1"
+        ]
+      },
+      "missing_subduties": "Evidence-validation/coverage-gap alerting with bounded acknowledgement latency.",
+      "rationale_under_rubric": "Intent-drift alerts and telemetry concern different events from evidence-pipeline assurance.",
+      "alternatives": [],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.3.5",
+      "poc_requirement": "Verify that the monitoring pipeline itself is re-assessed by a third party on a defined cycle (e.g., annually), and the re-assessment report is available to relying parties.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ],
+        "C": [
+          "CONFORMANCE",
+          "CONFORMANCE_STEPS"
+        ]
+      },
+      "missing_subduties": "Recurring third-party monitoring-pipeline reassessment and available reports.",
+      "rationale_under_rubric": "One TWG package review is not recurring reassessment; the generic-assurance PM alternative remains open.",
+      "alternatives": [
+        {
+          "label": "PM",
+          "reason": "TWG evidence review is a plausible generic assurance-review analog, but the pipeline object, recurring cycle and report availability are all absent; the reviewed text also does not establish reviewer independence.",
+          "review_status": "open alternative"
+        }
+      ],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.3.6",
+      "poc_requirement": "Verify that proof coverage — evidence-covered in-scope actions divided by total in-scope actions — is computed on a defined schedule and published with the claim, so coverage decay is visible rather than silent.",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "R1",
+          "R5"
+        ],
+        "C": [
+          "R1",
+          "R5"
+        ]
+      },
+      "missing_subduties": "Scheduled computation/publication of the defined coverage ratio.",
+      "rationale_under_rubric": "All-action receipt intent does not impose a metric-publication duty; retain the broad coverage-topic alternative.",
+      "alternatives": [
+        {
+          "label": "PM",
+          "reason": "R1/R5 overlap the general subject of action coverage. Conservative NM treats the actual coding unit as the distinct scheduled metric/publication duty.",
+          "review_status": "open alternative"
+        }
+      ],
+      "source_access_limit": "No missing-access inference used."
+    },
+    {
+      "poc_requirement_id": "10.3.7",
+      "poc_requirement": "Verify that automated validators used to monitor multi-step execution are evaluated for structured-trace parsing competence (schema and argument validation over tool-call trajectories), not only natural-language safety performance, and that the evaluation results are available to the assessor. *(Research-driven addition — see Appendix D, issue 12.)*",
+      "poc_source_url": "https://github.com/LFDT-ProofOfControl/ov-poc-standard/blob/54a7bc67140b39c9107216cd390dd47c1d42946d/0.1/en/0x10-C10-Conformance-and-Disclosure.md",
+      "baseline_label": "PM",
+      "proposed_labels": {
+        "P": "NM",
+        "C": "NM"
+      },
+      "strongest_inspected_source": {
+        "P": [
+          "CONFORMANCE_STEPS",
+          "R8"
+        ],
+        "C": [
+          "CT_R5_1",
+          "CT_R8_1"
+        ]
+      },
+      "missing_subduties": "Tests of automated validator tool-trajectory parsing competence and assessor reporting.",
+      "rationale_under_rubric": "Generic conformance/schema tests assess a different subject; retain the broad testing analogy as an alternative.",
+      "alternatives": [
+        {
+          "label": "PM",
+          "reason": "Generic mandatory testing and schema checks may be treated as a broad testing analogy. They evaluate different subjects from multi-step validator parsing competence, so NM is preferred.",
+          "review_status": "open alternative"
+        }
+      ],
+      "source_access_limit": "No missing-access inference used."
+    }
+  ],
+  "source_catalog": {
+    "ABSTRACT": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "ABSTRACT",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "This specification establishes a framework for securing artificial intelligence systems during action execution. As AI systems evolve from advisory tools into autonomous agents capable of consequential real-world actions, the security boundary shifts from model outputs to tool execution. AARM defines a control plane that intercepts, evaluates, decides on, and records every agent-initiated action before it is executed — regardless of the underlying model, framework, or environment."
+    },
+    "ARCH61": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "ARCH61",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "A network-layer proxy that intercepts agent-to-tool communication at the protocol level. Provides strong isolation guarantees but requires routing all agent traffic through the gateway. Suitable for environments where network topology can be controlled."
+    },
+    "ARCH62": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "ARCH62",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "Intercepts action calls via integration with the agent framework's SDK. Lower deployment friction than the gateway model but requires trust in the SDK integration. May not intercept actions made through non-instrumented paths."
+    },
+    "ARCH63": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "ARCH63",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "Uses kernel-level eBPF hooks to intercept system calls made by agent processes. Provides deep visibility and is difficult for an agent to bypass, but requires elevated privileges and kernel compatibility. Best suited for containerized production environments."
+    },
+    "ARCH64": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "ARCH64",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "Action interception is provided natively by the AI platform or tool vendor as part of their API surface. Lowest deployment friction but dependent on vendor implementation quality and coverage."
+    },
+    "ARCH_NEUTRAL": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "ARCH_NEUTRAL",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The specification is implementation-neutral. Four reference architectures are recognized, each with distinct trust properties and deployment trade-offs."
+    },
+    "CONFORMANCE": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "CONFORMANCE",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "A system may claim conformance to one of two levels. Claims must be supported by an evidence package reviewed by the AARM Technical Working Group."
+    },
+    "CONFORMANCE_STEPS": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "CONFORMANCE_STEPS",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_items": [
+        "01Satisfy all MUST requirements (R1–R6) for Core, or R1–R9 for Extended.",
+        "02Complete the testing protocol and compile evidence for each requirement.",
+        "03Engage with the working group community before submitting.",
+        "04Operate the system in a production environment with real agent workloads.",
+        "05Submit your evidence package. Allow up to 14 days for the conformance report."
+      ]
+    },
+    "CT_R1_3": {
+      "source_view": "companion",
+      "source_url": "https://aarm.dev/conformance",
+      "locator": "CT_R1_3",
+      "captured_at_utc": "2026-10-31T22:35:47.897441+00:00",
+      "table_cells": {
+        "requirement": "R1",
+        "test": "Make AARM system unavailable, submit action",
+        "expected_result": "Action fails (no fail-open bypass)",
+        "applicability": "MUST"
+      }
+    },
+    "CT_R5_1": {
+      "source_view": "companion",
+      "source_url": "https://aarm.dev/conformance",
+      "locator": "CT_R5_1",
+      "captured_at_utc": "2026-10-31T22:35:47.897441+00:00",
+      "table_cells": {
+        "requirement": "R5",
+        "test": "Generate receipts for ALLOW, DENY, MODIFY, STEP_UP, DEFER",
+        "expected_result": "Requester context, delegation chain, and policy version/hash present per schema",
+        "applicability": "MUST"
+      }
+    },
+    "CT_R5_2": {
+      "source_view": "companion",
+      "source_url": "https://aarm.dev/conformance",
+      "locator": "CT_R5_2",
+      "captured_at_utc": "2026-10-31T22:35:47.897441+00:00",
+      "table_cells": {
+        "requirement": "R5",
+        "test": "Verify receipt signature offline",
+        "expected_result": "Signature validates",
+        "applicability": "MUST"
+      }
+    },
+    "CT_R5_3": {
+      "source_view": "companion",
+      "source_url": "https://aarm.dev/conformance",
+      "locator": "CT_R5_3",
+      "captured_at_utc": "2026-10-31T22:35:47.897441+00:00",
+      "table_cells": {
+        "requirement": "R5",
+        "test": "Tamper with requester context or policy hash in receipt",
+        "expected_result": "Signature verification fails",
+        "applicability": "MUST"
+      }
+    },
+    "CT_R7_1": {
+      "source_view": "companion",
+      "source_url": "https://aarm.dev/conformance",
+      "locator": "CT_R7_1",
+      "captured_at_utc": "2026-10-31T22:35:47.897441+00:00",
+      "table_cells": {
+        "requirement": "R7",
+        "test": "Execute diverging action sequence exceeding drift threshold",
+        "expected_result": "Alert, deferral, or escalation triggered",
+        "applicability": "SHOULD"
+      }
+    },
+    "CT_R8_1": {
+      "source_view": "companion",
+      "source_url": "https://aarm.dev/conformance",
+      "locator": "CT_R8_1",
+      "captured_at_utc": "2026-10-31T22:35:47.897441+00:00",
+      "table_cells": {
+        "requirement": "R8",
+        "test": "Configure SIEM export",
+        "expected_result": "Events appear with correct schema including DEFER events",
+        "applicability": "SHOULD"
+      }
+    },
+    "R1": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R1Pre-execution interceptionMUST",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The system MUST intercept every agent-initiated action before it is executed. No action may bypass the control plane. This requirement is non-negotiable: a system that allows any action to execute without interception provides no meaningful runtime guarantee."
+    },
+    "R2": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R2Context accumulationMUST",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The system MUST accumulate and maintain context about the agent's stated intent, prior actions in the current session, and the conversation or task thread. Context must be available to the policy evaluation layer at the time of each decision."
+    },
+    "R3": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R3Policy evaluation with intent alignmentMUST",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The system MUST evaluate each intercepted action against a policy that considers both the action itself and its alignment with the agent's stated intent. Policies that evaluate actions in isolation without intent context do not satisfy this requirement."
+    },
+    "R4": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R4Five authorization decisionsMUST",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The policy engine MUST be capable of producing exactly one of five decisions for each evaluated action: ALLOW (execute as-is), DENY (block execution), MODIFY (execute a transformed version), STEP_UP (require human approval before execution), or DEFER (delay execution pending additional context)."
+    },
+    "R5": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R5Tamper-evident receiptsMUST",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The system MUST produce a tamper-evident action receipt for every evaluated action. Each receipt must include at minimum: the original action, the decision, the timestamp, and the policy context used in evaluation. Receipts must be verifiable against unauthorized modification."
+    },
+    "R6": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R6Identity bindingMUST",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "Every action receipt MUST be cryptographically bound to an agent identity. The binding must be verifiable and must uniquely identify the agent that initiated the action, supporting non-repudiation."
+    },
+    "R7": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R7Semantic distance trackingSHOULD",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The system SHOULD track the semantic distance between proposed actions and the agent's original stated intent, flagging drift over long task horizons. This requirement addresses T6 (intent drift) and is especially relevant for agents operating autonomously over extended sessions."
+    },
+    "R8": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R8Telemetry exportSHOULD",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The system SHOULD export action telemetry in a standard, interoperable format (e.g., OpenTelemetry) suitable for ingestion by SIEM platforms and observability infrastructure. Proprietary-only export formats do not satisfy this requirement."
+    },
+    "R9": {
+      "source_view": "primary",
+      "source_url": "https://aarm.dev/spec",
+      "locator": "R9Least privilege enforcementSHOULD",
+      "captured_at_utc": "2026-10-31T22:34:12.040843+00:00",
+      "quoted_text": "The system SHOULD enforce least-privilege scoping of agent credentials and tool access at the time of action execution. Credentials should be scoped to the minimum necessary for each action, not granted session-wide or system-wide."
+    }
+  }
+}
