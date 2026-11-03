@@ -1,0 +1,24 @@
+{
+  "schema": "bjorn-vectors/expected-outcome/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B2-d2",
+  "family": "B2",
+  "frozen_before_any_run": true,
+  "integrity": {"predicate": "signature, chain and visible-log consistency of the presented records", "status": "verified", "visible_log": "consistent", "rules": ["R1"], "provenance": "echo of the declared stage-1 input; reported separately from mediation and bypass conclusions"},
+  "observation_assessment": [
+    {"surface": "gw-http", "adequate": [{"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}], "inadequate": []},
+    {"surface": "alt-db", "adequate": [{"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}], "inadequate": []}
+  ],
+  "mediation_assessment": [{"surface": "gw-http", "evidence_id": "MB-http", "status": "bound", "rules": ["R8"]}, {"surface": "alt-db", "status": "absent", "rules": ["R11", "R13"]}],
+  "findings": [
+    {"type": "unrecorded_effect", "effect_id": "E-77", "surface": "alt-db", "time": "2026-01-01T02:30:00Z", "evidence": "OB-db observed E-77 with effect_ref X-99; no record carries X-99", "rules": ["R10"]}
+  ],
+  "claim_results": [
+    {"claim": "no_bypass", "polarity": "every effect on a required surface in the scope took a mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}}, "status": "not_established", "rules": ["R11", "R13"], "evidence": ["no mediation-binding evidence for alt-db; routes of E-77 and E-12 are undetermined"], "conditional_on": []},
+    {"claim": "bypass_occurred", "polarity": "at least one effect on a required surface in the scope took a non-mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}}, "status": "not_established", "rules": ["R11", "R13"], "evidence": ["E-77 has no record, but it may be a mediated write whose record was lost"], "conditional_on": []}
+  ],
+  "scoped_results": [],
+  "unestablished": [{"scope": {"surfaces": ["alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}}, "affected_claims": ["no_bypass", "bypass_occurred"]}],
+  "must_not_conclude": ["bypass_occurred supported", "no_bypass supported", "E-77 classified as a lost record", "the unrecorded_effect finding suppressed because mediation is undetermined"],
+  "pr182_mapping": "Correspondence fails (local unrecorded_effect). Without mediation binding, E-77 is either an action outside the identified population or a mediated action whose record is missing (PR182 missing); the assessor cannot tell which."
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "bjorn-vectors/generator-truth/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B2-d1",
+  "family": "B2",
+  "canary": "CANARY-b2d1-7b08",
+  "intervention_point": "direct write to alt-db at 02:30 with credential svc-batch, never submitted to the gateway; alt-db fully observed with credentials exported",
+  "injected": [{"kind": "alternate_path_effect", "surface": "alt-db", "time": "2026-01-01T02:30:00Z", "effect_ref": "X-99", "credential": "svc-batch", "visibility": "visible as E-77 with its credential"}],
+  "leak_check_tokens": [],
+  "notes": "Generator-only ground truth. The assessor must not read this file. X-99 and svc-batch are legitimately visible here through the observation."
+}

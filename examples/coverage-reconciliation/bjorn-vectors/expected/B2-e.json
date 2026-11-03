@@ -1,0 +1,22 @@
+{
+  "schema": "bjorn-vectors/expected-outcome/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B2-e",
+  "family": "B2",
+  "frozen_before_any_run": true,
+  "integrity": {"predicate": "signature, chain and visible-log consistency of the presented records", "status": "verified", "visible_log": "consistent", "rules": ["R1"], "provenance": "echo of the declared stage-1 input; reported separately from mediation and bypass conclusions"},
+  "observation_assessment": [
+    {"surface": "gw-http", "adequate": [{"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}], "inadequate": []},
+    {"surface": "alt-db", "adequate": [{"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}], "inadequate": []}
+  ],
+  "mediation_assessment": [{"surface": "gw-http", "evidence_id": "MB-http", "status": "bound", "rules": ["R8"]}, {"surface": "alt-db", "evidence_id": "MB-db", "status": "bound", "rules": ["R8"]}],
+  "findings": [],
+  "claim_results": [
+    {"claim": "no_bypass", "polarity": "every effect on a required surface in the scope took a mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}}, "status": "supported", "rules": ["R8", "R12"], "evidence": ["both surfaces adequately observed over the whole interval", "E-11 and E-13 bound by MB-http, E-12 bound by MB-db to mediated routes"], "conditional_on": ["A4", "A5", "A6", "A7", "A8", "A9"]},
+    {"claim": "bypass_occurred", "polarity": "at least one effect on a required surface in the scope took a non-mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}}, "status": "not_supported", "rules": ["R8"], "evidence": ["both surfaces adequately observed and every observed effect bound to a mediated route"], "conditional_on": ["A4", "A5", "A6", "A7", "A8", "A9"]}
+  ],
+  "scoped_results": [],
+  "unestablished": [],
+  "must_not_conclude": ["support stated without its declared assumptions", "support attributed to effect_ref matching alone", "support extended to surfaces or times outside the claim"],
+  "pr182_mapping": "Under A4-A9 this supplies a 7.1.1-style completeness basis for the two surfaces in the interval (PR182 Terms); it does not by itself demonstrate C1 coverage."
+}

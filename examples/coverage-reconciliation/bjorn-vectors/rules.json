@@ -1,0 +1,73 @@
+{
+  "schema": "bjorn-vectors/rules/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "revision": "R1 frozen derivation rules; publication metadata view",
+  "vocabulary": {
+    "supported": "The positive claim follows from assessor-visible evidence under the listed declared assumptions. In this synthetic package the assumptions are declared, not verified.",
+    "not_supported": "Assessor-visible evidence contradicts the positive claim within its scope.",
+    "not_established": "The available evidence cannot decide the claim either way within its scope."
+  },
+  "claim_polarity": {
+    "no_bypass": "every effect on a required surface in the scope took a mediated route",
+    "bypass_occurred": "at least one effect on a required surface in the scope took a non-mediated route",
+    "note": "no_bypass and bypass_occurred are logical complements over the same scope. Record correspondence (whether an effect has a matching record) is a separate predicate, reported only as unrecorded_effect findings. coverage_complete keeps the polarity stated in each B1 fixture."
+  },
+  "rules": [
+    {
+      "id": "R1",
+      "text": "Integrity is a separate predicate. Signature, chain, per-epoch sequence and visible-log results describe the presented records only; they never decide population completeness, coverage, mediation or bypass."
+    },
+    {
+      "id": "R2",
+      "text": "Contiguous sequence numbers within an epoch do not show that every origin event reached the evidence writer. An event lost before the writer leaves no sequence gap."
+    },
+    {
+      "id": "R3",
+      "text": "A verified epoch link shows that two record chains are connected across a restart. It is not population evidence and cannot establish completeness for any interval."
+    },
+    {
+      "id": "R4",
+      "text": "coverage_complete is supported for a scope only if supplied population evidence covers that scope, its structural check holds (unique ledger sequence numbers forming exactly the range between the two checkpoints, unique obligation identifiers, every due time inside the scope), and every listed obligation is carried by exactly one business record in the scope."
+    },
+    {
+      "id": "R5",
+      "text": "Population evidence exposes missing and duplicated records; it does not repair them. A listed obligation carried by no business record is a missing_record finding; one carried by more than one business record is a duplicate_record finding. Either makes coverage_complete for that scope not_supported."
+    },
+    {
+      "id": "R6",
+      "text": "Where no adequate population evidence covers an interval, coverage_complete for that interval is not_established. The assessor does not name, count or date events from absence of evidence."
+    },
+    {
+      "id": "R7",
+      "text": "Results for a sub-interval covered by adequate evidence are reported as scoped results and are never extended to the whole claim."
+    },
+    {
+      "id": "R8",
+      "text": "no_bypass is supported for a scope only if (a) every required surface is adequately observed over the whole scope, and (b) mediation-binding evidence is supplied for every required surface and binds every observed effect in the scope, through its route value, to a mediated route. A segment is adequate only if its status is available and it carries structured completeness evidence: a sequence range with first_seq not above last_seq, an empty gaps list, and every observed effect in the segment carrying a unique feed_seq inside that range. Support is conditional on declared assumptions covering observation completeness, authoritative route evidence, unique occurrence binding and applicability to the interval."
+    },
+    {
+      "id": "R9",
+      "text": "Insufficient observation (unavailable, incomplete, or without structured completeness evidence) cannot by itself establish either no_bypass or bypass_occurred for that part of the scope. It does not erase a bypass independently evidenced by an effect that was observed (R11)."
+    },
+    {
+      "id": "R10",
+      "text": "An observed effect on a required surface whose effect_ref matches no record is an unrecorded_effect finding. It concerns record correspondence, not mediation, and does not by itself decide no_bypass or bypass_occurred."
+    },
+    {
+      "id": "R11",
+      "text": "An observed effect whose route value, under the mediation-binding evidence supplied for its surface, is not a mediated route is a witnessed bypass: bypass_occurred is supported and no_bypass is not_supported for every scope containing it, whether or not observation elsewhere is complete. Without mediation-binding evidence for its surface, the route of an effect is undetermined."
+    },
+    {
+      "id": "R12",
+      "text": "Every supported result lists the declared assumptions it is conditional on. Synthetic support is a model result, distinct from verified signatures and from real operational independence."
+    },
+    {
+      "id": "R13",
+      "text": "A matching effect_ref, complete observation or an empty observation result never establishes mediation by itself. If any observed effect in a scope lacks a binding to a mediated route and no witnessed bypass exists, no_bypass and bypass_occurred are both not_established for that scope."
+    },
+    {
+      "id": "R14",
+      "text": "Control records (kind epoch_link) occupy chain sequence positions and are verified with their epoch chain, but are projected out of the business-obligation population: they neither meet nor create obligations."
+    }
+  ]
+}

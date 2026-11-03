@@ -1,0 +1,463 @@
+{
+  "schema": "coverage-reconciliation/export-provenance/v1",
+  "status": "Selected publication export; no new execution of these cleaned source bytes",
+  "recorded_experiment_date": "2026-10-30",
+  "source_derivatives": [
+    {
+      "path": "bjorn-implementation/adapter/adapter.py",
+      "original_execution_source": {
+        "bytes": 24570,
+        "sha256": "6cb5d26ee19750d767269fdd24240e30e19455161615c4ae7a42cc730ec11b64"
+      },
+      "export_source": {
+        "bytes": 24318,
+        "sha256": "abf6c2429d78221683066343731862038ceb347d83c3ccc942441b903f24fdbc"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change"
+      ]
+    },
+    {
+      "path": "bjorn-implementation/assessor/assessor.py",
+      "original_execution_source": {
+        "bytes": 3931,
+        "sha256": "9367d0d84fbf26715ddaf3a2566241db08b47387365dd21a533c00124eba44fe"
+      },
+      "export_source": {
+        "bytes": 3900,
+        "sha256": "885eb1172c57417a47c23f03cb2c6d6b20079b5163e556ddc80c0d8cc607fad7"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change"
+      ]
+    },
+    {
+      "path": "bjorn-implementation/assessor/assessor_common.py",
+      "original_execution_source": {
+        "bytes": 8773,
+        "sha256": "b465d7913f7a32134c42a0463bed05fd6a5ffd580c2c2a7aab87e33c0e6e438b"
+      },
+      "export_source": {
+        "bytes": 8749,
+        "sha256": "f2b0dfc818c40466023447d72aa4eefb8f6750a06fe970db812ea0b602f9c927"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change"
+      ]
+    },
+    {
+      "path": "bjorn-implementation/assessor/assessor_b1.py",
+      "original_execution_source": {
+        "bytes": 15088,
+        "sha256": "81c5284367e249171778461b809c268c507a22dd5eb6459deeec3f3986765353"
+      },
+      "export_source": {
+        "bytes": 14957,
+        "sha256": "30371e271dff954c8c431d59528d668c86ebbb901460ce678b156b95c6c71366"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change",
+        "Removed five dangling item-number references from comments/docstrings; executable AST unchanged"
+      ]
+    },
+    {
+      "path": "bjorn-implementation/assessor/assessor_b2.py",
+      "original_execution_source": {
+        "bytes": 15485,
+        "sha256": "5ffed7af35e63b7c62bffb340fec2237cf7ac06a0189bfec38a9807030f29389"
+      },
+      "export_source": {
+        "bytes": 15470,
+        "sha256": "7faebbfb992d26d5e482383981496cb723e74713b614692c875fc453f0e0cade"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change"
+      ]
+    },
+    {
+      "path": "bjorn-implementation/comparator/compare.py",
+      "original_execution_source": {
+        "bytes": 31168,
+        "sha256": "8d2a1f087a7066c806af8bd737ff4b8d3df95668dfb3c4f13751e539083834fe"
+      },
+      "export_source": {
+        "bytes": 31027,
+        "sha256": "8b6b89a576adb4d4d8d937915dee9bacbe0d77d406479ae19f3f08aa0747910e"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change",
+        "Exact linked checker/launcher source-pin constants updated"
+      ]
+    },
+    {
+      "path": "bjorn-implementation/runtime/orchestration-controller/controller.py",
+      "original_execution_source": {
+        "bytes": 24798,
+        "sha256": "cc84eb332060a95e2f46ac3c5a0f396b805b6f263a49101b9255487b6be66283"
+      },
+      "export_source": {
+        "bytes": 24785,
+        "sha256": "898f5d1ca91dd7dcf338279bb8a0eeeb9e7dd277ee1a573ff9a6fbd539356768"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change",
+        "Exact linked checker/launcher source-pin constants updated"
+      ]
+    },
+    {
+      "path": "bjorn-implementation/runtime/orchestration-launcher/run_isolated.py",
+      "original_execution_source": {
+        "bytes": 17022,
+        "sha256": "9fb97e8d61792d072f6f17130b05f021cb5a76296c5dca267483498f04311e89"
+      },
+      "export_source": {
+        "bytes": 17019,
+        "sha256": "240d7f82369a8495d317817c858525130c14e6852a8063e71dc36ee74ea8b803"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change"
+      ]
+    },
+    {
+      "path": "bjorn-implementation/runtime/orchestration-binding/check_orchestration.py",
+      "original_execution_source": {
+        "bytes": 12524,
+        "sha256": "a19bf532fbbc6d16f2a7a42dedc9567dfa945f3b4ec01833a8037af4acf7c3c5"
+      },
+      "export_source": {
+        "bytes": 12511,
+        "sha256": "c445c11409c7137d05f82bbb46540ecc870b22a5fcb1efc65a20bfd625d67d30"
+      },
+      "transformations": [
+        "Publication comments/docstrings; no inference-rule change"
+      ]
+    }
+  ],
+  "data_transformations": {
+    "unchanged_case_files": 39,
+    "unchanged_case_schemas": 3,
+    "unchanged_assessor_output_schema": 1,
+    "cases_json": "Descriptive revision/attribution/origin/source metadata replaced; IDs, families, titles and frozen input status retained; fixture-required status distinguished from historical catalogue metadata",
+    "rules_json": "Descriptive revision field replaced; all rules unchanged"
+  },
+  "evidence_view": "results/recorded-results.json selects actual claims/scopes/measurements/digests from canonical records, omitting host paths and private orchestration/workflow material; it is not original raw receipts or proof of omitted bytes",
+  "compatibility": "Technical s3-bjorn schema/module/profile/container names and one checker-pin error diagnostic retained as disclosed compatibility strings, not published workflow records. Fixture NOT EXECUTED validation label and historical catalogue status retained.",
+  "checks": "Declared transformations and AST equivalence checked statically, except documented docstrings and exact linked-source pin constants. No exported code, reproduction command or campaign executed.",
+  "files_before_provenance_and_checksum_file": [
+    {
+      "path": "LICENSE",
+      "bytes": 11360,
+      "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 3105,
+      "sha256": "c3695bdad4468d57e1ec26ac67a99593a9a7bf191219c8c7a7f349c7cb9f49a9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3651,
+      "sha256": "a6d67c69cb3a01341bc9e21c93f66fee88395e69b07684b6c4b31f76fe56ef64"
+    },
+    {
+      "path": "REFERENCE.json",
+      "bytes": 812,
+      "sha256": "33a4da2b200b793735bd19037f67e94a711313bc77639d94653d4571d3de3a0d"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 20602,
+      "sha256": "bd53c8e61f403ab94c8d34ebb4b19cf00f44e80060ea1c119f09405539d2e901"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 3652,
+      "sha256": "f5a730410f50ce2fb51e3a02fccf30ac3fe146b4780499df51ab3aa038c14089"
+    },
+    {
+      "path": "bjorn-implementation/adapter/adapter.py",
+      "bytes": 24318,
+      "sha256": "abf6c2429d78221683066343731862038ceb347d83c3ccc942441b903f24fdbc"
+    },
+    {
+      "path": "bjorn-implementation/assessor/assessor.py",
+      "bytes": 3900,
+      "sha256": "885eb1172c57417a47c23f03cb2c6d6b20079b5163e556ddc80c0d8cc607fad7"
+    },
+    {
+      "path": "bjorn-implementation/assessor/assessor_b1.py",
+      "bytes": 14957,
+      "sha256": "30371e271dff954c8c431d59528d668c86ebbb901460ce678b156b95c6c71366"
+    },
+    {
+      "path": "bjorn-implementation/assessor/assessor_b2.py",
+      "bytes": 15470,
+      "sha256": "7faebbfb992d26d5e482383981496cb723e74713b614692c875fc453f0e0cade"
+    },
+    {
+      "path": "bjorn-implementation/assessor/assessor_common.py",
+      "bytes": 8749,
+      "sha256": "f2b0dfc818c40466023447d72aa4eefb8f6750a06fe970db812ea0b602f9c927"
+    },
+    {
+      "path": "bjorn-implementation/comparator/compare.py",
+      "bytes": 31027,
+      "sha256": "8b6b89a576adb4d4d8d937915dee9bacbe0d77d406479ae19f3f08aa0747910e"
+    },
+    {
+      "path": "bjorn-implementation/runtime/orchestration-binding/check_orchestration.py",
+      "bytes": 12511,
+      "sha256": "c445c11409c7137d05f82bbb46540ecc870b22a5fcb1efc65a20bfd625d67d30"
+    },
+    {
+      "path": "bjorn-implementation/runtime/orchestration-controller/controller.py",
+      "bytes": 24785,
+      "sha256": "898f5d1ca91dd7dcf338279bb8a0eeeb9e7dd277ee1a573ff9a6fbd539356768"
+    },
+    {
+      "path": "bjorn-implementation/runtime/orchestration-launcher/run_isolated.py",
+      "bytes": 17019,
+      "sha256": "240d7f82369a8495d317817c858525130c14e6852a8063e71dc36ee74ea8b803"
+    },
+    {
+      "path": "bjorn-implementation/schema/assessor-output.schema.json",
+      "bytes": 4105,
+      "sha256": "831bd4ef8bdd6fe36f5fc132c3d81f2cb6f0daae825c400ca9ea2822dbcc2d2c"
+    },
+    {
+      "path": "bjorn-vectors/cases.json",
+      "bytes": 4465,
+      "sha256": "e2653c96d5d5b9caea0cfbb7a0384b9d276bfc2ee218041b9ced1e862ab0a2e4"
+    },
+    {
+      "path": "bjorn-vectors/expected/B1-a1.json",
+      "bytes": 1916,
+      "sha256": "37756f8b10de2a91ae3c3bfe7755042afe8acdbddfa2628c9bdd128f2d8c52e2"
+    },
+    {
+      "path": "bjorn-vectors/expected/B1-a2.json",
+      "bytes": 2818,
+      "sha256": "a9c7690344a27245740c315cf1dc970296500b774ed0b034e04d2e96093d2da2"
+    },
+    {
+      "path": "bjorn-vectors/expected/B1-b.json",
+      "bytes": 1943,
+      "sha256": "52242abe7a57a59df9e038b41570fcb4f21ac2442e3292a1df1ed057ef49de97"
+    },
+    {
+      "path": "bjorn-vectors/expected/B1-c.json",
+      "bytes": 2703,
+      "sha256": "c4d25ce6d7c95c18e3526eefb95dcbd861eee817859149a4a11fdefe0894e607"
+    },
+    {
+      "path": "bjorn-vectors/expected/B1-d.json",
+      "bytes": 2431,
+      "sha256": "f4b38c562025e736e76dd152955f602f9bc5b3ffaf6504a6faf374a93d5e42d0"
+    },
+    {
+      "path": "bjorn-vectors/expected/B2-a.json",
+      "bytes": 3532,
+      "sha256": "4a49529447fa82863f7a6d7f5fe294f8f1dcbb056c448c08e5436f53252e79cb"
+    },
+    {
+      "path": "bjorn-vectors/expected/B2-b.json",
+      "bytes": 2310,
+      "sha256": "2ac8ac1cdf3bec49880dc8373be76a3680de35f60c36fa36ab732da9c2ac5c44"
+    },
+    {
+      "path": "bjorn-vectors/expected/B2-c.json",
+      "bytes": 2391,
+      "sha256": "db48ee9cd5bd6c9dd9e8c865dd2fdcc53d8db76c2cdc3848fe0fc9a0c215c4c2"
+    },
+    {
+      "path": "bjorn-vectors/expected/B2-d1.json",
+      "bytes": 2683,
+      "sha256": "3280365f20b859194c4e9d7d4094be854ff174dd0d06426af2a47589e0c74e78"
+    },
+    {
+      "path": "bjorn-vectors/expected/B2-d2.json",
+      "bytes": 2670,
+      "sha256": "a110177f9fc391fb4d93ba2e693d813825e30f4b31d8217f60983b9df2cf94ec"
+    },
+    {
+      "path": "bjorn-vectors/expected/B2-e.json",
+      "bytes": 2347,
+      "sha256": "555efca56b6155750a9291c05ff4a5b7377b2f6052c919bb9d7d5b59a454950e"
+    },
+    {
+      "path": "bjorn-vectors/expected/B2-f.json",
+      "bytes": 2365,
+      "sha256": "3beea281f4919e00d216246760b6d894c8d525a21cfcc9cd3e51e7caed1d9194"
+    },
+    {
+      "path": "bjorn-vectors/expected/B2-g.json",
+      "bytes": 2769,
+      "sha256": "d879de3481ae7cc635d8174db8ae24d03eee5fbbe88fe826cd1123e3b038dac4"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B1-a1.json",
+      "bytes": 1805,
+      "sha256": "decb7e83c016abd2cf1fa08ce3aeda1309315d3de29cd23f594f8ab03141d7d3"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B1-a2.json",
+      "bytes": 3068,
+      "sha256": "dcb8d5d818a00410f5bc3b6548c820c67d3824b58bbec5254efad632e8542ed1"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B1-b.json",
+      "bytes": 2478,
+      "sha256": "b955c0c4756189b547ebfa3d739765bdb0cdcd817289c8b57137aa53c8b08e18"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B1-c.json",
+      "bytes": 3373,
+      "sha256": "c9373db6344c2aa4f5e1b8b5e610dc8069bbe00b56e89cca9b807d5a0de338f8"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B1-d.json",
+      "bytes": 3294,
+      "sha256": "a3b7538ecd01134c69c5a9b68fe4733a45ef4bfcc74553d8e9fdc1daf40650ff"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B2-a.json",
+      "bytes": 4818,
+      "sha256": "5057805940aadb0f2eed8582bb70ba9612df00d8c727a2ac1211e933fcf0b369"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B2-b.json",
+      "bytes": 3856,
+      "sha256": "3906d7ecf8d9a73ef58f2d3e9788d72a2be858f458be3f0e2c2536afc1f5d4dc"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B2-c.json",
+      "bytes": 3827,
+      "sha256": "c8169fde8db855c4f993e7aa5585dbf448efcb29d061c7fcaff239479e054ec5"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B2-d1.json",
+      "bytes": 4594,
+      "sha256": "e53d2b7e5c05384a64be528679a35ea003dae41ee120dd630b5e6a5cf6dff848"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B2-d2.json",
+      "bytes": 3908,
+      "sha256": "632af180b76e68ab7f7549095179049485323912f46f09c6f7b7fb9339d0b9f7"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B2-e.json",
+      "bytes": 4430,
+      "sha256": "bd8faead757735a867a5695a65865483f06fe5582b9a26a04bde5742a62bb82b"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B2-f.json",
+      "bytes": 2934,
+      "sha256": "a6ee4e98b94c11decaeca9eb295b48375bcb6b186f866c08002b2e727a373004"
+    },
+    {
+      "path": "bjorn-vectors/fixtures/assessor/B2-g.json",
+      "bytes": 4328,
+      "sha256": "f9ba24f6c4ad9810f8cc147857b800999889101cacd5d248746b587e1834f751"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B1-a1.json",
+      "bytes": 770,
+      "sha256": "18895d2fcda4bc76e15ddf9084a5945da45a6c86b89a994c5f110a7c37642ec0"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B1-a2.json",
+      "bytes": 770,
+      "sha256": "f6ca08764d641d1418d6c7802f28604f8025582becefe1a103b2f92f6167466b"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B1-b.json",
+      "bytes": 794,
+      "sha256": "c3fa4504a028ffde405478f62b4a7544400c43c90cf78a7d3f038e80d90d1f55"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B1-c.json",
+      "bytes": 883,
+      "sha256": "041dba0bb739c99adbff6d0a2478762050dfd010620303a93e4d52fd6a715828"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B1-d.json",
+      "bytes": 575,
+      "sha256": "8871448cdd78000db8fe70935361ca75257516776ab1b362b2b5dcc37819c3be"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B2-a.json",
+      "bytes": 659,
+      "sha256": "c6abb766ad7c64128e6b06ea1d42dc8ff5867d1724db0fffc36cf042bad62f4a"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B2-b.json",
+      "bytes": 651,
+      "sha256": "79da60a05506ccf88cf99f8470b8db3bab9f528c45b4e70dc7f3f31a54fbfd99"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B2-c.json",
+      "bytes": 694,
+      "sha256": "9f4290a8ff29e17b42dce2e6bced7554b970b4d286d20d0596b24d16ab00f445"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B2-d1.json",
+      "bytes": 734,
+      "sha256": "ca41702fc66ccc220557592ec57d81e097a302017ad79440279ce2c9df0276ea"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B2-d2.json",
+      "bytes": 732,
+      "sha256": "e1764560ff08a41959ffffd2f9216570c023c5d45dd939327675745464fe3abe"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B2-e.json",
+      "bytes": 388,
+      "sha256": "db3c17181e4f88d2b7cbd5608aaf94ff85612762771a28ec62c5776f36dea1bb"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B2-f.json",
+      "bytes": 628,
+      "sha256": "ea9cbe53452a9e8a69dfa9d1f7b9970b4463380d70d7adf920ef039f13885d22"
+    },
+    {
+      "path": "bjorn-vectors/generator-truth/B2-g.json",
+      "bytes": 811,
+      "sha256": "a46b5a37be48dfbc147941a89985dcc91b054b3339586ca5a9ef6abf58e8fd13"
+    },
+    {
+      "path": "bjorn-vectors/rules.json",
+      "bytes": 5565,
+      "sha256": "70c84bfdffefedf7903551a355c0c1073d33163c5d5337e83845ea1896a3d07b"
+    },
+    {
+      "path": "bjorn-vectors/schema/assessor-input.schema.json",
+      "bytes": 4222,
+      "sha256": "c25ec71a704f4a09b260e74f0a82e197044bbc3900cf9d7c9d0ea317569938b4"
+    },
+    {
+      "path": "bjorn-vectors/schema/expected-outcome.schema.json",
+      "bytes": 2661,
+      "sha256": "a813e0bcd39c3eba703e01b923ebf2758f156d97e3392f169ba7755d5315cebf"
+    },
+    {
+      "path": "bjorn-vectors/schema/generator-truth.schema.json",
+      "bytes": 1076,
+      "sha256": "69ea64d66e170d29b9e5c73d0938892b998d7b42cf547b4bcf506905dba3e696"
+    },
+    {
+      "path": "dependencies.json",
+      "bytes": 2384,
+      "sha256": "e2922edacecb0a49f3d6a31b67dbaf2d2295623a7d5261633a9f7fe73690bc94"
+    },
+    {
+      "path": "requirements.lock",
+      "bytes": 286,
+      "sha256": "f6aa3c1e9be3b8cba9e250606ab188ca56c89288ba3cf8555c1d1b1960a7c3ae"
+    },
+    {
+      "path": "results/recorded-results.json",
+      "bytes": 48623,
+      "sha256": "525f62e8ad681df37eae6eded455969a14f630344b693273c81830b809d115d5"
+    }
+  ]
+}

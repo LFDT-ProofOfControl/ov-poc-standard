@@ -1,0 +1,25 @@
+{
+  "schema": "bjorn-vectors/expected-outcome/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B2-a",
+  "family": "B2",
+  "frozen_before_any_run": true,
+  "integrity": {"predicate": "signature, chain and visible-log consistency of the presented records", "status": "verified", "visible_log": "consistent", "rules": ["R1"], "provenance": "echo of the declared stage-1 input; reported separately from mediation and bypass conclusions"},
+  "observation_assessment": [
+    {"surface": "gw-http", "adequate": [{"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}], "inadequate": []},
+    {"surface": "alt-db", "adequate": [{"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T02:20:00Z"}, {"start": "2026-01-01T02:45:00Z", "end": "2026-01-01T03:00:00Z"}], "inadequate": [{"start": "2026-01-01T02:20:00Z", "end": "2026-01-01T02:45:00Z", "reason": "unavailable"}]}
+  ],
+  "mediation_assessment": [{"surface": "gw-http", "evidence_id": "MB-http", "status": "bound", "rules": ["R8"]}, {"surface": "alt-db", "evidence_id": "MB-db", "status": "bound", "rules": ["R8"]}],
+  "findings": [],
+  "claim_results": [
+    {"claim": "no_bypass", "polarity": "every effect on a required surface in the scope took a mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}}, "status": "not_established", "rules": ["R8", "R9"], "evidence": ["alt-db unobserved 02:20-02:45", "no observed effect has a non-mediated route"], "conditional_on": []},
+    {"claim": "bypass_occurred", "polarity": "at least one effect on a required surface in the scope took a non-mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T03:00:00Z"}}, "status": "not_established", "rules": ["R9", "R11"], "evidence": ["no witnessed non-mediated route", "alt-db unobserved 02:20-02:45"], "conditional_on": []}
+  ],
+  "scoped_results": [
+    {"claim": "no_bypass", "polarity": "every effect on a required surface in the scope took a mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T02:20:00Z"}}, "status": "supported", "rules": ["R7", "R8", "R12"], "evidence": ["both surfaces adequately observed in this sub-interval", "E-11 bound by MB-http to mediated route rp-http-capability"], "conditional_on": ["A4", "A5", "A6", "A7", "A8", "A9"]},
+    {"claim": "no_bypass", "polarity": "every effect on a required surface in the scope took a mediated route", "scope": {"surfaces": ["gw-http", "alt-db"], "interval": {"start": "2026-01-01T02:45:00Z", "end": "2026-01-01T03:00:00Z"}}, "status": "supported", "rules": ["R7", "R8", "R12"], "evidence": ["both surfaces adequately observed in this sub-interval", "E-12 bound by MB-db to svc-rp-db; E-13 bound by MB-http to rp-http-capability"], "conditional_on": ["A4", "A5", "A6", "A7", "A8", "A9"]}
+  ],
+  "unestablished": [{"scope": {"surfaces": ["alt-db"], "interval": {"start": "2026-01-01T02:20:00Z", "end": "2026-01-01T02:45:00Z"}}, "affected_claims": ["no_bypass", "bypass_occurred"]}],
+  "must_not_conclude": ["bypass_occurred supported", "no_bypass supported for 02:00-03:00", "an effect_ref match treated as mediation", "scoped support extended to 02:20-02:45"],
+  "pr182_mapping": "PR182 Limits leave population completeness to 7.1.1. A 7.1.1-style basis exists only for the two scoped sub-intervals, under A4-A9; for alt-db 02:20-02:45 it is not established."
+}

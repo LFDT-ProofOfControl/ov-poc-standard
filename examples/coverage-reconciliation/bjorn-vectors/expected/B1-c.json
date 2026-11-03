@@ -1,0 +1,21 @@
+{
+  "schema": "bjorn-vectors/expected-outcome/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B1-c",
+  "family": "B1",
+  "frozen_before_any_run": true,
+  "integrity": {"predicate": "per-epoch signature, chain and sequence integrity of the presented records", "per_epoch": [{"epoch_id": "src-1/e1", "status": "verified"}, {"epoch_id": "src-1/e2", "status": "verified"}], "rules": ["R1", "R2"], "provenance": "echo of the declared stage-1 input; reported separately and never used to decide completeness"},
+  "cross_epoch": {"discontinuity": "restart_counter_reset", "from_epoch": "src-1/e1", "to_epoch": "src-1/e2", "link": "absent", "note": "cross-epoch completeness is assessed only from population evidence (R3)"},
+  "basis_assessment": {"kind": "independent_population_evidence", "evidence_id": "PB-1", "status": "covers_claim_scope", "covers": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T01:00:00Z"}, "internal_check": "7 entries equal checkpoint difference 127-120", "conditional_on": ["A1", "A2", "A3"], "rules": ["R4"]},
+  "reconciliation": {"scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T01:00:00Z"}}, "matched": [{"obligation_id": "O-3a7e", "record_id": "R-91d2"}, {"obligation_id": "O-b519", "record_id": "R-4c08"}, {"obligation_id": "O-2d84", "record_id": "R-e6f3"}, {"obligation_id": "O-58c1", "record_id": "R-07ab"}, {"obligation_id": "O-f60b", "record_id": "R-d3e9"}, {"obligation_id": "O-9e27", "record_id": "R-6b15"}], "missing": ["O-c41d"]},
+  "findings": [
+    {"type": "missing_record", "obligation_id": "O-c41d", "due": "2026-01-01T00:20:00Z", "evidence": "PB-1 entry ledger_seq 124 lists the obligation; no record carries it", "rules": ["R5"]}
+  ],
+  "claim_results": [
+    {"claim": "coverage_complete", "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record", "scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T01:00:00Z"}}, "status": "not_supported", "rules": ["R4", "R5"], "evidence": ["PB-1 covers the claim scope and its internal check holds", "O-c41d listed in PB-1 has no record"], "conditional_on": ["A1", "A2", "A3"]}
+  ],
+  "scoped_results": [],
+  "unestablished": [],
+  "must_not_conclude": ["population evidence repairs the missing record", "coverage_complete supported", "missing record reported as unestablished population"],
+  "pr182_mapping": "The population completeness basis is established under A1-A3. Obligation O-c41d is triggered and missing (finding missing), so the action is not covered. A reconciliation that correctly reports findings does not demonstrate coverage (C1)."
+}

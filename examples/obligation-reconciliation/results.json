@@ -1,0 +1,928 @@
+{
+  "schema": "obligation-reconciliation-results/1",
+  "cases": [
+    {
+      "case": "complete",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "compensating_duplicate",
+      "actual": {
+        "missing": [
+          "op1/attempt2/before"
+        ],
+        "no_admissible_record": [
+          "op1/attempt2/before"
+        ],
+        "undetermined": [],
+        "duplicates": [
+          "op1/attempt1/before"
+        ],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [
+          "op1/attempt2/before"
+        ],
+        "no_admissible_record": [
+          "op1/attempt2/before"
+        ],
+        "undetermined": [],
+        "duplicates": [
+          "op1/attempt1/before"
+        ],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "retry_is_distinct",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "unresolved_does_not_erase_obligation",
+      "actual": {
+        "missing": [
+          "op1/attempt1/before"
+        ],
+        "no_admissible_record": [
+          "op1/attempt1/before"
+        ],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": [
+          "op1/attempt1"
+        ]
+      },
+      "expected": {
+        "missing": [
+          "op1/attempt1/before"
+        ],
+        "no_admissible_record": [
+          "op1/attempt1/before"
+        ],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": [
+          "op1/attempt1"
+        ]
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "trigger_unknown_without_record",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [
+          "op1/attempt1/after"
+        ],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": [
+          "op1/attempt1"
+        ]
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [
+          "op1/attempt1/after"
+        ],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": [
+          "op1/attempt1"
+        ]
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "transport_redelivery",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "same_key_content_conflict",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [
+          "op1/attempt1/before"
+        ],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [
+          {
+            "record_id": "r1",
+            "variants": [
+              [
+                "r1",
+                "op1/attempt1/before",
+                "different-content"
+              ],
+              [
+                "r1",
+                "op1/attempt1/before",
+                "dispatch-bound-content"
+              ]
+            ],
+            "affected_declared_units": [
+              "op1/attempt1/before"
+            ],
+            "unmatched_units": []
+          }
+        ],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [
+          "op1/attempt1/before"
+        ],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [
+          {
+            "record_id": "r1",
+            "variants": [
+              [
+                "r1",
+                "op1/attempt1/before",
+                "different-content"
+              ],
+              [
+                "r1",
+                "op1/attempt1/before",
+                "dispatch-bound-content"
+              ]
+            ],
+            "affected_declared_units": [
+              "op1/attempt1/before"
+            ],
+            "unmatched_units": []
+          }
+        ],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "cross_key_binding_conflict",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [
+          "op1/attempt1/before",
+          "op1/attempt2/before"
+        ],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [
+          {
+            "record_id": "r1",
+            "variants": [
+              [
+                "r1",
+                "op1/attempt1/before",
+                "dispatch-bound-content"
+              ],
+              [
+                "r1",
+                "op1/attempt2/before",
+                "dispatch-bound-content"
+              ]
+            ],
+            "affected_declared_units": [
+              "op1/attempt1/before",
+              "op1/attempt2/before"
+            ],
+            "unmatched_units": []
+          }
+        ],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [
+          "op1/attempt1/before",
+          "op1/attempt2/before"
+        ],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [
+          {
+            "record_id": "r1",
+            "variants": [
+              [
+                "r1",
+                "op1/attempt1/before",
+                "dispatch-bound-content"
+              ],
+              [
+                "r1",
+                "op1/attempt2/before",
+                "dispatch-bound-content"
+              ]
+            ],
+            "affected_declared_units": [
+              "op1/attempt1/before",
+              "op1/attempt2/before"
+            ],
+            "unmatched_units": []
+          }
+        ],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "conflict_plus_separate_valid_record",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [
+          {
+            "record_id": "r1",
+            "variants": [
+              [
+                "r1",
+                "op1/attempt1/before",
+                "different-content"
+              ],
+              [
+                "r1",
+                "op1/attempt1/before",
+                "dispatch-bound-content"
+              ]
+            ],
+            "affected_declared_units": [
+              "op1/attempt1/before"
+            ],
+            "unmatched_units": []
+          }
+        ],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [
+          {
+            "record_id": "r1",
+            "variants": [
+              [
+                "r1",
+                "op1/attempt1/before",
+                "different-content"
+              ],
+              [
+                "r1",
+                "op1/attempt1/before",
+                "dispatch-bound-content"
+              ]
+            ],
+            "affected_declared_units": [
+              "op1/attempt1/before"
+            ],
+            "unmatched_units": []
+          }
+        ],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "inactive_without_record",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "inactive_with_record",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [
+          {
+            "record": [
+              "r1",
+              "op1/attempt1/before",
+              "dispatch-bound-content"
+            ],
+            "reason": "inactive"
+          }
+        ],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [
+          {
+            "record": [
+              "r1",
+              "op1/attempt1/before",
+              "dispatch-bound-content"
+            ],
+            "reason": "inactive"
+          }
+        ],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "undeclared_record",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [
+          {
+            "record": [
+              "r3",
+              "undeclared/attempt1/before",
+              "unbound-content"
+            ],
+            "reason": "undeclared"
+          }
+        ],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [
+          {
+            "record": [
+              "r3",
+              "undeclared/attempt1/before",
+              "unbound-content"
+            ],
+            "reason": "undeclared"
+          }
+        ],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "unresolved_with_all_required_records_present",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": [
+          "op1/attempt1"
+        ]
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": [
+          "op1/attempt1"
+        ]
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "unknown_with_record",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [
+          "op1/attempt1/before"
+        ],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [
+          "op1/attempt1/before"
+        ],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "conflict_retains_inactive_and_undeclared_variants",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [
+          {
+            "record_id": "r1",
+            "variants": [
+              [
+                "r1",
+                "op1/attempt1/before",
+                "dispatch-bound-content"
+              ],
+              [
+                "r1",
+                "undeclared/attempt1/before",
+                "unbound-content"
+              ]
+            ],
+            "affected_declared_units": [
+              "op1/attempt1/before"
+            ],
+            "unmatched_units": [
+              "op1/attempt1/before",
+              "undeclared/attempt1/before"
+            ]
+          }
+        ],
+        "unmatched": [
+          {
+            "record": [
+              "r1",
+              "op1/attempt1/before",
+              "dispatch-bound-content"
+            ],
+            "reason": "inactive"
+          },
+          {
+            "record": [
+              "r1",
+              "undeclared/attempt1/before",
+              "unbound-content"
+            ],
+            "reason": "undeclared"
+          }
+        ],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [
+          {
+            "record_id": "r1",
+            "variants": [
+              [
+                "r1",
+                "op1/attempt1/before",
+                "dispatch-bound-content"
+              ],
+              [
+                "r1",
+                "undeclared/attempt1/before",
+                "unbound-content"
+              ]
+            ],
+            "affected_declared_units": [
+              "op1/attempt1/before"
+            ],
+            "unmatched_units": [
+              "op1/attempt1/before",
+              "undeclared/attempt1/before"
+            ]
+          }
+        ],
+        "unmatched": [
+          {
+            "record": [
+              "r1",
+              "op1/attempt1/before",
+              "dispatch-bound-content"
+            ],
+            "reason": "inactive"
+          },
+          {
+            "record": [
+              "r1",
+              "undeclared/attempt1/before",
+              "unbound-content"
+            ],
+            "reason": "undeclared"
+          }
+        ],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "snapshot_unknown",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [
+          "op1/attempt1/after"
+        ],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": [
+          "op1/attempt1"
+        ]
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [
+          "op1/attempt1/after"
+        ],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": [
+          "op1/attempt1"
+        ]
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "snapshot_changed_declarations",
+      "actual": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "expected": {
+        "missing": [],
+        "no_admissible_record": [],
+        "undetermined": [],
+        "duplicates": [],
+        "conflicts": [],
+        "unmatched": [],
+        "unresolved": []
+      },
+      "checks": {
+        "expected_findings": true,
+        "input_unchanged": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "case": "linked_late_receipt",
+      "original": {
+        "assessment_id": "A0",
+        "model_version": "declared-obligation-reconciliation/2-candidate",
+        "scope": {
+          "id": "synthetic-op1-attempt1",
+          "population": [
+            "op1/attempt1"
+          ],
+          "completeness": "not established"
+        },
+        "references": {
+          "obligation_rules": {
+            "artifact": "premises.json#/obligation_rules",
+            "version": "synthetic-dispatch/1",
+            "sha256": "84851d66a1f5898236e125b16628fce28e5a3ae57200c85e348bc9577f34fd13"
+          },
+          "phase_profile": {
+            "artifact": "premises.json#/phase_profile",
+            "version": "synthetic-before-after/1",
+            "sha256": "8d9d0a90bd0b9756984b5a364b1b495afdb88b5d0c66ef584059a5140fa922e0"
+          },
+          "identity_policy": {
+            "artifact": "premises.json#/identity_policy",
+            "version": "synthetic-triple/2",
+            "sha256": "2dcedc4316373e56f581d106cc669ff13de7ae047504011f9897a3e87ff25074"
+          }
+        },
+        "original_cutoff": "2026-11-02T00:00:00Z",
+        "cutoff": "2026-11-02T00:00:00Z",
+        "clock_basis": "Synthetic UTC declarations; not a trusted clock",
+        "trigger_basis": {
+          "op1/attempt1/before": {
+            "source_id": "synthetic-dispatch-E0",
+            "artifact_ref": "controls.json#/linked/trigger_basis",
+            "binding": "op1/attempt1",
+            "event_at": "2026-11-01T23:50:00Z",
+            "available_at": "2026-11-01T23:51:00Z",
+            "declaration": "Dispatch asserted by fixture author; not authenticated."
+          }
+        },
+        "input_snapshot": {
+          "obligations": {
+            "op1/attempt1/before": "true"
+          },
+          "records": [],
+          "unresolved": [
+            "op1/attempt1"
+          ]
+        },
+        "input_sha256": "1cbe5369b2e9186038c046cfd8ea580466b851e1a14b3b92d8f4fd530bd34594",
+        "previous_assessment_ref": null,
+        "change": null,
+        "findings": {
+          "missing": [
+            "op1/attempt1/before"
+          ],
+          "no_admissible_record": [
+            "op1/attempt1/before"
+          ],
+          "undetermined": [],
+          "duplicates": [],
+          "conflicts": [],
+          "unmatched": [],
+          "unresolved": [
+            "op1/attempt1"
+          ]
+        },
+        "provenance_status": "SUPPLIED_SYNTHETIC_DECLARATIONS_NOT_VERIFIED"
+      },
+      "successor": {
+        "assessment_id": "A1",
+        "model_version": "declared-obligation-reconciliation/2-candidate",
+        "scope": {
+          "id": "synthetic-op1-attempt1",
+          "population": [
+            "op1/attempt1"
+          ],
+          "completeness": "not established"
+        },
+        "references": {
+          "obligation_rules": {
+            "artifact": "premises.json#/obligation_rules",
+            "version": "synthetic-dispatch/1",
+            "sha256": "84851d66a1f5898236e125b16628fce28e5a3ae57200c85e348bc9577f34fd13"
+          },
+          "phase_profile": {
+            "artifact": "premises.json#/phase_profile",
+            "version": "synthetic-before-after/1",
+            "sha256": "8d9d0a90bd0b9756984b5a364b1b495afdb88b5d0c66ef584059a5140fa922e0"
+          },
+          "identity_policy": {
+            "artifact": "premises.json#/identity_policy",
+            "version": "synthetic-triple/2",
+            "sha256": "2dcedc4316373e56f581d106cc669ff13de7ae047504011f9897a3e87ff25074"
+          }
+        },
+        "original_cutoff": "2026-11-02T00:00:00Z",
+        "cutoff": "2026-11-02T01:00:00Z",
+        "clock_basis": "Synthetic UTC declarations; not a trusted clock",
+        "trigger_basis": {
+          "op1/attempt1/before": {
+            "source_id": "synthetic-dispatch-E0",
+            "artifact_ref": "controls.json#/linked/trigger_basis",
+            "binding": "op1/attempt1",
+            "event_at": "2026-11-01T23:50:00Z",
+            "available_at": "2026-11-01T23:51:00Z",
+            "declaration": "Dispatch asserted by fixture author; not authenticated."
+          }
+        },
+        "input_snapshot": {
+          "obligations": {
+            "op1/attempt1/before": "true"
+          },
+          "records": [
+            [
+              "late-r1",
+              "op1/attempt1/before",
+              "before-receipt"
+            ]
+          ],
+          "unresolved": [
+            "op1/attempt1"
+          ]
+        },
+        "input_sha256": "dfb29bdd020c6fe02d536a585af35e4ac7cbb0e69cfe429d8f5c6572a5e686a8",
+        "previous_assessment_ref": {
+          "assessment_id": "A0",
+          "sha256": "0eea46de7f6a9fbc92ff9dca7767a61a1b353e4420c6003c0ac2d71fa81159a6"
+        },
+        "change": {
+          "kind": "late_receipt",
+          "added_records": [
+            [
+              "late-r1",
+              "op1/attempt1/before",
+              "before-receipt"
+            ]
+          ],
+          "added_evidence": [
+            {
+              "record_id": "late-r1",
+              "artifact_ref": "controls.json#/linked/successor/input/records/0",
+              "event_at": "2026-11-01T23:55:00Z",
+              "available_at": "2026-11-02T00:30:00Z",
+              "basis": "Synthetic supplied late receipt; no declared outcome-resolution evidence."
+            }
+          ],
+          "reason": "Newly available before receipt; premises and outcome declaration unchanged."
+        },
+        "findings": {
+          "missing": [],
+          "no_admissible_record": [],
+          "undetermined": [],
+          "duplicates": [],
+          "conflicts": [],
+          "unmatched": [],
+          "unresolved": [
+            "op1/attempt1"
+          ]
+        },
+        "provenance_status": "SUPPLIED_SYNTHETIC_DECLARATIONS_NOT_VERIFIED"
+      },
+      "checks": {
+        "original_expected": true,
+        "successor_expected": true,
+        "original_bytes_unchanged": true,
+        "original_object_unchanged": true,
+        "input_objects_unchanged": true,
+        "separate_identity": true,
+        "previous_link_exact": true,
+        "original_cutoff_preserved": true,
+        "current_cutoffs_retained": true,
+        "same_premises_and_trigger_basis": true,
+        "snapshot_bindings_exact": true,
+        "added_evidence_retained": true,
+        "outcomes_remain_unresolved": true,
+        "references_bind_included_premise_bytes": true
+      },
+      "comparison": "PASS"
+    }
+  ],
+  "passed": 18,
+  "failed": 0,
+  "scope": "18 synthetic controls; contributor-authored expectations; no full proposal coverage"
+}

@@ -1,0 +1,1526 @@
+{
+  "schema": "coverage-reconciliation/recorded-result-view/v1",
+  "view_kind": "Derived selected fields; not the original receipts, not a new run, not independently replayable proof of the original execution",
+  "recorded_at": "2026-10-30T23:35:15.525672+00:00",
+  "canonical_campaign_result_digest": {
+    "bytes": 108101,
+    "sha256": "72ba4f972e0fb9930e9f847d99fb92214cd7d42ab6711240f53eb687e464aef5"
+  },
+  "original_execution": {
+    "attempted": 13,
+    "comparison_pass": 13,
+    "automatic_retries": 0,
+    "fixture_fallbacks": 0,
+    "subject_code_modified": false
+  },
+  "evidence_boundary": "Original host receipts and full records are retained unchanged by the contributor. This compact public view omits machine paths and orchestration/workflow records. Digest values identify the originals; omitted bytes cannot be revalidated from this view alone. Reviewer reproduction uses fresh runs and IDs.",
+  "results": [
+    {
+      "case_id": "B1-a1",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "coverage_complete",
+          "conditional_on": [],
+          "evidence": [
+            "no population evidence supplied"
+          ],
+          "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record",
+          "rules": [
+            "R2",
+            "R6"
+          ],
+          "scope": {
+            "instance_id": "src-1",
+            "interval": {
+              "end": "2026-01-01T01:00:00Z",
+              "start": "2026-01-01T00:00:00Z"
+            }
+          },
+          "status": "not_established"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "per_epoch": [
+          {
+            "epoch_id": "src-1/e1",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          }
+        ],
+        "projection": [
+          {
+            "epoch_id": "src-1/e1",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          }
+        ],
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 2325,
+          "sha256": "df0fe3e82f49becca7a2832f759f2bd4340ec42d60334b9df5dcb35b242de5f8"
+        },
+        "outcome": {
+          "bytes": 1338,
+          "sha256": "fe9daeb93e0afa67c5f46b2acda2f4caaa0f00f6f7de72c0ea7e79d8ceeaa531"
+        },
+        "measured": {
+          "bytes": 4727,
+          "sha256": "dbda07d008edd54360f1a2053a5a5ae183f231e62656e7b93b1011e2556312f9"
+        },
+        "comparison_stdout": {
+          "bytes": 1883,
+          "sha256": "165dc3ec334262495eb6eadc07f32ac75cbfe5c67b4d4e31bf1976f0fc305f06"
+        }
+      }
+    },
+    {
+      "case_id": "B1-a2",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "coverage_complete",
+          "conditional_on": [],
+          "evidence": [
+            "population evidence covers only part of the claim interval"
+          ],
+          "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record",
+          "rules": [
+            "R6",
+            "R7"
+          ],
+          "scope": {
+            "instance_id": "src-1",
+            "interval": {
+              "end": "2026-01-01T01:00:00Z",
+              "start": "2026-01-01T00:00:00Z"
+            }
+          },
+          "status": "not_established"
+        }
+      ],
+      "scoped_results": [
+        {
+          "claim": "coverage_complete",
+          "conditional_on": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "evidence": [
+            "population evidence covers this sub-interval"
+          ],
+          "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record",
+          "rules": [
+            "R4",
+            "R7",
+            "R12"
+          ],
+          "scope": {
+            "instance_id": "src-1",
+            "interval": {
+              "end": "2026-01-01T01:00:00Z",
+              "start": "2026-01-01T00:25:00Z"
+            }
+          },
+          "status": "supported"
+        }
+      ],
+      "measured_summary": {
+        "per_epoch": [
+          {
+            "epoch_id": "src-1/e1",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          }
+        ],
+        "projection": [
+          {
+            "epoch_id": "src-1/e1",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          }
+        ],
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 3940,
+          "sha256": "ff9d4ad9b67a893352be343511d05bb6a52a0014fb5941ebc71a44ad06cb92c8"
+        },
+        "outcome": {
+          "bytes": 2287,
+          "sha256": "0f1c4f9893b296615cbfc4b85a8fe39401c524ed06fbec107bfd9071971e9b0d"
+        },
+        "measured": {
+          "bytes": 4727,
+          "sha256": "af2dc92f9d3219f7a3f049d3c2f5423a4025dee3d20e33fcfdfd89df318434c9"
+        },
+        "comparison_stdout": {
+          "bytes": 1883,
+          "sha256": "a866c80d1a6c699b57ddcf9321283af78de03118986c283328192697de50d16a"
+        }
+      }
+    },
+    {
+      "case_id": "B1-b",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "coverage_complete",
+          "conditional_on": [],
+          "evidence": [
+            "an epoch link is not population evidence"
+          ],
+          "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record",
+          "rules": [
+            "R3",
+            "R6"
+          ],
+          "scope": {
+            "instance_id": "src-1",
+            "interval": {
+              "end": "2026-01-01T01:00:00Z",
+              "start": "2026-01-01T00:00:00Z"
+            }
+          },
+          "status": "not_established"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "per_epoch": [
+          {
+            "epoch_id": "src-1/e1",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "verified": true,
+            "message": "chain verified: 4 records"
+          }
+        ],
+        "projection": [
+          {
+            "epoch_id": "src-1/e1",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "chain_length": 4,
+            "control_records": 1,
+            "business_records": 3
+          }
+        ],
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 3098,
+          "sha256": "73b6d96f1f8e0ebd41d758b4c0c449096990466c241bbc096608183fffcf201e"
+        },
+        "outcome": {
+          "bytes": 1431,
+          "sha256": "abe8c491b3380c47c4d75c0c1ed4fcd584e2488c1ff300e469aca9b032ffb543"
+        },
+        "measured": {
+          "bytes": 5073,
+          "sha256": "5f837935276ea91c15a2a56d52799259a229b0b0e2fc64ad96c3734991a9173a"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "2afddeec4e9bd2fc3b8a2e7f0c387bee41c149a18405e8d7c78ee99f80e6220b"
+        }
+      }
+    },
+    {
+      "case_id": "B1-c",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "coverage_complete",
+          "conditional_on": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "evidence": [
+            "population evidence covers the claim scope and its internal check holds"
+          ],
+          "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record",
+          "rules": [
+            "R4",
+            "R5"
+          ],
+          "scope": {
+            "instance_id": "src-1",
+            "interval": {
+              "end": "2026-01-01T01:00:00Z",
+              "start": "2026-01-01T00:00:00Z"
+            }
+          },
+          "status": "not_supported"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "per_epoch": [
+          {
+            "epoch_id": "src-1/e1",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          }
+        ],
+        "projection": [
+          {
+            "epoch_id": "src-1/e1",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          }
+        ],
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 4397,
+          "sha256": "98793ef00d702d6a13e18385893795d094cdd811647837f96ef4bc17df305107"
+        },
+        "outcome": {
+          "bytes": 2116,
+          "sha256": "c69e848543f50f23e8c7417e7facca39b1f77d9ad2b6690682f4e5ac8f694e1e"
+        },
+        "measured": {
+          "bytes": 4726,
+          "sha256": "bf55a73860d25c7a751d37e3224a551150fd0725ef7cdc443845f2cfaa25c767"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "c95068d3753db959866e4777a85bc43e039a0fc87e5ee92cfba2c4e9fd049444"
+        }
+      }
+    },
+    {
+      "case_id": "B1-d",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "coverage_complete",
+          "conditional_on": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "evidence": [
+            "population evidence covers the claim scope and its internal check holds"
+          ],
+          "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record",
+          "rules": [
+            "R4",
+            "R12"
+          ],
+          "scope": {
+            "instance_id": "src-1",
+            "interval": {
+              "end": "2026-01-01T01:00:00Z",
+              "start": "2026-01-01T00:00:00Z"
+            }
+          },
+          "status": "supported"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "per_epoch": [
+          {
+            "epoch_id": "src-1/e1",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "verified": true,
+            "message": "chain verified: 3 records"
+          }
+        ],
+        "projection": [
+          {
+            "epoch_id": "src-1/e1",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          },
+          {
+            "epoch_id": "src-1/e2",
+            "chain_length": 3,
+            "control_records": 0,
+            "business_records": 3
+          }
+        ],
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 4280,
+          "sha256": "0f23df0696bbc767e966778a43ff14f634865b1f63842d0c29395109a247786b"
+        },
+        "outcome": {
+          "bytes": 1915,
+          "sha256": "32e5590bf1380797ab96e3b1730cb83cdb156efcafe26574fd459b3ca6936fba"
+        },
+        "measured": {
+          "bytes": 4726,
+          "sha256": "558580af85086bd19e85675ae74a9e48e2e5dd3c4280616799d17545a4009038"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "54ca9efdd6d02f92d1299c41997bfba57e615ca607b922e3477e9e11fb181ebf"
+        }
+      }
+    },
+    {
+      "case_id": "B2-a",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R9",
+            "R13"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        },
+        {
+          "claim": "bypass_occurred",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "at least one effect on a required surface in the scope took a non-mediated route",
+          "rules": [
+            "R9",
+            "R11"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        }
+      ],
+      "scoped_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8",
+            "A9"
+          ],
+          "evidence": [
+            "every required surface adequately observed and bound in this sub-interval"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R7",
+            "R8",
+            "R12"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T02:20:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "supported"
+        },
+        {
+          "claim": "no_bypass",
+          "conditional_on": [
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8",
+            "A9"
+          ],
+          "evidence": [
+            "every required surface adequately observed and bound in this sub-interval"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R7",
+            "R8",
+            "R12"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:45:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "supported"
+        }
+      ],
+      "measured_summary": {
+        "chain": {
+          "verified": true,
+          "message": "chain verified: 3 records",
+          "chain_length": 3
+        },
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 6158,
+          "sha256": "5c446903c26ee8a48fb83079277c231206d8666d454b772b9e2e0902a5870317"
+        },
+        "outcome": {
+          "bytes": 3124,
+          "sha256": "be37ede2fac0af70b386ca114426c565027f389a147d09bafb1ba46bbecb0378"
+        },
+        "measured": {
+          "bytes": 3270,
+          "sha256": "f74b2ce5150b671a9975da2076d84fe58e511162b84b5a7f927c2461339a094a"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "5d248699ac90acd7fdceeaef83ccec97e5cad5285c9f139202a078f49ed02898"
+        }
+      }
+    },
+    {
+      "case_id": "B2-b",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R9",
+            "R13"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        },
+        {
+          "claim": "bypass_occurred",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "at least one effect on a required surface in the scope took a non-mediated route",
+          "rules": [
+            "R9",
+            "R11"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "chain": {
+          "verified": true,
+          "message": "chain verified: 3 records",
+          "chain_length": 3
+        },
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 4788,
+          "sha256": "98343d909d79861d98c0d4fcc0de234f2773798ec42fcc44e07ba5d473078617"
+        },
+        "outcome": {
+          "bytes": 2139,
+          "sha256": "e697eb2301b8a1b02adfe8af1a18b1addb41d62e087e99e119947cc4ff6ffcab"
+        },
+        "measured": {
+          "bytes": 3270,
+          "sha256": "c0f90eb29dfcc959a377f6463b0a24d96fecfa5b030f913d57506a7dded88bf7"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "2699b9a903d44b495965a7c79dfbf5a174f172f5b3bb0a272256c2fff7ef0f66"
+        }
+      }
+    },
+    {
+      "case_id": "B2-c",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R9",
+            "R13"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        },
+        {
+          "claim": "bypass_occurred",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "at least one effect on a required surface in the scope took a non-mediated route",
+          "rules": [
+            "R9",
+            "R11"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "chain": {
+          "verified": true,
+          "message": "chain verified: 3 records",
+          "chain_length": 3
+        },
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 4759,
+          "sha256": "cf9653a5208176199e5c37719231586691fa972948eb6de6fc6bc6a01328bf23"
+        },
+        "outcome": {
+          "bytes": 2144,
+          "sha256": "da2fbcfbe87435ba0ecdf7d3abd66728682c6fb946f45d85d68e436a2f6bc4e5"
+        },
+        "measured": {
+          "bytes": 3270,
+          "sha256": "6f5494be920b68ffa91c56862d8c5ad80caff7034d5f6eebc06f92cec6b1150b"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "d42ab5bb1778f9d432f40cee3817dd99abee08e9f9fd7a76ad82161968570f93"
+        }
+      }
+    },
+    {
+      "case_id": "B2-d1",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": [
+          {
+            "ids": [
+              "A5"
+            ],
+            "note": "permitted conservative dependency, not exact equality",
+            "path": "claim_results[bypass_occurred@surfaces:alt-db,gw-http|2026-01-01T02:00:00Z|2026-01-01T03:00:00Z].conditional_on"
+          },
+          {
+            "ids": [
+              "A5"
+            ],
+            "note": "permitted conservative dependency, not exact equality",
+            "path": "claim_results[no_bypass@surfaces:alt-db,gw-http|2026-01-01T02:00:00Z|2026-01-01T03:00:00Z].conditional_on"
+          }
+        ]
+      },
+      "claim_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [
+            "A4",
+            "A5",
+            "A6",
+            "A9"
+          ],
+          "evidence": [
+            "witnessed non-mediated route: E-77 route svc-batch"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R11"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_supported"
+        },
+        {
+          "claim": "bypass_occurred",
+          "conditional_on": [
+            "A4",
+            "A5",
+            "A6",
+            "A9"
+          ],
+          "evidence": [
+            "witnessed non-mediated route: E-77 route svc-batch"
+          ],
+          "polarity": "at least one effect on a required surface in the scope took a non-mediated route",
+          "rules": [
+            "R11",
+            "R12"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "supported"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "chain": {
+          "verified": true,
+          "message": "chain verified: 3 records",
+          "chain_length": 3
+        },
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 5804,
+          "sha256": "19120df5a1b40a90082468e74a86ade06a78f35170e1e25010b066c163bc2ff2"
+        },
+        "outcome": {
+          "bytes": 2253,
+          "sha256": "466e45390e5a613344f0b0c7d0c84c19b2992b540fc133e423503cc6d951dda8"
+        },
+        "measured": {
+          "bytes": 3271,
+          "sha256": "2bbf80661e557b54f87649eea28f3a8043f1b29ce0277766b647efa4d15f4226"
+        },
+        "comparison_stdout": {
+          "bytes": 2377,
+          "sha256": "e626be2f6698b929eaa52e4bced624092715f449caf4c3602d3a1e8fb01eab51"
+        }
+      }
+    },
+    {
+      "case_id": "B2-d2",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R9",
+            "R13"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        },
+        {
+          "claim": "bypass_occurred",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "at least one effect on a required surface in the scope took a non-mediated route",
+          "rules": [
+            "R9",
+            "R11"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "chain": {
+          "verified": true,
+          "message": "chain verified: 3 records",
+          "chain_length": 3
+        },
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 4992,
+          "sha256": "e1dd8f6e1a743eb7b8d8f982d0dedf9c23d1a0353fa5e573d99610b588430e0f"
+        },
+        "outcome": {
+          "bytes": 2257,
+          "sha256": "30848fd1838824884317bbb9e741527e384013aa984a7b56079d232bf83bd6b9"
+        },
+        "measured": {
+          "bytes": 3271,
+          "sha256": "36f8d32427ca4aa95ccfc7ce10b00ab6eb10a9682fb43a2ff6727be921b83e4f"
+        },
+        "comparison_stdout": {
+          "bytes": 1883,
+          "sha256": "71bfefbe49406c98210c07ccf343ed5613718a6a38052e78f2b246202fc67618"
+        }
+      }
+    },
+    {
+      "case_id": "B2-e",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8",
+            "A9"
+          ],
+          "evidence": [
+            "every required surface adequately observed and bound; every observed effect took a mediated route"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R8",
+            "R12"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "supported"
+        },
+        {
+          "claim": "bypass_occurred",
+          "conditional_on": [
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8",
+            "A9"
+          ],
+          "evidence": [
+            "every required surface adequately observed and bound; every observed effect took a mediated route"
+          ],
+          "polarity": "at least one effect on a required surface in the scope took a non-mediated route",
+          "rules": [
+            "R8"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_supported"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "chain": {
+          "verified": true,
+          "message": "chain verified: 3 records",
+          "chain_length": 3
+        },
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 5572,
+          "sha256": "de828c6388a3f6cc0898d82222a07c33ee586ea183bf112d53119b8d4959fa79"
+        },
+        "outcome": {
+          "bytes": 1998,
+          "sha256": "aa8a990d59d17dd411d9a9d99b72a80633116c966f26574ed9a6c39ff6608805"
+        },
+        "measured": {
+          "bytes": 3270,
+          "sha256": "e9bf1dba327c149d497f93133a8f847418f20df9b8e2ce9cb22ad2871a5db966"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "43acacb08e9d5229033b107550fee3a2cf1b13b318958bd210b0e80ce3c8e133"
+        }
+      }
+    },
+    {
+      "case_id": "B2-f",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R9",
+            "R13"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        },
+        {
+          "claim": "bypass_occurred",
+          "conditional_on": [],
+          "evidence": [
+            "observation, binding or route evidence is insufficient and no non-mediated route was witnessed"
+          ],
+          "polarity": "at least one effect on a required surface in the scope took a non-mediated route",
+          "rules": [
+            "R9",
+            "R11"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_established"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "chain": {
+          "verified": true,
+          "message": "chain verified: 3 records",
+          "chain_length": 3
+        },
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 3810,
+          "sha256": "98d97369edc3da95cd8cd42df3d84a31697553ed8adfd0069b4cb3aa55e3c225"
+        },
+        "outcome": {
+          "bytes": 2068,
+          "sha256": "671a339177bc091208e46c58104853a8f157eb8f13bb8c571f18bd725c2470df"
+        },
+        "measured": {
+          "bytes": 3270,
+          "sha256": "8fe29aa8ddd5b30c23c027aad80814ab9ec98f2b5df4b0be2965ffa921e46793"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "3e084751f4158c26a13a744868744ce245497eb97056942876ea85b27f889e92"
+        }
+      }
+    },
+    {
+      "case_id": "B2-g",
+      "comparison": {
+        "overall": "PASS",
+        "outcome_match": true,
+        "measurement_status": "MATCH",
+        "measurement_match": true,
+        "run_binding": "verified",
+        "orchestration": "verified",
+        "additional_dependencies": []
+      },
+      "claim_results": [
+        {
+          "claim": "no_bypass",
+          "conditional_on": [
+            "A6",
+            "A9",
+            "A10"
+          ],
+          "evidence": [
+            "witnessed non-mediated route: E-78 route svc-batch"
+          ],
+          "polarity": "every effect on a required surface in the scope took a mediated route",
+          "rules": [
+            "R11"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "not_supported"
+        },
+        {
+          "claim": "bypass_occurred",
+          "conditional_on": [
+            "A6",
+            "A9",
+            "A10"
+          ],
+          "evidence": [
+            "witnessed non-mediated route: E-78 route svc-batch"
+          ],
+          "polarity": "at least one effect on a required surface in the scope took a non-mediated route",
+          "rules": [
+            "R11",
+            "R12"
+          ],
+          "scope": {
+            "interval": {
+              "end": "2026-01-01T03:00:00Z",
+              "start": "2026-01-01T02:00:00Z"
+            },
+            "surfaces": [
+              "gw-http",
+              "alt-db"
+            ]
+          },
+          "status": "supported"
+        }
+      ],
+      "scoped_results": [],
+      "measured_summary": {
+        "chain": {
+          "verified": true,
+          "message": "chain verified: 3 records",
+          "chain_length": 3
+        },
+        "semantic_diff": [],
+        "parts": {
+          "measured": [
+            "verify_chain result of each full generated chain, control records included",
+            "record sequence positions and epoch-link previous_last_seq from the generated chains"
+          ],
+          "simulated": [
+            "population evidence",
+            "observations, segments and completeness evidence",
+            "routes and mediation bindings",
+            "assumptions",
+            "record times, copied from the fixture by chain position"
+          ],
+          "declared": [
+            "integrity_inputs, copied unchanged; measured integrity appears only in this file"
+          ],
+          "not_measured": [
+            "RelyingParty capability checks and dispatch: no RelyingParty is instantiated",
+            "gateway executed=True without a relying party is a release signal, not an endpoint execution result"
+          ]
+        }
+      },
+      "canonical_artifact_digests": {
+        "input": {
+          "bytes": 5376,
+          "sha256": "43604829a2feab63800f562a9c0f784c864845055363a0e9f44032994e5d2747"
+        },
+        "outcome": {
+          "bytes": 2276,
+          "sha256": "958d787d7f39032532fefa53bf751942c6f93fb4ee85e2091f9e35f2518b09ad"
+        },
+        "measured": {
+          "bytes": 3270,
+          "sha256": "1d9bc7b2058955089726871020bffb62227db9b87a1e7a66e4a0e8a2856fdbd0"
+        },
+        "comparison_stdout": {
+          "bytes": 1882,
+          "sha256": "a61069594447d5c9e9e244ef821dc980e2b4791ce1714dfdf2f57baf9977bae9"
+        }
+      }
+    }
+  ]
+}

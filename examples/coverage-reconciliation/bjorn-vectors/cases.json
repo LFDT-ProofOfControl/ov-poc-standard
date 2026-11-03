@@ -1,0 +1,99 @@
+{
+  "schema": "bjorn-vectors/cases/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "revision": "R1 frozen input format; publication metadata view",
+  "attribution_note": "B1 restart/loss and B2 alternate-path scenario ideas are credited to Bjorn Vidar Hauge (VERITON AS). His source proposal disclosed a commercial interest and described proposed tests, not completed results. The contributor prepared this finite model, implementation and results, and separately added positive controls and bounded variants. The status string is a required validation value in fixture inputs and retained historical metadata in the case/rule catalogues; it does not describe the date-stamped recorded results in this export.",
+  "cases": [
+    {
+      "case_id": "B1-a1",
+      "family": "B1",
+      "title": "Restart after pre-writer loss; no population evidence",
+      "origin": "bjorn-scenario",
+      "source": "B1/B2 scenario suggestion, formalized in this finite model"
+    },
+    {
+      "case_id": "B1-a2",
+      "family": "B1",
+      "title": "Restart; population evidence for the second epoch only",
+      "origin": "contributor-variant",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B1-b",
+      "family": "B1",
+      "title": "Restart; verified epoch link only, link verified inside the second epoch chain",
+      "origin": "bjorn-scenario",
+      "source": "B1/B2 scenario suggestion, formalized in this finite model"
+    },
+    {
+      "case_id": "B1-c",
+      "family": "B1",
+      "title": "Complete population evidence exposes the missing obligation",
+      "origin": "contributor-control",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B1-d",
+      "family": "B1",
+      "title": "Complete population evidence, nothing withheld",
+      "origin": "contributor-control",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B2-a",
+      "family": "B2",
+      "title": "Alternate-path effect while its observation surface is unreadable",
+      "origin": "bjorn-scenario",
+      "source": "B1/B2 scenario suggestion, formalized in this finite model"
+    },
+    {
+      "case_id": "B2-b",
+      "family": "B2",
+      "title": "Alternate-path effect under sampled, incomplete observation",
+      "origin": "contributor-variant",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B2-c",
+      "family": "B2",
+      "title": "Empty observation result without a completeness mechanism",
+      "origin": "contributor-variant",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B2-d1",
+      "family": "B2",
+      "title": "Detection control: visible alternate-route effect with mediation-binding evidence",
+      "origin": "contributor-control",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B2-d2",
+      "family": "B2",
+      "title": "Visible unrecorded effect without mediation-binding evidence",
+      "origin": "contributor-variant",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B2-e",
+      "family": "B2",
+      "title": "No-bypass control: adequate observation and explicit mediation binding for every surface, nothing injected",
+      "origin": "contributor-control",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B2-f",
+      "family": "B2",
+      "title": "Matched references and complete observation without mediation binding",
+      "origin": "contributor-variant",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    },
+    {
+      "case_id": "B2-g",
+      "family": "B2",
+      "title": "Incomplete observation that still witnesses a bound bypass",
+      "origin": "contributor-variant",
+      "source": "Additional contributor control or bounded variant; not attributed to Bjorn as a proposed case"
+    }
+  ]
+}

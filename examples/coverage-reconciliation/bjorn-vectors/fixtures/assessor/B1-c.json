@@ -1,0 +1,23 @@
+{
+  "schema": "bjorn-vectors/assessor-input/v0",
+  "status": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED",
+  "case_id": "B1-c",
+  "family": "B1",
+  "claim": {"kind": "coverage_complete", "polarity": "every evidence obligation of src-1 due in the interval is met by exactly one record", "scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T01:00:00Z"}}, "cutoff": "2026-01-01T01:05:00Z"},
+  "source_instances": [{"instance_id": "src-1", "epochs": [{"epoch_id": "src-1/e1", "counter_start": 0, "declared_start": "2026-01-01T00:00:00Z"}, {"epoch_id": "src-1/e2", "counter_start": 0, "declared_start": "2026-01-01T00:25:00Z", "start_reason": "restart_counter_reset"}]}],
+  "integrity_inputs": {"provenance": "synthetic stage-1 declaration for design review; no signature or chain verification was performed", "per_epoch": [{"epoch_id": "src-1/e1", "chain": "verified", "records": 3}, {"epoch_id": "src-1/e2", "chain": "verified", "records": 3}]},
+  "records": [
+    {"record_id": "R-91d2", "epoch_id": "src-1/e1", "seq": 0, "time": "2026-01-01T00:05:00Z", "obligation_id": "O-3a7e"},
+    {"record_id": "R-4c08", "epoch_id": "src-1/e1", "seq": 1, "time": "2026-01-01T00:10:00Z", "obligation_id": "O-b519"},
+    {"record_id": "R-e6f3", "epoch_id": "src-1/e1", "seq": 2, "time": "2026-01-01T00:15:00Z", "obligation_id": "O-2d84"},
+    {"record_id": "R-07ab", "epoch_id": "src-1/e2", "seq": 0, "time": "2026-01-01T00:30:00Z", "obligation_id": "O-58c1"},
+    {"record_id": "R-d3e9", "epoch_id": "src-1/e2", "seq": 1, "time": "2026-01-01T00:40:00Z", "obligation_id": "O-f60b"},
+    {"record_id": "R-6b15", "epoch_id": "src-1/e2", "seq": 2, "time": "2026-01-01T00:50:00Z", "obligation_id": "O-9e27"}
+  ],
+  "assumptions": [
+    {"id": "A1", "text": "origin-ledger-1 is written by the origin system before, and independently of, the evidence writer; loss at or before the writer cannot remove ledger entries", "status": "declared_not_verified"},
+    {"id": "A2", "text": "ledger checkpoints are authentic and the ledger is append-only between them", "status": "declared_not_verified"},
+    {"id": "A3", "text": "each in-scope event of src-1 creates exactly one ledger entry and exactly one evidence obligation with the same obligation_id", "status": "declared_not_verified"}
+  ],
+  "population_evidence": {"kind": "independent_population_evidence", "evidence_id": "PB-1", "producer": "origin-ledger-1", "mechanism": "append-only origin ledger with signed checkpoints; this export covers both epochs", "scope": {"instance_id": "src-1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T01:00:00Z"}}, "checkpoints": [{"time": "2026-01-01T00:00:00Z", "ledger_seq": 120}, {"time": "2026-01-01T01:00:00Z", "ledger_seq": 127}], "entries": [{"ledger_seq": 121, "obligation_id": "O-3a7e", "due": "2026-01-01T00:05:00Z"}, {"ledger_seq": 122, "obligation_id": "O-b519", "due": "2026-01-01T00:10:00Z"}, {"ledger_seq": 123, "obligation_id": "O-2d84", "due": "2026-01-01T00:15:00Z"}, {"ledger_seq": 124, "obligation_id": "O-c41d", "due": "2026-01-01T00:20:00Z"}, {"ledger_seq": 125, "obligation_id": "O-58c1", "due": "2026-01-01T00:30:00Z"}, {"ledger_seq": 126, "obligation_id": "O-f60b", "due": "2026-01-01T00:40:00Z"}, {"ledger_seq": 127, "obligation_id": "O-9e27", "due": "2026-01-01T00:50:00Z"}], "assumptions": ["A1", "A2", "A3"]}
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bjorn-vectors/expected-outcome/v0",
+  "title": "Frozen expected outcome. DESIGN CANDIDATE / PROPOSED, NOT EXECUTED. Not readable by the assessor. Revision R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "status", "case_id", "family", "frozen_before_any_run", "integrity", "findings", "claim_results", "scoped_results", "unestablished", "must_not_conclude", "pr182_mapping"],
+  "properties": {
+    "schema": {"const": "bjorn-vectors/expected-outcome/v0"},
+    "status": {"const": "DESIGN CANDIDATE / PROPOSED, NOT EXECUTED"},
+    "case_id": {"type": "string"},
+    "family": {"enum": ["B1", "B2"]},
+    "frozen_before_any_run": {"const": true},
+    "integrity": {"type": "object", "required": ["predicate", "rules", "provenance"]},
+    "cross_epoch": {"type": "object", "required": ["discontinuity", "from_epoch", "to_epoch", "link"]},
+    "basis_assessment": {"type": "object", "required": ["kind", "status", "rules"]},
+    "reconciliation": {"type": ["object", "null"]},
+    "observation_assessment": {"type": "array", "items": {"type": "object", "required": ["surface", "adequate", "inadequate"]}},
+    "mediation_assessment": {"type": "array", "items": {"type": "object", "required": ["surface", "status", "rules"], "properties": {"status": {"enum": ["bound", "absent"]}}}},
+    "findings": {"type": "array", "items": {"type": "object", "required": ["type", "evidence", "rules"], "properties": {"type": {"enum": ["missing_record", "duplicate_record", "unrecorded_effect", "non_mediated_route"]}}}},
+    "claim_results": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/result"}},
+    "scoped_results": {"type": "array", "items": {"$ref": "#/$defs/result"}},
+    "unestablished": {"type": "array", "items": {"type": "object", "required": ["scope", "affected_claims"]}},
+    "must_not_conclude": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "pr182_mapping": {"type": "string"}
+  },
+  "$defs": {
+    "result": {"type": "object", "additionalProperties": false, "required": ["claim", "polarity", "scope", "status", "rules", "evidence", "conditional_on"], "properties": {"claim": {"enum": ["coverage_complete", "no_bypass", "bypass_occurred"]}, "polarity": {"type": "string"}, "scope": {"type": "object", "required": ["interval"]}, "status": {"enum": ["supported", "not_supported", "not_established"]}, "rules": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "evidence": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "conditional_on": {"type": "array", "items": {"type": "string"}}}}
+  }
+}
