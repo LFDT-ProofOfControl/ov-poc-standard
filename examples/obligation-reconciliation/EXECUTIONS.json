@@ -1,0 +1,119 @@
+{
+  "schema": "obligation-example-executions/1",
+  "scope": "One submitted synthetic suite, two historical executions reported by the contributor and one separate export smoke run. Not independent suite design or third-party reproduction.",
+  "historical_records_availability": "Contributor-retained private originals; this summary does not publish or independently establish their execution chronology. Original bytes remain unchanged.",
+  "historical_executions": [
+    {
+      "role": "implementation-owner execution",
+      "started_at": "2026-11-03T18:32:55.328994+00:00",
+      "completed_at": "2026-11-03T18:32:55.351464+00:00",
+      "python": "3.14.6",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "passed": 18,
+      "failed": 0,
+      "stdout_sha256": "a5f0c74901d99dc40370b82287dc2c7b2a93fc7170f20c8c4e22df28d6441752",
+      "source_hashes": {
+        "controls.json": "6ef0ff03cf239a1a80549911952b6b88f43a80ba5336bd8733a3a8af785baee0",
+        "run_controls.py": "39bfa1573abdd196b25df08f95e006634f0dbc2166154508e1759d942d19a7cd",
+        "CONTRACT.md": "fdb255694c79c64349f609ef10b76db410d42162423961a8752974c0a4ff2997",
+        "premises.json": "ec8b1cfac9a9aeb1b59c264ea5a5361bf1778ca3bf958758435a421b16376011",
+        "reconcile.py": "1ebad1adb51184d3e2abbdda471f418ca7e73872ed6e28d47bafeb6b80c0605b"
+      }
+    },
+    {
+      "role": "separate review-environment execution of the submitted suite",
+      "reported_on": "2026-11-03",
+      "python": "3.12.14",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "passed": 18,
+      "failed": 0,
+      "stdout_sha256": "a5f0c74901d99dc40370b82287dc2c7b2a93fc7170f20c8c4e22df28d6441752",
+      "source_hashes": {
+        "controls.json": "6ef0ff03cf239a1a80549911952b6b88f43a80ba5336bd8733a3a8af785baee0",
+        "run_controls.py": "39bfa1573abdd196b25df08f95e006634f0dbc2166154508e1759d942d19a7cd",
+        "CONTRACT.md": "fdb255694c79c64349f609ef10b76db410d42162423961a8752974c0a4ff2997",
+        "premises.json": "ec8b1cfac9a9aeb1b59c264ea5a5361bf1778ca3bf958758435a421b16376011",
+        "reconcile.py": "1ebad1adb51184d3e2abbdda471f418ca7e73872ed6e28d47bafeb6b80c0605b"
+      },
+      "independent_suite_design": false,
+      "external_reproduction": false
+    }
+  ],
+  "export_smoke": {
+    "started_at": "2026-11-03T21:36:04.130224+00:00",
+    "completed_at": "2026-11-03T21:36:04.158733+00:00",
+    "argv_display": [
+      "python3",
+      "-B",
+      "-W",
+      "error",
+      "run_controls.py"
+    ],
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "platform": "Darwin",
+    "machine": "arm64",
+    "exit_code": 0,
+    "stdout_sha256": "33db34f133a33f3d84fb53d9362abbbda54a9169524769c5d9421dfae0e7902b",
+    "stdout_bytes": 24041,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_bytes": 0,
+    "run_count": 1,
+    "sources_before": {
+      "docs/proposals/coverage-reconciliation-obligation-model-2026-11-03.md": {
+        "bytes": 2928,
+        "sha256": "b7560a1d73077aa2aed060c3427ca3676630f5ae824bbe813b19954876d2802b"
+      },
+      "examples/obligation-reconciliation/CONTRACT.md": {
+        "bytes": 5599,
+        "sha256": "6078e3916bd3c16b7b8f562611265c16895d5fff577b36666c4c4acde29b89ae"
+      },
+      "examples/obligation-reconciliation/LICENSE": {
+        "bytes": 11360,
+        "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+      },
+      "examples/obligation-reconciliation/NOTICE.md": {
+        "bytes": 1686,
+        "sha256": "25ee56f271433f311692792c620e06809502a3cbd35aeb0fc22d8627f24d9933"
+      },
+      "examples/obligation-reconciliation/PROVENANCE.md": {
+        "bytes": 3407,
+        "sha256": "0b3bacdbb60fd26b6652679b444e2f9aeebd0ac9e0418a950f1ac67459323776"
+      },
+      "examples/obligation-reconciliation/README.md": {
+        "bytes": 3408,
+        "sha256": "9341b4ed4ff3a90078d3d2848455e3854c1eff41d4415ce04a2fdb21691929bb"
+      },
+      "examples/obligation-reconciliation/controls.json": {
+        "bytes": 16675,
+        "sha256": "ec536351eef5d22022b7863f21480a4a8a7379db2ffde6b1b80e402fb375750e"
+      },
+      "examples/obligation-reconciliation/premises.json": {
+        "bytes": 778,
+        "sha256": "ec8b1cfac9a9aeb1b59c264ea5a5361bf1778ca3bf958758435a421b16376011"
+      },
+      "examples/obligation-reconciliation/reconcile.py": {
+        "bytes": 5215,
+        "sha256": "e1d1c963d50e42d3eb5aaa9ad76f47b1f3e78d506e3b3182829654511029da7d"
+      },
+      "examples/obligation-reconciliation/run_controls.py": {
+        "bytes": 4371,
+        "sha256": "50ebab39db12d6f7e4b08f76ba17e0450f02dfbbffbf16ba952749034536b0f7"
+      }
+    },
+    "sources_after_equal": true,
+    "network_calls_by_subject": 0,
+    "source_directory_contains_only_public_export": true,
+    "passed": 18,
+    "failed": 0,
+    "result_file": "results.json",
+    "actual_expected_case_objects_equal_to_retained_original": true
+  },
+  "output_wrapper_delta": {
+    "schema": {
+      "to": "obligation-reconciliation-results/1"
+    },
+    "scope": "Development-only output labels replaced; all case objects unchanged."
+  }
+}

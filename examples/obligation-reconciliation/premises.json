@@ -1,0 +1,26 @@
+{
+  "model_version": "declared-obligation-reconciliation/2-candidate",
+  "scope": {
+    "id": "synthetic-op1-attempt1",
+    "population": [
+      "op1/attempt1"
+    ],
+    "completeness": "not established"
+  },
+  "obligation_rules": {
+    "version": "synthetic-dispatch/1",
+    "text": "Supplied dispatch declaration entails before obligation; unresolved outcome does not cancel it."
+  },
+  "phase_profile": {
+    "version": "synthetic-before-after/1",
+    "phases": [
+      "before",
+      "after"
+    ],
+    "text": "Only supplied declared units are modeled; no universal during phase."
+  },
+  "identity_policy": {
+    "version": "synthetic-triple/2",
+    "text": "Equal triples deduplicate; unequal triples under same ID conflict across all bindings; see CONTRACT.md."
+  }
+}
