@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "attempts": 1,
+  "command": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "<RUN_ROOT>/output/prerequisites/capture/sandbox.sb",
+    "<VENV>/bin/python",
+    "-I",
+    "-B",
+    "<RUN_ROOT>/output/prerequisites/restricted/control_probe.py"
+  ],
+  "profile_sha256": "b38950a0a6b731f300baea794bcf32f0054ac08a233b8ac5cff20daa435dd808",
+  "stdout_bytes": 4918,
+  "stderr_bytes": 0
+}

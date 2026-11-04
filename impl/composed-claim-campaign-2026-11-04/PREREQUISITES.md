@@ -1,0 +1,17 @@
+# Prepared fresh prerequisites
+
+The harness is prepared, not executed. Exact successor review must authorize the plan before a run. Old PASS records do not satisfy the fresh gate.
+
+1. Resolve bundle, environment and output paths. Every pair must be disjoint in both ancestry directions; equality and symlink aliases are rejected. Output must not exist. Bundle/output also cannot overlap a base-Python or system read root permitted by the sandbox.
+2. Verify current outgoing content hashes, recorded macOS/Python executable, released dependency versions and exact installed site-file set/hashes. Only __pycache__ directories and .pyc files are excluded, as in the original inventory. Symlinks in the installed site are rejected, even at excluded names. No files are removed and no packages reinstalled.
+3. Launch one separately captured component control with the same launcher/profile used for the later appraisals. The allowed stage contains the public probe, common/assessor/Merkle modules, fixed public vectors, unchanged P0 supplied data, fresh local acquisition metadata and paths of denial targets. It never contains the oracle, case label or generator-knowledge canaries themselves.
+4. Require all 19 named results: Ed25519 positive and changed-signature rejection; one inclusion and three consistency positives with invalid-node negatives; one permitted Q2 component; four denied reads (oracle, case label, generator-knowledge canary and symlink escape); denied write/network/fork; no inherited API-key environment names. Only EPERM/EACCES qualify as denials. The launcher supplies its fixed environment; the probe inspects names only, never credential values.
+5. Store intent, process/stdout/stderr/profile/stage inventory and result. Any failure or incomplete capture leaves all thirteen full cases NOT_RUN. Only fresh READY admits the existing thirteen-case loop.
+
+The permitted Q2 component reuses the immutable P0 supplied file and invokes only q2, never Assessor.run or the scorer. Its trace remains separate from the later full P0 attempt. No signing keys or new fixtures are generated. The case-label and generator-knowledge denial targets contain harmless public text, not withheld real secrets. The oracle denial target is the actual exported oracle.
+
+Ed25519 material is the public-key/message/signature portion of [RFC8032 section 7.1 TEST1](https://www.rfc-editor.org/rfc/rfc8032#section-7.1), by Simon Josefsson and Ilari Liusvaara. Its private-key field and implementation code are excluded. Attribution and source terms are recorded in ED25519-VECTOR.json for publication review.
+
+The Merkle material is the previously frozen seven-leaf vector derived through a hand-expanded expression graph and system OpenSSL, independently of the candidate builder/verifier algorithms. It is the same operator's derivation, not independent human reproduction. MERKLE-VECTOR.json is byte-identical; MERKLE-RECIPE.json changes only the internal attribution label and adds provenance. Its tree expressions and paths remain unchanged. [RFC9162 section 2.1](https://www.rfc-editor.org/rfc/rfc9162.html#section-2.1) is the algorithm reference.
+
+Synthetic preflight regressions exercise only paths and file bytes. They do not establish that these primitive or sandbox controls will pass. The host, supervisor, grader and filesystem stability remain trusted; there is no hostile-host, race-resistance or side-channel claim.

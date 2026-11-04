@@ -1,0 +1,30 @@
+{
+  "state": "READY",
+  "checks": {
+    "case_label_read_denied": true,
+    "consistency_3_5_invalid_node_rejected": true,
+    "consistency_3_5_positive": true,
+    "consistency_3_7_invalid_node_rejected": true,
+    "consistency_3_7_positive": true,
+    "consistency_5_7_invalid_node_rejected": true,
+    "consistency_5_7_positive": true,
+    "ed25519_invalid_signature_rejected": true,
+    "ed25519_positive": true,
+    "fork_denied": true,
+    "generator_knowledge_read_denied": true,
+    "inherited_api_environment_absent": true,
+    "merkle_inclusion_positive": true,
+    "merkle_invalid_inclusion_rejected": true,
+    "network_denied": true,
+    "oracle_read_denied": true,
+    "permitted_Q2_component": true,
+    "symlink_escape_read_denied": true,
+    "write_denied": true
+  },
+  "capture_sha256": "dcd51298449f0017b4fe815294e669daa115212ba74f873b1b7b6b1c1a731fee",
+  "profile_sha256": "b38950a0a6b731f300baea794bcf32f0054ac08a233b8ac5cff20daa435dd808",
+  "component_invocations": 1,
+  "full_appraisals": 0,
+  "grade_calls": 0,
+  "scope": "Fresh local control only; trusted operator/host, no independent witness or hardware claim"
+}

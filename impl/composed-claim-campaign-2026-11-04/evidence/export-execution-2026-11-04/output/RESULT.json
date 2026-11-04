@@ -1,0 +1,126 @@
+{
+  "schema": "composed-export-reproduction/1",
+  "at": "2026-11-04T08:37:30.332252+00:00",
+  "rows": [
+    {
+      "case": "P0",
+      "run_directory": "cb3626f0-31d7-4425-9eb4-8ab89805c968",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "0ebaef233eb61748c3e1d08e5fc9bb828dfde2891a96ed15605b0b774f6756eb",
+      "mismatches": []
+    },
+    {
+      "case": "T2-A",
+      "run_directory": "ec50e097-6864-4bc4-be2d-4703d8b94788",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "8998948ae355b1db34711962944be4e919b51d5c07d0552976b24f8f8051d666",
+      "mismatches": []
+    },
+    {
+      "case": "T2-B",
+      "run_directory": "b482708f-db07-4628-9180-bec150062187",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "0b5f27235e7b4559ef213cf4caf61e89ee295e4a4ff45144a39ad000efd9cef3",
+      "mismatches": []
+    },
+    {
+      "case": "T2-C",
+      "run_directory": "b6a67a91-a633-4484-8d5b-ba512d19c915",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "125f7bf01be270fc9f15dc82270358b2225286227195a2050e06a5f513e533d9",
+      "mismatches": []
+    },
+    {
+      "case": "T3-U",
+      "run_directory": "3dd19c59-88a4-43b8-a777-2755b49e002d",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "6691d2d6fd0686d47f558d940992e57893db558e7e2d89afc33a3772dc8356e9",
+      "mismatches": []
+    },
+    {
+      "case": "T3-R",
+      "run_directory": "305d2344-ae4c-46fd-a089-81b73a371918",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "d8a86a4b99057eab0caaf2343f456bde9d8fcf85625669c322cdd4d087e44b43",
+      "mismatches": []
+    },
+    {
+      "case": "T3-N",
+      "run_directory": "4b440a85-137f-498b-a09a-893a205d8074",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "db44fc225d53b5d5eb8c64c096e4a91d96ef276efd346afabc2ae310d69fe64b",
+      "mismatches": []
+    },
+    {
+      "case": "T5-M",
+      "run_directory": "0e20f92d-cac2-4c9b-ac0d-aecd91e812ac",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "7c0bcaf727707e8d7eb2aa753078fe158b3e933015019ea8fc6e83c1233ec0c3",
+      "mismatches": []
+    },
+    {
+      "case": "T5-S",
+      "run_directory": "61c179b2-65c8-4a27-b8d3-d32b14c06eab",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "6d357a3ff7901c1010d7a7fb3ea4558f60db6015d8b3c6f1f5891f8a3db28401",
+      "mismatches": []
+    },
+    {
+      "case": "N2",
+      "run_directory": "194ce764-ae3c-4d08-a552-65cd0e0005a6",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "c3edb2141bda137ce2a1fb1b515715df06ac4674e18611b1f9481c673d4f475c",
+      "mismatches": []
+    },
+    {
+      "case": "N3",
+      "run_directory": "f431e7ce-094c-47de-b090-92d60d35bce9",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "b5574786a3f6e4afd81533ecf9f0a84a09e20678ffbbf7cbc6b762e28c7d2eac",
+      "mismatches": []
+    },
+    {
+      "case": "N4",
+      "run_directory": "b4896bdc-4e55-42b5-be1a-19768855e577",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "7fe827f823368efdaa0af86d361d5d988e0ecbc86789e44a5ede01aeab5c3281",
+      "mismatches": []
+    },
+    {
+      "case": "N5",
+      "run_directory": "b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8",
+      "assessor_attempts": 1,
+      "grade_attempts": 1,
+      "state": "MATCH",
+      "capture_sha256": "76a3238c1f8ecd814fde1075fbb4a43b89377f39f90b26f6047f9047c04ed568",
+      "mismatches": []
+    }
+  ],
+  "halt": null,
+  "retries": 0,
+  "historical_result": false
+}

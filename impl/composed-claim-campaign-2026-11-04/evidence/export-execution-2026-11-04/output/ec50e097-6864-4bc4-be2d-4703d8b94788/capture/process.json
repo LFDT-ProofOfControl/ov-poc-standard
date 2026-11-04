@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "attempts": 1,
+  "command": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "<RUN_ROOT>/output/ec50e097-6864-4bc4-be2d-4703d8b94788/capture/sandbox.sb",
+    "<VENV>/bin/python",
+    "-I",
+    "-B",
+    "<RUN_ROOT>/output/ec50e097-6864-4bc4-be2d-4703d8b94788/restricted/entrypoint.py"
+  ],
+  "profile_sha256": "6e6626bd81e90e40178721fbb2c7cb31ec4fb979cf54ca9ca5f8e20487f25911",
+  "stdout_bytes": 96026,
+  "stderr_bytes": 0
+}

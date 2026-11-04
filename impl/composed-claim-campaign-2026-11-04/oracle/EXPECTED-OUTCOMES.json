@@ -1,0 +1,575 @@
+{
+  "schema": "composed-claim-design-expectations/2",
+  "status": "PROPOSED_EXPECTATIONS_NOT_RESULTS",
+  "source_head": "51e229e8364d4afce89da15fbe8cce8eaf6636ba",
+  "behavioral_runs": 0,
+  "fixture_bytes_generated": false,
+  "scope": "Synthetic signed-artifact and simulated source-delivery instance only; not a TEE or real deployment.",
+  "cases": [
+    {
+      "id": "P0",
+      "origin": "positive control",
+      "intervention": "Complete material; all component operations scheduled and completed.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "verified",
+        "Q2": "verified",
+        "Q3_direct": "verified",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "supported",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "All required calls enter and complete; compare W1/W2 and endpoints.",
+      "interpretation": "Positive control is proposed, not executed. Support is only for the simulated view set and cutoff.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct",
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "T2-A",
+      "origin": "T2 / Bjørn unavailable material",
+      "intervention": "Remove the entire collateral block (signer certificate and revocation/validity snapshot); keep R, M and log proofs.",
+      "expected_components": {
+        "Q1a": "unavailable",
+        "Q1b": "verified",
+        "Q1c": "verified",
+        "Q2": "verified",
+        "Q3_direct": "verified",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "supported",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Q1a dependency gate reports missing collateral; no chain/authenticated-report verification completes. Raw challenge equality may still be recorded separately.",
+      "interpretation": "Q1a authentication, chain, validity and revocation subchecks unavailable. No inference that measurement is false.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct",
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "T2-B",
+      "origin": "T2",
+      "intervention": "Remove M and every supplied copy of its value, including the RVP publication; keep R and authority directory.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "unavailable",
+        "Q1c": "unavailable",
+        "Q2": "verified",
+        "Q3_direct": "verified",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "supported",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Q1b comparison not entered; Q1c publication binding blocked, while any independent authority subcheck is retained.",
+      "interpretation": "No fallback to generator's M or expected-output file. Withholding M alone while keeping it in a publication would not be this case.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct",
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "T2-C",
+      "origin": "T2",
+      "intervention": "Remove the signed authority directory; keep M and the signed RVP publication.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "unavailable",
+        "Q2": "verified",
+        "Q3_direct": "verified",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "supported",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Q1c required authority-material gate unavailable; publication signature can be checked independently.",
+      "interpretation": "Absent required object is unavailable, distinct from T3-U's present but inconclusive object.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct",
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "T3-U",
+      "origin": "T3",
+      "intervention": "Supply a valid signed authority directory with an allow entry for another claim only. Exact target-claim authority is unresolved by the frozen open-world policy.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "unevaluable",
+        "Q2": "verified",
+        "Q3_direct": "verified",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "supported",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Q1c signature, scope lookup and policy evaluation all execute; lookup finds no applicable allow/deny assertion.",
+      "interpretation": "Observed equality remains verified. No policy conclusion is possible for this claim; no environment falsity is inferred.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct",
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "T3-R",
+      "origin": "T3 rejection contrast",
+      "intervention": "Supply a valid signed, in-window explicit deny entry for this RVP and exact target claim.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "failed",
+        "Q2": "verified",
+        "Q3_direct": "verified",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "supported",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Q1c executes and returns policy_rejected with the matching signed rule digest.",
+      "interpretation": "Policy rejection concerns reference admissibility, not observed inequality or software identity.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct",
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "T3-N",
+      "origin": "T3 inequality contrast",
+      "intervention": "Reissue R with a different measurement digest, sign it, recompute d and all log/receipt objects; leave M and its authority unchanged.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "failed",
+        "Q1c": "verified",
+        "Q2": "verified",
+        "Q3_direct": "verified",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "supported",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Q1b completes a byte comparison and records observed_inequality; every log check uses the new R digest.",
+      "interpretation": "Isolated inequality, not a broken stale log proof. No inference against real software identity without the discriminating-mapping premise.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct",
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "T5-M",
+      "origin": "T5 missing material",
+      "intervention": "Retain appraisal material, Q5 receipt, S2 and inclusion proof. Omit S1, both W delivery envelopes/heads and all Q3/Q4 consistency proofs.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "verified",
+        "Q2": "verified",
+        "Q3_direct": "unavailable",
+        "Q4": "unavailable",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "not established",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Q2 completes; Q3_direct/Q4 dependency gates list missing objects; no consistency/view comparison or Q3_from_Q4 derivation enters.",
+      "interpretation": "PA-incl alone is supported at S2. Generator retention of omitted objects supplies no evidence to the assessor.",
+      "expected_q3_proposition": {
+        "status": "not established",
+        "supporting_routes": [],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "blocked",
+        "outcome": null,
+        "reason": "missing_S1_and_authenticated_views",
+        "enters": 0,
+        "completions": 0,
+        "mathematical_relation_rejected": false
+      }
+    },
+    {
+      "id": "T5-S",
+      "origin": "T5 supplied but skipped contrast",
+      "intervention": "Supply the complete P0 pack, but the frozen run plan does not schedule Q3 or Q4.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "verified",
+        "Q2": "verified",
+        "Q3_direct": "not assessed",
+        "Q4": "not assessed",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "not established",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Inventory proves required bytes supplied; schedule records not_requested; Q3_direct/Q4 and Q3_from_Q4 enter/complete counts exactly zero.",
+      "interpretation": "This is intentional nonexecution, not a crash or missing-material case. PA-incl remains separately supported.",
+      "expected_q3_proposition": {
+        "status": "not established",
+        "supporting_routes": [],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "not_requested",
+        "outcome": null,
+        "reason": "frozen_plan_not_requested",
+        "enters": 0,
+        "completions": 0,
+        "mathematical_relation_rejected": false
+      }
+    },
+    {
+      "id": "N2",
+      "origin": "invalid cryptographic proof control",
+      "intervention": "Flip bit 0 of byte 0 of the first inclusion-path node; preserve node length, R, signed S2, leaf index and tree size.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "verified",
+        "Q2": "failed",
+        "Q3_direct": "verified",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "not established",
+        "PA-obs": "not established",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "S2 signature succeeds; inclusion verifier actually runs and rejects the mutated proof.",
+      "interpretation": "Failure to prove inclusion does not prove absence of R from the tree.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct",
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "N3",
+      "origin": "invalid consistency proof control",
+      "intervention": "Flip bit 0 of byte 0 of the first direct S1→S2 consistency node; keep independent Q4 edge proofs intact.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "verified",
+        "Q2": "verified",
+        "Q3_direct": "failed",
+        "Q4": "verified",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "supported",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Q3_direct authenticates both requested endpoints and completes failed/proof_rejected. Q4 verifies S1→W1 and W1→W2 and W2/S2 equal-size root equality. Q3_from_Q4 separately enters/completes with exact shared bindings and operation/input provenance; Q3_proposition lists Q4_adjacent_edges only. Failed direct observation retained.",
+      "interpretation": "Source Q3 and bounded PA-obs are supported by the explicitly recorded alternative derivation; the submitted direct proof remains failed. Shared Q4 evidence is not an independent controller or security route.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "Q4_adjacent_edges"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "completed",
+        "outcome": "verified",
+        "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+        "enters": 1,
+        "completions": 1,
+        "bindings": "All q3_record_contract route_trace_fields required; exact same endpoints/log/trust/algorithm/report/appraisal/observed-set/cutoff."
+      }
+    },
+    {
+      "id": "N4",
+      "origin": "invalid signed-head control",
+      "intervention": "Flip bit 0 of byte 0 of the S2 signature supplied as the endpoint; preserve its signed payload, other heads and all paths.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "verified",
+        "Q2": "failed",
+        "Q3_direct": "failed",
+        "Q4": "failed",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "not established",
+        "PA-obs": "not established",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Requested S2 authentication rejects in Q2/Q3_direct/Q4; dependent inclusion/direct/edge proofs do not enter. Retain independently completed W2 authentication. Q3_from_Q4 records blocked with zero enters/completions; no alternate S2-via-W2 endpoint route is scheduled or evaluated.",
+      "interpretation": "The requested S2 signature is rejected, while W2 may authenticate an equivalent payload. This plan does not evaluate that alternative endpoint derivation. Q3/PA-obs are not established by recorded routes; the underlying mathematical relation is not declared false.",
+      "expected_q3_proposition": {
+        "status": "not established",
+        "supporting_routes": [],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "blocked",
+        "outcome": null,
+        "reason": "requested_S2_authentication_rejected_Q4_edges_not_evaluated",
+        "enters": 0,
+        "completions": 0,
+        "mathematical_relation_rejected": false
+      },
+      "alternate_endpoint_derivation_evaluated": false
+    },
+    {
+      "id": "N5",
+      "origin": "authenticated conflicting-view control",
+      "intervention": "Keep S1/S2 and inclusion proof. Supply a W2 envelope carrying an LO-signed n=7 head with a different root; W2's delivery signature is valid.",
+      "expected_components": {
+        "Q1a": "verified",
+        "Q1b": "verified",
+        "Q1c": "verified",
+        "Q2": "verified",
+        "Q3_direct": "verified",
+        "Q4": "failed",
+        "Q5": "verified",
+        "Q6": "not assessed"
+      },
+      "expected_claims": {
+        "PA-incl": "supported",
+        "PA-obs": "not established",
+        "PB": "not established for an actual environment",
+        "PC": "not established for an actual environment",
+        "PA-reach": "not established",
+        "PA-time": "not established",
+        "PA-future": "not established"
+      },
+      "required_trace": "Both conflicting n=7 heads authenticate; Q4 equal-size root comparison actually executes and reports conflict.",
+      "interpretation": "This is authenticated conflict in the simulated obtained set, unlike N3's invalid submitted consistency proof.",
+      "expected_q3_proposition": {
+        "status": "supported",
+        "supporting_routes": [
+          "direct"
+        ],
+        "scope": "Requested S1/S2 relation within this report/log/appraisal; not established means by the recorded routes, not a false relation or an impossibility claim."
+      },
+      "expected_q3_derivation": {
+        "state": "blocked",
+        "outcome": null,
+        "reason": "authenticated_equal_size_conflict",
+        "enters": 0,
+        "completions": 0,
+        "mathematical_relation_rejected": false
+      }
+    }
+  ],
+  "q3_record_contract": {
+    "operation_field": "expected_components.Q3_direct",
+    "source_proposition_field": "expected_q3_proposition",
+    "derivation_field": "expected_q3_derivation",
+    "source_meaning": "S2 is an append-only extension of S1",
+    "support_rule": "Completed direct proof or explicit verified Q4 edge-chain derivation with exact common authenticated endpoint/log/algorithm/trust/report/appraisal/view-set/cutoff bindings. A rejected direct check is never relabelled.",
+    "route_trace_fields": [
+      "derivation_id",
+      "rule_version",
+      "input_digests",
+      "supporting_operation_ids",
+      "log_id",
+      "trust_config_digest",
+      "tree_algorithm",
+      "S1_artifact_digest",
+      "S1_size_root",
+      "S2_artifact_digest",
+      "S2_size_root",
+      "joined_edge_endpoint_digests",
+      "report_digest",
+      "appraisal_run_challenge",
+      "observed_view_set",
+      "acquisition_trace_ids",
+      "cutoff",
+      "enter",
+      "completion"
+    ],
+    "scope_note": "Same simulated source set and trusted harness; reuse of Q4 is shared evidence, not an independent security route."
+  }
+}

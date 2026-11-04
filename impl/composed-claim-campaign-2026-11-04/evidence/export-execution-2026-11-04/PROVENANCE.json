@@ -1,0 +1,61 @@
+{
+  "schema": "composed-export-execution-provenance/1",
+  "kind": "same-operator outgoing-only run, separate from earlier historical campaign",
+  "wrapper": {
+    "started_at": "2026-11-04T08:37:29.173463+00:00",
+    "finished_at": "2026-11-04T08:37:30.340587+00:00",
+    "returncode": 0,
+    "wrapper_invocations": 1,
+    "retry": false
+  },
+  "snapshot_files": 134,
+  "snapshot_bytes": 2445524,
+  "snapshot_inventory_sha256": "45e6360f8b09f8c70d60e137fc0251bd04be828e1fc6040c06df3091830c44c4",
+  "tested_inventory_sha256": "7be60ddcbadca83a4fcc7f2b75cd12f3c10745bdcadd4bcebde8ac98c28da464",
+  "plan_sha256": "bf24c077e5115dd21cc5a7d8ef3d678b4d063abfacd5d8fc9121151d19ee77e4",
+  "prerequisites": {
+    "state": "READY",
+    "checks": {
+      "case_label_read_denied": true,
+      "consistency_3_5_invalid_node_rejected": true,
+      "consistency_3_5_positive": true,
+      "consistency_3_7_invalid_node_rejected": true,
+      "consistency_3_7_positive": true,
+      "consistency_5_7_invalid_node_rejected": true,
+      "consistency_5_7_positive": true,
+      "ed25519_invalid_signature_rejected": true,
+      "ed25519_positive": true,
+      "fork_denied": true,
+      "generator_knowledge_read_denied": true,
+      "inherited_api_environment_absent": true,
+      "merkle_inclusion_positive": true,
+      "merkle_invalid_inclusion_rejected": true,
+      "network_denied": true,
+      "oracle_read_denied": true,
+      "permitted_Q2_component": true,
+      "symlink_escape_read_denied": true,
+      "write_denied": true
+    },
+    "capture_sha256": "dcd51298449f0017b4fe815294e669daa115212ba74f873b1b7b6b1c1a731fee",
+    "profile_sha256": "b38950a0a6b731f300baea794bcf32f0054ac08a233b8ac5cff20daa435dd808",
+    "component_invocations": 1,
+    "full_appraisals": 0,
+    "grade_calls": 0,
+    "scope": "Fresh local control only; trusted operator/host, no independent witness or hardware claim"
+  },
+  "full_attempts": 13,
+  "grades": 13,
+  "matches": 13,
+  "full_operation_pairs": 390,
+  "full_operation_outcomes": {
+    "verified": 382,
+    "failed": 8
+  },
+  "existing_runtime_reused": true,
+  "fresh_installation_validated": false,
+  "independent_reproduction": false,
+  "new_execution_for_documentation": false,
+  "current_full_publication_snapshot_executed": false,
+  "reconstruction": "Start from the 134 paths in snapshot-inventory.json; use current bytes for unchanged paths and tested-document-bytes for README.md, REPRODUCE.md and INVENTORY.json. Check all sizes/digests. Added later paths are excluded from the tested snapshot.",
+  "limits": "Trusted host/operator. No hardware/controller/endpoint assurance, composite Tier, population metric or blanket T1-T5 result."
+}

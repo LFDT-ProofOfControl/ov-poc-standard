@@ -1,0 +1,14 @@
+case,attempts,grades,state,Q1a,Q1b,Q1c,Q2,Q3_direct,Q4,Q5,Q6,Q3_proposition,Q3_routes,Q3_from_Q4,PA_incl,PA_obs,operation_pairs,verified_operations,failed_operations,run_directory
+P0,1,1,MATCH,verified,verified,verified,verified,verified,verified,verified,not assessed,supported,direct+Q4_adjacent_edges,completed,supported,supported,34,34,0,cb3626f0-31d7-4425-9eb4-8ab89805c968
+T2-A,1,1,MATCH,unavailable,verified,verified,verified,verified,verified,verified,not assessed,supported,direct+Q4_adjacent_edges,completed,supported,supported,27,27,0,ec50e097-6864-4bc4-be2d-4703d8b94788
+T2-B,1,1,MATCH,verified,unavailable,unavailable,verified,verified,verified,verified,not assessed,supported,direct+Q4_adjacent_edges,completed,supported,supported,31,31,0,b482708f-db07-4628-9180-bec150062187
+T2-C,1,1,MATCH,verified,verified,unavailable,verified,verified,verified,verified,not assessed,supported,direct+Q4_adjacent_edges,completed,supported,supported,30,30,0,b6a67a91-a633-4484-8d5b-ba512d19c915
+T3-U,1,1,MATCH,verified,verified,unevaluable,verified,verified,verified,verified,not assessed,supported,direct+Q4_adjacent_edges,completed,supported,supported,33,33,0,3dd19c59-88a4-43b8-a777-2755b49e002d
+T3-R,1,1,MATCH,verified,verified,failed,verified,verified,verified,verified,not assessed,supported,direct+Q4_adjacent_edges,completed,supported,supported,34,33,1,305d2344-ae4c-46fd-a089-81b73a371918
+T3-N,1,1,MATCH,verified,failed,verified,verified,verified,verified,verified,not assessed,supported,direct+Q4_adjacent_edges,completed,supported,supported,34,33,1,4b440a85-137f-498b-a09a-893a205d8074
+T5-M,1,1,MATCH,verified,verified,verified,verified,unavailable,unavailable,verified,not assessed,not established,,blocked,supported,not established,21,21,0,0e20f92d-cac2-4c9b-ac0d-aecd91e812ac
+T5-S,1,1,MATCH,verified,verified,verified,verified,not assessed,not assessed,verified,not assessed,not established,,not_requested,supported,not established,19,19,0,61c179b2-65c8-4a27-b8d3-d32b14c06eab
+N2,1,1,MATCH,verified,verified,verified,failed,verified,verified,verified,not assessed,supported,direct+Q4_adjacent_edges,completed,not established,not established,34,33,1,194ce764-ae3c-4d08-a552-65cd0e0005a6
+N3,1,1,MATCH,verified,verified,verified,verified,failed,verified,verified,not assessed,supported,Q4_adjacent_edges,completed,supported,supported,34,33,1,f431e7ce-094c-47de-b090-92d60d35bce9
+N4,1,1,MATCH,verified,verified,verified,failed,failed,failed,verified,not assessed,not established,,blocked,not established,not established,28,25,3,b4896bdc-4e55-42b5-be1a-19768855e577
+N5,1,1,MATCH,verified,verified,verified,verified,verified,failed,verified,not assessed,supported,direct,blocked,supported,not established,31,30,1,b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8

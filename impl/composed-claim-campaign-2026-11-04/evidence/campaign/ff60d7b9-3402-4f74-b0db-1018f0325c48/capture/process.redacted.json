@@ -1,0 +1,22 @@
+{
+  "representation": "transformed historical process projection, not original capture",
+  "original_sha256": "67e4293207ff83894e40830d20165e5de4b2f6fa77271bad3feaae1020a915b6",
+  "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained.",
+  "record": {
+    "returncode": 0,
+    "timed_out": false,
+    "attempts": 1,
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "${CAPTURE_PROFILE}",
+      "${VENV}/bin/python",
+      "-I",
+      "-B",
+      "${STAGE}/entrypoint.py"
+    ],
+    "profile_sha256": "2afa14af2b0c0a38267c5e2e81f896e4aeeb3a1acb367209ac52e2bc004b180f",
+    "stdout_bytes": 114327,
+    "stderr_bytes": 0
+  }
+}

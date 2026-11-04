@@ -1,0 +1,1676 @@
+{
+  "schema": "composed-public-inventory/1",
+  "excludes": [
+    "impl/composed-claim-campaign-2026-11-04/INVENTORY.json"
+  ],
+  "files": [
+    {
+      "path": "docs/proposals/composed-claim-campaign-2026-11-04.md",
+      "bytes": 6160,
+      "sha256": "c8eff1fab56cd6b304cc98762736b22776c28757b766a8474d63e8c2a908b852",
+      "git_blob": "17aba79aae52d652ae987c50d6d933ba92a431ed"
+    },
+    {
+      "path": "docs/proposals/composed-claim-export-execution-2026-11-04.md",
+      "bytes": 6929,
+      "sha256": "4853a6d066a8d02ae8a3d1b699c80deda143fa30325106136646d14d4dcd3cd2",
+      "git_blob": "f9b76a0c69f9cc24f0f8068c9c0280348b51a42c"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/CONTRACT.md",
+      "bytes": 4217,
+      "sha256": "b09877dadf225e838ca76e85813bc7c58d0fa620f81e91652488873d8d677d5d",
+      "git_blob": "1bcdbd562a78433795fdf92368e90cca6c8e8749"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/ED25519-VECTOR.json",
+      "bytes": 993,
+      "sha256": "1d5f435ab4ea17d9574d88d104a009f8b5bdc627ac2fb472fdc5c10ea40040b4",
+      "git_blob": "e205654a4dc647471eadc89f822d9ac551d8ea7b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/EXPORT-MAP.json",
+      "bytes": 56944,
+      "sha256": "8ce8046b931615eae89c73b21f892bd57ddb1d61cae2392727a6e93deb36c0c1",
+      "git_blob": "540e5c4c57880387493e64ccf189d1d2dac2aec5"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/INSTALLED-DEPENDENCIES.json",
+      "bytes": 70167,
+      "sha256": "c1e90d16b892e3929668c6b3af0a9345d6d88f14a27db7da3191a2743ae35121",
+      "git_blob": "83c3ba02ba0b65dff5ddd72b8811116a2cf8f2e8"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/MERKLE-RECIPE.json",
+      "bytes": 1540,
+      "sha256": "bc860b2271d3e8f1757209c9ff1b333c2985076a3847dac9f52669aea7d2ac67",
+      "git_blob": "98fa56461d4468aec38f8b19ec69321ea624d5f1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/MERKLE-VECTOR.json",
+      "bytes": 3244,
+      "sha256": "f42d35817f0fb18355f5e2e3ac5ee2e2d87fcf6a5800797840a234847ce11ddb",
+      "git_blob": "bd52dc67ac326642898e13282f0b6d24fa487f5d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/PREREQUISITES.md",
+      "bytes": 3427,
+      "sha256": "98ce4752656a38c77bf5d32e8394dbd6b2ed473d0dcaf877622066e2aa115065",
+      "git_blob": "f89b4eeea6198a9506263686990ab3bfa28c122f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/PROVENANCE.json",
+      "bytes": 3938,
+      "sha256": "9019b5e9a6a7acce215c37c7aa9bd9ee57057e7159bcf24bd8cacdba0ba6c8a8",
+      "git_blob": "104680f793891e5bb2158e563bc329b9b716e477"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/README.md",
+      "bytes": 4863,
+      "sha256": "008e2c5984d8a8bb4b5c09fe136ed3d0fcf6fb63f1696aaf1b64ffb42672443b",
+      "git_blob": "3eadf22d0e5919f7eacd76904bef4912416414bc"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/REPRODUCE.md",
+      "bytes": 5191,
+      "sha256": "8d52133973564c4bcca4b6c6afcc5d2c7f493cd90c9e6c0a6941e2668fc1b8b4",
+      "git_blob": "a2fff6c2df079e93275b8c15763072291fac6ea4"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/RUN-PLAN.json",
+      "bytes": 4364,
+      "sha256": "bf24c077e5115dd21cc5a7d8ef3d678b4d063abfacd5d8fc9121151d19ee77e4",
+      "git_blob": "f2c871d070b5060341da8bebe5a43c1b8eefa1b2"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/RUNTIME.json",
+      "bytes": 2046,
+      "sha256": "da4a1b6f14d150f1716da593240f7771c354bd94ad93510b656431d5b43f2b8a",
+      "git_blob": "31132e2a82d7bae70203e808bb29f1fde3c50fb0"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/admission.py",
+      "bytes": 8845,
+      "sha256": "6c92fff867baf18b692f5a921e8263043a3d14b522da95adac9c81402f8bf4a3",
+      "git_blob": "601c474904bc0a164605d7ef2671890b770f22bf"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/assessor.py",
+      "bytes": 18887,
+      "sha256": "db8ea4f1403cb4d0e022c7232a2e6aa84c209b5692a0e80b01251cdb88d37d86",
+      "git_blob": "505b89c1986336230ed01b149de0b72acba417f1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/common.py",
+      "bytes": 6445,
+      "sha256": "f3e4b5b5a1ac021cd565002d8aaf370e6cb42add4485fc7f9a50cd95c03d09bf",
+      "git_blob": "cd120310705049350d105891b81de5c031a255ab"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/control_probe.py",
+      "bytes": 3994,
+      "sha256": "5546126e289192447338ef13aca5be7755760738510d96f541baf242f316e5bc",
+      "git_blob": "d1a99ccd3c94d79ee6d802631a0f115e26b5ad09"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/entrypoint.py",
+      "bytes": 497,
+      "sha256": "7b72c39afde4cf34cdad2a6bf2523760026801d942f19a6d94e9563c20489155",
+      "git_blob": "13697ea14c6ccba3dd8ac793160038697296482a"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/MATRIX.csv",
+      "bytes": 3237,
+      "sha256": "6a03a4529d9fa565446af068aae3055a173ddcd2f42aea7a2f54fc82f69aad30",
+      "git_blob": "2069a9214c1917cbe4b1a630efe2e179c1d6cae5"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/RUN-INDEX.json",
+      "bytes": 109560,
+      "sha256": "1d0f5870ecf33fe26c70c14ae49647b881235bf3c6cd603fb97780b2029abddf",
+      "git_blob": "012273cf2aff6b49478fed81757ff0c34ffff43a"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/SUMMARY.json",
+      "bytes": 1349,
+      "sha256": "fac6e9f6a6f7bcbb69dd1ad382886d8873b0c98faaa9340aa9e5c44695cf4077",
+      "git_blob": "e3ea987c2f3e1a66eab22255b10df913553bd908"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/acquisition.json",
+      "bytes": 785,
+      "sha256": "765252f4e960b07b8fcfe0684c0346abeb88932f0e001b2f2e2e63a2f7e33fbd",
+      "git_blob": "faeb7129bffa26fe53f3e8ce00eb48cab26562c2"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/assessor-result.json",
+      "bytes": 54950,
+      "sha256": "80ddbcd2496327f3f8744a5f34a022e9f1735cdecffa88f47bd651c5560a3600",
+      "git_blob": "73f9bc900e6720bb5a71df67b7402b0402993f8a"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/capture/process.redacted.json",
+      "bytes": 722,
+      "sha256": "d7486f9962ff503191a5b730f32522df0dda4ac2c03ac24ace9494f2894b33fc",
+      "git_blob": "d1d159582dae9fc3a6ba98fc03dad45b919c63e8"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/capture/stdout.jsonl",
+      "bytes": 104608,
+      "sha256": "493af3377ded7f59e2ed958841e1c8843826e8b35f53a7255846c8a09a2559b5",
+      "git_blob": "f28becb138db8a9b6ac999a68cbef405f1af6e35"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/grade.json",
+      "bytes": 327,
+      "sha256": "d9d4c8d529cd6d3c740df026c0d1d11876da6621ec5c6129c8da51920686a954",
+      "git_blob": "a62a4adf3e044d748ce28b35bd6344d0d94b384c"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "de297281cd70d731fb4e8a92bf6dc845bfef238ecd06ef2aca08585ab9795485",
+      "git_blob": "5abb964ef894ab11cc308a1a7f6a0a4fcef3e196"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/acquisition.json",
+      "bytes": 785,
+      "sha256": "51f741e10bac36c190e914082ad517ba75719bab2487e08130eb443e38576815",
+      "git_blob": "ed3abb1e70d7414bd9d6fda19e753f6e532c947d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/assessor-result.json",
+      "bytes": 45283,
+      "sha256": "982316f875a3d6201247e08c917276fee07b9dd15f9d2677ffc6b73c9cfc4b2d",
+      "git_blob": "c72c5208b0b70a892e3e71b3057a6b2d9a2a7609"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/capture/process.redacted.json",
+      "bytes": 721,
+      "sha256": "3bd23630afc4e9446efa99e9f541ba394095b5f947f4232359d070a408210fb4",
+      "git_blob": "c6ba65bd553714644ff76e628a891cca7d46ab60"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/capture/stdout.jsonl",
+      "bytes": 93435,
+      "sha256": "03d75217c7b920b131c64eae551d22017644781a96576570fee7d141d003a7b9",
+      "git_blob": "5e740aa2526b9a30bc8f07a14cba8d35a9fd00a6"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/grade.json",
+      "bytes": 325,
+      "sha256": "4ed063b1a85d5b44f8a80a012f5f9825839704fa03958f80aebf987309aad2f2",
+      "git_blob": "b688c4c6acef262001b2d974f68ba7c0053336a1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "dc49b45f07c26a2c7e339b8ac0ddbf98f1922854a0c5342aaa1c0c64d8aebb62",
+      "git_blob": "5e82d01fced574eaca317b681e3e60200eea97fe"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/acquisition.json",
+      "bytes": 785,
+      "sha256": "afcc2c1d274f8b78f24076f8173cb6064f3f57c6b97ba9b19a0e57e3ab0046cb",
+      "git_blob": "1de1308a8b6eb2e085a4f697713b45328b9aafe7"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/assessor-result.json",
+      "bytes": 57388,
+      "sha256": "069e159636576dee80eb78d7d094297289763b2b26b6d5de41e3ab2ec585aa39",
+      "git_blob": "0be336e0bc5783ce74af2326c5c1cc0b5515223c"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/capture/process.redacted.json",
+      "bytes": 722,
+      "sha256": "75ba49892522847b311a52baa6ae65e075de25da8516654a5cfd0764d9c48ccd",
+      "git_blob": "d4701674bc62f3b253bab14c4880a2169c614430"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/capture/stdout.jsonl",
+      "bytes": 111687,
+      "sha256": "c325b709703ec305901da5770a8f3cf0ab9985980762806bdd1f90b5951d25cb",
+      "git_blob": "25fb2f235aa43a9690bf7dbceb664aa57925993b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/grade.json",
+      "bytes": 327,
+      "sha256": "c80ad58e8d87711f1f7132ff73829cf9fa0b0d6c0d09c3600d12d2941550f88d",
+      "git_blob": "98092b6a8d5c3d0839c8d6e1baf416c114348231"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "9f57cf2a37215748d982577d44f68a7ca38b5a3574ab96bf3e84cee91438d0ab",
+      "git_blob": "8f457c4d2b28b7c6af8e7c06a27ff431bce6f3f7"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/acquisition.json",
+      "bytes": 156,
+      "sha256": "41477f600b7bbabce27595ad8259d82e38c1c21b365a0ca8f65d7f728d0d3de7",
+      "git_blob": "4aafa1e5d635360b7f62476fda273189d9ed7ea1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/assessor-result.json",
+      "bytes": 25709,
+      "sha256": "a784204257290fab408d1db6c653362c4e517d04d315782ee2ffac15f8c6101e",
+      "git_blob": "b1b32bc9d45dd4216a7dea5b70ce5f3efe33ea75"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/capture/process.redacted.json",
+      "bytes": 721,
+      "sha256": "d3ced365bbb3cf13cad89c7bb3d010ba603cff78460d935b9577076f1e651902",
+      "git_blob": "ba0084ee039886d2287b15d738929bf561461697"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/capture/stdout.jsonl",
+      "bytes": 54962,
+      "sha256": "1d9d78733d64e03d428be53d44600f2cfedd63681940e408aeb3adaaedf8cacf",
+      "git_blob": "9a9455b6e14e3d9e17ffd17be927f7e910434bdd"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/grade.json",
+      "bytes": 327,
+      "sha256": "3026be640414f7e7bce6a2f1be6397a09f23b0c9684e83510b8950e36fbbf39e",
+      "git_blob": "7bb81154a9ea08459cd79725c36440bfae654c53"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "8aba56d40f0ef9dd60decdbfa5743a79e9fabc289d72e8f1613aff27c70026ff",
+      "git_blob": "076026eea8cd7e7b0b339239515bf64ebd58a2c7"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/acquisition.json",
+      "bytes": 785,
+      "sha256": "683cb66a7857b48083d73151daaab04abd623aecc32aa1a46dd9306447b72403",
+      "git_blob": "0f6b070f242b5557f8d9bcce0cec60db5989c7ab"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/assessor-result.json",
+      "bytes": 58598,
+      "sha256": "1c5f347ef2ff17cb300c80a2b21cd1394233e0bcce3c4a8e2ab1a9422f6a3e66",
+      "git_blob": "2db44162a15e0b0c51cadd4eb20453773811047c"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/capture/process.redacted.json",
+      "bytes": 722,
+      "sha256": "5553cdb9ff38044b4cada21d1657d085915c564f570bfbf3f072cc3feacb0aab",
+      "git_blob": "8ef890b280b94a6ae6db8b7c1e203fe7276decb6"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/capture/stdout.jsonl",
+      "bytes": 114330,
+      "sha256": "73a1e68af4c77a0af09692399f5cf62e29654ef12f84f684cf72a32a675973e6",
+      "git_blob": "aeba256bcd19e1236b92707b651a48e7ace82cc0"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/grade.json",
+      "bytes": 327,
+      "sha256": "20825689b0a8a5757823a28401d92253fee9c582f036ecbbdca0aa0dd010a923",
+      "git_blob": "5f7f652eca41739b6373beaf136252c4076a6ad1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "193b855eb9173191cc44cd5e825e16cc438e6a95d964eda5a948ec1534badb2f",
+      "git_blob": "e509c161ef6d1d550e1056012691dae6b2ff7421"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/acquisition.json",
+      "bytes": 785,
+      "sha256": "3486fbb0a5a661ecffc2125a80a63f74348fc124b8a4e314491c06403dae3835",
+      "git_blob": "172b4c8aa0ed8b60fb471a51c88fe8b559222243"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/assessor-result.json",
+      "bytes": 58580,
+      "sha256": "42930a5ed79b40c7be8201b4900563f3b4dc687e989479460d804504764f427b",
+      "git_blob": "e70e71e11082c803013c054c21d4d434efd04f6f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/capture/process.redacted.json",
+      "bytes": 722,
+      "sha256": "74d00fcd445d424655ad0f4143dddf061d62d3eb177a890ea6e0b2552b0f7e95",
+      "git_blob": "cc5181af0f84d9bae5b42192f939e1e3d70ee3b7"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/capture/stdout.jsonl",
+      "bytes": 114303,
+      "sha256": "8d36f10e49923c88795c6f9c4e8687c46513520cc3bd8d2a42d0f4140b74d848",
+      "git_blob": "ac6e6229d7d4b51ad313f8d688b7e9c1ca14c686"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/grade.json",
+      "bytes": 325,
+      "sha256": "af8f4a8f0601d0b5a06417005bba43e3318094a793d6bf3ce9a934dbd18a322e",
+      "git_blob": "30d6c893d542b6103fb043698d367fa1ac7dec9b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "2383fbb87ac7cde18907938b10fff3763ac37ad484e9496c73daf34b2a087f16",
+      "git_blob": "140f5af61ee531bcdf7b899ad6a3672e01b24148"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/acquisition.json",
+      "bytes": 785,
+      "sha256": "1e3c6b6b68164fc39c6c36ed6c91ac865f35fee074994bc860b32570d34fc937",
+      "git_blob": "7f9982832fe2ccef7f686174bbaf062ab5d8c6c0"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/assessor-result.json",
+      "bytes": 50102,
+      "sha256": "12a77f995ac81d22f66c23427c43bc5be63eca37d49468342617b32131f2d114",
+      "git_blob": "6e0190ba3e40b15fc99ed17401023986744441b1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/capture/process.redacted.json",
+      "bytes": 721,
+      "sha256": "650a4fd3fdd2c15ec1b40dd303278d5201e42f9f4acf2c7f0df82c17cd5ddc07",
+      "git_blob": "c621e23cff68f9374ae704f00e973d6536c2ac9e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/capture/stdout.jsonl",
+      "bytes": 96026,
+      "sha256": "6cd3b4548b2b3a5bc24704b190b148144d09792d8f9ede65137ed1aa4d9c34f4",
+      "git_blob": "929c55036885e4283938a63bb8d78d0ec124335d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/grade.json",
+      "bytes": 327,
+      "sha256": "5d9fd1a7503ebbb0906f39ffa59ecaa5c26a23aa8e27c8c72bd894acfe8cfe98",
+      "git_blob": "28452d2071c51aea65740bd50e650dc349eedcce"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "254565ddd4b63004b93f4a436c0b2f14cf01c57d55beeda0fc137853b2db7e66",
+      "git_blob": "018cc06b9e5038971e30020f2144bd56b3bda7e9"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/acquisition.json",
+      "bytes": 785,
+      "sha256": "436b2357541ee15531c72b4fd0c81db2bdf6e5867df7350eb9d0e137d2a57da1",
+      "git_blob": "0e712c2621b78b7950d1e1ea6c2a1f5d7eef2aea"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/assessor-result.json",
+      "bytes": 58572,
+      "sha256": "4f0331b5ba758ab41ae2a08837475afbca7b2c7133759335be5a8be0a3f3d2f3",
+      "git_blob": "126ddaeebd944ab56e9f97e53cea1bd7e3373e46"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/capture/process.redacted.json",
+      "bytes": 722,
+      "sha256": "1202a4693dc7a0e60503bba68f0bce7676a8548d51800f5304d2f5e907d6fac1",
+      "git_blob": "5156928640b160ee922a28b8e625a565e5f3bac6"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/capture/stdout.jsonl",
+      "bytes": 114306,
+      "sha256": "a60f100439de0efdf5d186e1cdd7a590b2d2f5cf6109349ee1895156da360f2e",
+      "git_blob": "ef4a970dea687f5c4e664660461db36458cc12bd"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/grade.json",
+      "bytes": 325,
+      "sha256": "dd69d6edc422019ca310186e25a2564ae75b2fb01cfa36a13756603ef329b743",
+      "git_blob": "091dafd5cebc7ba242a43cd332310d3c57792d4f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "91f66252fc3bdc7ba25654c3916ad99df6a769adf7f8184b9018a4b84967afec",
+      "git_blob": "dc3bb62e0c601ebc9c80ec2688c3cc14c7d78fc1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/acquisition.json",
+      "bytes": 785,
+      "sha256": "722fd2d1788bf93cc4317bb0d9e91fbd04d36176e000f68302ab15f710542329",
+      "git_blob": "09bc13e8b626fbe2fc20ee5749ca3e3e93c72d3e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/assessor-result.json",
+      "bytes": 25991,
+      "sha256": "bf504a05225bd5ea9f6c15d3cd91707cd17fb23c12fc131ae2f78ee25ba77a96",
+      "git_blob": "56cffdea90ea466f8f464b6a999b3ab481284753"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/capture/process.redacted.json",
+      "bytes": 721,
+      "sha256": "3ab326d0d5e26787f3bbcef263c20968424d0a00e199aaf73c67745baafccc8e",
+      "git_blob": "1a3055c89c02498189574db21d4684e15160163d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/capture/stdout.jsonl",
+      "bytes": 55526,
+      "sha256": "4c72fba013fb211a4a76bf9a1bd7bf4698502061cea09a5e3a0e3c442b127a8a",
+      "git_blob": "2de6fb3666c8b71211d625cf394e97838a4a705e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/grade.json",
+      "bytes": 327,
+      "sha256": "696f5af9e4ac6ad1e50dfb6500393ad360f65ffa8177708af1016d8c4a2a7471",
+      "git_blob": "e0815441fa829b4a0806c8fd00da8925d7069b9b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "561179c42b6fa85f4d8e4ef6e47a688ea8d86bd91fe5f02263c83f989b29c38d",
+      "git_blob": "768643c3ab04aceb96c7f9e9d98e86e455604eaf"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/acquisition.json",
+      "bytes": 785,
+      "sha256": "095d9fe1fadd29e74a27150927b2fe50027d32ddae9019e85ae8cabec0ce70a4",
+      "git_blob": "099e63f6aad43ea72be2a6cf6d29425396758448"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/assessor-result.json",
+      "bytes": 58590,
+      "sha256": "10d53bf47774eac35e41fc841c1fa7646eb9d83d28664c73bd748ffe152708a3",
+      "git_blob": "db3e27d9bd983413c9b53aa46b298f33b47c4406"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/capture/process.redacted.json",
+      "bytes": 722,
+      "sha256": "5d7c337047617d9837d27202f169a627bb6b5ebb281a8fa71f5d0f66436b0da6",
+      "git_blob": "71b421f4c34d98df6526885423d38bfe09d57969"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/capture/stdout.jsonl",
+      "bytes": 114317,
+      "sha256": "4e93128b24cb9fff45b6e9409fc65f8811f18797d7383768c08835ecdd273bc8",
+      "git_blob": "01b89dfcc08ab5fe01bc10d1d531e5efc2765ed4"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/grade.json",
+      "bytes": 327,
+      "sha256": "6d03752e0b5003714025568269301e718ff5b4d105fe1ee4f0f5d5e6db55fd00",
+      "git_blob": "67a2aa4ce50192951221f60a43df41074edf2a77"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "39948f5d6f005ca865d0bb98e7e56a24dd7815f17726718cb2526fb44582a188",
+      "git_blob": "c04d1f36b9b3b64e9ff4bc90b061c5db85ef3fde"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/acquisition.json",
+      "bytes": 785,
+      "sha256": "60b1ffe0cdf5a965d03df3213cbe4d3f9df23df9d4e13c286d631e980c41ef12",
+      "git_blob": "7d5f6f30bf4529465a962840343a9e0a145d598a"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/assessor-result.json",
+      "bytes": 54884,
+      "sha256": "7c05f1b68030d6a68a27857165247805d7ff70473f83489550188755e5cf6700",
+      "git_blob": "63e8dc381bfa4c80882bff8cf4ed6cb353fbea5a"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/capture/process.redacted.json",
+      "bytes": 722,
+      "sha256": "9dc452fbb4ba29a5b8aea84eda28d96ccafa52028c838430d870631220312e52",
+      "git_blob": "7aa483c6d0d71ebb48b5e7ccda5e6ea5683d4a3f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/capture/stdout.jsonl",
+      "bytes": 106100,
+      "sha256": "6147744d21bb54f3b2eabbe23536a16e271d5fecf14ab40b877a6279c6f90e22",
+      "git_blob": "67a6fc115cf4604934b9ce8fcc0bf488cefa536f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/grade.json",
+      "bytes": 327,
+      "sha256": "2abe52f7caae28e1db22ae9237d0770b3d0f8f8e02ecefa87cdd4b82c0657868",
+      "git_blob": "bef5d3b33163785e25f2fbd92fa9fc218c73c99d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "29c80412dd88a08e01802bd536efdd12a5c8805d3d341057e62545d1ba3a7a07",
+      "git_blob": "f4337119b54c1c5e5e026ace181234f966ee6d88"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/acquisition.json",
+      "bytes": 785,
+      "sha256": "60e3e8e567e8d8de0566247a8940e384502b5178a04cabff6a22859f79f3202b",
+      "git_blob": "e5ef05ac6a301e7990fb2ea34fa4fdaf0aed1a8d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/assessor-result.json",
+      "bytes": 39884,
+      "sha256": "44ac1a1d1b054f864c8bea24fd359b90ac3d80587fdbe0c3f623d62a1e74d268",
+      "git_blob": "bbce58811bc8728caa6d3eb1ad5483a01e33debf"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/capture/process.redacted.json",
+      "bytes": 721,
+      "sha256": "a05664f62117369a43600dcf4d5b110fc8f30cb6244346baa9eac7419e2add78",
+      "git_blob": "cd226bc1490df804ec80032e28545cb62173638f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/capture/stdout.jsonl",
+      "bytes": 82905,
+      "sha256": "5c77d872f0bcd6545fa62b4ed52d499667cb67e41b2ee0dedd9219d1eda141ab",
+      "git_blob": "619655f45699a4937ed083da1cbea44f46d6aaec"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/grade.json",
+      "bytes": 325,
+      "sha256": "23cc1e93c6eca9fd22eaff530a8b38128d3cbd68c9ac528ba6bf07a7fa27074d",
+      "git_blob": "33925da2a9d80ac2f7598a59c65668629544baaf"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "e2d5c8fde1bc509729fcca688f0de64118c891d44e3a28c02e640f0d6d9d2d13",
+      "git_blob": "b2b09116b52840f3b8030defa1520a2b1d6b01db"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/acquisition.json",
+      "bytes": 785,
+      "sha256": "0331bef47c75d27dbabc00124ee457e7832ed422e808184df249d240af187368",
+      "git_blob": "b6ec20dd29e67e148e728d3530e6bedb733475d3"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/assessor-result.json",
+      "bytes": 58600,
+      "sha256": "14b49f6d7ed9fabcf9fa59ffcb1d9ab97ff085e9e8462bc4e7e035ec1d72627f",
+      "git_blob": "935cfc626d6d2cd7a3b9585b61316c5a5c991d97"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/capture/process.redacted.json",
+      "bytes": 722,
+      "sha256": "255852f5abbc66a95f5e3acaf6af40bb1738d2971ad5282fc0d74d5affb24553",
+      "git_blob": "3a106908be73ada687bdc6ca3cf3f28426ca09eb"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/capture/stdout.jsonl",
+      "bytes": 114327,
+      "sha256": "3493bc9504a47bf82d7af8004aeba7ac2d57abb25500a8148c2e88685760ffc9",
+      "git_blob": "1ce7fb64a4a0a88717bec336cfa6aedd22cecdb1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/grade.json",
+      "bytes": 325,
+      "sha256": "9ecc9b02ca413bdbe7e520a7c9d3e04a1dcdf5a74f2d4ab38e78b90b03e23812",
+      "git_blob": "21a858f4e42bf3e7fe3107085877179644319b68"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "b8cd9de7e423f0b15f5bc08df504836ab04e33678bf471b453a222df8cffd111",
+      "git_blob": "9bf63c5ef15aaeaf05045969746af02cfe2ab601"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/MATRIX.csv",
+      "bytes": 2771,
+      "sha256": "c41163eb5f036dc3298b558cda7c9e1919bb0c13e36dc2276389bf471f16ffe4",
+      "git_blob": "fd3cbffcb5622efe92bf7485cffba21d98379a79"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/PROVENANCE.json",
+      "bytes": 2679,
+      "sha256": "9c9f2383fdb84cbd666e6ed9d9cc90f3ff416de0aabe0683306bc586363fcb3e",
+      "git_blob": "185657376ad41c6137439f7620193d8f61c2cb76"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/RUN-INDEX.json",
+      "bytes": 137114,
+      "sha256": "962dbdae5c9b6ccc2b8266bb69aafdf0620973143903b31ea46dfca8ddeb8d68",
+      "git_blob": "ee2d10c5083fd4c0f3c7d1c92b9d3cfde2daaf75"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/TRANSFORM-MAP.json",
+      "bytes": 121038,
+      "sha256": "0e3ce36afc173a298d9bf47e4ce801c385e4561f4ba9f5a5421404fb6faeb68e",
+      "git_blob": "93c25570aab785cc5f4057bb1e7637ac253e3ede"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/launch-once.json",
+      "bytes": 330,
+      "sha256": "730d96d03e1da825108f8f1785c207d3a0009baffeda1f03fe48a36ce498539c",
+      "git_blob": "668b478fa7faa84551baf067c2cb4e741ae620d3"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/acquisition.json",
+      "bytes": 156,
+      "sha256": "02f443946e81b172da17949b182995732642bc97dd6afe3801d82ff8b147f5bd",
+      "git_blob": "9164493c6dbc9c65794eedd6ce5015bd1a5e45e5"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/assessor-result.json",
+      "bytes": 25709,
+      "sha256": "47f78b8f80aaab0fdd80dddbb0754078b38e2ecfda9b76a6ab4bd52d75fe9990",
+      "git_blob": "af7272f005b8d941f16ded6813828d44ad17417f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/capture/process.json",
+      "bytes": 466,
+      "sha256": "43423017af58a17a32c872b897869e7e71cad814523db031af441d5afa4ac2c5",
+      "git_blob": "1c6b3bebd2c8cb3e1bbdcd2aafe6d86e4b81bf17"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "0914e050500abc3b688be0b70f637a1699803814a28b60901af5208950e02b06",
+      "git_blob": "1e2824e31e897b4ea92c5f7a437ba55931087448"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/capture/stdout.jsonl",
+      "bytes": 54962,
+      "sha256": "7c0bcaf727707e8d7eb2aa753078fe158b3e933015019ea8fc6e83c1233ec0c3",
+      "git_blob": "a4f323e7cbac4cb5a5204fd41136769cf39a2979"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/grade.json",
+      "bytes": 327,
+      "sha256": "8019f0ca9fb7213e4536e6dbb06806a14c0ad9a4867cb92f76a87d8f4d819e38",
+      "git_blob": "e1044ea4171d86435736471098f3160fa07f6f32"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "658791081a64af0257f59bd72f890b9deb55a022b2b346620d15ef07e121b146",
+      "git_blob": "3f011b864f9696e5960ebebe61774076a13283d0"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/0e20f92d-cac2-4c9b-ac0d-aecd91e812ac/validation.json",
+      "bytes": 154,
+      "sha256": "b421a884f970d9af80a1aec3f7900d38b4d80251b937a447bea044aed6a585d4",
+      "git_blob": "6f874e2b745c58ad1bd129d64027ae73a4ff6461"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/acquisition.json",
+      "bytes": 785,
+      "sha256": "4457e66e8d3fed748e11235d241ebd22dc5a3a10f22c8d2308377b704f9425f9",
+      "git_blob": "6ff89ba6ea393f7c73703d5cac145eedb02fb4cc"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/assessor-result.json",
+      "bytes": 58600,
+      "sha256": "258c1bcd5a36640f87e583c05cf2ac70cdc2697eb77fb5404ae661e8603e994b",
+      "git_blob": "1230d5e0920676b3cb95218e0cd786353eded16c"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/capture/process.json",
+      "bytes": 467,
+      "sha256": "18383d91063e44717dc9f245b4265ad5b5a6016cb1284358ef0a34331b1a09a9",
+      "git_blob": "f6fed1bcf837458f8ee4d2bd32db4f03e428df3b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "7eadb237abf1ff6119c1006c01a792aeb4a15aaae2d21195090bcd0ef02d4040",
+      "git_blob": "0f636b7dc307c39988568a8841536c97f7907875"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/capture/stdout.jsonl",
+      "bytes": 114327,
+      "sha256": "c3edb2141bda137ce2a1fb1b515715df06ac4674e18611b1f9481c673d4f475c",
+      "git_blob": "7e6f3fb8babc87bade1779ff361d30044564802f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/grade.json",
+      "bytes": 325,
+      "sha256": "c281062ee916f74769c169794d774085b4e69ffc89d704a17da5d6f97eb001b0",
+      "git_blob": "e5911f4b31001ead7946053632d8d7634d1e237e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "c24fd2dc6e1a496cf1a43380dff2c8fdb83ee481277ad04c49e71deb7a9ea6e9",
+      "git_blob": "51833f626d7a196f7799dbe88478a35458fb5d97"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/194ce764-ae3c-4d08-a552-65cd0e0005a6/validation.json",
+      "bytes": 154,
+      "sha256": "fd67b38123a0e00c8e40f06711a169a69ba5e6a5b98df4380d1eb92a40beb361",
+      "git_blob": "6fbdb713a46f8f0d515ef5e2eab11d85fefd021e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/acquisition.json",
+      "bytes": 785,
+      "sha256": "21b02d716b0acdcbf110400bb8dbe20e7a6b89ac5b0ad1a0d938690ad2816bca",
+      "git_blob": "09be5746b66506dacc1bcd19756a6e743407b456"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/assessor-result.json",
+      "bytes": 58590,
+      "sha256": "2a5eb5080c96ced5d05c479fef7f7bc5e69715741a8998adaaaf79a580747f50",
+      "git_blob": "6fbb15d43c0b7e512a15ee26139c2bcbc2e3f847"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/capture/process.json",
+      "bytes": 467,
+      "sha256": "ae932d35ca72e191674f478154f4a36bdd0c97b1b0366e6c1414726970cd9f28",
+      "git_blob": "ce6c6ca7467282a1edb31871bc194c5e82d1cdfd"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "31ed964b3266e44f3ea54611cd13399d7c78206f19a1a0e4d743621f0df6e3f4",
+      "git_blob": "4e2334f4fddeebc5b955bfa82172076ced2949dc"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/capture/stdout.jsonl",
+      "bytes": 114317,
+      "sha256": "d8a86a4b99057eab0caaf2343f456bde9d8fcf85625669c322cdd4d087e44b43",
+      "git_blob": "65f3157122dec278eb999572dc4a7ff533cd3851"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/grade.json",
+      "bytes": 327,
+      "sha256": "8a96fa18a82c7551545fa5a09609aff3781b181140c015cd4d73960f15805647",
+      "git_blob": "c55d3773d0a879cbaac6297442d142683a632cea"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "663ec8337d864734d5384ca32b3f871d5d11600feb3c84b4115f1cad51c87579",
+      "git_blob": "5023b5d84fc3350c1393f56787a33b035c6c7e25"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/305d2344-ae4c-46fd-a089-81b73a371918/validation.json",
+      "bytes": 154,
+      "sha256": "a3f6265715b297c390a39c87467a2d737d60f85a69a8ba46089276fdd3a419d2",
+      "git_blob": "959dc4ab2ad53f9f6cd5925ceb988a4f7d33e113"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/acquisition.json",
+      "bytes": 785,
+      "sha256": "032013608a48120fadddf7ac8b206c99ac2f5431932fab6e4dfd2a1f0dbfe9e5",
+      "git_blob": "8d9badd3de8a3906942b9c5b727d4e6d3389bbd0"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/assessor-result.json",
+      "bytes": 57388,
+      "sha256": "d620e81de70feacd2871460f23c1e3446c09bcb2ff856ff334eb7ad3286e9be4",
+      "git_blob": "ddb14e1a01e3aa0ab95e44c990d4864c36f6fc36"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/capture/process.json",
+      "bytes": 467,
+      "sha256": "121fab1fac9910ba3c8a7b04f7fce9b2743c902c29fc521b3a0df751fda28470",
+      "git_blob": "f17987d7d23b58bc2f4914a3d3ebb87574046c66"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "63078516e9411c5299b1ca771a2783b305a3246b11a29c00ecedc27914c02950",
+      "git_blob": "6a8578958f48e58c51ebbfb19f21cca7043be47e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/capture/stdout.jsonl",
+      "bytes": 111687,
+      "sha256": "6691d2d6fd0686d47f558d940992e57893db558e7e2d89afc33a3772dc8356e9",
+      "git_blob": "cc5f2678e5b706d15ca3d65b268294b750433333"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/grade.json",
+      "bytes": 327,
+      "sha256": "104e8704dd3713647fccf838a8df4a725b4c55ee0db3cea2b443282b91411ccc",
+      "git_blob": "95c5cebb4755959dfce0413d16c0b581e8185b2e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "07efdbbbe2adc1b509eb4a6c077b3568f356840ee5c5f927fe9a8720250f7616",
+      "git_blob": "418ec7ee522637d3ab55c347d1c797c9adcc439d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/3dd19c59-88a4-43b8-a777-2755b49e002d/validation.json",
+      "bytes": 154,
+      "sha256": "b5c60a7042d32ab7a989bbf4acd8fb6b9f01a5f152d144bd64fc582685518064",
+      "git_blob": "f424a8dc2b2dcb220b3152a670fb38b6ce040623"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/acquisition.json",
+      "bytes": 785,
+      "sha256": "25dfd52ddb924dd47ea0a1b02c81e4949ead7b723a63d4f9dbcddaf3e1d4dfee",
+      "git_blob": "3c555d67b3570f6d6a1dcd205b3245bdf6d4d3a1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/assessor-result.json",
+      "bytes": 58598,
+      "sha256": "b9227d41a2f6beaf8fe5d0da92fa38b0fb592ccb3c94a3765f11fa9b8ef578ff",
+      "git_blob": "6a9a74e5c539c3bd254b05c77c83961c101b1164"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/capture/process.json",
+      "bytes": 467,
+      "sha256": "897f277ef55562a200d357aa85d34dad43306dc06e9ba24d9e4d53dba6b6c1ec",
+      "git_blob": "d10705048feea868f786375cbc50139c5b45a5cc"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "e7f0d570844c2b6b84709363e82cee45061d50879713bb63b0d3f435f511e9f6",
+      "git_blob": "c1ec23332b8b7a648e26379a2ca4dd8cf047db4d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/capture/stdout.jsonl",
+      "bytes": 114330,
+      "sha256": "db44fc225d53b5d5eb8c64c096e4a91d96ef276efd346afabc2ae310d69fe64b",
+      "git_blob": "216d7b3ff6882ac6e0402254269abec55733eecb"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/grade.json",
+      "bytes": 327,
+      "sha256": "2681af3760baa899d30f62c0bfd84ca6bd0d5f8f56a7d1592654c764c8b87d9e",
+      "git_blob": "140e398c95b4c03be17e436bfce959dece3606b1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "63097cbea8ff2d9b6610a6f0460918139c096476aa081fb8549f4de60f9fe4b7",
+      "git_blob": "2ed0c298472d15d357bf4d557a79c4cc742e3508"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/4b440a85-137f-498b-a09a-893a205d8074/validation.json",
+      "bytes": 154,
+      "sha256": "5c660397298acbdd277715abfe2396617d5ab14b7296719eb6bd59d8b31f7e2b",
+      "git_blob": "bfaf2da2559ae2ced99d4875441e8445a99c1ef6"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/acquisition.json",
+      "bytes": 785,
+      "sha256": "76553d7dd1877e66cd1c72a01e4a474dff6578343b2485d23f162cafbeb4d2f9",
+      "git_blob": "43641a49ce8b083c3ef063e4e01f220f99ccab6e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/assessor-result.json",
+      "bytes": 25991,
+      "sha256": "7dd55b8fe494fae5984acd768631bd39d6194add3ce65be759960217bc161522",
+      "git_blob": "50296a060c23138c5c8bc7f7f3fee0cad54995db"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/capture/process.json",
+      "bytes": 466,
+      "sha256": "b2722f442a28e31777e5e2f9ea893d40bcff526619e03487e7c817c7c429e327",
+      "git_blob": "96a6edba892f76649ea7587f26e1ecde8b87589c"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "bccc2cbc3193bd489ff853adf7459e1b73939b5f72f2c15452fd65ac83b5a15a",
+      "git_blob": "5f7b270c9f7b2d45819a030f6748dd9f161bafe9"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/capture/stdout.jsonl",
+      "bytes": 55526,
+      "sha256": "6d357a3ff7901c1010d7a7fb3ea4558f60db6015d8b3c6f1f5891f8a3db28401",
+      "git_blob": "000edb323b464ec9131e3c1090300c5dff610b4d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/grade.json",
+      "bytes": 327,
+      "sha256": "add5b161441747cbfb693d78813088bd78a35cc007752aa25683d7295d9668cc",
+      "git_blob": "04098ae8b36e6e75ec234c2eefc2ccd8760a8da2"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "4006e7603b383f38eb84ed36d7152c9f904d4e08bfd36d9f6b253771b73bcd1f",
+      "git_blob": "6686d29d4e8757cc0aa5483034995d1faf52b577"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/61c179b2-65c8-4a27-b8d3-d32b14c06eab/validation.json",
+      "bytes": 154,
+      "sha256": "5046c266c6798a9875e506d85c7730d09ccdf6d61841abf2263ce977fb42623b",
+      "git_blob": "7522926d75a92cc910e8b5d0a1d8afc0f266ef00"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/RESULT.json",
+      "bytes": 3983,
+      "sha256": "6021a58a937944c04043b170fa0c24a6d3c1a2bd0c37170ce1963310dfd747cb",
+      "git_blob": "28b79896de52abf667f4b6b2214a9fb719a764e3"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/attempt-ledger.jsonl",
+      "bytes": 10125,
+      "sha256": "c40c94966edda914811759cdd5193a65e72ced50f8ee7196cf9525c22ea7c95b",
+      "git_blob": "6a6150f1b88577fb1252c3e0be64556bb9efa322"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/acquisition.json",
+      "bytes": 785,
+      "sha256": "5d7113f6d03741c74c4c658cf074974c698b544b77a053bec426142b700a0be3",
+      "git_blob": "561d53b70e790c7a3af1fb1a6e2b86197304da18"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/assessor-result.json",
+      "bytes": 45283,
+      "sha256": "9dd118b906fe21a5e4d76065d27e9f754ca77156be495878447b5d2ce6972e1e",
+      "git_blob": "869e9393b5a860f4af3169dc08a0fbec4522a309"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/capture/process.json",
+      "bytes": 466,
+      "sha256": "61db1cceab2f513d846dafa5b6d7367074a7ee6c0a61eaf32eed9561d349a6c4",
+      "git_blob": "730dd6c9b58eda950f1cb6c7665cbfd7a0899518"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "31bee658fb4af502c56d095f9e201f6d51c0cea61bf7d09aa28281f6f140ce60",
+      "git_blob": "427d950898f245b9f9033bf709b8d1c25175d038"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/capture/stdout.jsonl",
+      "bytes": 93435,
+      "sha256": "76a3238c1f8ecd814fde1075fbb4a43b89377f39f90b26f6047f9047c04ed568",
+      "git_blob": "b133eaa40167090f406bf0c39c7cb6d851c7ddc7"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/grade.json",
+      "bytes": 325,
+      "sha256": "b1c58a66804a25f693ab909840db59b311efde09e291d95ad5bc892d63961e18",
+      "git_blob": "23f9643c6db39bed48d285ec0ddee7c0525a6c6f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "3c37260c9aa33fc113fad3a3e283ef8e462c0a5b8b6958fab2bf95c2e6eb1937",
+      "git_blob": "37f4c4349dc15f32f3f807b2548e95d5e832123b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b360cea4-3f1f-4369-98b0-1e3f9d7fb6e8/validation.json",
+      "bytes": 154,
+      "sha256": "d1f7f236463756e967bd3eecae9af0b0cd2466e295060505fbbb422330a97b0a",
+      "git_blob": "456c973b38c4f63328c720dd6cce61fa5d314da3"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/acquisition.json",
+      "bytes": 785,
+      "sha256": "4eedbf32cbfd0cfae67c32a3b5700cc06bd6b5577c46e148d157369cda75dee2",
+      "git_blob": "414d03dcae08bd221987c01d4885dea5fc362e70"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/assessor-result.json",
+      "bytes": 54884,
+      "sha256": "92a690c8d43c5e03208538687b457a4f930e06cb498393715cef99f93a84d9fc",
+      "git_blob": "5a76ea6bce4346201d2b4b772e2444127a6ad9a6"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/capture/process.json",
+      "bytes": 467,
+      "sha256": "0da87906bbb198ec82019130afd80010593f345b7071c31935644977a5333604",
+      "git_blob": "d71e516ef5815def4d83f921915f6c943bb03329"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "3d1c3819df6d2f459712e62952cb815bd527fc0e56942f11421fd7307304ec21",
+      "git_blob": "c0c66ee426c07b4e544c9ecb7105b943024a1b64"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/capture/stdout.jsonl",
+      "bytes": 106100,
+      "sha256": "0b5f27235e7b4559ef213cf4caf61e89ee295e4a4ff45144a39ad000efd9cef3",
+      "git_blob": "ce2ac9260b08698d10e8b5adc4d28db123e4ba7b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/grade.json",
+      "bytes": 327,
+      "sha256": "aebad8cb886ac6f8760bb765cdd97344ecb4ef32e2c5b8c7ceb86bdccc57d444",
+      "git_blob": "9f7449feae3973c3d357b44768339430bd9982ec"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "49fbb01b38e2141fff77244ff33383aa642c902c9bb20d9e02df82d850c98278",
+      "git_blob": "af6981883b9136a0c14bb832a5dd83e37ff41937"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b482708f-db07-4628-9180-bec150062187/validation.json",
+      "bytes": 154,
+      "sha256": "c5af7f7402c32b8a70c520903712ad7d683b501c987e224348a3534fd57ed306",
+      "git_blob": "d03ad591d5ca58ede57a41495136a19881dadd56"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/acquisition.json",
+      "bytes": 785,
+      "sha256": "da972c407a188fcc736396cbd5540f49bfd37bbd7b678e4f8ffbec229b8ad02b",
+      "git_blob": "f8a0a9944213e6092867e1686b6a33b7f6d7bbf0"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/assessor-result.json",
+      "bytes": 39884,
+      "sha256": "a587ae146063d7a3659336f9014ffb009a3768a0c396832adbd37c6003382bca",
+      "git_blob": "cce705a198ec437338da2f8d112a79645f8591ae"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/capture/process.json",
+      "bytes": 466,
+      "sha256": "08432647dd9547c168a5f1b6418e7385550025510c0413f7fd44982dec464825",
+      "git_blob": "192175472b5e1a64760b809bbdeccb3dbb93fd54"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "72fd2db0c1f0f6de7e578672b520172fb218476bcc092450c74b8bb9b6e2252b",
+      "git_blob": "2e16b1acdccaed1835db13a37c0291ef5fd33a38"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/capture/stdout.jsonl",
+      "bytes": 82905,
+      "sha256": "7fe827f823368efdaa0af86d361d5d988e0ecbc86789e44a5ede01aeab5c3281",
+      "git_blob": "6f307694bd5564ed14041fe13840ed223be30cba"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/grade.json",
+      "bytes": 325,
+      "sha256": "86dc41c17d76ec8e976e94d24a7b52c2ad336b16845bb2118c60d5575f9aac40",
+      "git_blob": "1219c6b11768a1f2dc4f9c79d3c20fd6b2886d14"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "836b8ba802f6985b4ffad98466086b4daf6dc654f73c11f2078f12557a188caf",
+      "git_blob": "b90b1d5867b19559360dfe2d68e7bc36ed8b8d9a"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b4896bdc-4e55-42b5-be1a-19768855e577/validation.json",
+      "bytes": 154,
+      "sha256": "8685fce68a1de7b86dd7ed3a1a2ff805cbc6ebae8a4e825d4d6615067059affc",
+      "git_blob": "8f5bc50b4db8c22172170b62fe7f9029a1d6ad16"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/acquisition.json",
+      "bytes": 785,
+      "sha256": "b54d7e1e31b3df6bdce65d5894492d2bd57f6f5d5bfd249fefef83936e6eedfc",
+      "git_blob": "a2ebe889abd31c31d96c78432782523d3d048222"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/assessor-result.json",
+      "bytes": 54950,
+      "sha256": "f4d85f42021333cc309eb6ae24cb2a67bf364a42f5ef1aea601ff0072d6f850d",
+      "git_blob": "e55bfee16e552988c2b6e1fae2014e9740acd332"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/capture/process.json",
+      "bytes": 467,
+      "sha256": "aab5136bfca0ded0f1696844961aaef80b42a2c52f517c49414ae03ef0548f62",
+      "git_blob": "26a2918db825e6f2ff3a0ed76bc1230356eb00ed"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "363e252c9a7e711fb870bd993c89e232804ace91318990b1e4457599cc3311f9",
+      "git_blob": "4b6af74bf0f8026202486c8d7594fa4cf6f1dede"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/capture/stdout.jsonl",
+      "bytes": 104608,
+      "sha256": "125f7bf01be270fc9f15dc82270358b2225286227195a2050e06a5f513e533d9",
+      "git_blob": "b627799ad0ac84135b12333c9f7b39f429495684"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/grade.json",
+      "bytes": 327,
+      "sha256": "5988f6bb85ee430a38484eee455da53a0a6f003999637a664bf0fc2d2e027a46",
+      "git_blob": "ce36125ce94975114b7737c8156415b0832121f6"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "c96445b3ed8226e76dec3537321664e0952a19b09dd7bf0ab6e1adc635aa782b",
+      "git_blob": "5e4180a02e963618101d1bfc25dc20a20e592fe5"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/b6a67a91-a633-4484-8d5b-ba512d19c915/validation.json",
+      "bytes": 154,
+      "sha256": "a3f38f471d3ab2097825fb127b5bbb46c3b082a9cacd1b627e8b17e7f4a70194",
+      "git_blob": "ab872836c93ff043bd431f6824ddb0f47127db36"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/acquisition.json",
+      "bytes": 785,
+      "sha256": "34eb09a6f3a9e654f264564601b4bbda84a85397b7f5a81a321da6b849669342",
+      "git_blob": "ba139905bdee6bd54a90323481415ae8de5da071"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/assessor-result.json",
+      "bytes": 58580,
+      "sha256": "fc55d59f6f48935f45e600b800dd653da53cbb25c2b314a8bed17bab9e3a5b48",
+      "git_blob": "d2e019ed9e6a6dfd1512a492e6cc0d49054f7d3f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/capture/process.json",
+      "bytes": 467,
+      "sha256": "a5dbe38bbc2a06e10d21299468655f21295b1cb579d8f21f34d7b99412cdcfe7",
+      "git_blob": "34cc83453d65bbc3b286457d8a5799a4e17b1f86"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "78d782ee24efd6ebfb8850b1075e5dfd7b7ca900104b93bafa0744b96133716d",
+      "git_blob": "0f4a83f87ba924573aef4185440c63128fa12837"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/capture/stdout.jsonl",
+      "bytes": 114303,
+      "sha256": "0ebaef233eb61748c3e1d08e5fc9bb828dfde2891a96ed15605b0b774f6756eb",
+      "git_blob": "469b1f5583412387ec70d66fc05991fe347ad705"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/grade.json",
+      "bytes": 325,
+      "sha256": "60296f059bdc13d68f175804485edab6eb92cba2f6dc1c003c03e7519f09a70b",
+      "git_blob": "b0e6228abb6675c4e7375eeb4e001511fd4b5692"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "793182084072b25b1d413de66864f9b9351dee8edf7861147536ab42e7e0d727",
+      "git_blob": "e8729f02d93bf972814ba38e1c678e6b5cbe3322"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/cb3626f0-31d7-4425-9eb4-8ab89805c968/validation.json",
+      "bytes": 154,
+      "sha256": "afaf7273386e045e494bfd317577398e0b11e95388d8dede20b88efeb06edd14",
+      "git_blob": "7c1d53a9506d6fb2d23dba4fd6b285568fdc8681"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/acquisition.json",
+      "bytes": 785,
+      "sha256": "bf3d68ed9bb42ba84d3402ae6e39bc031e5fead7de5c36cc4491a1596c91e3eb",
+      "git_blob": "7645ae4cc61977e180853f9057d8c136f61d034c"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/assessor-result.json",
+      "bytes": 50102,
+      "sha256": "f65201263191bc7a4dadf92af436959f31b6895188ebe4994cb591b82ccd6598",
+      "git_blob": "4e8eeca32904cad14bb39bcebc0268fb2ec5d15e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/capture/process.json",
+      "bytes": 466,
+      "sha256": "c54ba36eb8da697e459bd3ef12405dc33b82890303bf899981b1ceb98ebda516",
+      "git_blob": "29c9ffea64fa4aa1ca71f105bf1ac1fc9002edb5"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "6a9eed03b31f7a728a47b6ec264edcd9d7940428821a9a251f9cd1e785386f3e",
+      "git_blob": "47f1a5b7d6f90199af7a9af50496f3483bb0af1f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/capture/stdout.jsonl",
+      "bytes": 96026,
+      "sha256": "8998948ae355b1db34711962944be4e919b51d5c07d0552976b24f8f8051d666",
+      "git_blob": "2a8279b9bb95edd33376a5a9dd316514482f2fd7"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/grade.json",
+      "bytes": 327,
+      "sha256": "fa11aaf92355062b8c5c846f7ad9df6ae2ac674e782d8d0507d02335650267d5",
+      "git_blob": "7ad65e2b3c37401a37df6a99f40d209be0caa478"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "c56ee3f7e485ef3abf69dc69a30e999b7528c21dc74c8f82f37741723f9dc52b",
+      "git_blob": "3a602c752b3d40b96e81bf160639dd781fb86f54"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/ec50e097-6864-4bc4-be2d-4703d8b94788/validation.json",
+      "bytes": 154,
+      "sha256": "1a79a86747c3de0824e4c8f225b82dc538c3367e53c24942f2f5b0c61dbcb24d",
+      "git_blob": "0088fd8c8bd7fd70a71084edf4192bdd9c838227"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/acquisition.json",
+      "bytes": 785,
+      "sha256": "29eba0cc0cd02e9686675d63963b5b6377f90c43602796c652236510261e48bf",
+      "git_blob": "15cb743a2f25d13c3c632fee19fe6139f18c26e8"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/assessor-result.json",
+      "bytes": 58572,
+      "sha256": "236a5ab1aa1cad56a9d21a924390838e4d5b060a424074ffc9075c85840a1030",
+      "git_blob": "f9536e5b9ef5355057d8cd787adbc5bddd2d1e68"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/capture/process.json",
+      "bytes": 467,
+      "sha256": "c052858ea21736dc4199d3e0c3c990802f2270c0ecdb18faeaad5ee8e35396c4",
+      "git_blob": "c1d3f0c204045e109423e6321945b8984a6290ee"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/capture/sandbox.sb",
+      "bytes": 576,
+      "sha256": "9e192bb7048ef4b0af20af60d5d8321a1cbf30359119b1f117e485dfafd024fe",
+      "git_blob": "58919a03bf8864bb7babd79cdbce1f3f61aef97e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/capture/stdout.jsonl",
+      "bytes": 114306,
+      "sha256": "b5574786a3f6e4afd81533ecf9f0a84a09e20678ffbbf7cbc6b762e28c7d2eac",
+      "git_blob": "b11b118d145cb6bc4db1b56876661d89398579b4"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/grade.json",
+      "bytes": 325,
+      "sha256": "cba748fd503cac3260308cabc4d1ed82e2882110a96d45bbd9d22d8c63eb54cf",
+      "git_blob": "b799ff397be66613809a7968281c2df8d918458f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/stage-inventory.json",
+      "bytes": 492,
+      "sha256": "5179f2d101ec63afad64b40f19e03ae795cab285e4c3e06228e28406097b4ce9",
+      "git_blob": "7dccab287c074b30e48761bf9ab8b5bad01d8b77"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/f431e7ce-094c-47de-b090-92d60d35bce9/validation.json",
+      "bytes": 154,
+      "sha256": "4b63beebaf46fe7ffe2de820ee0da92bafd0da2763de10f593a0377891e64621",
+      "git_blob": "a95b3c2bf2ceeabb10a5e4936350f8036344fa9a"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/RESULT.json",
+      "bytes": 1140,
+      "sha256": "c721b52fb196b4310137bf4701b9cb3d4e3b01e10128b88737e0daccc2ec5a3a",
+      "git_blob": "bc22098dfc1f7a946223946c9bdc2ce8311a8b40"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/capture/process.json",
+      "bytes": 422,
+      "sha256": "60b05f48c740eb4d3f79388c765caa9dc9603020f96389514a2e409e34ac26d9",
+      "git_blob": "7b015c09ef4f6159665373874df60ebd73bff966"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/capture/sandbox.sb",
+      "bytes": 553,
+      "sha256": "4e5209e0d7b592b783099c60776b5088fd5ed413aed2332af850b44b9d13eeba",
+      "git_blob": "37cce623b68a32a76e94f9efda3d0e8ca9fe8f11"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/capture/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/capture/stdout.jsonl",
+      "bytes": 4918,
+      "sha256": "dcd51298449f0017b4fe815294e669daa115212ba74f873b1b7b6b1c1a731fee",
+      "git_blob": "9778d04e28bdb16f32b51c3b985104151f84e16c"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/outside-stage/case-label.txt",
+      "bytes": 35,
+      "sha256": "4892af05914d01a1469bca3eb6b4e867008ada59dae8538ad3662ce36ebe4cac",
+      "git_blob": "49108f074a84f3e0762abe09ddb292f8dcfe0a7a"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/outside-stage/generator-knowledge.txt",
+      "bytes": 58,
+      "sha256": "e0c72656f2b4c247400eefca256865d9033ebad6691f3fba8787a0a2551ad9a2",
+      "git_blob": "041321b31532094b394618689fa50ea0e389766b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/restricted/acquisition.json",
+      "bytes": 785,
+      "sha256": "fd68cec0d24e7fe5f0a28edca408a4ca73776cdf61782ee8bf177afaf5d7db00",
+      "git_blob": "970246fbac54c37b02ab74a796be0e32bc999231"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/restricted/control-paths.json",
+      "bytes": 349,
+      "sha256": "9f187620ae3c1ab4bb1f99515b547f60c5136076d1d8cd384c38ed40537cdb74",
+      "git_blob": "649d706630c68c3920169af248d9e38e7091669e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/restricted/escape.symlink.json",
+      "bytes": 343,
+      "sha256": "522079da174602c94ad2df02276c00831cb06deab80a0e0e4eff744bdb017b60",
+      "git_blob": "1c691a275e623e7d084709b4a17ec467b1cf6822"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/output/prerequisites/stage-inventory.json",
+      "bytes": 1091,
+      "sha256": "cd4386c885b3c512a287759577e49ddb6344b7dba04559fae5cdd30e8a896ff1",
+      "git_blob": "bd8fefbafae7540cd712db1f48408272baa833c9"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/runtime-inspection.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/runtime-inspection.stdout.json",
+      "bytes": 67873,
+      "sha256": "9cdb5bde704f0354f6d6bd7eec5888e5451bcb48de49163291a661830add4755",
+      "git_blob": "a789dda05f13178deb051b151e8c7fefe4700756"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/snapshot-inventory.json",
+      "bytes": 27987,
+      "sha256": "45e6360f8b09f8c70d60e137fc0251bd04be828e1fc6040c06df3091830c44c4",
+      "git_blob": "8e32bc5b71fc54cb0a92b1ba1e3d2f1b83680d56"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/tested-document-bytes/INVENTORY.json",
+      "bytes": 39133,
+      "sha256": "7be60ddcbadca83a4fcc7f2b75cd12f3c10745bdcadd4bcebde8ac98c28da464",
+      "git_blob": "f3b88512b54626511ac3afe092b14d5ead69803b"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/tested-document-bytes/README.md",
+      "bytes": 2835,
+      "sha256": "85337c49e03852645ae258010f2b74127272b75f35652d46de261935507a52b8",
+      "git_blob": "d5c945b9cf0e71ba780d6e928bbd303a7bafc96e"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/tested-document-bytes/REPRODUCE.md",
+      "bytes": 4696,
+      "sha256": "a9e358f538afeeac2f52185d6814a5171372614d0e1a63cb79103f7de4c10ecc",
+      "git_blob": "a5170a64a9a5c904e84779c40fd82d92f9009168"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/wrapper-process.json",
+      "bytes": 173,
+      "sha256": "b006c450b0e1b1f1b53cd4c2fc3ddb0b540a4d82e48b1de5933edb0ef95f5881",
+      "git_blob": "87af526a4e3705b6a352265f3b0519200c1ee8a3"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/wrapper.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/evidence/export-execution-2026-11-04/wrapper.stdout.txt",
+      "bytes": 161,
+      "sha256": "8640825b8daba8a536753eb343ecb7228ea93265218c34668606c5192b194b5b",
+      "git_blob": "158dc3a8fe32076c8965810791b68c5beb49267d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/N2/supplied.json",
+      "bytes": 6334,
+      "sha256": "1e48be0d09296f62ac2a08bb83ab266ce2a5c68410629b67b6443b4cda18edf4",
+      "git_blob": "23505317024c9830a075366d66d1be4136e8dc56"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/N3/supplied.json",
+      "bytes": 6334,
+      "sha256": "c1cc48bf29b87bd074b242acb6e7039e52d343c79aa9704c900ecdab49fc4d24",
+      "git_blob": "7f993eb6e41988365ad111ac0c5c4fff8dfeb7a1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/N4/supplied.json",
+      "bytes": 6334,
+      "sha256": "6a361d46cf7c395de6081eee5df4d7d2c2eceefde04d66a062c86243250d8c29",
+      "git_blob": "f82fe410a31a003b40722704c51097073df973b1"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/N5/supplied.json",
+      "bytes": 6334,
+      "sha256": "f2ee0975906aeafef91a11750deeb83bc91edc56b738dc19d63b70cd2a0beb82",
+      "git_blob": "be874490f30353b8b3d6b3de4f7168f717f05b8d"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/P0/supplied.json",
+      "bytes": 6334,
+      "sha256": "690071fdb3f231b30132414b21779964ef18b09280d2987eff215a7f18cc2550",
+      "git_blob": "129c78062261fe4022dee31d812da312260e3bc6"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/T2-A/supplied.json",
+      "bytes": 5735,
+      "sha256": "5148909aa2cb9c6e7c2f4f3a74154966002cfcd0820c9afb15a316d442975f1a",
+      "git_blob": "719f902b6b6b6ac68ef77f2395fe25459ebfc925"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/T2-B/supplied.json",
+      "bytes": 5929,
+      "sha256": "c369cf961453a9701f6d19c142c2938e724d4404739ea281bfc59257414a938d",
+      "git_blob": "a235b749fd7bcf19d368ddde36b13383f481b853"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/T2-C/supplied.json",
+      "bytes": 5986,
+      "sha256": "c9b422c41b0cb87426df242cbf04a6e99381da1228ab502437382d10d28cd9b4",
+      "git_blob": "dd389cddf82441fe34643329cee637f195e854ea"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/T3-N/supplied.json",
+      "bytes": 6334,
+      "sha256": "ec343ada331d42ef61a233d9e8f26e00c7d05623170e20a6d48716149ba38828",
+      "git_blob": "73c2521390fb6c42abf021582802c667f136b7cf"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/T3-R/supplied.json",
+      "bytes": 6333,
+      "sha256": "86ce27aaadcf043045ff162ee62722d21d2abe150c0d11654fadeb1ffd006cf0",
+      "git_blob": "b9041781035e70ed34ca5688e4e47d30f29a47b0"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/T3-U/supplied.json",
+      "bytes": 6328,
+      "sha256": "0b42b54364472e16e15a7a21b0cee4d3d4b4934dad39d5aee7e6d18b79e7d2ec",
+      "git_blob": "ca68b57a0a3696725fb30afc068181905beb01bd"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/T5-M/supplied.json",
+      "bytes": 3566,
+      "sha256": "47adf98df0bedfce8bb77dfe37ae190c4d0dc7bb4e7aac78f9e63aadaaa24560",
+      "git_blob": "d8dbf4a7753ab10f3490dcf22984d6543b9c0965"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/fixtures/T5-S/supplied.json",
+      "bytes": 6317,
+      "sha256": "bdae461fbd08c405d188767a785ba64e0dc996b16097e69b0dba1b89c086ac41",
+      "git_blob": "f970f4fc206e05168ce0da52a22934ccf3f03be6"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/grader.py",
+      "bytes": 7188,
+      "sha256": "00e2856fbc15b72d4dbd75946ca2efaa06c55d02ed2caf904cc169efab304538",
+      "git_blob": "42e0e62628f717e068f22368750005790b81dbd4"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/merkle.py",
+      "bytes": 1590,
+      "sha256": "2574c8abbb33f1dcbf86b01a964333503fba0201d74c95ad967ad3e6c24de5a9",
+      "git_blob": "6aeedc878a1b7cd718573c7049247da0b8608ea8"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/oracle/EXPECTED-OUTCOMES.json",
+      "bytes": 24904,
+      "sha256": "8fb4042fe1747763ef318ecb417e6a39a2f51ead5f3205cf5c2af68087ba7a94",
+      "git_blob": "74d2be2733b7f48b0b5ff39c107181b6b13ed19f"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/prerequisites.py",
+      "bytes": 4331,
+      "sha256": "8f0aa7df9530505f9f94ed1945743639acd71429c735d9c4be34457119b31da1",
+      "git_blob": "65c15f57399d3b46d75c703c6ad863bdb23b1cdc"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/reproduce.py",
+      "bytes": 6350,
+      "sha256": "e098f8278701a5a7cfd46547a3d4d5c9b746421ea9058827c18ec5e26dc8a409",
+      "git_blob": "0d9bce597972d8827ef798e9b624091dcba58878"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/requirements.lock",
+      "bytes": 286,
+      "sha256": "15529d5a2586e14b8e4e1501956ea11d6776d49b87fd58166dac51f0ef517f98",
+      "git_blob": "a5afb4770dcca8255eaf9bdbbabfcb629b02d5df"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/runtime_preflight.py",
+      "bytes": 2640,
+      "sha256": "04b966a0beff51ad15f89f52f249471a852cc84bf4be0676c11da35942510f2d",
+      "git_blob": "a503636ea63d36a4b9644be3ede5feeb58df0537"
+    },
+    {
+      "path": "impl/composed-claim-campaign-2026-11-04/supervisor.py",
+      "bytes": 9962,
+      "sha256": "15cd2e7486f4c7b4a771247f3284f8576450830a1c9d355b5a4529889cb399ff",
+      "git_blob": "13ec70a2e3bcfd9aec3e6829e752f15d77d29964"
+    }
+  ]
+}

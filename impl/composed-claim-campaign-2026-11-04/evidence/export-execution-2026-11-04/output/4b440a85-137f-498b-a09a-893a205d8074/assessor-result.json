@@ -1,0 +1,1427 @@
+{
+  "binding": {
+    "acquisition_trace_ids": [
+      "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+      "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+    ],
+    "appraisal_time": 1000,
+    "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+    "cutoff": 191226952585208,
+    "log_id": "synthetic-log-v1",
+    "observed_view_set": [
+      "W1",
+      "W2"
+    ],
+    "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+    "report_id": "report-742891ef82cda083",
+    "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+    "tree_algorithm": "RFC9162-SHA256",
+    "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+  },
+  "claims": {
+    "PA-future": "not established",
+    "PA-incl": "supported",
+    "PA-obs": "supported",
+    "PA-reach": "not established",
+    "PA-time": "not established",
+    "PB": "not established for an actual environment",
+    "PC": "not established for an actual environment"
+  },
+  "components": {
+    "Q1a": {
+      "outcome": "verified",
+      "reason": "verified",
+      "subchecks": [
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1a",
+          "details": {},
+          "input_digests": [
+            "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3"
+          ],
+          "name": "raw_challenge_equality",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:1",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1a",
+          "details": {},
+          "input_digests": [
+            "d1dbf3d9f1a317257e78f65ad473c39fc1c4eefdcdf1c7a6fdf1b73a45e3f4de"
+          ],
+          "name": "auth_certificate",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:3",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1a",
+          "details": {},
+          "input_digests": [
+            "98d2ec9f89a0e109c13e8aa681114ebaee2b950f353a6a2869f4077832d4d8bd"
+          ],
+          "name": "auth_collateral",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:5",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1a",
+          "details": {},
+          "input_digests": [
+            "d1dbf3d9f1a317257e78f65ad473c39fc1c4eefdcdf1c7a6fdf1b73a45e3f4de"
+          ],
+          "name": "certificate_identity",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:7",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1a",
+          "details": {},
+          "input_digests": [
+            "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3"
+          ],
+          "name": "auth_R",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:9",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1a",
+          "details": {},
+          "input_digests": [
+            "d1dbf3d9f1a317257e78f65ad473c39fc1c4eefdcdf1c7a6fdf1b73a45e3f4de",
+            "98d2ec9f89a0e109c13e8aa681114ebaee2b950f353a6a2869f4077832d4d8bd"
+          ],
+          "name": "validity",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:11",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1a",
+          "details": {},
+          "input_digests": [
+            "98d2ec9f89a0e109c13e8aa681114ebaee2b950f353a6a2869f4077832d4d8bd"
+          ],
+          "name": "revocation",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:13",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1a",
+          "details": {},
+          "input_digests": [
+            "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3"
+          ],
+          "name": "authenticated_report_binding",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:15",
+          "outcome": "verified",
+          "reason": "verified"
+        }
+      ]
+    },
+    "Q1b": {
+      "outcome": "failed",
+      "reason": "observed_inequality",
+      "subchecks": [
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1b",
+          "details": {
+            "left": "abababababababababababababababababababababababababababababababab",
+            "right": "6f4aec0e3f70e361aeb10d7b8ce455621f7c4dfade0a03e521a9a0214b886a08"
+          },
+          "input_digests": [
+            "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "dc4d5537c087a65ef125262868df8ca86e011b648733cabf4962177742cb668f"
+          ],
+          "name": "measurement_equality",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:17",
+          "outcome": "failed",
+          "reason": "observed_inequality"
+        }
+      ]
+    },
+    "Q1c": {
+      "outcome": "verified",
+      "reason": "verified",
+      "subchecks": [
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1c",
+          "details": {},
+          "input_digests": [
+            "41a8c40f7869172f9f612638a95d61b10c2cc7e8bf8e4fcb36dde5e7a84232cf"
+          ],
+          "name": "auth_publication",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:19",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1c",
+          "details": {},
+          "input_digests": [
+            "41a8c40f7869172f9f612638a95d61b10c2cc7e8bf8e4fcb36dde5e7a84232cf",
+            "dc4d5537c087a65ef125262868df8ca86e011b648733cabf4962177742cb668f"
+          ],
+          "name": "publication_binding",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:21",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1c",
+          "details": {},
+          "input_digests": [
+            "c356a0d440ac43d5d7068316239ed7a96c3d5676645db0a0ff9cb5cfeb868a7b"
+          ],
+          "name": "auth_directory",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:23",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1c",
+          "details": {},
+          "input_digests": [
+            "c356a0d440ac43d5d7068316239ed7a96c3d5676645db0a0ff9cb5cfeb868a7b"
+          ],
+          "name": "policy_version",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:25",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q1c",
+          "details": {
+            "matching_rule_digest": "1124449de0ab6b084381a3ac032b9a54fd9c76ceb32070212c028b828cc8b9c1"
+          },
+          "input_digests": [
+            "c356a0d440ac43d5d7068316239ed7a96c3d5676645db0a0ff9cb5cfeb868a7b"
+          ],
+          "name": "authority_policy",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:29",
+          "outcome": "verified",
+          "reason": "verified"
+        }
+      ]
+    },
+    "Q2": {
+      "outcome": "verified",
+      "reason": "verified",
+      "subchecks": [
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q2",
+          "details": {
+            "artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "key_id": "LO",
+            "log_id": "synthetic-log-v1",
+            "root": "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef",
+            "size": 7
+          },
+          "input_digests": [
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+          ],
+          "name": "auth_S2",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:31",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q2",
+          "details": {},
+          "input_digests": [
+            "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "0cf3acf7d7a3d2a36afc749391cf52533afe36b5c753cfa7c2866d47a3ef48d5"
+          ],
+          "name": "inclusion",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:33",
+          "outcome": "verified",
+          "reason": "verified"
+        }
+      ]
+    },
+    "Q3_direct": {
+      "outcome": "verified",
+      "reason": "verified",
+      "subchecks": [
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q3_direct",
+          "details": {
+            "artifact_digest": "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+            "key_id": "LO",
+            "log_id": "synthetic-log-v1",
+            "root": "165c2015564fbfa3feaed782142ff8ca4f3c7a53d29267d33d1694b2dcbe2fdb",
+            "size": 3
+          },
+          "input_digests": [
+            "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb"
+          ],
+          "name": "auth_S1",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:35",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q3_direct",
+          "details": {
+            "artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "key_id": "LO",
+            "log_id": "synthetic-log-v1",
+            "root": "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef",
+            "size": 7
+          },
+          "input_digests": [
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+          ],
+          "name": "auth_S2",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:37",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q3_direct",
+          "details": {
+            "left": {
+              "artifact_digest": "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+              "key_id": "LO",
+              "log_id": "synthetic-log-v1",
+              "root": "165c2015564fbfa3feaed782142ff8ca4f3c7a53d29267d33d1694b2dcbe2fdb",
+              "size": 3
+            },
+            "proof_digest": "ad9f9fd55376cba617d46e7543f30bdf77a00683b4644e276a364b55a0217459",
+            "right": {
+              "artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+              "key_id": "LO",
+              "log_id": "synthetic-log-v1",
+              "root": "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef",
+              "size": 7
+            }
+          },
+          "input_digests": [
+            "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "ad9f9fd55376cba617d46e7543f30bdf77a00683b4644e276a364b55a0217459"
+          ],
+          "name": "direct_consistency",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:39",
+          "outcome": "verified",
+          "reason": "verified"
+        }
+      ]
+    },
+    "Q4": {
+      "outcome": "verified",
+      "reason": "verified",
+      "subchecks": [
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "artifact_digest": "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+            "key_id": "LO",
+            "log_id": "synthetic-log-v1",
+            "root": "165c2015564fbfa3feaed782142ff8ca4f3c7a53d29267d33d1694b2dcbe2fdb",
+            "size": 3
+          },
+          "input_digests": [
+            "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb"
+          ],
+          "name": "auth_S1",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:41",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "key_id": "LO",
+            "log_id": "synthetic-log-v1",
+            "root": "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef",
+            "size": 7
+          },
+          "input_digests": [
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+          ],
+          "name": "auth_S2",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:43",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "artifact_digest": "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+            "key_id": "LO",
+            "log_id": "synthetic-log-v1",
+            "root": "fe1c961c47077aebc2cf28f1d2147ef380fb61369bcddfa6a5b17ad39c99e7ad",
+            "size": 5
+          },
+          "input_digests": [
+            "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b"
+          ],
+          "name": "auth_W1_head",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:45",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "key_id": "LO",
+            "log_id": "synthetic-log-v1",
+            "root": "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef",
+            "size": 7
+          },
+          "input_digests": [
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+          ],
+          "name": "auth_W2_head",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:47",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {},
+          "input_digests": [
+            "60296f944a4705170710bfc4efe9a4f9864bca57f4078b667a4c8c14adc19536",
+            "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b"
+          ],
+          "name": "delivery_W1",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:49",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "delivery_digest": "60296f944a4705170710bfc4efe9a4f9864bca57f4078b667a4c8c14adc19536",
+            "event_id": "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+            "head_digest": "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+            "received_ns": 191226952579000,
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "source_id": "W1"
+          },
+          "input_digests": [
+            "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+            "60296f944a4705170710bfc4efe9a4f9864bca57f4078b667a4c8c14adc19536"
+          ],
+          "name": "acquisition_W1",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:51",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {},
+          "input_digests": [
+            "6e4212612bae7e7eeb3b9b4502bb517fb5ac47ec45d98db286cf86858236fddc",
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+          ],
+          "name": "delivery_W2",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:53",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "delivery_digest": "6e4212612bae7e7eeb3b9b4502bb517fb5ac47ec45d98db286cf86858236fddc",
+            "event_id": "6398953e6c9448d68a6c877e9f697cfa:receive:1",
+            "head_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "received_ns": 191226952585000,
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "source_id": "W2"
+          },
+          "input_digests": [
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "6e4212612bae7e7eeb3b9b4502bb517fb5ac47ec45d98db286cf86858236fddc"
+          ],
+          "name": "acquisition_W2",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:55",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "left": {
+              "artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+              "key_id": "LO",
+              "log_id": "synthetic-log-v1",
+              "root": "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef",
+              "size": 7
+            },
+            "right": {
+              "artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+              "key_id": "LO",
+              "log_id": "synthetic-log-v1",
+              "root": "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef",
+              "size": 7
+            }
+          },
+          "input_digests": [
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+          ],
+          "name": "same_size_W2_S2",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:57",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "left": {
+              "artifact_digest": "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+              "key_id": "LO",
+              "log_id": "synthetic-log-v1",
+              "root": "165c2015564fbfa3feaed782142ff8ca4f3c7a53d29267d33d1694b2dcbe2fdb",
+              "size": 3
+            },
+            "proof_digest": "1e7858c78495d96962ca8aae9f1f5f48585482d0a3844a7df9394c61814bdb3b",
+            "right": {
+              "artifact_digest": "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+              "key_id": "LO",
+              "log_id": "synthetic-log-v1",
+              "root": "fe1c961c47077aebc2cf28f1d2147ef380fb61369bcddfa6a5b17ad39c99e7ad",
+              "size": 5
+            }
+          },
+          "input_digests": [
+            "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+            "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+            "1e7858c78495d96962ca8aae9f1f5f48585482d0a3844a7df9394c61814bdb3b"
+          ],
+          "name": "edge_S1_W1",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:59",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q4",
+          "details": {
+            "left": {
+              "artifact_digest": "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+              "key_id": "LO",
+              "log_id": "synthetic-log-v1",
+              "root": "fe1c961c47077aebc2cf28f1d2147ef380fb61369bcddfa6a5b17ad39c99e7ad",
+              "size": 5
+            },
+            "proof_digest": "1936ec40698066a4195844ec0247a7f90cf666a48d730b832f4f88f2f243c9dc",
+            "right": {
+              "artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+              "key_id": "LO",
+              "log_id": "synthetic-log-v1",
+              "root": "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef",
+              "size": 7
+            }
+          },
+          "input_digests": [
+            "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "1936ec40698066a4195844ec0247a7f90cf666a48d730b832f4f88f2f243c9dc"
+          ],
+          "name": "edge_W1_W2",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:61",
+          "outcome": "verified",
+          "reason": "verified"
+        }
+      ]
+    },
+    "Q5": {
+      "outcome": "verified",
+      "reason": "verified",
+      "subchecks": [
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q5",
+          "details": {},
+          "input_digests": [
+            "d42828496d4338c90d51be99305772d45776223c2c792f5b3fc473e7cf401309"
+          ],
+          "name": "auth_time_receipt",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:63",
+          "outcome": "verified",
+          "reason": "verified"
+        },
+        {
+          "binding": {
+            "acquisition_trace_ids": [
+              "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+              "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+            ],
+            "appraisal_time": 1000,
+            "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+            "cutoff": 191226952585208,
+            "log_id": "synthetic-log-v1",
+            "observed_view_set": [
+              "W1",
+              "W2"
+            ],
+            "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "report_id": "report-742891ef82cda083",
+            "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+            "tree_algorithm": "RFC9162-SHA256",
+            "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+          },
+          "component": "Q5",
+          "details": {},
+          "input_digests": [
+            "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+            "d42828496d4338c90d51be99305772d45776223c2c792f5b3fc473e7cf401309"
+          ],
+          "name": "asserted_time_binding",
+          "operation_id": "6398953e6c9448d68a6c877e9f697cfa:65",
+          "outcome": "verified",
+          "reason": "verified"
+        }
+      ]
+    },
+    "Q6": {
+      "outcome": "not assessed",
+      "reason": "frozen_plan_not_requested"
+    }
+  },
+  "coverage": {
+    "Q1a": {
+      "completions": 8,
+      "enters": 8
+    },
+    "Q1b": {
+      "completions": 1,
+      "enters": 1
+    },
+    "Q1c": {
+      "completions": 6,
+      "enters": 6
+    },
+    "Q2": {
+      "completions": 2,
+      "enters": 2
+    },
+    "Q3_direct": {
+      "completions": 3,
+      "enters": 3
+    },
+    "Q3_from_Q4": {
+      "completions": 1,
+      "enters": 1
+    },
+    "Q4": {
+      "completions": 11,
+      "enters": 11
+    },
+    "Q5": {
+      "completions": 2,
+      "enters": 2
+    },
+    "Q6": {
+      "completions": 0,
+      "enters": 0
+    }
+  },
+  "q3_derivation": {
+    "completions": 1,
+    "enters": 1,
+    "outcome": "verified",
+    "provenance": {
+      "S1_artifact_digest": "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+      "S1_size_root": [
+        3,
+        "165c2015564fbfa3feaed782142ff8ca4f3c7a53d29267d33d1694b2dcbe2fdb"
+      ],
+      "S2_artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+      "S2_size_root": [
+        7,
+        "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef"
+      ],
+      "acquisition_trace_ids": [
+        "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+        "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+      ],
+      "appraisal_run_challenge": {
+        "appraisal_time": 1000,
+        "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+        "report_id": "report-742891ef82cda083",
+        "run_id": "6398953e6c9448d68a6c877e9f697cfa"
+      },
+      "completion": {
+        "monotonic_ns": 191226993547375,
+        "operation_id": "6398953e6c9448d68a6c877e9f697cfa:68",
+        "seq": 69
+      },
+      "cutoff": 191226952585208,
+      "derivation_id": "6398953e6c9448d68a6c877e9f697cfa:Q3_from_Q4",
+      "enter": {
+        "monotonic_ns": 191226993418416,
+        "operation_id": "6398953e6c9448d68a6c877e9f697cfa:68",
+        "seq": 68
+      },
+      "input_digests": [
+        "dc2409f5a145d37d30575bbb4e55ddf99aadf1f68d63a9ff69e2cb0bc9f39a66",
+        "6d21d225db05e796d748dc81a201d5ac2391e885a963d69bddc43fb4e221ad14",
+        "4ad38af27411d820b53e4531a6d44512f73ba3c8910690e548aa6007da34e446",
+        "7e1d78bb328aa46f032a2d826d26f216084bb78bb05ccc2ec192258b45689776",
+        "d9b6c996e1bc35e5c00f2932fb23bcf962d639da20d36e9c13d355e5b424cdf5",
+        "78fca96540f45e3464bd7e262f76330cb68ebbc1d3d76a64adae6c78beb10c67",
+        "f2fe945a42e9886dd4ab33c8a9ef013b7efcfb5e41aeea7ef37917a4bb1188d0",
+        "bf3428b8d0df0edb23b6652426574b3d0914c471ac055ff8fdbc50a124803917",
+        "283de6cb9569520df615c45c267965febea381f23c960c9c5bae2a642d782572",
+        "98310a3ccb6548b7e72cbde305b38d917af7a303403d962fd219031dac350357",
+        "89d0ded918bc1e58068d91ef8bc455f53ffc02de1b9dce98f6fe636e12442c12"
+      ],
+      "joined_edge_endpoint_digests": [
+        [
+          "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+          "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b"
+        ],
+        [
+          "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+          "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+        ],
+        [
+          "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+          "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+        ]
+      ],
+      "log_id": "synthetic-log-v1",
+      "observed_view_set": [
+        "W1",
+        "W2"
+      ],
+      "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+      "rule_version": "prefix-transitivity-v1",
+      "supporting_operation_ids": [
+        "6398953e6c9448d68a6c877e9f697cfa:41",
+        "6398953e6c9448d68a6c877e9f697cfa:43",
+        "6398953e6c9448d68a6c877e9f697cfa:45",
+        "6398953e6c9448d68a6c877e9f697cfa:47",
+        "6398953e6c9448d68a6c877e9f697cfa:49",
+        "6398953e6c9448d68a6c877e9f697cfa:53",
+        "6398953e6c9448d68a6c877e9f697cfa:51",
+        "6398953e6c9448d68a6c877e9f697cfa:55",
+        "6398953e6c9448d68a6c877e9f697cfa:57",
+        "6398953e6c9448d68a6c877e9f697cfa:59",
+        "6398953e6c9448d68a6c877e9f697cfa:61"
+      ],
+      "tree_algorithm": "RFC9162-SHA256",
+      "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+    },
+    "reason": "verified_adjacent_prefix_relations_and_equal_final_roots",
+    "record": {
+      "binding": {
+        "acquisition_trace_ids": [
+          "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+          "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+        ],
+        "appraisal_time": 1000,
+        "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+        "cutoff": 191226952585208,
+        "log_id": "synthetic-log-v1",
+        "observed_view_set": [
+          "W1",
+          "W2"
+        ],
+        "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+        "report_id": "report-742891ef82cda083",
+        "run_id": "6398953e6c9448d68a6c877e9f697cfa",
+        "tree_algorithm": "RFC9162-SHA256",
+        "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+      },
+      "component": "Q3_from_Q4",
+      "details": {
+        "S1_artifact_digest": "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+        "S1_size_root": [
+          3,
+          "165c2015564fbfa3feaed782142ff8ca4f3c7a53d29267d33d1694b2dcbe2fdb"
+        ],
+        "S2_artifact_digest": "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+        "S2_size_root": [
+          7,
+          "07ea1ae40d218514ce662b99400663e9bbec6a9bf2cb6e82787a0926e2d6f9ef"
+        ],
+        "acquisition_trace_ids": [
+          "6398953e6c9448d68a6c877e9f697cfa:receive:0",
+          "6398953e6c9448d68a6c877e9f697cfa:receive:1"
+        ],
+        "appraisal_run_challenge": {
+          "appraisal_time": 1000,
+          "challenge": "742891ef82cda083bf090bd800ea24aa3dfb533af4f48b2b949a45c72284dde3",
+          "report_id": "report-742891ef82cda083",
+          "run_id": "6398953e6c9448d68a6c877e9f697cfa"
+        },
+        "cutoff": 191226952585208,
+        "derivation_id": "6398953e6c9448d68a6c877e9f697cfa:Q3_from_Q4",
+        "input_digests": [
+          "dc2409f5a145d37d30575bbb4e55ddf99aadf1f68d63a9ff69e2cb0bc9f39a66",
+          "6d21d225db05e796d748dc81a201d5ac2391e885a963d69bddc43fb4e221ad14",
+          "4ad38af27411d820b53e4531a6d44512f73ba3c8910690e548aa6007da34e446",
+          "7e1d78bb328aa46f032a2d826d26f216084bb78bb05ccc2ec192258b45689776",
+          "d9b6c996e1bc35e5c00f2932fb23bcf962d639da20d36e9c13d355e5b424cdf5",
+          "78fca96540f45e3464bd7e262f76330cb68ebbc1d3d76a64adae6c78beb10c67",
+          "f2fe945a42e9886dd4ab33c8a9ef013b7efcfb5e41aeea7ef37917a4bb1188d0",
+          "bf3428b8d0df0edb23b6652426574b3d0914c471ac055ff8fdbc50a124803917",
+          "283de6cb9569520df615c45c267965febea381f23c960c9c5bae2a642d782572",
+          "98310a3ccb6548b7e72cbde305b38d917af7a303403d962fd219031dac350357",
+          "89d0ded918bc1e58068d91ef8bc455f53ffc02de1b9dce98f6fe636e12442c12"
+        ],
+        "joined_edge_endpoint_digests": [
+          [
+            "f753cc1a1f227dc3dd93ba3fb9157cdb02e0a34ab360a5f359074769b46fa0fb",
+            "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b"
+          ],
+          [
+            "e4f5536238825d1c4eac4bbf42a610d32c8e0b76a142e906d438c3a88c9d0e1b",
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+          ],
+          [
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59",
+            "648c4bfd4e62e271e203c7884100944391e722ca44b5cc8a6aadbeef54128b59"
+          ]
+        ],
+        "log_id": "synthetic-log-v1",
+        "observed_view_set": [
+          "W1",
+          "W2"
+        ],
+        "report_digest": "9657c6c5ffac4a2e8cb6f4c914ba49f7e6c2e6fb2463b45042c62943f4775cc3",
+        "rule_version": "prefix-transitivity-v1",
+        "supporting_operation_ids": [
+          "6398953e6c9448d68a6c877e9f697cfa:41",
+          "6398953e6c9448d68a6c877e9f697cfa:43",
+          "6398953e6c9448d68a6c877e9f697cfa:45",
+          "6398953e6c9448d68a6c877e9f697cfa:47",
+          "6398953e6c9448d68a6c877e9f697cfa:49",
+          "6398953e6c9448d68a6c877e9f697cfa:53",
+          "6398953e6c9448d68a6c877e9f697cfa:51",
+          "6398953e6c9448d68a6c877e9f697cfa:55",
+          "6398953e6c9448d68a6c877e9f697cfa:57",
+          "6398953e6c9448d68a6c877e9f697cfa:59",
+          "6398953e6c9448d68a6c877e9f697cfa:61"
+        ],
+        "tree_algorithm": "RFC9162-SHA256",
+        "trust_config_digest": "7d925b4c5e1919f0d6445c0a5da154c07d53edbb07e6a31af5d7a3e0c98707f6"
+      },
+      "input_digests": [
+        "dc2409f5a145d37d30575bbb4e55ddf99aadf1f68d63a9ff69e2cb0bc9f39a66",
+        "6d21d225db05e796d748dc81a201d5ac2391e885a963d69bddc43fb4e221ad14",
+        "4ad38af27411d820b53e4531a6d44512f73ba3c8910690e548aa6007da34e446",
+        "7e1d78bb328aa46f032a2d826d26f216084bb78bb05ccc2ec192258b45689776",
+        "d9b6c996e1bc35e5c00f2932fb23bcf962d639da20d36e9c13d355e5b424cdf5",
+        "f2fe945a42e9886dd4ab33c8a9ef013b7efcfb5e41aeea7ef37917a4bb1188d0",
+        "78fca96540f45e3464bd7e262f76330cb68ebbc1d3d76a64adae6c78beb10c67",
+        "bf3428b8d0df0edb23b6652426574b3d0914c471ac055ff8fdbc50a124803917",
+        "283de6cb9569520df615c45c267965febea381f23c960c9c5bae2a642d782572",
+        "98310a3ccb6548b7e72cbde305b38d917af7a303403d962fd219031dac350357",
+        "89d0ded918bc1e58068d91ef8bc455f53ffc02de1b9dce98f6fe636e12442c12"
+      ],
+      "name": "prefix_transitivity",
+      "operation_id": "6398953e6c9448d68a6c877e9f697cfa:68",
+      "outcome": "verified",
+      "reason": "verified"
+    },
+    "state": "completed"
+  },
+  "q3_proposition": {
+    "scope": "Requested endpoints, same appraisal; no negative mathematical inference.",
+    "status": "supported",
+    "supporting_routes": [
+      "direct",
+      "Q4_adjacent_edges"
+    ]
+  }
+}
