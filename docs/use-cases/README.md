@@ -18,7 +18,7 @@ boundary concrete against real examples.
 ## How much of the threat model is covered
 
 <!-- coverage:start -->
-**Coverage: 20 of 29 threats** across 14 use cases. `███████████████████░░░░░░░░░`  
+**Coverage: 29 of 29 threats** across 17 use cases. `████████████████████████████`  
 Full index in [COVERAGE.md](COVERAGE.md).
 <!-- coverage:end -->
 
@@ -34,6 +34,9 @@ yours is the story that closes it.
 | [`account-takeover-stolen-credentials.md`](submissions/account-takeover-stolen-credentials.md) | Cloud services | Scenario | 4 |
 | [`agent-exceeds-principal-clearance.md`](submissions/agent-exceeds-principal-clearance.md) | Enterprise software | Scenario | 2 |
 | [`agentic-cross-border-payments.md`](submissions/agentic-cross-border-payments.md) | Cross-border payments | Scenario | 4 |
+| [`ai-assisted-clinical-infusion-instruction.md`](submissions/ai-assisted-clinical-infusion-instruction.md) | Healthcare | Scenario | 4 |
+| [`ai-assisted-legal-filing.md`](submissions/ai-assisted-legal-filing.md) | Legal services | Scenario | 4 |
+| [`ai-assisted-public-emergency-alert.md`](submissions/ai-assisted-public-emergency-alert.md) | Public-sector emergency communications | Scenario | 4 |
 | [`credit-decisioning.md`](submissions/credit-decisioning.md) | Consumer lending | Scenario | 4 |
 | [`deepfake-biometric.md`](submissions/deepfake-biometric.md) | Financial services | Scenario | 3 |
 | [`deepfake-interview-insider.md`](submissions/deepfake-interview-insider.md) | Technology | Scenario | 4 |
