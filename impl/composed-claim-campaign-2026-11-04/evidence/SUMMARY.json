@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-04T04:38:13.036060+00:00",
+  "assessor_attempts": 13,
+  "grade_attempts": 13,
+  "matched": 13,
+  "mismatched": 0,
+  "not_run": 0,
+  "halt": null,
+  "retries": 0,
+  "scope": {
+    "genuine": "SHA256 of synthetic F in generator; Ed25519 and Merkle checks; equality comparisons; local acquisition clocks and executed-operation trace",
+    "stipulated": "signer roles/trust/authority policies; remote witness independence; logical log time; claimed deployment relation",
+    "not_established": [
+      "hardware attestation",
+      "controller independence",
+      "endpoint effects",
+      "actual-environment PB/PC",
+      "PA-reach/time/future",
+      "global completeness",
+      "composite Tier"
+    ]
+  },
+  "representation": "selected-field historical summary; not original result capture",
+  "original_result_sha256": "26235aec03644e3d93b3c3e8c8e1eb0a2127a0a7fa89b5c1e93761e7265b3099",
+  "original_oracle_sha256": "067766a40efb8dd3e8a481d7dc5a75892e92d8ffaa146bf43ac3dbd2b41681bc",
+  "exported_oracle_sha256": "8fb4042fe1747763ef318ecb417e6a39a2f51ead5f3205cf5c2af68087ba7a94",
+  "entered_completed_operation_pairs": 390,
+  "verified_operation_outcomes": 382,
+  "failed_operation_outcomes": 8,
+  "stdout_bytes": 1276832,
+  "stderr_bytes": 0,
+  "run_index": "RUN-INDEX.json",
+  "new_export_runs": 0,
+  "new_export_grades": 0
+}

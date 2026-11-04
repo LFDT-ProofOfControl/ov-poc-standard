@@ -1,0 +1,1 @@
+{"case_label": "<RUN_ROOT>/output/prerequisites/outside-stage/case-label.txt", "generator_knowledge": "<RUN_ROOT>/output/prerequisites/outside-stage/generator-knowledge.txt", "oracle": "<RUN_ROOT>/snapshot/impl/composed-claim-campaign-2026-11-04/oracle/EXPECTED-OUTCOMES.json", "symlink_escape": "<RUN_ROOT>/output/prerequisites/restricted/escape"}

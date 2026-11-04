@@ -1,0 +1,1 @@
+Public synthetic canary; no signing key or generator data

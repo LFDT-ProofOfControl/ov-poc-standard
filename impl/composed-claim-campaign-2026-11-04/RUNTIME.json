@@ -1,0 +1,39 @@
+{
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "executable_sha256": "00af3dfc2df3a5b1de60a67a14bc6477dce39cb3ff89466d16a4da4c2b9bd329",
+  "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "package_pins": [
+    {
+      "name": "cryptography",
+      "version": "46.0.3",
+      "filename": "cryptography-46.0.3-cp311-abi3-macosx_10_9_universal2.whl",
+      "sha256": "109d4ddfadf17e8e7779c39f9b18111a09efb969a301a31e987416a0191ed93a",
+      "bytes": 7225004,
+      "url": "https://files.pythonhosted.org/packages/1d/42/9c391dd801d6cf0d561b5890549d4b27bafcc53b39c31a817e69d87c625b/cryptography-46.0.3-cp311-abi3-macosx_10_9_universal2.whl",
+      "published_at": "2025-10-15T23:16:52.239359Z",
+      "metadata_url": "https://pypi.org/pypi/cryptography/46.0.3/json"
+    },
+    {
+      "name": "cffi",
+      "version": "2.0.0",
+      "filename": "cffi-2.0.0-cp314-cp314-macosx_11_0_arm64.whl",
+      "sha256": "c654de545946e0db659b3400168c9ad31b5d29593291482c43e3564effbcee13",
+      "bytes": 181487,
+      "url": "https://files.pythonhosted.org/packages/59/dd/27e9fa567a23931c838c6b02d0764611c62290062a6d4e8ff7863daf9730/cffi-2.0.0-cp314-cp314-macosx_11_0_arm64.whl",
+      "published_at": "2025-09-08T23:23:19.622604Z",
+      "metadata_url": "https://pypi.org/pypi/cffi/2.0.0/json"
+    },
+    {
+      "name": "pycparser",
+      "version": "2.23",
+      "filename": "pycparser-2.23-py3-none-any.whl",
+      "sha256": "e5c6e8d3fbad53479cab09ac03729e0a9faf2bee3db8208a550daf5af81a5934",
+      "bytes": 118140,
+      "url": "https://files.pythonhosted.org/packages/a0/e3/59cd50310fc9b59512193629e1984c1f95e5c8ae6e5d8c69532ccc65a7fe/pycparser-2.23-py3-none-any.whl",
+      "published_at": "2025-09-09T13:23:46.651288Z",
+      "metadata_url": "https://pypi.org/pypi/pycparser/2.23/json"
+    }
+  ],
+  "provenance": "Existing Homebrew Python runtime observed locally; released wheel bytes verified against PyPI JSON then installed offline with --require-hashes. No latest-version claim."
+}

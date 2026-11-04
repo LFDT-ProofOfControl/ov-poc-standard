@@ -1,0 +1,92 @@
+{
+  "schema": "composed-campaign-public-provenance/1",
+  "historical_record": true,
+  "author": "Mikhail Sergeev; prepared with AI assistance",
+  "execution_operator": "same operator; not independent reproduction",
+  "worked_record": {
+    "repository": "LFDT-ProofOfControl/ov-poc-standard",
+    "head": "51e229e8364d4afce89da15fbe8cce8eaf6636ba",
+    "path": "docs/proposals/composed-claim-worked-record-2026-10-31.md",
+    "git_blob": "524dbc13b2a7d82fb608ac2f03381100fff5bc46"
+  },
+  "original_oracle_sha256": "067766a40efb8dd3e8a481d7dc5a75892e92d8ffaa146bf43ac3dbd2b41681bc",
+  "exported_oracle_sha256": "8fb4042fe1747763ef318ecb417e6a39a2f51ead5f3205cf5c2af68087ba7a94",
+  "expectation_cases_sha256": "a4dacb9d29c5646107497873859aa6634ecb846cab8a0e0ef1cea7a6d62335de",
+  "route_contract_sha256": "a508c7daca8b1d04e2866aaa98a7e8b84616418af8d4e3f263ef4ec9c38e8c5a",
+  "oracle_note": "All semantic fields retained; top-level assignment/revision metadata omitted. Historical grades refer to original oracle. Proposed/unexecuted wording records expectation freeze time.",
+  "case_order": [
+    "P0",
+    "T2-A",
+    "T2-B",
+    "T2-C",
+    "T3-U",
+    "T3-R",
+    "T3-N",
+    "T5-M",
+    "T5-S",
+    "N2",
+    "N3",
+    "N4",
+    "N5"
+  ],
+  "frozen_input_manifest_original_sha256": "59dbf727a987dbb430726c69d78cfe0d1a3ad58cb557f126757ffffb5922d07a",
+  "raw_result_original_sha256": "26235aec03644e3d93b3c3e8c8e1eb0a2127a0a7fa89b5c1e93761e7265b3099",
+  "historical_attempts": 13,
+  "historical_grades": 13,
+  "historical_matches": 13,
+  "export_execution": false,
+  "original_source_pins": {
+    "common.py": {
+      "bytes": 6445,
+      "sha256": "f3e4b5b5a1ac021cd565002d8aaf370e6cb42add4485fc7f9a50cd95c03d09bf"
+    },
+    "merkle.py": {
+      "bytes": 1590,
+      "sha256": "2574c8abbb33f1dcbf86b01a964333503fba0201d74c95ad967ad3e6c24de5a9"
+    },
+    "assessor.py": {
+      "bytes": 18887,
+      "sha256": "db8ea4f1403cb4d0e022c7232a2e6aa84c209b5692a0e80b01251cdb88d37d86"
+    },
+    "entrypoint.py": {
+      "bytes": 497,
+      "sha256": "7b72c39afde4cf34cdad2a6bf2523760026801d942f19a6d94e9563c20489155"
+    },
+    "admission.py": {
+      "bytes": 8845,
+      "sha256": "6c92fff867baf18b692f5a921e8263043a3d14b522da95adac9c81402f8bf4a3"
+    },
+    "supervisor.py": {
+      "bytes": 9965,
+      "sha256": "a14911c449368a7e2f1c232b1e4e5432c070c529e0ee18daaeb427c5dc648a0b"
+    },
+    "grader.py": {
+      "bytes": 7188,
+      "sha256": "c3ddd56beffb77dad83ad6ba54e96e7fba1e616c6efa734e61a648529b6584e6"
+    }
+  },
+  "omitted_material": [
+    "generator-only signing keys and generator-only knowledge",
+    "internal coordination records and repository paths",
+    "local personal paths",
+    "original sandbox profiles and private process commands",
+    "original campaign wrapper and attempt ledger containing internal metadata",
+    "development controls and prerequisite scripts requiring internal material"
+  ],
+  "omission_limits": "Public captures support inspection of recorded outcomes. Omitted original process/profile/ledger records and historic prerequisite probes are not independently inspectable through this bundle; their retained hashes are identifiers, not replacements for original evidence.",
+  "freshness": "Frozen P0/T5-S material reuse is session-binding data, not freshness demonstration.",
+  "review_boundary": "R1/R2 correction: pure path/file preflight regressions on synthetic temporary data plus static consistency. No new assessor, grader, primitive verification, sandbox measurement or public-only reproduction.",
+  "prepared_prerequisites": {
+    "state": "UNEXECUTED_REVIEW_REQUIRED",
+    "script": "prerequisites.py",
+    "probe": "control_probe.py",
+    "fixed_vectors": [
+      "ED25519-VECTOR.json",
+      "MERKLE-VECTOR.json"
+    ],
+    "maximum_component_control_launches": 1,
+    "full_appraisals_before_READY": 0,
+    "new_fixture_generation": false,
+    "private_signing_keys": false
+  }
+}

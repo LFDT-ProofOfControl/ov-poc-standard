@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-04T08:37:29.173204+00:00",
+  "command": [
+    "<VENV>/bin/python",
+    "-B",
+    "<RUN_ROOT>/snapshot/impl/composed-claim-campaign-2026-11-04/reproduce.py",
+    "--venv",
+    "<VENV>",
+    "--output",
+    "<RUN_ROOT>/output",
+    "--review-token",
+    "<REVIEW_TOKEN>"
+  ],
+  "once": true,
+  "no_retry": true
+}

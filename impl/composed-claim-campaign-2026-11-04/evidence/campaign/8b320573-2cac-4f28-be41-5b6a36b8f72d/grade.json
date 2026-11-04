@@ -1,0 +1,8 @@
+{
+  "case": "P0",
+  "status": "MATCH",
+  "mismatches": [],
+  "oracle_sha256": "067766a40efb8dd3e8a481d7dc5a75892e92d8ffaa146bf43ac3dbd2b41681bc",
+  "capture_sha256": "8d36f10e49923c88795c6f9c4e8687c46513520cc3bd8d2a42d0f4140b74d848",
+  "scope": "synthetic bounded appraisal only; no actual-environment attestation or Tier"
+}

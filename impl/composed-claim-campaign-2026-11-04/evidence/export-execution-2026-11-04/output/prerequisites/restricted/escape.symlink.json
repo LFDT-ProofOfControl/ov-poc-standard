@@ -1,0 +1,7 @@
+{
+  "kind": "symlink target metadata, not original regular-file bytes",
+  "source_relative_path": "output/prerequisites/restricted/escape",
+  "target": "<RUN_ROOT>/output/prerequisites/outside-stage/generator-knowledge.txt",
+  "target_utf8_sha256": "9805ca1a2102617238cdce4e7f00c1058049e431d7d240193ce4776d1137fa7c",
+  "dereferenced": false
+}

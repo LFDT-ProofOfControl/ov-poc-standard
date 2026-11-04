@@ -1,0 +1,32 @@
+{
+  "assessor.py": {
+    "sha256": "db8ea4f1403cb4d0e022c7232a2e6aa84c209b5692a0e80b01251cdb88d37d86"
+  },
+  "escape": {
+    "symlink_target": "<RUN_ROOT>/output/prerequisites/outside-stage/generator-knowledge.txt"
+  },
+  "control_probe.py": {
+    "sha256": "5546126e289192447338ef13aca5be7755760738510d96f541baf242f316e5bc"
+  },
+  "acquisition.json": {
+    "sha256": "fd68cec0d24e7fe5f0a28edca408a4ca73776cdf61782ee8bf177afaf5d7db00"
+  },
+  "MERKLE-VECTOR.json": {
+    "sha256": "f42d35817f0fb18355f5e2e3ac5ee2e2d87fcf6a5800797840a234847ce11ddb"
+  },
+  "merkle.py": {
+    "sha256": "2574c8abbb33f1dcbf86b01a964333503fba0201d74c95ad967ad3e6c24de5a9"
+  },
+  "supplied.json": {
+    "sha256": "690071fdb3f231b30132414b21779964ef18b09280d2987eff215a7f18cc2550"
+  },
+  "common.py": {
+    "sha256": "f3e4b5b5a1ac021cd565002d8aaf370e6cb42add4485fc7f9a50cd95c03d09bf"
+  },
+  "control-paths.json": {
+    "sha256": "cd9ceba57d39341c94449444b1861a97c9743b7b04bbc70b81b381423a88b52e"
+  },
+  "ED25519-VECTOR.json": {
+    "sha256": "1d5f435ab4ea17d9574d88d104a009f8b5bdc627ac2fb472fdc5c10ea40040b4"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "independent-unrolled-vector-recipe/1",
+  "pinned_before_derivation": true,
+  "reference": "https://www.rfc-editor.org/rfc/rfc9162.html#section-2.1",
+  "method": "Same-operator hand-expanded fixed seven-leaf expression graph; SHA-256 via system OpenSSL subprocess, without importing candidate builder/verifier. Independent of those algorithms, not an independent person or production validation.",
+  "leaf_inputs": "seven 32-byte entries: byte values 00 through 06 repeated 32 times each",
+  "nodes": {
+    "L0": "H(00 || entry0)",
+    "L1": "H(00 || entry1)",
+    "L2": "H(00 || entry2)",
+    "L3": "H(00 || entry3)",
+    "L4": "H(00 || entry4)",
+    "L5": "H(00 || entry5)",
+    "L6": "H(00 || entry6)",
+    "N01": "H(01 || L0 || L1)",
+    "N23": "H(01 || L2 || L3)",
+    "N45": "H(01 || L4 || L5)",
+    "N0123": "H(01 || N01 || N23)",
+    "N456": "H(01 || N45 || L6)",
+    "R3": "H(01 || N01 || L2)",
+    "R5": "H(01 || N0123 || L4)",
+    "R7": "H(01 || N0123 || N456)"
+  },
+  "inclusion_1_7": [
+    "L0",
+    "N23",
+    "N456"
+  ],
+  "consistency_3_7": [
+    "L2",
+    "L3",
+    "N01",
+    "N456"
+  ],
+  "consistency_3_5": [
+    "L2",
+    "L3",
+    "N01",
+    "L4"
+  ],
+  "consistency_5_7": [
+    "L4",
+    "L5",
+    "L6",
+    "N0123"
+  ],
+  "original_recipe_sha256": "39a3fe29bf8555388385fcf9976b7405d714582be59f74d4b0d6e33661426ec8",
+  "export_note": "Method attribution label changed only; fixed expression graph and all paths unchanged. MERKLE-VECTOR retains original recipe digest; no rederivation in this export."
+}

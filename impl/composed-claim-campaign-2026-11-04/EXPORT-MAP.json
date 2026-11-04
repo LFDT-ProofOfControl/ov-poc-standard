@@ -1,0 +1,1009 @@
+{
+  "schema": "composed-export-transformations/1",
+  "files": [
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/oracle/EXPECTED-OUTCOMES.json",
+      "source_bytes": 25288,
+      "source_sha256": "067766a40efb8dd3e8a481d7dc5a75892e92d8ffaa146bf43ac3dbd2b41681bc",
+      "output_bytes": 24904,
+      "output_sha256": "8fb4042fe1747763ef318ecb417e6a39a2f51ead5f3205cf5c2af68087ba7a94",
+      "transformation": "Remove top-level assignment and revision coordination metadata only; retain every other field, all 13 cases/order and q3_record_contract unchanged. UTF-8 JSON reserialization."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/common.py",
+      "source_bytes": 6445,
+      "source_sha256": "f3e4b5b5a1ac021cd565002d8aaf370e6cb42add4485fc7f9a50cd95c03d09bf",
+      "output_bytes": 6445,
+      "output_sha256": "f3e4b5b5a1ac021cd565002d8aaf370e6cb42add4485fc7f9a50cd95c03d09bf",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/merkle.py",
+      "source_bytes": 1590,
+      "source_sha256": "2574c8abbb33f1dcbf86b01a964333503fba0201d74c95ad967ad3e6c24de5a9",
+      "output_bytes": 1590,
+      "output_sha256": "2574c8abbb33f1dcbf86b01a964333503fba0201d74c95ad967ad3e6c24de5a9",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/assessor.py",
+      "source_bytes": 18887,
+      "source_sha256": "db8ea4f1403cb4d0e022c7232a2e6aa84c209b5692a0e80b01251cdb88d37d86",
+      "output_bytes": 18887,
+      "output_sha256": "db8ea4f1403cb4d0e022c7232a2e6aa84c209b5692a0e80b01251cdb88d37d86",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/entrypoint.py",
+      "source_bytes": 497,
+      "source_sha256": "7b72c39afde4cf34cdad2a6bf2523760026801d942f19a6d94e9563c20489155",
+      "output_bytes": 497,
+      "output_sha256": "7b72c39afde4cf34cdad2a6bf2523760026801d942f19a6d94e9563c20489155",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/admission.py",
+      "source_bytes": 8845,
+      "source_sha256": "6c92fff867baf18b692f5a921e8263043a3d14b522da95adac9c81402f8bf4a3",
+      "output_bytes": 8845,
+      "output_sha256": "6c92fff867baf18b692f5a921e8263043a3d14b522da95adac9c81402f8bf4a3",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/supervisor.py",
+      "source_bytes": 9965,
+      "source_sha256": "a14911c449368a7e2f1c232b1e4e5432c070c529e0ee18daaeb427c5dc648a0b",
+      "output_bytes": 9962,
+      "output_sha256": "15cd2e7486f4c7b4a771247f3284f8576450830a1c9d355b5a4529889cb399ff",
+      "transformation": "Change one PermissionError string from coordination role to generic implementation/run-plan review; control flow unchanged."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/grader.py",
+      "source_bytes": 7188,
+      "source_sha256": "c3ddd56beffb77dad83ad6ba54e96e7fba1e616c6efa734e61a648529b6584e6",
+      "output_bytes": 7188,
+      "output_sha256": "00e2856fbc15b72d4dbd75946ca2efaa06c55d02ed2caf904cc169efab304538",
+      "transformation": "Replace only ORACLE_SHA256 literal with exported oracle hash; frozen expectations and grading logic unchanged."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/requirements.lock",
+      "source_bytes": 286,
+      "source_sha256": "15529d5a2586e14b8e4e1501956ea11d6776d49b87fd58166dac51f0ef517f98",
+      "output_bytes": 286,
+      "output_sha256": "15529d5a2586e14b8e4e1501956ea11d6776d49b87fd58166dac51f0ef517f98",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/RUNTIME.json",
+      "source_bytes": 2244,
+      "source_sha256": "a1755f9843e26b155fb837999be09a44a71af76dd22f31919c4c9a92d728c158",
+      "output_bytes": 2046,
+      "output_sha256": "da4a1b6f14d150f1716da593240f7771c354bd94ad93510b656431d5b43f2b8a",
+      "transformation": "Remove original executable and environment path fields; retain runtime/build/executable hash and released distribution pins."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/INSTALLED-DEPENDENCIES.json",
+      "source_bytes": 70278,
+      "source_sha256": "3de79e700b05fa793b2b8ba777e11e5bb6ee4e057ab46396904589b7880cff07",
+      "output_bytes": 70167,
+      "output_sha256": "c1e90d16b892e3929668c6b3af0a9345d6d88f14a27db7da3191a2743ae35121",
+      "transformation": "Remove local site-packages absolute path; retain all 633 relative installed-file hashes, exclusions and original state text."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/CONTRACT.md",
+      "source_bytes": 4532,
+      "source_sha256": "6432c554c4f18d5d5eedc4bf3ef7f3979a2166bd13991528cdc220528ac6d662",
+      "output_bytes": 4217,
+      "output_sha256": "b09877dadf225e838ca76e85813bc7c58d0fa620f81e91652488873d8d677d5d",
+      "transformation": "Replace historical coordination introduction and omit final internal execution restriction paragraph; all operative schema/policy/schedule/isolation paragraphs byte-identical. Normalize one extra terminal blank line; operative paragraphs unchanged."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/P0/supplied.json",
+      "source_bytes": 6334,
+      "source_sha256": "690071fdb3f231b30132414b21779964ef18b09280d2987eff215a7f18cc2550",
+      "output_bytes": 6334,
+      "output_sha256": "690071fdb3f231b30132414b21779964ef18b09280d2987eff215a7f18cc2550",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/T2-A/supplied.json",
+      "source_bytes": 5735,
+      "source_sha256": "5148909aa2cb9c6e7c2f4f3a74154966002cfcd0820c9afb15a316d442975f1a",
+      "output_bytes": 5735,
+      "output_sha256": "5148909aa2cb9c6e7c2f4f3a74154966002cfcd0820c9afb15a316d442975f1a",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/T2-B/supplied.json",
+      "source_bytes": 5929,
+      "source_sha256": "c369cf961453a9701f6d19c142c2938e724d4404739ea281bfc59257414a938d",
+      "output_bytes": 5929,
+      "output_sha256": "c369cf961453a9701f6d19c142c2938e724d4404739ea281bfc59257414a938d",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/T2-C/supplied.json",
+      "source_bytes": 5986,
+      "source_sha256": "c9b422c41b0cb87426df242cbf04a6e99381da1228ab502437382d10d28cd9b4",
+      "output_bytes": 5986,
+      "output_sha256": "c9b422c41b0cb87426df242cbf04a6e99381da1228ab502437382d10d28cd9b4",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/T3-U/supplied.json",
+      "source_bytes": 6328,
+      "source_sha256": "0b42b54364472e16e15a7a21b0cee4d3d4b4934dad39d5aee7e6d18b79e7d2ec",
+      "output_bytes": 6328,
+      "output_sha256": "0b42b54364472e16e15a7a21b0cee4d3d4b4934dad39d5aee7e6d18b79e7d2ec",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/T3-R/supplied.json",
+      "source_bytes": 6333,
+      "source_sha256": "86ce27aaadcf043045ff162ee62722d21d2abe150c0d11654fadeb1ffd006cf0",
+      "output_bytes": 6333,
+      "output_sha256": "86ce27aaadcf043045ff162ee62722d21d2abe150c0d11654fadeb1ffd006cf0",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/T3-N/supplied.json",
+      "source_bytes": 6334,
+      "source_sha256": "ec343ada331d42ef61a233d9e8f26e00c7d05623170e20a6d48716149ba38828",
+      "output_bytes": 6334,
+      "output_sha256": "ec343ada331d42ef61a233d9e8f26e00c7d05623170e20a6d48716149ba38828",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/T5-M/supplied.json",
+      "source_bytes": 3566,
+      "source_sha256": "47adf98df0bedfce8bb77dfe37ae190c4d0dc7bb4e7aac78f9e63aadaaa24560",
+      "output_bytes": 3566,
+      "output_sha256": "47adf98df0bedfce8bb77dfe37ae190c4d0dc7bb4e7aac78f9e63aadaaa24560",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/T5-S/supplied.json",
+      "source_bytes": 6317,
+      "source_sha256": "bdae461fbd08c405d188767a785ba64e0dc996b16097e69b0dba1b89c086ac41",
+      "output_bytes": 6317,
+      "output_sha256": "bdae461fbd08c405d188767a785ba64e0dc996b16097e69b0dba1b89c086ac41",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/N2/supplied.json",
+      "source_bytes": 6334,
+      "source_sha256": "1e48be0d09296f62ac2a08bb83ab266ce2a5c68410629b67b6443b4cda18edf4",
+      "output_bytes": 6334,
+      "output_sha256": "1e48be0d09296f62ac2a08bb83ab266ce2a5c68410629b67b6443b4cda18edf4",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/N3/supplied.json",
+      "source_bytes": 6334,
+      "source_sha256": "c1cc48bf29b87bd074b242acb6e7039e52d343c79aa9704c900ecdab49fc4d24",
+      "output_bytes": 6334,
+      "output_sha256": "c1cc48bf29b87bd074b242acb6e7039e52d343c79aa9704c900ecdab49fc4d24",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/N4/supplied.json",
+      "source_bytes": 6334,
+      "source_sha256": "6a361d46cf7c395de6081eee5df4d7d2c2eceefde04d66a062c86243250d8c29",
+      "output_bytes": 6334,
+      "output_sha256": "6a361d46cf7c395de6081eee5df4d7d2c2eceefde04d66a062c86243250d8c29",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/fixtures/N5/supplied.json",
+      "source_bytes": 6334,
+      "source_sha256": "f2ee0975906aeafef91a11750deeb83bc91edc56b738dc19d63b70cd2a0beb82",
+      "output_bytes": 6334,
+      "output_sha256": "f2ee0975906aeafef91a11750deeb83bc91edc56b738dc19d63b70cd2a0beb82",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "3486fbb0a5a661ecffc2125a80a63f74348fc124b8a4e314491c06403dae3835",
+      "output_bytes": 785,
+      "output_sha256": "3486fbb0a5a661ecffc2125a80a63f74348fc124b8a4e314491c06403dae3835",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/assessor-result.json",
+      "source_bytes": 58580,
+      "source_sha256": "42930a5ed79b40c7be8201b4900563f3b4dc687e989479460d804504764f427b",
+      "output_bytes": 58580,
+      "output_sha256": "42930a5ed79b40c7be8201b4900563f3b4dc687e989479460d804504764f427b",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/grade.json",
+      "source_bytes": 325,
+      "source_sha256": "af8f4a8f0601d0b5a06417005bba43e3318094a793d6bf3ce9a934dbd18a322e",
+      "output_bytes": 325,
+      "output_sha256": "af8f4a8f0601d0b5a06417005bba43e3318094a793d6bf3ce9a934dbd18a322e",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "2383fbb87ac7cde18907938b10fff3763ac37ad484e9496c73daf34b2a087f16",
+      "output_bytes": 492,
+      "output_sha256": "2383fbb87ac7cde18907938b10fff3763ac37ad484e9496c73daf34b2a087f16",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/capture/stdout.jsonl",
+      "source_bytes": 114303,
+      "source_sha256": "8d36f10e49923c88795c6f9c4e8687c46513520cc3bd8d2a42d0f4140b74d848",
+      "output_bytes": 114303,
+      "output_sha256": "8d36f10e49923c88795c6f9c4e8687c46513520cc3bd8d2a42d0f4140b74d848",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/8b320573-2cac-4f28-be41-5b6a36b8f72d/capture/process.redacted.json",
+      "source_bytes": 639,
+      "source_sha256": "da48e5f1c85626cbc65bf45152b3fc472a853a841368078c3961ebd93edbacb0",
+      "output_bytes": 722,
+      "output_sha256": "74d00fcd445d424655ad0f4143dddf061d62d3eb177a890ea6e0b2552b0f7e95",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "1e3c6b6b68164fc39c6c36ed6c91ac865f35fee074994bc860b32570d34fc937",
+      "output_bytes": 785,
+      "output_sha256": "1e3c6b6b68164fc39c6c36ed6c91ac865f35fee074994bc860b32570d34fc937",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/assessor-result.json",
+      "source_bytes": 50102,
+      "source_sha256": "12a77f995ac81d22f66c23427c43bc5be63eca37d49468342617b32131f2d114",
+      "output_bytes": 50102,
+      "output_sha256": "12a77f995ac81d22f66c23427c43bc5be63eca37d49468342617b32131f2d114",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/grade.json",
+      "source_bytes": 327,
+      "source_sha256": "5d9fd1a7503ebbb0906f39ffa59ecaa5c26a23aa8e27c8c72bd894acfe8cfe98",
+      "output_bytes": 327,
+      "output_sha256": "5d9fd1a7503ebbb0906f39ffa59ecaa5c26a23aa8e27c8c72bd894acfe8cfe98",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "254565ddd4b63004b93f4a436c0b2f14cf01c57d55beeda0fc137853b2db7e66",
+      "output_bytes": 492,
+      "output_sha256": "254565ddd4b63004b93f4a436c0b2f14cf01c57d55beeda0fc137853b2db7e66",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/capture/stdout.jsonl",
+      "source_bytes": 96026,
+      "source_sha256": "6cd3b4548b2b3a5bc24704b190b148144d09792d8f9ede65137ed1aa4d9c34f4",
+      "output_bytes": 96026,
+      "output_sha256": "6cd3b4548b2b3a5bc24704b190b148144d09792d8f9ede65137ed1aa4d9c34f4",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ac685aac-d8ac-4757-9684-373724ab10d5/capture/process.redacted.json",
+      "source_bytes": 638,
+      "source_sha256": "aede69866833c63a0f9363850e320e8dcdb61c33e14a41eb16812c691d67d373",
+      "output_bytes": 721,
+      "output_sha256": "650a4fd3fdd2c15ec1b40dd303278d5201e42f9f4acf2c7f0df82c17cd5ddc07",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "60b1ffe0cdf5a965d03df3213cbe4d3f9df23df9d4e13c286d631e980c41ef12",
+      "output_bytes": 785,
+      "output_sha256": "60b1ffe0cdf5a965d03df3213cbe4d3f9df23df9d4e13c286d631e980c41ef12",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/assessor-result.json",
+      "source_bytes": 54884,
+      "source_sha256": "7c05f1b68030d6a68a27857165247805d7ff70473f83489550188755e5cf6700",
+      "output_bytes": 54884,
+      "output_sha256": "7c05f1b68030d6a68a27857165247805d7ff70473f83489550188755e5cf6700",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/grade.json",
+      "source_bytes": 327,
+      "source_sha256": "2abe52f7caae28e1db22ae9237d0770b3d0f8f8e02ecefa87cdd4b82c0657868",
+      "output_bytes": 327,
+      "output_sha256": "2abe52f7caae28e1db22ae9237d0770b3d0f8f8e02ecefa87cdd4b82c0657868",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "29c80412dd88a08e01802bd536efdd12a5c8805d3d341057e62545d1ba3a7a07",
+      "output_bytes": 492,
+      "output_sha256": "29c80412dd88a08e01802bd536efdd12a5c8805d3d341057e62545d1ba3a7a07",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/capture/stdout.jsonl",
+      "source_bytes": 106100,
+      "source_sha256": "6147744d21bb54f3b2eabbe23536a16e271d5fecf14ab40b877a6279c6f90e22",
+      "output_bytes": 106100,
+      "output_sha256": "6147744d21bb54f3b2eabbe23536a16e271d5fecf14ab40b877a6279c6f90e22",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/e3071809-d25b-4106-aed9-d1fe25cd3367/capture/process.redacted.json",
+      "source_bytes": 639,
+      "source_sha256": "531252287da06ec55ab69f5e4007a98ba527c2ded496b79f8c0b28456fe7196f",
+      "output_bytes": 722,
+      "output_sha256": "9dc452fbb4ba29a5b8aea84eda28d96ccafa52028c838430d870631220312e52",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "765252f4e960b07b8fcfe0684c0346abeb88932f0e001b2f2e2e63a2f7e33fbd",
+      "output_bytes": 785,
+      "output_sha256": "765252f4e960b07b8fcfe0684c0346abeb88932f0e001b2f2e2e63a2f7e33fbd",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/assessor-result.json",
+      "source_bytes": 54950,
+      "source_sha256": "80ddbcd2496327f3f8744a5f34a022e9f1735cdecffa88f47bd651c5560a3600",
+      "output_bytes": 54950,
+      "output_sha256": "80ddbcd2496327f3f8744a5f34a022e9f1735cdecffa88f47bd651c5560a3600",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/grade.json",
+      "source_bytes": 327,
+      "source_sha256": "d9d4c8d529cd6d3c740df026c0d1d11876da6621ec5c6129c8da51920686a954",
+      "output_bytes": 327,
+      "output_sha256": "d9d4c8d529cd6d3c740df026c0d1d11876da6621ec5c6129c8da51920686a954",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "de297281cd70d731fb4e8a92bf6dc845bfef238ecd06ef2aca08585ab9795485",
+      "output_bytes": 492,
+      "output_sha256": "de297281cd70d731fb4e8a92bf6dc845bfef238ecd06ef2aca08585ab9795485",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/capture/stdout.jsonl",
+      "source_bytes": 104608,
+      "source_sha256": "493af3377ded7f59e2ed958841e1c8843826e8b35f53a7255846c8a09a2559b5",
+      "output_bytes": 104608,
+      "output_sha256": "493af3377ded7f59e2ed958841e1c8843826e8b35f53a7255846c8a09a2559b5",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/0ff82016-469c-436e-a07e-f2676b7a2ff0/capture/process.redacted.json",
+      "source_bytes": 639,
+      "source_sha256": "96fab8868115a2f4822d21ab4e01b4123e1a5edb21dd3dca9cc9acde72e5ad11",
+      "output_bytes": 722,
+      "output_sha256": "d7486f9962ff503191a5b730f32522df0dda4ac2c03ac24ace9494f2894b33fc",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "afcc2c1d274f8b78f24076f8173cb6064f3f57c6b97ba9b19a0e57e3ab0046cb",
+      "output_bytes": 785,
+      "output_sha256": "afcc2c1d274f8b78f24076f8173cb6064f3f57c6b97ba9b19a0e57e3ab0046cb",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/assessor-result.json",
+      "source_bytes": 57388,
+      "source_sha256": "069e159636576dee80eb78d7d094297289763b2b26b6d5de41e3ab2ec585aa39",
+      "output_bytes": 57388,
+      "output_sha256": "069e159636576dee80eb78d7d094297289763b2b26b6d5de41e3ab2ec585aa39",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/grade.json",
+      "source_bytes": 327,
+      "source_sha256": "c80ad58e8d87711f1f7132ff73829cf9fa0b0d6c0d09c3600d12d2941550f88d",
+      "output_bytes": 327,
+      "output_sha256": "c80ad58e8d87711f1f7132ff73829cf9fa0b0d6c0d09c3600d12d2941550f88d",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "9f57cf2a37215748d982577d44f68a7ca38b5a3574ab96bf3e84cee91438d0ab",
+      "output_bytes": 492,
+      "output_sha256": "9f57cf2a37215748d982577d44f68a7ca38b5a3574ab96bf3e84cee91438d0ab",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/capture/stdout.jsonl",
+      "source_bytes": 111687,
+      "source_sha256": "c325b709703ec305901da5770a8f3cf0ab9985980762806bdd1f90b5951d25cb",
+      "output_bytes": 111687,
+      "output_sha256": "c325b709703ec305901da5770a8f3cf0ab9985980762806bdd1f90b5951d25cb",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/323e141c-7b04-4e0a-b69e-3cbf7ed412b4/capture/process.redacted.json",
+      "source_bytes": 639,
+      "source_sha256": "2cdeefdc67ed51549e75f07daedc4a81d1b3b6d178b14d90ee322f0d413af286",
+      "output_bytes": 722,
+      "output_sha256": "75ba49892522847b311a52baa6ae65e075de25da8516654a5cfd0764d9c48ccd",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "095d9fe1fadd29e74a27150927b2fe50027d32ddae9019e85ae8cabec0ce70a4",
+      "output_bytes": 785,
+      "output_sha256": "095d9fe1fadd29e74a27150927b2fe50027d32ddae9019e85ae8cabec0ce70a4",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/assessor-result.json",
+      "source_bytes": 58590,
+      "source_sha256": "10d53bf47774eac35e41fc841c1fa7646eb9d83d28664c73bd748ffe152708a3",
+      "output_bytes": 58590,
+      "output_sha256": "10d53bf47774eac35e41fc841c1fa7646eb9d83d28664c73bd748ffe152708a3",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/grade.json",
+      "source_bytes": 327,
+      "source_sha256": "6d03752e0b5003714025568269301e718ff5b4d105fe1ee4f0f5d5e6db55fd00",
+      "output_bytes": 327,
+      "output_sha256": "6d03752e0b5003714025568269301e718ff5b4d105fe1ee4f0f5d5e6db55fd00",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "39948f5d6f005ca865d0bb98e7e56a24dd7815f17726718cb2526fb44582a188",
+      "output_bytes": 492,
+      "output_sha256": "39948f5d6f005ca865d0bb98e7e56a24dd7815f17726718cb2526fb44582a188",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/capture/stdout.jsonl",
+      "source_bytes": 114317,
+      "source_sha256": "4e93128b24cb9fff45b6e9409fc65f8811f18797d7383768c08835ecdd273bc8",
+      "output_bytes": 114317,
+      "output_sha256": "4e93128b24cb9fff45b6e9409fc65f8811f18797d7383768c08835ecdd273bc8",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cdcc3341-11e6-4df5-958d-30c6fea9c27f/capture/process.redacted.json",
+      "source_bytes": 639,
+      "source_sha256": "aeac5366b048e6d1eb70c46242d66ac7090b4bd50901ccdb7172b2005f5c6d73",
+      "output_bytes": 722,
+      "output_sha256": "5d7c337047617d9837d27202f169a627bb6b5ebb281a8fa71f5d0f66436b0da6",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "683cb66a7857b48083d73151daaab04abd623aecc32aa1a46dd9306447b72403",
+      "output_bytes": 785,
+      "output_sha256": "683cb66a7857b48083d73151daaab04abd623aecc32aa1a46dd9306447b72403",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/assessor-result.json",
+      "source_bytes": 58598,
+      "source_sha256": "1c5f347ef2ff17cb300c80a2b21cd1394233e0bcce3c4a8e2ab1a9422f6a3e66",
+      "output_bytes": 58598,
+      "output_sha256": "1c5f347ef2ff17cb300c80a2b21cd1394233e0bcce3c4a8e2ab1a9422f6a3e66",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/grade.json",
+      "source_bytes": 327,
+      "source_sha256": "20825689b0a8a5757823a28401d92253fee9c582f036ecbbdca0aa0dd010a923",
+      "output_bytes": 327,
+      "output_sha256": "20825689b0a8a5757823a28401d92253fee9c582f036ecbbdca0aa0dd010a923",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "193b855eb9173191cc44cd5e825e16cc438e6a95d964eda5a948ec1534badb2f",
+      "output_bytes": 492,
+      "output_sha256": "193b855eb9173191cc44cd5e825e16cc438e6a95d964eda5a948ec1534badb2f",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/capture/stdout.jsonl",
+      "source_bytes": 114330,
+      "source_sha256": "73a1e68af4c77a0af09692399f5cf62e29654ef12f84f684cf72a32a675973e6",
+      "output_bytes": 114330,
+      "output_sha256": "73a1e68af4c77a0af09692399f5cf62e29654ef12f84f684cf72a32a675973e6",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/50efae1b-3503-4b80-8695-7afd6da35ff4/capture/process.redacted.json",
+      "source_bytes": 639,
+      "source_sha256": "b5702ef47b1ad14cc0d31cdbb91afb4868f81d7ce4035f6df0083ed3d481a5ba",
+      "output_bytes": 722,
+      "output_sha256": "5553cdb9ff38044b4cada21d1657d085915c564f570bfbf3f072cc3feacb0aab",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/acquisition.json",
+      "source_bytes": 156,
+      "source_sha256": "41477f600b7bbabce27595ad8259d82e38c1c21b365a0ca8f65d7f728d0d3de7",
+      "output_bytes": 156,
+      "output_sha256": "41477f600b7bbabce27595ad8259d82e38c1c21b365a0ca8f65d7f728d0d3de7",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/assessor-result.json",
+      "source_bytes": 25709,
+      "source_sha256": "a784204257290fab408d1db6c653362c4e517d04d315782ee2ffac15f8c6101e",
+      "output_bytes": 25709,
+      "output_sha256": "a784204257290fab408d1db6c653362c4e517d04d315782ee2ffac15f8c6101e",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/grade.json",
+      "source_bytes": 327,
+      "source_sha256": "3026be640414f7e7bce6a2f1be6397a09f23b0c9684e83510b8950e36fbbf39e",
+      "output_bytes": 327,
+      "output_sha256": "3026be640414f7e7bce6a2f1be6397a09f23b0c9684e83510b8950e36fbbf39e",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "8aba56d40f0ef9dd60decdbfa5743a79e9fabc289d72e8f1613aff27c70026ff",
+      "output_bytes": 492,
+      "output_sha256": "8aba56d40f0ef9dd60decdbfa5743a79e9fabc289d72e8f1613aff27c70026ff",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/capture/stdout.jsonl",
+      "source_bytes": 54962,
+      "source_sha256": "1d9d78733d64e03d428be53d44600f2cfedd63681940e408aeb3adaaedf8cacf",
+      "output_bytes": 54962,
+      "output_sha256": "1d9d78733d64e03d428be53d44600f2cfedd63681940e408aeb3adaaedf8cacf",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/4bfe4f1d-5ea5-48c9-a1b6-1ae601ed0dbb/capture/process.redacted.json",
+      "source_bytes": 638,
+      "source_sha256": "bd9a820db3b69a59e27339a7c26c499d32f8a29b0a3ef7081404513f1025bd69",
+      "output_bytes": 721,
+      "output_sha256": "d3ced365bbb3cf13cad89c7bb3d010ba603cff78460d935b9577076f1e651902",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "722fd2d1788bf93cc4317bb0d9e91fbd04d36176e000f68302ab15f710542329",
+      "output_bytes": 785,
+      "output_sha256": "722fd2d1788bf93cc4317bb0d9e91fbd04d36176e000f68302ab15f710542329",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/assessor-result.json",
+      "source_bytes": 25991,
+      "source_sha256": "bf504a05225bd5ea9f6c15d3cd91707cd17fb23c12fc131ae2f78ee25ba77a96",
+      "output_bytes": 25991,
+      "output_sha256": "bf504a05225bd5ea9f6c15d3cd91707cd17fb23c12fc131ae2f78ee25ba77a96",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/grade.json",
+      "source_bytes": 327,
+      "source_sha256": "696f5af9e4ac6ad1e50dfb6500393ad360f65ffa8177708af1016d8c4a2a7471",
+      "output_bytes": 327,
+      "output_sha256": "696f5af9e4ac6ad1e50dfb6500393ad360f65ffa8177708af1016d8c4a2a7471",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "561179c42b6fa85f4d8e4ef6e47a688ea8d86bd91fe5f02263c83f989b29c38d",
+      "output_bytes": 492,
+      "output_sha256": "561179c42b6fa85f4d8e4ef6e47a688ea8d86bd91fe5f02263c83f989b29c38d",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/capture/stdout.jsonl",
+      "source_bytes": 55526,
+      "source_sha256": "4c72fba013fb211a4a76bf9a1bd7bf4698502061cea09a5e3a0e3c442b127a8a",
+      "output_bytes": 55526,
+      "output_sha256": "4c72fba013fb211a4a76bf9a1bd7bf4698502061cea09a5e3a0e3c442b127a8a",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/cbea2254-f449-4393-9941-5875842e495b/capture/process.redacted.json",
+      "source_bytes": 638,
+      "source_sha256": "f47b743187f2f230fb320068a821f08c650d18cdcaef2fba4bd6709625582ed3",
+      "output_bytes": 721,
+      "output_sha256": "3ab326d0d5e26787f3bbcef263c20968424d0a00e199aaf73c67745baafccc8e",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "0331bef47c75d27dbabc00124ee457e7832ed422e808184df249d240af187368",
+      "output_bytes": 785,
+      "output_sha256": "0331bef47c75d27dbabc00124ee457e7832ed422e808184df249d240af187368",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/assessor-result.json",
+      "source_bytes": 58600,
+      "source_sha256": "14b49f6d7ed9fabcf9fa59ffcb1d9ab97ff085e9e8462bc4e7e035ec1d72627f",
+      "output_bytes": 58600,
+      "output_sha256": "14b49f6d7ed9fabcf9fa59ffcb1d9ab97ff085e9e8462bc4e7e035ec1d72627f",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/grade.json",
+      "source_bytes": 325,
+      "source_sha256": "9ecc9b02ca413bdbe7e520a7c9d3e04a1dcdf5a74f2d4ab38e78b90b03e23812",
+      "output_bytes": 325,
+      "output_sha256": "9ecc9b02ca413bdbe7e520a7c9d3e04a1dcdf5a74f2d4ab38e78b90b03e23812",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "b8cd9de7e423f0b15f5bc08df504836ab04e33678bf471b453a222df8cffd111",
+      "output_bytes": 492,
+      "output_sha256": "b8cd9de7e423f0b15f5bc08df504836ab04e33678bf471b453a222df8cffd111",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/capture/stdout.jsonl",
+      "source_bytes": 114327,
+      "source_sha256": "3493bc9504a47bf82d7af8004aeba7ac2d57abb25500a8148c2e88685760ffc9",
+      "output_bytes": 114327,
+      "output_sha256": "3493bc9504a47bf82d7af8004aeba7ac2d57abb25500a8148c2e88685760ffc9",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ff60d7b9-3402-4f74-b0db-1018f0325c48/capture/process.redacted.json",
+      "source_bytes": 639,
+      "source_sha256": "67e4293207ff83894e40830d20165e5de4b2f6fa77271bad3feaae1020a915b6",
+      "output_bytes": 722,
+      "output_sha256": "255852f5abbc66a95f5e3acaf6af40bb1738d2971ad5282fc0d74d5affb24553",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "436b2357541ee15531c72b4fd0c81db2bdf6e5867df7350eb9d0e137d2a57da1",
+      "output_bytes": 785,
+      "output_sha256": "436b2357541ee15531c72b4fd0c81db2bdf6e5867df7350eb9d0e137d2a57da1",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/assessor-result.json",
+      "source_bytes": 58572,
+      "source_sha256": "4f0331b5ba758ab41ae2a08837475afbca7b2c7133759335be5a8be0a3f3d2f3",
+      "output_bytes": 58572,
+      "output_sha256": "4f0331b5ba758ab41ae2a08837475afbca7b2c7133759335be5a8be0a3f3d2f3",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/grade.json",
+      "source_bytes": 325,
+      "source_sha256": "dd69d6edc422019ca310186e25a2564ae75b2fb01cfa36a13756603ef329b743",
+      "output_bytes": 325,
+      "output_sha256": "dd69d6edc422019ca310186e25a2564ae75b2fb01cfa36a13756603ef329b743",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "91f66252fc3bdc7ba25654c3916ad99df6a769adf7f8184b9018a4b84967afec",
+      "output_bytes": 492,
+      "output_sha256": "91f66252fc3bdc7ba25654c3916ad99df6a769adf7f8184b9018a4b84967afec",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/capture/stdout.jsonl",
+      "source_bytes": 114306,
+      "source_sha256": "a60f100439de0efdf5d186e1cdd7a590b2d2f5cf6109349ee1895156da360f2e",
+      "output_bytes": 114306,
+      "output_sha256": "a60f100439de0efdf5d186e1cdd7a590b2d2f5cf6109349ee1895156da360f2e",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/ba64873c-f767-4baa-99d0-f251aefc664c/capture/process.redacted.json",
+      "source_bytes": 639,
+      "source_sha256": "ea4bb187ef316b69373143ea72f5c7000cd79ecad40d0a7be90a303db3e9f90d",
+      "output_bytes": 722,
+      "output_sha256": "1202a4693dc7a0e60503bba68f0bce7676a8548d51800f5304d2f5e907d6fac1",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "60e3e8e567e8d8de0566247a8940e384502b5178a04cabff6a22859f79f3202b",
+      "output_bytes": 785,
+      "output_sha256": "60e3e8e567e8d8de0566247a8940e384502b5178a04cabff6a22859f79f3202b",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/assessor-result.json",
+      "source_bytes": 39884,
+      "source_sha256": "44ac1a1d1b054f864c8bea24fd359b90ac3d80587fdbe0c3f623d62a1e74d268",
+      "output_bytes": 39884,
+      "output_sha256": "44ac1a1d1b054f864c8bea24fd359b90ac3d80587fdbe0c3f623d62a1e74d268",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/grade.json",
+      "source_bytes": 325,
+      "source_sha256": "23cc1e93c6eca9fd22eaff530a8b38128d3cbd68c9ac528ba6bf07a7fa27074d",
+      "output_bytes": 325,
+      "output_sha256": "23cc1e93c6eca9fd22eaff530a8b38128d3cbd68c9ac528ba6bf07a7fa27074d",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "e2d5c8fde1bc509729fcca688f0de64118c891d44e3a28c02e640f0d6d9d2d13",
+      "output_bytes": 492,
+      "output_sha256": "e2d5c8fde1bc509729fcca688f0de64118c891d44e3a28c02e640f0d6d9d2d13",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/capture/stdout.jsonl",
+      "source_bytes": 82905,
+      "source_sha256": "5c77d872f0bcd6545fa62b4ed52d499667cb67e41b2ee0dedd9219d1eda141ab",
+      "output_bytes": 82905,
+      "output_sha256": "5c77d872f0bcd6545fa62b4ed52d499667cb67e41b2ee0dedd9219d1eda141ab",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/fc90b213-2281-48a6-be26-7366242bf4b0/capture/process.redacted.json",
+      "source_bytes": 638,
+      "source_sha256": "ddc4ad1e33ac4d910b8864c126a6630006aeb8845f62e1bbe59bfc78a41ebaca",
+      "output_bytes": 721,
+      "output_sha256": "a05664f62117369a43600dcf4d5b110fc8f30cb6244346baa9eac7419e2add78",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/acquisition.json",
+      "source_bytes": 785,
+      "source_sha256": "51f741e10bac36c190e914082ad517ba75719bab2487e08130eb443e38576815",
+      "output_bytes": 785,
+      "output_sha256": "51f741e10bac36c190e914082ad517ba75719bab2487e08130eb443e38576815",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/assessor-result.json",
+      "source_bytes": 45283,
+      "source_sha256": "982316f875a3d6201247e08c917276fee07b9dd15f9d2677ffc6b73c9cfc4b2d",
+      "output_bytes": 45283,
+      "output_sha256": "982316f875a3d6201247e08c917276fee07b9dd15f9d2677ffc6b73c9cfc4b2d",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/grade.json",
+      "source_bytes": 325,
+      "source_sha256": "4ed063b1a85d5b44f8a80a012f5f9825839704fa03958f80aebf987309aad2f2",
+      "output_bytes": 325,
+      "output_sha256": "4ed063b1a85d5b44f8a80a012f5f9825839704fa03958f80aebf987309aad2f2",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/stage-inventory.json",
+      "source_bytes": 492,
+      "source_sha256": "dc49b45f07c26a2c7e339b8ac0ddbf98f1922854a0c5342aaa1c0c64d8aebb62",
+      "output_bytes": 492,
+      "output_sha256": "dc49b45f07c26a2c7e339b8ac0ddbf98f1922854a0c5342aaa1c0c64d8aebb62",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/capture/stdout.jsonl",
+      "source_bytes": 93435,
+      "source_sha256": "03d75217c7b920b131c64eae551d22017644781a96576570fee7d141d003a7b9",
+      "output_bytes": 93435,
+      "output_sha256": "03d75217c7b920b131c64eae551d22017644781a96576570fee7d141d003a7b9",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/capture/stderr.txt",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/campaign/16d6d94c-7d62-424c-851c-400a27ca01ff/capture/process.redacted.json",
+      "source_bytes": 638,
+      "source_sha256": "ee0a5e8231fcc7461f57ae2e7041d5b71380887213d22555d06c5fa719ea1ca9",
+      "output_bytes": 721,
+      "output_sha256": "3bd23630afc4e9446efa99e9f541ba394095b5f947f4232359d070a408210fb4",
+      "transformation": "Only command path values at indices 2, 3 and 6 replaced by relocation placeholders; all other process fields retained."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/RUN-INDEX.json",
+      "source_bytes": 109560,
+      "source_sha256": "1d0f5870ecf33fe26c70c14ae49647b881235bf3c6cd603fb97780b2029abddf",
+      "output_bytes": 109560,
+      "output_sha256": "1d0f5870ecf33fe26c70c14ae49647b881235bf3c6cd603fb97780b2029abddf",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/MATRIX.csv",
+      "source_bytes": 3237,
+      "source_sha256": "6a03a4529d9fa565446af068aae3055a173ddcd2f42aea7a2f54fc82f69aad30",
+      "output_bytes": 3237,
+      "output_sha256": "6a03a4529d9fa565446af068aae3055a173ddcd2f42aea7a2f54fc82f69aad30",
+      "transformation": "byte-identical copy; relocation only"
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/evidence/SUMMARY.json",
+      "source_bytes": 44351,
+      "source_sha256": "26235aec03644e3d93b3c3e8c8e1eb0a2127a0a7fa89b5c1e93761e7265b3099",
+      "output_bytes": 1349,
+      "output_sha256": "fac6e9f6a6f7bcbb69dd1ad382886d8873b0c98faaa9340aa9e5c44695cf4077",
+      "transformation": "Select historical counts, timestamp and scope; add representation label, original/output oracle hashes and reconciled operation totals. Omit internal workflow and repository metadata and duplicate rows."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/reproduce.py",
+      "transformation": "New export orchestration, R1/R2 corrected placement/exact dependency admission and prepared fresh prerequisite gate. Only pure preflight predicates tested; no prerequisite/appraisal/grader execution.",
+      "output_sha256": "e098f8278701a5a7cfd46547a3d4d5c9b746421ea9058827c18ec5e26dc8a409",
+      "output_bytes": 6350
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/runtime_preflight.py",
+      "output_bytes": 2640,
+      "output_sha256": "04b966a0beff51ad15f89f52f249471a852cc84bf4be0676c11da35942510f2d",
+      "transformation": "New prepared preflight/primitive/isolation harness; no actual crypto or sandbox execution in this revision."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/prerequisites.py",
+      "output_bytes": 4331,
+      "output_sha256": "8f0aa7df9530505f9f94ed1945743639acd71429c735d9c4be34457119b31da1",
+      "transformation": "New prepared preflight/primitive/isolation harness; no actual crypto or sandbox execution in this revision."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/control_probe.py",
+      "output_bytes": 3994,
+      "output_sha256": "5546126e289192447338ef13aca5be7755760738510d96f541baf242f316e5bc",
+      "transformation": "New prepared preflight/primitive/isolation harness; no actual crypto or sandbox execution in this revision."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/ED25519-VECTOR.json",
+      "output_bytes": 993,
+      "output_sha256": "1d5f435ab4ea17d9574d88d104a009f8b5bdc627ac2fb472fdc5c10ea40040b4",
+      "source": "https://www.rfc-editor.org/rfc/rfc8032#section-7.1",
+      "transformation": "Transcribe TEST1 public key, empty message and signature only, retain attribution; exclude source private-key field. No RFC code copied."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/MERKLE-VECTOR.json",
+      "output_bytes": 3244,
+      "output_sha256": "f42d35817f0fb18355f5e2e3ac5ee2e2d87fcf6a5800797840a234847ce11ddb",
+      "source_sha256": "f42d35817f0fb18355f5e2e3ac5ee2e2d87fcf6a5800797840a234847ce11ddb",
+      "transformation": "Byte-identical historical independently-derived fixed vector; no rederivation. Independent of builder/verifier algorithm, not an independent person."
+    },
+    {
+      "output": "impl/composed-claim-campaign-2026-11-04/MERKLE-RECIPE.json",
+      "output_bytes": 1540,
+      "output_sha256": "bc860b2271d3e8f1757209c9ff1b333c2985076a3847dac9f52669aea7d2ac67",
+      "source_sha256": "39a3fe29bf8555388385fcf9976b7405d714582be59f74d4b0d6e33661426ec8",
+      "transformation": "Replace internal operator label in method, add original recipe hash and export note; expression graph/paths unchanged."
+    }
+  ],
+  "new_prose": [
+    "docs/proposals/composed-claim-campaign-2026-11-04.md",
+    "impl/composed-claim-campaign-2026-11-04/README.md",
+    "impl/composed-claim-campaign-2026-11-04/REPRODUCE.md",
+    "impl/composed-claim-campaign-2026-11-04/PREREQUISITES.md"
+  ],
+  "note": "Byte-identical captures are distinguished from transformed process projections and selected-field summary. All original source/evidence retained."
+}

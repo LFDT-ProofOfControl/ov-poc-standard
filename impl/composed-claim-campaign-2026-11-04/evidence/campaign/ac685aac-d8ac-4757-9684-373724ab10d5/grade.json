@@ -1,0 +1,8 @@
+{
+  "case": "T2-A",
+  "status": "MATCH",
+  "mismatches": [],
+  "oracle_sha256": "067766a40efb8dd3e8a481d7dc5a75892e92d8ffaa146bf43ac3dbd2b41681bc",
+  "capture_sha256": "6cd3b4548b2b3a5bc24704b190b148144d09792d8f9ede65137ed1aa4d9c34f4",
+  "scope": "synthetic bounded appraisal only; no actual-environment attestation or Tier"
+}

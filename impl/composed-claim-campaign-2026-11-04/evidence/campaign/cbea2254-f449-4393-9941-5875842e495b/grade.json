@@ -1,0 +1,8 @@
+{
+  "case": "T5-S",
+  "status": "MATCH",
+  "mismatches": [],
+  "oracle_sha256": "067766a40efb8dd3e8a481d7dc5a75892e92d8ffaa146bf43ac3dbd2b41681bc",
+  "capture_sha256": "4c72fba013fb211a4a76bf9a1bd7bf4698502061cea09a5e3a0e3c442b127a8a",
+  "scope": "synthetic bounded appraisal only; no actual-environment attestation or Tier"
+}
