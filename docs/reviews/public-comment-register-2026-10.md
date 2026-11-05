@@ -54,6 +54,13 @@ item they are grouped so the working group reads them together.
 | [#73](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/73) | basilpuglisi | Evidence-status declarations per record and a classification of the human act in C4.1.6 (CARCS, offered as reference) |
 | [#56](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/56) | evidifyai-svg | C4.1.6's approval record is a self-report with no interception boundary, so its auditor evidence cannot be closed out; either bind the approval to a commitment outside the presenting system (Level 3) or state the limit and cap it at Tier 2 (Level 2). The comment thread reads the two remedies as two Levels of one requirement |
 
+*Note added 2026-10-29:* two issues by dbrewpnw, filed 2026-10-12 after this register was written, bear on
+this group. [#115](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/115) asks C4.2 and C5.2 to bind a delegate's execution records to the
+delegator's `SUBAGENT_DELEGATION` record, so that an outsider can walk a multi-hop delegation chain
+from the records alone. [#119](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/119) takes up C8 open item 3: a Tier 1 floor of timestamp, tagged
+digest and attribution, where the attribution states its basis (self-asserted versus a published key).
+The disposition of both is the working group's.
+
 ### Appendix D issues 3 and 5, and C7.6: continuity, completeness and omission
 
 | Issue | Raised by | What it asked |
@@ -83,6 +90,13 @@ item they are grouped so the working group reads them together.
 | [#66](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/66) | rakeshgohel01 | How a token represents an evaluation that could not complete, and whether the token needs a result claim distinct from the decision |
 | [#77](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/77) | elekto-energy | Require the published verifier's result to state its scope as execution facts and mark content correctness as not assessed; an Appendix C row for relying-party over-inference. Keep "could not evaluate" (#66) distinct from "outside scope" |
 
+*Note added 2026-10-29:* two issues by dbrewpnw, filed 2026-10-12 after this register was written, bear on
+this group. [#118](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/118) asks C7.5 and the schema to define an optional extension claim that commits
+to an agent-emitted reasoning record by digest, and to state that the content of that record never
+raises a Tier. [#117](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/117) asks for a C1.2 note: an agent's declared dependencies may be recorded as
+an execution fact, but they do not satisfy a requirement written for influence. Both keep the
+verifier result to what the records show. The disposition is the working group's.
+
 ### Appendix C and Appendix D issue 12: threat rows and citations
 
 | Issue | Raised by | What it asked |
@@ -91,6 +105,14 @@ item they are grouped so the working group reads them together.
 | [#71](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/71) | basilpuglisi | Approval fatigue is Partial and has no worked use case; pattern-level signals over approval records could narrow the gap (offered as reference) |
 | [#70](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/70) | basilpuglisi | A source-custody record for each research-driven requirement and crosswalk citation before ratification |
 | [#68](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/68) | basilpuglisi | Align the informative "open verification must replace human verification" framing with the normative text, which keeps validation and accountability with humans |
+
+*Note added 2026-10-29:* [#116](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/116) (dbrewpnw), filed 2026-10-12 after this register was written,
+asks Appendix C to add a "Fabricated or post-hoc justification" row with coverage Partial and
+faithfulness out of scope, and to soften "true intent" in the approval-fatigue row. The thread,
+with the author of [#56](https://github.com/LFDT-ProofOfControl/ov-poc-standard/issues/56), converged on the replacement "Evidences the content the system
+recorded as presented for approval, and the approval decisions", with the Out of scope cell adding
+whether that content is what the human actually saw (#56), and the same change in
+`docs/use-cases/THREATS.md`. The disposition is the working group's.
 
 ### Offers of contributions
 
