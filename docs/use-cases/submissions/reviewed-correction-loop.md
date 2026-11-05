@@ -47,11 +47,11 @@ evidence that any system meets Tier 3.
 
 The claim Lena and an auditor rely on is "the change that was merged is the change the
 reviewer accepted at the last hop of this session". Anyone holding the records must be
-able to check, without trusting the operator or either agent, that each review record
+able to verify, without trusting the operator or either agent, that each review record
 names the digest of the result it judged, the hop it belongs to and the session or
 invocation it was issued for, and that each of those equals what the receiver expected
 at that point. That is Tier 3: the records are verifiable and their binding to the
-context is checkable, with the receiver's honesty disclosed rather than removed.
+context is verifiable, with the receiver's honesty disclosed rather than removed.
 
 This is the tier the scenario argues the deployment needs. Whether a particular
 implementation meets the Tier 3 requirements, in particular how much a verifier still
@@ -81,7 +81,7 @@ see the notes.
 | Provenance | 3 | Each hop's output and each review must be attributable to the agent and hop that produced it, verifiably. |
 | Privacy | not claimed | The task carries no personal data. |
 | Portability | not claimed | Both agents run under one receiver; nothing moves between providers. |
-| Authorization | 3 | Admission of each hop must be checkable against the mandate's plan, caps and the expected context, including that a review verdict cannot extend the plan. |
+| Authorization | 3 | Admission of each hop must be verifiable against the mandate's plan, caps and the expected context, including that a review verdict cannot extend the plan. |
 | Identity | 3 | Worker and reviewer roles must be bound to signed identities so that the worker cannot present at a reviewer hop. |
 | Security | 2 | Integrity of the packages moved between hops is needed; a stronger isolation claim is not what the merge decision turns on. |
 
@@ -89,7 +89,7 @@ see the notes.
 
 | Threat | What it looks like here |
 |---|---|
-| `context-blind-authorization` | A genuine review record from another session, another hop or another invocation is presented where a different one is expected, and every check that ignores the context passes. |
+| `context-blind-authorization` | A genuine review record from another session, another hop or another invocation is presented where a different one is expected, and every verification that ignores the context passes. |
 | `insecure-inter-agent-comms` | The package from worker to reviewer, or the verdict from reviewer back, is altered or swapped between collection and use: changed output, a review of the wrong result, a link naming the wrong source hop. |
 | `excessive-agency` | A verdict is taken as permission to go further than the mandate: a fifth hop, a further correction round, or the worker acting in the reviewer role. |
 | `unbounded-consumption` | Attempts or handoffs continue past the mandate's caps because each individual step looks allowed. |
