@@ -119,6 +119,15 @@ def main() -> int:
     mod["poc_claims"]["reason"] = "recipient domain rewritten to the approved partner"
     mod["poc_claims"]["dispatched_snapshot_hash"] = "sha-256:" + hashlib.sha256(
         b"the action that actually ran").hexdigest()
+    # The chain head and the tree head commit to the verdict (C7.3), so changing
+    # the verdict means recomputing both. Copying them from the ALLOW token left
+    # a tree head that committed to a verdict the token did not state.
+    snap_digest = mod["poc_claims"]["canonical_snapshot_hash"].split(":", 1)[1]
+    mod["poc_claims"]["chain_head"] = "sha-256:" + hashlib.sha256(
+        (hashlib.sha256(b"poc-genesis").hexdigest() + snap_digest + "MODIFY").encode()
+    ).hexdigest()
+    mod["poc_claims"]["merkle_root"] = "sha-256:" + hashlib.sha256(
+        b"\x00" + jcs({"snapshot": snap_digest, "verdict": "MODIFY"})).hexdigest()
     mod = resign(mod, sk)
     write(OUT / "positive" / "modify-bound.json", mod)
 
@@ -163,8 +172,26 @@ def main() -> int:
     broken(small_tree, "tree-size-too-small.json")
 
     def unbound_modify(t):
+        # Only the missing dispatched_snapshot_hash may be wrong here, so the
+        # chain head and tree head are recomputed for the MODIFY verdict. Left
+        # at their ALLOW values, the root-leaf check would also fire, and a
+        # negative vector must break exactly one rule.
         t["poc_claims"]["verdict"] = "MODIFY"
+        digest = t["poc_claims"]["canonical_snapshot_hash"].split(":", 1)[1]
+        t["poc_claims"]["chain_head"] = "sha-256:" + hashlib.sha256(
+            (hashlib.sha256(b"poc-genesis").hexdigest() + digest + "MODIFY").encode()
+        ).hexdigest()
+        t["poc_claims"]["merkle_root"] = "sha-256:" + hashlib.sha256(
+            b"\x00" + jcs({"snapshot": digest, "verdict": "MODIFY"})).hexdigest()
     broken(unbound_modify, "modify-unbound.json")
+
+    def stale_root(t):
+        # A MODIFY token whose tree head still commits to the ALLOW leaf it was
+        # copied from: signed, schema-valid, and not a leaf of its own tree.
+        t["poc_claims"]["verdict"] = "MODIFY"
+        t["poc_claims"]["dispatched_snapshot_hash"] = \
+            "sha-256:" + hashlib.sha256(b"the action that actually ran").hexdigest()
+    broken(stale_root, "root-verdict-mismatch.json")
 
     # An uppercase digest in an EXTENSION claim. The schema cannot catch this:
     # extension claims are open by design, so canonicalization is the only
@@ -268,6 +295,9 @@ def main() -> int:
             {"file": "negative/modify-unbound.json",
              "expect_code": "modify-unbound",
              "why": "MODIFY must commit to the action that actually runs"},
+            {"file": "negative/root-verdict-mismatch.json",
+             "expect_code": "root-leaf",
+             "why": "a tree head must commit to the verdict the token states"},
             {"file": "negative/uppercase-hex-extension.json",
              "expect_code": "hex-case",
              "why": "extension claims are open, so canonicalization is the "

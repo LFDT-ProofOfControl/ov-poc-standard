@@ -140,7 +140,7 @@ that serialize the same action differently produce different digests for it — 
 still verifies, so nothing looks broken, and the binding property that Theorem 1 depends on
 fails silently. [`schema/`](schema/README.md) closes that: CDDL for the CWT/CBOR rendering,
 JSON Schema for the JWT rendering, a canonicalization specification stating exactly which bytes
-a signature covers, and **16 signed test vectors** — four positive, ten negative, two
+a signature covers, and **18 signed test vectors** — four positive, twelve negative, two
 canonical-form. The reference implementation's own output is validated against the schema in its
 test suite, so the two cannot drift apart silently.
 

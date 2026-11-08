@@ -31,7 +31,7 @@ python3 schema/validate.py --canonical t.json # canonical bytes and digest
 Current state:
 
 ```
-16 passed, 0 failed          (4 positive, 10 negative, 2 canonical-form)
+18 passed, 0 failed          (4 positive, 12 negative, 2 canonical-form)
 4 identical, 0 differing     (JSON <-> CBOR round trip)
 ```
 
@@ -94,10 +94,12 @@ file has not shown it detects duplicate keys.
 | --- | --- |
 | `missing-policy-bundle-hash` | a verdict that cannot be re-derived is not evidence |
 | `untagged-digest` | the hash algorithm must never be guessed |
+| `digest-alg-width-mismatch` | a digest's declared algorithm must match its width |
 | `wrong-profile` | claims must not be read under an unknown profile |
 | `bad-interception-point` | an unrecognised hook makes coverage unassessable |
 | `tree-size-too-small` | a record must be a leaf of the tree it names |
 | `modify-unbound` | MODIFY must commit to the action that actually runs |
+| `root-verdict-mismatch` | with one leaf, the tree head must be the leaf of the token's own snapshot and verdict |
 | `uppercase-hex-extension` | extension claims are open, so canonicalization is the only defence |
 | `float-timestamp` | the claim set forbids floating point |
 | `bad-signature` | a claim altered after signing |
