@@ -172,7 +172,17 @@ def main() -> int:
     broken(small_tree, "tree-size-too-small.json")
 
     def unbound_modify(t):
+        # Only the missing dispatched_snapshot_hash may be wrong here, so the
+        # chain head and tree head are recomputed for the MODIFY verdict. Left
+        # at their ALLOW values, the root-leaf check would also fire, and a
+        # negative vector must break exactly one rule.
         t["poc_claims"]["verdict"] = "MODIFY"
+        digest = t["poc_claims"]["canonical_snapshot_hash"].split(":", 1)[1]
+        t["poc_claims"]["chain_head"] = "sha-256:" + hashlib.sha256(
+            (hashlib.sha256(b"poc-genesis").hexdigest() + digest + "MODIFY").encode()
+        ).hexdigest()
+        t["poc_claims"]["merkle_root"] = "sha-256:" + hashlib.sha256(
+            b"\x00" + jcs({"snapshot": digest, "verdict": "MODIFY"})).hexdigest()
     broken(unbound_modify, "modify-unbound.json")
 
     def stale_root(t):
