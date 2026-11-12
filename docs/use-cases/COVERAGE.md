@@ -1,6 +1,6 @@
 # Coverage index
 
-**20 of 29 threats have a worked use case.** 14 submissions.
+**20 of 29 threats have a worked use case.** 15 submissions.
 
 Generated from the `threats:` frontmatter across this folder. Do not
 edit by hand: run `python3 tools/generate_use_case_coverage.py`.
@@ -46,10 +46,10 @@ A submission covering one of these helps most.
 | Memory, knowledge, and supply chain | `rag-weakness` | — |
 | Memory, knowledge, and supply chain | `model-poisoning` | `credit-decisioning` |
 | Memory, knowledge, and supply chain | `supply-chain-poisoning` | `credit-decisioning`, `frontier-lab-agent-collective`, `privileged-software-change` |
-| Identity, authority, and inter-agent trust | `identity-abuse` | `account-takeover-stolen-credentials`, `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `deepfake-interview-insider`, `frontier-lab-agent-collective`, `license-piracy-agent`, `pig-butchering`, `privileged-software-change` |
-| Identity, authority, and inter-agent trust | `context-blind-authorization` | `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii` |
-| Identity, authority, and inter-agent trust | `excessive-agency` | `account-takeover-stolen-credentials`, `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `deepfake-interview-insider`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
-| Identity, authority, and inter-agent trust | `insecure-inter-agent-comms` | `agentic-cross-border-payments`, `frontier-lab-agent-collective` |
+| Identity, authority, and inter-agent trust | `identity-abuse` | `account-takeover-stolen-credentials`, `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `deepfake-interview-insider`, `delegated-aggregate-limit`, `frontier-lab-agent-collective`, `license-piracy-agent`, `pig-butchering`, `privileged-software-change` |
+| Identity, authority, and inter-agent trust | `context-blind-authorization` | `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `delegated-aggregate-limit`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii` |
+| Identity, authority, and inter-agent trust | `excessive-agency` | `account-takeover-stolen-credentials`, `agent-exceeds-principal-clearance`, `agentic-cross-border-payments`, `deepfake-interview-insider`, `delegated-aggregate-limit`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
+| Identity, authority, and inter-agent trust | `insecure-inter-agent-comms` | `agentic-cross-border-payments`, `delegated-aggregate-limit`, `frontier-lab-agent-collective` |
 | Tools, actions, and effects | `tool-misuse` | `agentic-cross-border-payments`, `license-piracy-agent` |
 | Tools, actions, and effects | `unexpected-code-execution` | `frontier-lab-agent-collective` |
 | Tools, actions, and effects | `unsafe-actuation` | — |
@@ -62,12 +62,12 @@ A submission covering one of these helps most.
 | Record integrity and resilience | `cascading-failure` | `privileged-software-change` |
 | Record integrity and resilience | `coverage-decay` | — |
 | Record integrity and resilience | `evidence-repudiation` | `agentic-cross-border-payments`, `credit-decisioning`, `deepfake-biometric`, `frontier-lab-agent-collective`, `privileged-software-change`, `provider-replacement-live-mandate`, `rogue-internal-agent-pii`, `shopping-agent` |
-| Record integrity and resilience | `trust-opacity` | `account-takeover-stolen-credentials`, `deepfake-interview-insider`, `pig-butchering` |
+| Record integrity and resilience | `trust-opacity` | `account-takeover-stolen-credentials`, `deepfake-interview-insider`, `delegated-aggregate-limit`, `pig-butchering` |
 | Human oversight and disclosure | `approval-fatigue` | `deepfake-biometric`, `pig-butchering` |
 | Human oversight and disclosure | `undisclosed-ai` | `license-piracy-agent`, `pig-butchering` |
 | Output quality and availability | `misinformation` | — |
 | Output quality and availability | `hidden-bias` | `credit-decisioning` |
-| Output quality and availability | `unbounded-consumption` | `shopping-agent` |
+| Output quality and availability | `unbounded-consumption` | `delegated-aggregate-limit`, `shopping-agent` |
 
 ## Every use case
 
@@ -79,6 +79,7 @@ A submission covering one of these helps most.
 | `credit-decisioning` | `model-poisoning`, `supply-chain-poisoning`, `scope-creep-lifecycle`, `behavioral-drift`, `identity-abuse`, `data-exfiltration`, `hidden-bias`, `evidence-repudiation` |
 | `deepfake-biometric` | `identity-abuse`, `approval-fatigue`, `evidence-repudiation` |
 | `deepfake-interview-insider` | `identity-abuse`, `excessive-agency`, `scope-creep-lifecycle`, `trust-opacity` |
+| `delegated-aggregate-limit` | `context-blind-authorization`, `excessive-agency`, `identity-abuse`, `insecure-inter-agent-comms`, `unbounded-consumption`, `trust-opacity` |
 | `frontier-lab-agent-collective` | `insecure-inter-agent-comms`, `audit-tampering`, `excessive-agency`, `context-blind-authorization`, `identity-abuse`, `unexpected-code-execution`, `data-exfiltration`, `supply-chain-poisoning`, `behavioral-drift`, `evidence-repudiation` |
 | `license-piracy-agent` | `identity-abuse`, `tool-misuse`, `undisclosed-ai` |
 | `pig-butchering` | `identity-abuse`, `approval-fatigue`, `undisclosed-ai`, `trust-opacity` |
