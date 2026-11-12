@@ -137,6 +137,7 @@ already addresses — not the reverse, and not framework quality. Two patterns m
 | EU AI Act | Regulation | Proof-of-Control evidence lets the Act be enforced against evidence, not filings | [eu-ai-act.md](eu-ai-act.md) |
 | Zero Trust (NIST SP 800-207; Anthropic Zero Trust for AI Agents) | Security architecture / vendor framework | Zero Trust enforces at runtime; Proof-of-Control shows openly that control held | [zero-trust.md](zero-trust.md) |
 | Confidential Computing (TEEs) | Mechanism | One valid mechanism for delivering Proof-of-Control, not the property itself | [confidential-computing.md](confidential-computing.md) |
+| IETF agent-evidence Internet-Drafts | Evidence formats | Candidate evidence formats for parts of C1 to C10 and three claims of the evidence claim set; none reaches Tier 4 | [ietf-agent-evidence-drafts.md](ietf-agent-evidence-drafts.md) |
 | AIUC-1 | AI audit / certification framework | Portability-domain alignment target (cross-platform auditing) | [aiuc-1.md](aiuc-1.md) |
 
 ## The By-Domain Mapping (working view)
