@@ -69,3 +69,14 @@ Where a proposal rests on cryptography nobody can deploy today — two of `occul
 five priced layers are modelled stubs with no security, and its BBS+ is real but not
 interoperable — it is labelled `[MODELLED — NOT IMPLEMENTABLE TODAY]` rather than written
 as though it were available.
+
+## Pattern contribution: possession-bound control
+
+[`possession-bound-control/`](possession-bound-control/README.md) is a separate
+contribution. It does not come from the research-roadmap tools above, and it does
+not propose that the standard depend on any implementation. It states holes the
+current chapters leave open — a bearer token passes C5, an approval record need
+not match the challenge that was answered, a local boolean can be graded as open
+verification — and it uses ENI6MA PassPlus as a running instance of the possession
+pattern that closes those holes. The white paper in that folder is the document
+to review. The gap notes are the issue texts.

@@ -18,7 +18,7 @@ boundary concrete against real examples.
 ## How much of the threat model is covered
 
 <!-- coverage:start -->
-**Coverage: 20 of 29 threats** across 14 use cases. `███████████████████░░░░░░░░░`  
+**Coverage: 21 of 29 threats** across 15 use cases. `████████████████████░░░░░░░░`  
 Full index in [COVERAGE.md](COVERAGE.md).
 <!-- coverage:end -->
 
@@ -43,6 +43,7 @@ yours is the story that closes it.
 | [`privileged-software-change.md`](submissions/privileged-software-change.md) | Software and cloud services | Scenario | 4 |
 | [`provider-replacement-live-mandate.md`](submissions/provider-replacement-live-mandate.md) | Business operations | Scenario | 3 |
 | [`rogue-internal-agent-pii.md`](submissions/rogue-internal-agent-pii.md) | Enterprise software | Scenario | 3 |
+| [`possession-before-irreversible-effect.md`](submissions/possession-before-irreversible-effect.md) | Payments | Scenario | 4 |
 | [`shopping-agent.md`](submissions/shopping-agent.md) | E-commerce | Scenario | 3 |
 | [`sovereign-agents.md`](submissions/sovereign-agents.md) | Cross-sector | Scenario, v1 template | 4 |
 
