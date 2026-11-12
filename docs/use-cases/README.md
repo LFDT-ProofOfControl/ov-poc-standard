@@ -18,7 +18,7 @@ boundary concrete against real examples.
 ## How much of the threat model is covered
 
 <!-- coverage:start -->
-**Coverage: 20 of 29 threats** across 14 use cases. `███████████████████░░░░░░░░░`  
+**Coverage: 20 of 29 threats** across 15 use cases. `███████████████████░░░░░░░░░`  
 Full index in [COVERAGE.md](COVERAGE.md).
 <!-- coverage:end -->
 
@@ -37,6 +37,7 @@ yours is the story that closes it.
 | [`credit-decisioning.md`](submissions/credit-decisioning.md) | Consumer lending | Scenario | 4 |
 | [`deepfake-biometric.md`](submissions/deepfake-biometric.md) | Financial services | Scenario | 3 |
 | [`deepfake-interview-insider.md`](submissions/deepfake-interview-insider.md) | Technology | Scenario | 4 |
+| [`delegated-aggregate-limit.md`](submissions/delegated-aggregate-limit.md) | Procurement | Scenario | 4 |
 | [`frontier-lab-agent-collective.md`](submissions/frontier-lab-agent-collective.md) | AI research | Incident | 1 observed, 4 required |
 | [`license-piracy-agent.md`](submissions/license-piracy-agent.md) | Software publishing | Scenario | 3 |
 | [`pig-butchering.md`](submissions/pig-butchering.md) | Financial services | Scenario | 4 |
