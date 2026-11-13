@@ -4,18 +4,18 @@
 | --- | --- |
 | **Framework type** | IETF architectures: transparent digital supply chains (SCITT) and remote attestation (RATS) |
 | **Corpus version** | RFC 9943, June 2026, Proposed Standard, with COSE Receipts in RFC 9942 · [access](https://www.rfc-editor.org/rfc/rfc9943) · RFC 9334, January 2023, Informational · [access](https://www.rfc-editor.org/rfc/rfc9334) · [corpus provenance](corpus/README.md) |
-| **Relationship** | Interchange layer. SCITT and RATS define how an attested or registered statement travels between parties; Proof-of-Control defines what the evidence must establish about an agent's actions |
+| **Relationship** | Interchange. SCITT and RATS define how an attested or registered statement travels between parties; Proof-of-Control defines what the evidence must establish about an agent's actions |
 | **Coding status** | **[WG-INPUT NEEDED]** · qualitative only. No row-level coding; see [What is deliberately absent](#what-is-deliberately-absent) |
 
 ## The Relationship
 
 Every framework currently coded in this directory is a control catalogue, a risk framework or a
-regulation: each says what control an operator should have. SCITT and RATS sit at a different
-layer. They say nothing about what a control boundary is, or what an agent action record should
+regulation: each says what control an operator should have. SCITT and RATS address a different
+question. They say nothing about what a control boundary is, or what an agent action record should
 contain. They define the roles and the wire formats by which a statement about an artifact
 moves from the party that made it to a party that was not present when it was made.
 
-That is the layer at which several C7 requirements are satisfied rather than merely described.
+That is where several C7 requirements are satisfied rather than merely described.
 A Proof-of-Control implementer who has read RFC 9943 is holding the receipt format that C7.3.4
 asks for. One who has read RFC 9334 is holding the vocabulary that separates the party that
 appraises evidence from the party that acts on it, which is the separation the Tiers grade.
@@ -30,7 +30,7 @@ by hand.
 | Requirement | SCITT construct | What it supplies, and what remains |
 | --- | --- | --- |
 | [C7.3.4](../0.1/en/0x10-C07-Evidence-Generation-and-Properties.md) inclusion proof against an append-only tree | Receipt (RFC 9942) over the Transparency Service's Verifiable Data Structure | Supplies the proof form the requirement describes, obtainable by a verifier without the rest of the log. The content registered stays a Proof-of-Control obligation |
-| C7.3.5 append-only consistency against previously published roots | The **Auditor** role, defined in RFC 9943 as a Relying Party that verifies the consistency and correctness of the append-only log | Names the role and the duty. The requirement's own discipline, comparing a recomputed root against the anchored value rather than a record count, stays with the implementer |
+| C7.3.5 append-only consistency against previously published roots | The **Auditor** role, defined in RFC 9943 as a specialized Relying Party that verifies the correctness and consistency of the Transparent Statements a Transparency Service issues | Names the role and the duty. The requirement's own discipline, comparing a recomputed root against the anchored value rather than a record count, stays with the implementer |
 | C7.3.3 equivocation resistance | A Transparency Service holds an identity backed by a public key and publishes its trust anchors; Auditors and second Relying Parties can obtain the same roots | Gives the cross-verification the requirement offers as one option. RFC 9943 stops short of requiring a witness quorum |
 | C7.6.6 external anchoring within a declared interval | Registration and receipt issuance | Fixes a point in a verifiable structure. The declared maximum interval, and the alert on a missed deadline, remain Proof-of-Control obligations |
 | C7.7.1 to C7.7.3 schema, canonical serialization, explicit algorithm identifier | COSE_Sign1 envelopes and CBOR encoding | Carry explicit algorithm identifiers and a deterministic encoding, which is most of what C7.7.3 tests. The evidence claim set itself stays a Proof-of-Control schema |

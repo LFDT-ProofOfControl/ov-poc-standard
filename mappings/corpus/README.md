@@ -72,6 +72,7 @@ volunteers welcome ([sign up at advancedaisociety.org](https://advancedaisociety
 | CSA MAESTRO | Adopted as the System surface (an axis of the standard, not a coverage target) — [maestro.md](../maestro.md) |
 | Anthropic Zero Trust for AI Agents | Vendor framework, May 2026 ([zero-trust.md](../zero-trust.md)) |
 | Confidential Computing (CCC) | Mechanism, not a clause-coded framework ([confidential-computing.md](../confidential-computing.md)) |
+| IETF SCITT and RATS | Qualitative crosswalk only, no row-level coding ([ietf-scitt-rats.md](../ietf-scitt-rats.md)). Sources: RFC 9943, An Architecture for Trustworthy and Transparent Digital Supply Chains, Proposed Standard, June 2026, <https://www.rfc-editor.org/rfc/rfc9943>; RFC 9942, CBOR Object Signing and Encryption (COSE) Receipts, June 2026, <https://www.rfc-editor.org/rfc/rfc9942>; RFC 9334, Remote ATtestation procedureS (RATS) Architecture, January 2023, Informational, <https://www.rfc-editor.org/rfc/rfc9334> |
 | OWASP Agentic Top 10 / AIVSS, IEEE 7000-series, IMDRF, HAARF | Candidate additions raised by the working group |
 
 ## Reproduction Instructions

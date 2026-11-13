@@ -138,6 +138,7 @@ already addresses — not the reverse, and not framework quality. Two patterns m
 | Zero Trust (NIST SP 800-207; Anthropic Zero Trust for AI Agents) | Security architecture / vendor framework | Zero Trust enforces at runtime; Proof-of-Control shows openly that control held | [zero-trust.md](zero-trust.md) |
 | Confidential Computing (TEEs) | Mechanism | One valid mechanism for delivering Proof-of-Control, not the property itself | [confidential-computing.md](confidential-computing.md) |
 | AIUC-1 | AI audit / certification framework | Portability-domain alignment target (cross-platform auditing) | [aiuc-1.md](aiuc-1.md) |
+| IETF SCITT (RFC 9943) and RATS (RFC 9334) | IETF architectures: supply-chain transparency and remote attestation | Interchange: SCITT and RATS define how an attested or registered statement travels between parties; Proof-of-Control defines what the evidence must establish | [ietf-scitt-rats.md](ietf-scitt-rats.md) |
 
 ## The By-Domain Mapping (working view)
 
