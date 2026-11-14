@@ -9,7 +9,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from poc import (Action, AttestingEnvironment, EvidenceStore, Gateway, Grant,
                  PathSummary, PolicyEngine, RelyingParty, TransparencyLog,
-                 Verifier, gossip)
+                 Verifier, canonical, gossip)
+from poc.renewal import (Clock, TimestampAuthority, archive, renew,
+                         verify_long_term)
 
 PASS = FAIL = 0
 
@@ -165,6 +167,75 @@ def main():
     v = Verifier(ae.pk, ae.measurement)
     check("C7.3.5 re-signed rewritten history rejected against the anchored root",
           not v.verify_chain(store2.records, anchor=log)[0])
+
+    # ---------------------------------------- long-term verifiability (A12, A13)
+    # Years: made 0, archived 1, renewed 5, classical broken 8, examined 10.
+    # Each negative case asserts the reason, not only the rejection (C7.7.4).
+    clock = Clock(1)
+    old = TimestampAuthority("tsa-classical", "classical", clock)
+    new = TimestampAuthority("tsa-current", "current", clock)
+    keys = {old.name: ("classical", old.pk), new.name: ("current", new.pk)}
+    lt = dict(signed_with="classical", generated=0, max_anchor_interval=1,
+              authorities=keys, breaks={"classical": 8}, now=10)
+    ae, store, gw = stack()
+    for i in range(5):
+        gw.submit(Action("db.read", "customers", {"row": i}))
+    recs = [canonical(r) for r in store.records]
+
+    def rejects(bundle, reason, record=recs[2], **over):
+        ok, why = verify_long_term(record, bundle, **{**lt, **over})
+        return not ok and reason in why
+
+    renewed = archive(recs, old)
+    first = dict(renewed.chain[0])
+    clock.year = 5
+    renew(renewed, new)
+    check("C6.3.5 renewal appends one token and leaves the root and first token",
+          len(renewed.chain) == 2 and renewed.chain[0] == first
+          and renewed.bundle(2)["root"] == first["digest"])
+    check("C6.3.5 a renewed record verifies after its algorithm breaks",
+          verify_long_term(recs[2], renewed.bundle(2), **lt)[0])
+    clock.year = 1
+    unrenewed = archive(recs, old)
+    check("C6.3.5 an unrenewed record does not verify after the break",
+          rejects(unrenewed.bundle(2), "nothing covers it"))
+    clock.year = 9
+    renew(unrenewed, new)
+    check("C6.3.5 a renewal issued after the break does not count",
+          rejects(unrenewed.bundle(2), "issued in year 9, after that"))
+    check("C6.3.5 an authority key compromised before the renewal is not covered",
+          rejects(renewed.bundle(2), "forgeable from year 3",
+                  compromised={old.name: 3}, breaks={}))
+    check("C6.3.5 an authority key compromised after the renewal stays covered",
+          verify_long_term(recs[2], renewed.bundle(2),
+                           **{**lt, "compromised": {old.name: 6}, "breaks": {}})[0])
+    b = renewed.bundle(2)
+    b["chain"][1]["t"] = 4
+    check("a renewal token's date is covered by its signature",
+          rejects(b, "token 1 signature invalid"))
+    b = renewed.bundle(2)
+    b["chain"][1]["digest"] = "00" * 32
+    check("a renewal that covers the wrong digest is rejected",
+          rejects(b, "token 1 does not cover token 0"))
+    b = renewed.bundle(2)
+    b["chain"].reverse()
+    check("a reordered chain is rejected",
+          rejects(b, "does not cover the archived root"))
+    b = renewed.bundle(2)
+    b["chain"][1]["tsa"] = "tsa-unknown"
+    check("a token from an unpublished authority is rejected",
+          rejects(b, "unknown authority"))
+    check("a record absent from the archive is rejected",
+          rejects(renewed.bundle(2), "not in the archived root", record=recs[3]))
+    check("a timestamp dated before generation is rejected",
+          rejects(renewed.bundle(2), "before the record was generated",
+                  generated=2))
+    check("a timestamp dated in the future is rejected",
+          rejects(renewed.bundle(2), "dated in the future", now=4))
+    clock.year = 5
+    check("C7.6.6 a first timestamp outside the anchoring interval is rejected",
+          rejects(archive(recs, new).bundle(2), "the declared anchoring interval is 1",
+                  signed_with="current"))
 
     # ---------------------------------------------------- schema conformance
     sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "schema"))
