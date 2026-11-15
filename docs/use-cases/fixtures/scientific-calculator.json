@@ -1,0 +1,24 @@
+{
+  "fixture_id": "scientific-calculator-v1",
+  "input": {
+    "opening_nav": "100",
+    "monthly_simple_returns": [
+      "0.01",
+      "-0.02",
+      "0.03"
+    ]
+  },
+  "expected": {
+    "nav": [
+      "101",
+      "98.98",
+      "101.9494"
+    ],
+    "max_drawdown_fraction": "0.02"
+  },
+  "units": "abstract NAV units",
+  "cash_flows_fees_taxes": "none",
+  "rounding": "none during calculation",
+  "comparison": "exact rational equality for this finite-decimal fixture",
+  "data_kind": "synthetic"
+}
