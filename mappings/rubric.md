@@ -18,8 +18,9 @@ equivalent scope, intent, and level of specificity.
 * Direct traceability between requirement and clause
 
 **Example 1:** Proof-of-Control C4.1.3 (out-of-scope actions blocked at the interception gateway, rejection
-evidenced) → CSA AARM runtime action interception (approve / modify / defer / deny at the action
-boundary). Both mandate enforcement at a runtime gateway with a recorded decision.
+evidenced) → CSA AARM R1, R4 and R5 (every agent-initiated action intercepted before execution;
+exactly one of five decisions: ALLOW, DENY, MODIFY, STEP_UP or DEFER; a tamper-evident receipt of
+the decision). Both mandate enforcement at a runtime gateway with a recorded decision.
 
 **Example 2:** Proof-of-Control C10.1.4 (conformance statement contents) → SOC 2 system description and
 management assertion. Both require a published, structured claim naming the system, its scope,
