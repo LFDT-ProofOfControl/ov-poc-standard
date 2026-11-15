@@ -49,22 +49,22 @@
 <rect x="320" y="348" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#5c5850"/>
 <rect x="320.0" y="348" width="286.6" height="34" fill="#cfff04" clip-path="url(#clip4)"/>
 <text x="898" y="370.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">51%</text>
-<text x="304" y="419.5" font-size="12.5" fill="#f0edea" text-anchor="end">CSA AARM</text>
+<text x="304" y="419.5" font-size="12.5" fill="#f0edea" text-anchor="end">Zero Trust (NIST SP 800-207)</text>
 <clipPath id="clip5"><rect x="320" y="398" width="560" height="34" rx="9"/></clipPath>
 <rect x="320" y="398" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#5c5850"/>
-<rect x="320" y="398" width="4.4" height="34" fill="#8fae00" clip-path="url(#clip5)"/>
-<rect x="324.4" y="398" width="242.5" height="34" fill="#cfff04" clip-path="url(#clip5)"/>
-<text x="898" y="420.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">44%</text>
-<text x="304" y="469.5" font-size="12.5" fill="#f0edea" text-anchor="end">Zero Trust (NIST SP 800-207)</text>
+<rect x="320" y="398" width="35.3" height="34" fill="#8fae00" clip-path="url(#clip5)"/>
+<rect x="355.3" y="398" width="202.8" height="34" fill="#cfff04" clip-path="url(#clip5)"/>
+<text x="898" y="420.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">43%</text>
+<text x="304" y="469.5" font-size="12.5" fill="#f0edea" text-anchor="end">MITRE ATLAS</text>
 <clipPath id="clip6"><rect x="320" y="448" width="560" height="34" rx="9"/></clipPath>
 <rect x="320" y="448" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#5c5850"/>
-<rect x="320" y="448" width="35.3" height="34" fill="#8fae00" clip-path="url(#clip6)"/>
-<rect x="355.3" y="448" width="202.8" height="34" fill="#cfff04" clip-path="url(#clip6)"/>
-<text x="898" y="470.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">43%</text>
-<text x="304" y="519.5" font-size="12.5" fill="#f0edea" text-anchor="end">MITRE ATLAS</text>
+<rect x="320.0" y="448" width="167.6" height="34" fill="#cfff04" clip-path="url(#clip6)"/>
+<text x="898" y="470.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">30%</text>
+<text x="304" y="519.5" font-size="12.5" fill="#f0edea" text-anchor="end">CSA AARM</text>
 <clipPath id="clip7"><rect x="320" y="498" width="560" height="34" rx="9"/></clipPath>
 <rect x="320" y="498" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#5c5850"/>
-<rect x="320.0" y="498" width="167.6" height="34" fill="#cfff04" clip-path="url(#clip7)"/>
-<text x="898" y="520.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">30%</text>
+<rect x="320" y="498" width="4.4" height="34" fill="#8fae00" clip-path="url(#clip7)"/>
+<rect x="324.4" y="498" width="110.2" height="34" fill="#cfff04" clip-path="url(#clip7)"/>
+<text x="898" y="520.0" font-size="14" fill="#f0edea" text-anchor="start" font-weight="700">20%</text>
 <text x="520.0" y="588" font-size="12.5" fill="#9d978e" text-anchor="middle">the uncovered remainder — evidence gradability, the binary threshold, trust-assumption disclosure — is the gap Proof-of-Control exists to close</text>
 </svg>
