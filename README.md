@@ -223,6 +223,7 @@ with `python3 mappings/compute_coverage.py`:
 | [CSA AARM](mappings/csa-aarm.md) | 1 | 55 | 71 | **44%** |
 | [Zero Trust (NIST SP 800-207)](mappings/zero-trust.md) | 8 | 46 | 73 | **43%** |
 | [MITRE ATLAS](mappings/mitre-atlas.md) | 0 | 38 | 89 | **30%** |
+| [OSFI E-23](mappings/osfi-e23.md) | 0 | 14 | 113 | **11%** |
 
 <!-- END GENERATED COVERAGE -->
 

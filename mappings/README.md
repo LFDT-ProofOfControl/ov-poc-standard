@@ -16,7 +16,7 @@ complementary forms, following the reproducible coverage methodology established
 | File | What it is |
 | --- | --- |
 | [`rubric.md`](rubric.md) | The EM / PM / NM match-type definitions, coding instructions, and the coverage formula |
-| [`coding_sheet.csv`](coding_sheet.csv) | Row-level coding: 127 requirements × 8 frameworks = 1,016 coded rows with rationales |
+| [`coding_sheet.csv`](coding_sheet.csv) | Row-level coding: 127 requirements × 9 frameworks = 1,143 coded rows with rationales |
 | [`compute_coverage.py`](compute_coverage.py) | Validates the sheet and reproduces the coverage percentages and the chart below |
 | [`corpus/README.md`](corpus/README.md) | Provenance of the external framework documents (title, version, access URL) |
 | [`../docs/reviews/mapping-review-2026-08.md`](../docs/reviews/mapping-review-2026-08.md) | Independent review of all 1,000 rows: what was corrected, what was deferred, and why |
@@ -105,6 +105,7 @@ Each of the 127 requirements is coded against each framework with one of three *
 | [CSA AARM](csa-aarm.md) | 1 | 55 | 71 | **44%** |
 | [Zero Trust (NIST SP 800-207)](zero-trust.md) | 8 | 46 | 73 | **43%** |
 | [MITRE ATLAS](mitre-atlas.md) | 0 | 38 | 89 | **30%** |
+| [OSFI E-23](osfi-e23.md) | 0 | 14 | 113 | **11%** |
 
 <!-- END GENERATED COVERAGE -->
 
@@ -114,7 +115,7 @@ already addresses — not the reverse, and not framework quality. Two patterns m
 * **The PM band is wide and the EM band is nearly empty.** Existing frameworks require most of
   the *controls* Proof-of-Control verifies, but almost never require *operator-independent,
   mechanism-generated evidence* that the controls held. That is the exact gap between Tier 2 and
-  Tier 3 — the binary threshold. Five of the eight frameworks now have **zero** exact matches,
+  Tier 3 — the binary threshold. Six of the nine frameworks now have **zero** exact matches,
   and the [2026 review](../docs/reviews/mapping-review-2026-08.md) challenged every one of the
   remaining 37 — so treat any EM here as unconfirmed.
 * **The NM gap concentrates in C7/C8/C10.** No coded framework grades evidence by how
@@ -138,6 +139,7 @@ already addresses — not the reverse, and not framework quality. Two patterns m
 | Zero Trust (NIST SP 800-207; Anthropic Zero Trust for AI Agents) | Security architecture / vendor framework | Zero Trust enforces at runtime; Proof-of-Control shows openly that control held | [zero-trust.md](zero-trust.md) |
 | Confidential Computing (TEEs) | Mechanism | One valid mechanism for delivering Proof-of-Control, not the property itself | [confidential-computing.md](confidential-computing.md) |
 | AIUC-1 | AI audit / certification framework | Portability-domain alignment target (cross-platform auditing) | [aiuc-1.md](aiuc-1.md) |
+| OSFI Guideline E-23 (Canada) | Prudential guideline on model risk management | E-23 governs how an institution manages model risk; Proof-of-Control evidences what an agent did | [osfi-e23.md](osfi-e23.md) |
 
 ## The By-Domain Mapping (working view)
 

@@ -60,6 +60,13 @@ corpus and reproduce the coding.
 * **Version:** August 2020
 * **Access:** <https://csrc.nist.gov/pubs/sp/800/207/final>
 
+### 9. OSFI Guideline E-23 (`OSFI_E23`)
+
+* **Title:** Office of the Superintendent of Financial Institutions (Canada), Guideline E-23,
+  Model Risk Management (2027)
+* **Version:** Published 11 September 2025, effective 1 May 2027
+* **Access:** <https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/guideline-e-23-model-risk-management-2027>
+
 ## Pending Corpus (not yet coded)
 
 These frameworks have qualitative crosswalks in [`mappings/`](../) but no row-level coding yet —

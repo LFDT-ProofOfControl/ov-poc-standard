@@ -36,6 +36,7 @@ DISPLAY_NAMES = {
     "MITRE_ATLAS": "MITRE ATLAS",
     "CSA_AARM": "CSA AARM",
     "NIST_SP_800_207": "Zero Trust (NIST SP 800-207)",
+    "OSFI_E23": "OSFI E-23",
 }
 
 CROSSWALKS = {
@@ -47,6 +48,7 @@ CROSSWALKS = {
     "MITRE_ATLAS": "mitre-atlas.md",
     "CSA_AARM": "csa-aarm.md",
     "NIST_SP_800_207": "zero-trust.md",
+    "OSFI_E23": "osfi-e23.md",
 }
 
 def _diagram_kit():
